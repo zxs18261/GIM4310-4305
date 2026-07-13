@@ -1,0 +1,5 @@
+<map id="BSP_CLOCK_SwitchToHse" name="BSP_CLOCK_SwitchToHse">
+<area shape="rect" id="Node000001" title="切换系统时钟 PLL 源为 HSE" alt="" coords="5,5,228,35"/>
+<area shape="rect" id="Node000002" href="$bsp__clock_8c.html#af8cc85a4e415b8a30455765329bb634b" title="以指定源重配 PLL 并切回 PLL 供 SYSCLK" alt="" coords="276,5,470,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,18,263,20,258,20,228,23"/>
+</map>

@@ -1,0 +1,1183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: Application/config/board_config.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('board__config_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">board_config.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>板级硬件参数统一配置（GIM4310/4305 电机控制器 V0.0 板）  
+<a href="#details">更多...</a></p>
+<div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="board__config_8h__dep__incl.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="board__config_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ac9edcae3d1f60f60ac9cb59f0a1318db" id="r_ac9edcae3d1f60f60ac9cb59f0a1318db"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ac9edcae3d1f60f60ac9cb59f0a1318db">BOARD_HSE_FREQ_HZ</a>&#160;&#160;&#160;(20000000UL)</td></tr>
+<tr class="memitem:ad29bfbd9ccafdae6b91d5c274b2b685e" id="r_ad29bfbd9ccafdae6b91d5c274b2b685e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad29bfbd9ccafdae6b91d5c274b2b685e">BOARD_SYSCLK_HZ</a>&#160;&#160;&#160;(170000000UL)</td></tr>
+<tr class="memitem:a6644d550835215fbe4a8b10b0b4ddb04" id="r_a6644d550835215fbe4a8b10b0b4ddb04"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6644d550835215fbe4a8b10b0b4ddb04">BOARD_TIM1_CLK_HZ</a>&#160;&#160;&#160;(170000000UL)</td></tr>
+<tr class="memitem:a7debcd2a2db73be1ffea657d2fd3e715" id="r_a7debcd2a2db73be1ffea657d2fd3e715"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7debcd2a2db73be1ffea657d2fd3e715">BOARD_PWM_FREQ_HZ</a>&#160;&#160;&#160;(20000UL)</td></tr>
+<tr class="memitem:aafb68e7d4294c7e20691c8cda1957090" id="r_aafb68e7d4294c7e20691c8cda1957090"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aafb68e7d4294c7e20691c8cda1957090">BOARD_PWM_ARR</a>&#160;&#160;&#160;((uint32_t)(<a class="el" href="#a6644d550835215fbe4a8b10b0b4ddb04">BOARD_TIM1_CLK_HZ</a> / (2UL * <a class="el" href="#a7debcd2a2db73be1ffea657d2fd3e715">BOARD_PWM_FREQ_HZ</a>)))</td></tr>
+<tr class="memdesc:aafb68e7d4294c7e20691c8cda1957090"><td class="mdescLeft">&#160;</td><td class="mdescRight">中心对齐模式：ARR = TIM1CLK / (2 * PWM_FREQ) = 4250  <br /></td></tr>
+<tr class="memitem:a0d718b375104185711a0a901dbc14790" id="r_a0d718b375104185711a0a901dbc14790"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a0d718b375104185711a0a901dbc14790">BOARD_PWM_DEADTIME_DTG</a>&#160;&#160;&#160;(34U)</td></tr>
+<tr class="memdesc:a0d718b375104185711a0a901dbc14790"><td class="mdescLeft">&#160;</td><td class="mdescRight">死区：200ns @ tDTS=5.88ns -&gt; DTG=34；FD6288 另有 100~300ns 内部死区叠加  <br /></td></tr>
+<tr class="memitem:a7fec8551c3700e2ecbeb4a8544d4cf84" id="r_a7fec8551c3700e2ecbeb4a8544d4cf84"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7fec8551c3700e2ecbeb4a8544d4cf84">BOARD_PWM_MAX_DUTY</a>&#160;&#160;&#160;(0.94f)</td></tr>
+<tr class="memdesc:a7fec8551c3700e2ecbeb4a8544d4cf84"><td class="mdescLeft">&#160;</td><td class="mdescRight">每相占空比上限：保证低侧 shunt 采样窗口 &gt;= 3us 且高/低侧脉宽 &gt;= 500ns （FD6288 输入滤波对窄脉冲的吞没风险）  <br /></td></tr>
+<tr class="memitem:aaf286d012b58f701c1bad0fc362dc445" id="r_aaf286d012b58f701c1bad0fc362dc445"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aaf286d012b58f701c1bad0fc362dc445">BOARD_PWM_ADC_TRIG_ADVANCE</a>&#160;&#160;&#160;(40U)</td></tr>
+<tr class="memdesc:aaf286d012b58f701c1bad0fc362dc445"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC 注入组触发提前量 [计数拍]：OC4 上升沿相对计数器峰值的提前时间， 40 拍 = 235ns，保证采样落在低侧导通窗口中心附近  <br /></td></tr>
+<tr class="memitem:a5a0e1d82570458abe695e32acf4aa299" id="r_a5a0e1d82570458abe695e32acf4aa299"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5a0e1d82570458abe695e32acf4aa299">BOARD_PWM_CCR_U</a>&#160;&#160;&#160;CCR1</td></tr>
+<tr class="memdesc:a5a0e1d82570458abe695e32acf4aa299"><td class="mdescLeft">&#160;</td><td class="mdescRight">相别 -&gt; TIM1 CCR 寄存器成员映射（网表确认 CH1=U/CH2=V/CH3=W）  <br /></td></tr>
+<tr class="memitem:afd02ac954cfcb5990001b66ddf576de5" id="r_afd02ac954cfcb5990001b66ddf576de5"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#afd02ac954cfcb5990001b66ddf576de5">BOARD_PWM_CCR_V</a>&#160;&#160;&#160;CCR2</td></tr>
+<tr class="memitem:a7b80a7742e7d892d9aeb5016160728e4" id="r_a7b80a7742e7d892d9aeb5016160728e4"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7b80a7742e7d892d9aeb5016160728e4">BOARD_PWM_CCR_W</a>&#160;&#160;&#160;CCR3</td></tr>
+<tr class="memitem:a6972a7e17b7e1847574f6780d82d2bd2" id="r_a6972a7e17b7e1847574f6780d82d2bd2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6972a7e17b7e1847574f6780d82d2bd2">BOARD_SHUNT_OHM</a>&#160;&#160;&#160;(0.005f)</td></tr>
+<tr class="memitem:a2ec6ad813763f2391f3597d49f6b7fdc" id="r_a2ec6ad813763f2391f3597d49f6b7fdc"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a2ec6ad813763f2391f3597d49f6b7fdc">BOARD_CSA_GAIN</a>&#160;&#160;&#160;(25.0f)</td></tr>
+<tr class="memitem:a5ab8e7370a550b1dc932aa1a4235809c" id="r_a5ab8e7370a550b1dc932aa1a4235809c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5ab8e7370a550b1dc932aa1a4235809c">BOARD_ADC_VREF</a>&#160;&#160;&#160;(3.3f)</td></tr>
+<tr class="memitem:aa9bfe22acf0e1495121ecad6d04c4987" id="r_aa9bfe22acf0e1495121ecad6d04c4987"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa9bfe22acf0e1495121ecad6d04c4987">BOARD_CUR_LSB</a>&#160;&#160;&#160;(<a class="el" href="#a5ab8e7370a550b1dc932aa1a4235809c">BOARD_ADC_VREF</a> / 4096.0f / (<a class="el" href="#a2ec6ad813763f2391f3597d49f6b7fdc">BOARD_CSA_GAIN</a> * <a class="el" href="#a6972a7e17b7e1847574f6780d82d2bd2">BOARD_SHUNT_OHM</a>))</td></tr>
+<tr class="memdesc:aa9bfe22acf0e1495121ecad6d04c4987"><td class="mdescLeft">&#160;</td><td class="mdescRight">电流分辨率 [A/LSB] = VREF / 4096 / (增益 * 采样电阻) ≈ 6.45mA  <br /></td></tr>
+<tr class="memitem:ac6d0ad9a27b737a6f394fcdec571597e" id="r_ac6d0ad9a27b737a6f394fcdec571597e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ac6d0ad9a27b737a6f394fcdec571597e">BOARD_CUR_SIGN_U</a>&#160;&#160;&#160;(-1.0f)</td></tr>
+<tr class="memdesc:ac6d0ad9a27b737a6f394fcdec571597e"><td class="mdescLeft">&#160;</td><td class="mdescRight">电流符号：低侧续流窗口内，相电流流入电机时 shunt 压差为负（网表推导）， 正方向定义为电流流入电机  <br /></td></tr>
+<tr class="memitem:a26aa85955e77bd0faff5660a081ab19b" id="r_a26aa85955e77bd0faff5660a081ab19b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a26aa85955e77bd0faff5660a081ab19b">BOARD_CUR_SIGN_V</a>&#160;&#160;&#160;(-1.0f)</td></tr>
+<tr class="memitem:ae63005289d1a5ff7432ebf5db039de8d" id="r_ae63005289d1a5ff7432ebf5db039de8d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ae63005289d1a5ff7432ebf5db039de8d">BOARD_CUR_SIGN_BUS</a>&#160;&#160;&#160;(1.0f)</td></tr>
+<tr class="memitem:a5235c1299405728490745838d9124965" id="r_a5235c1299405728490745838d9124965"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5235c1299405728490745838d9124965">BOARD_CUR_MEAS_RANGE</a>&#160;&#160;&#160;(13.2f)</td></tr>
+<tr class="memdesc:a5235c1299405728490745838d9124965"><td class="mdescLeft">&#160;</td><td class="mdescRight">电流通道硬件量程 [A]（偏置在半量程时约 ±13.2A，超出即放大器/ADC 饱和）  <br /></td></tr>
+<tr class="memitem:a9072a593d066b96a7b39441989e28c5b" id="r_a9072a593d066b96a7b39441989e28c5b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a9072a593d066b96a7b39441989e28c5b">BOARD_ADC1_JCH_CUR</a>&#160;&#160;&#160;ADC_CHANNEL_12</td></tr>
+<tr class="memdesc:a9072a593d066b96a7b39441989e28c5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC 注入通道映射（网表确认）： IU = OPAMP3_VOUT = PB1 = ADC1_IN12 IBUS= OPAMP1_VOUT = PA2 = ADC1_IN3（峰值采样时刻恒≈0，仅诊断用） IV = OPAMP2_VOUT = PA6 = ADC2_IN3 VBUS= PB12 = ADC1_IN11  <br /></td></tr>
+<tr class="memitem:af712de11608a50329d77ddcde6d630b9" id="r_af712de11608a50329d77ddcde6d630b9"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af712de11608a50329d77ddcde6d630b9">BOARD_ADC1_JCH_IBUS</a>&#160;&#160;&#160;ADC_CHANNEL_3</td></tr>
+<tr class="memitem:af20e4ff4f91d387e659df648dd541de7" id="r_af20e4ff4f91d387e659df648dd541de7"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af20e4ff4f91d387e659df648dd541de7">BOARD_ADC1_JCH_VBUS</a>&#160;&#160;&#160;ADC_CHANNEL_11</td></tr>
+<tr class="memitem:ae5c19a896e942846553bff257dac6d1b" id="r_ae5c19a896e942846553bff257dac6d1b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ae5c19a896e942846553bff257dac6d1b">BOARD_ADC2_JCH_CUR</a>&#160;&#160;&#160;ADC_CHANNEL_3</td></tr>
+<tr class="memitem:a8c2baf0164a9ccfda5b3768dd8f5424c" id="r_a8c2baf0164a9ccfda5b3768dd8f5424c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a8c2baf0164a9ccfda5b3768dd8f5424c">BOARD_ADC1_RCH_MOSNTC</a>&#160;&#160;&#160;ADC_CHANNEL_14</td></tr>
+<tr class="memdesc:a8c2baf0164a9ccfda5b3768dd8f5424c"><td class="mdescLeft">&#160;</td><td class="mdescRight">规则组通道：MOS NTC = PB11 = ADC1_IN14，电机 NTC = PC4 = ADC2_IN5  <br /></td></tr>
+<tr class="memitem:a594e272632958f0d857917052d8482e5" id="r_a594e272632958f0d857917052d8482e5"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a594e272632958f0d857917052d8482e5">BOARD_ADC2_RCH_MOTNTC</a>&#160;&#160;&#160;ADC_CHANNEL_5</td></tr>
+<tr class="memitem:aaeab1d5f873cde4d302e6558f631ad9b" id="r_aaeab1d5f873cde4d302e6558f631ad9b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aaeab1d5f873cde4d302e6558f631ad9b">BOARD_ADC_CUR_SMPTIME</a>&#160;&#160;&#160;ADC_SAMPLETIME_6CYCLES_5</td></tr>
+<tr class="memdesc:aaeab1d5f873cde4d302e6558f631ad9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">采样时间（ADC 时钟 = SYSCLK/4 = 42.5MHz）  <br /></td></tr>
+<tr class="memitem:aaf4f98cd0e05cbf852a5e436d3912b5c" id="r_aaf4f98cd0e05cbf852a5e436d3912b5c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aaf4f98cd0e05cbf852a5e436d3912b5c">BOARD_ADC_VBUS_SMPTIME</a>&#160;&#160;&#160;ADC_SAMPLETIME_24CYCLES_5</td></tr>
+<tr class="memitem:a60fc80edb38e939ab44bf022c3e6724e" id="r_a60fc80edb38e939ab44bf022c3e6724e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a60fc80edb38e939ab44bf022c3e6724e">BOARD_ADC_NTC_SMPTIME</a>&#160;&#160;&#160;ADC_SAMPLETIME_247CYCLES_5</td></tr>
+<tr class="memitem:a069c088a57f31bd30721a0b064970096" id="r_a069c088a57f31bd30721a0b064970096"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a069c088a57f31bd30721a0b064970096">BOARD_ADC_OFFSET_MIN</a>&#160;&#160;&#160;(300.0f)</td></tr>
+<tr class="memdesc:a069c088a57f31bd30721a0b064970096"><td class="mdescLeft">&#160;</td><td class="mdescRight">零流偏置合理窗口 [LSB]：标称 1.65V 对应 2048，但网表所示偏置网络存在 直流工作点疑问（详见 doc/Firmware.md 硬件注意事项），窗口放宽并在 偏置校准时打印实测值供核对  <br /></td></tr>
+<tr class="memitem:a78d3afcd554c93d37fe2e59be527235f" id="r_a78d3afcd554c93d37fe2e59be527235f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a78d3afcd554c93d37fe2e59be527235f">BOARD_ADC_OFFSET_MAX</a>&#160;&#160;&#160;(3900.0f)</td></tr>
+<tr class="memitem:aa4cdf1437fde188ada4c2ab7ae068d63" id="r_aa4cdf1437fde188ada4c2ab7ae068d63"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa4cdf1437fde188ada4c2ab7ae068d63">BOARD_ADC_RAIL_LOW</a>&#160;&#160;&#160;(20U)</td></tr>
+<tr class="memdesc:aa4cdf1437fde188ada4c2ab7ae068d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">电流通道贴轨判定阈值 [LSB]：原始值越过即视为放大器/ADC 饱和（过流）  <br /></td></tr>
+<tr class="memitem:a696f782b84c7a257851d9428c1d7baf2" id="r_a696f782b84c7a257851d9428c1d7baf2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a696f782b84c7a257851d9428c1d7baf2">BOARD_ADC_RAIL_HIGH</a>&#160;&#160;&#160;(4075U)</td></tr>
+<tr class="memitem:af223b1ca71efbb7d2208098aeeb8ef21" id="r_af223b1ca71efbb7d2208098aeeb8ef21"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af223b1ca71efbb7d2208098aeeb8ef21">BOARD_VBUS_R_TOP</a>&#160;&#160;&#160;(100.0f)</td></tr>
+<tr class="memitem:ab6c63ce9cf47f1c6ebba19e94dd4f989" id="r_ab6c63ce9cf47f1c6ebba19e94dd4f989"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab6c63ce9cf47f1c6ebba19e94dd4f989">BOARD_VBUS_R_BOT</a>&#160;&#160;&#160;(4.3f)</td></tr>
+<tr class="memitem:a38625ac42ca0d6d46779435209eb870c" id="r_a38625ac42ca0d6d46779435209eb870c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a38625ac42ca0d6d46779435209eb870c">BOARD_VBUS_LSB</a>&#160;&#160;&#160;(<a class="el" href="#a5ab8e7370a550b1dc932aa1a4235809c">BOARD_ADC_VREF</a> / 4096.0f * ((<a class="el" href="#af223b1ca71efbb7d2208098aeeb8ef21">BOARD_VBUS_R_TOP</a> + <a class="el" href="#ab6c63ce9cf47f1c6ebba19e94dd4f989">BOARD_VBUS_R_BOT</a>) / <a class="el" href="#ab6c63ce9cf47f1c6ebba19e94dd4f989">BOARD_VBUS_R_BOT</a>))</td></tr>
+<tr class="memdesc:a38625ac42ca0d6d46779435209eb870c"><td class="mdescLeft">&#160;</td><td class="mdescRight">电压分辨率 [V/LSB] ≈ 19.55mV，满量程 ≈ 80V  <br /></td></tr>
+<tr class="memitem:adf2221688d30eef9e7b97d5a9eba02d0" id="r_adf2221688d30eef9e7b97d5a9eba02d0"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#adf2221688d30eef9e7b97d5a9eba02d0">BOARD_VBUS_LPF_ALPHA</a>&#160;&#160;&#160;(0.05f)</td></tr>
+<tr class="memdesc:adf2221688d30eef9e7b97d5a9eba02d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">母线电压一阶低通系数（20kHz 采样，约 160Hz 截止）  <br /></td></tr>
+<tr class="memitem:aed925ebe16a29b3e86f206d6cfae7359" id="r_aed925ebe16a29b3e86f206d6cfae7359"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aed925ebe16a29b3e86f206d6cfae7359">BOARD_NTC_PULLUP</a>&#160;&#160;&#160;(10000.0f)</td></tr>
+<tr class="memitem:a4296307746e7b70e8d9cc039d2b62679" id="r_a4296307746e7b70e8d9cc039d2b62679"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4296307746e7b70e8d9cc039d2b62679">BOARD_NTC_MOS_R25</a>&#160;&#160;&#160;(10000.0f)</td></tr>
+<tr class="memitem:a331acb47ee1d0260f04fee442b95e4b1" id="r_a331acb47ee1d0260f04fee442b95e4b1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a331acb47ee1d0260f04fee442b95e4b1">BOARD_NTC_MOS_BETA</a>&#160;&#160;&#160;(3950.0f)</td></tr>
+<tr class="memitem:a462dc439550e5208d74aa77f967d50f9" id="r_a462dc439550e5208d74aa77f967d50f9"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a462dc439550e5208d74aa77f967d50f9">BOARD_NTC_MOT_R25</a>&#160;&#160;&#160;(10000.0f)</td></tr>
+<tr class="memitem:af06d461c2cdb5c971efc1efe248cee8a" id="r_af06d461c2cdb5c971efc1efe248cee8a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af06d461c2cdb5c971efc1efe248cee8a">BOARD_NTC_MOT_BETA</a>&#160;&#160;&#160;(3950.0f)</td></tr>
+<tr class="memitem:abaf708838731d0078c1b86bde2857afb" id="r_abaf708838731d0078c1b86bde2857afb"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abaf708838731d0078c1b86bde2857afb">BOARD_NTC_FAULT_TEMP</a>&#160;&#160;&#160;(250.0f)</td></tr>
+<tr class="memitem:a7e9f8bc22ce424d47c209695874218ad" id="r_a7e9f8bc22ce424d47c209695874218ad"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7e9f8bc22ce424d47c209695874218ad">BOARD_UART_BAUDRATE</a>&#160;&#160;&#160;(921600UL)</td></tr>
+<tr class="memitem:a28110982ef5c85a64ea51845e6ecd702" id="r_a28110982ef5c85a64ea51845e6ecd702"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a28110982ef5c85a64ea51845e6ecd702">BOARD_CAN_TERM_ACTIVE_HIGH</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="memitem:a202147b9350276f50927d97faa328a23" id="r_a202147b9350276f50927d97faa328a23"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a202147b9350276f50927d97faa328a23">BOARD_CAN_BROADCAST_ID</a>&#160;&#160;&#160;(0x000U)</td></tr>
+<tr class="memitem:a17323fdfab5668e699770fef68768089" id="r_a17323fdfab5668e699770fef68768089"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a17323fdfab5668e699770fef68768089">BOARD_CAN_NODE_ID_MAX</a>&#160;&#160;&#160;(63U)</td></tr>
+<tr class="memitem:a1a0ce54b2c34bed1a4e2fe2354b6df38" id="r_a1a0ce54b2c34bed1a4e2fe2354b6df38"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a1a0ce54b2c34bed1a4e2fe2354b6df38">BOARD_CAN_CFG_ID_BASE</a>&#160;&#160;&#160;(0x600U)</td></tr>
+<tr class="memitem:ab31802725d7154c2474ce9e7e2b39b5b" id="r_ab31802725d7154c2474ce9e7e2b39b5b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab31802725d7154c2474ce9e7e2b39b5b">BOARD_CAN_CFG_REPLY_BASE</a>&#160;&#160;&#160;(0x680U)</td></tr>
+<tr class="memitem:abf5b023975de260399e97803cd41170c" id="r_abf5b023975de260399e97803cd41170c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abf5b023975de260399e97803cd41170c">BOARD_CAN_MASTER_ID</a>&#160;&#160;&#160;(0x000U)</td></tr>
+<tr class="memitem:aab99b1c86d2191807c5c658706cfafe3" id="r_aab99b1c86d2191807c5c658706cfafe3"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aab99b1c86d2191807c5c658706cfafe3">BOARD_WS2812_ARR</a>&#160;&#160;&#160;((uint32_t)(<a class="el" href="#ad29bfbd9ccafdae6b91d5c274b2b685e">BOARD_SYSCLK_HZ</a> / 800000UL - 1UL))</td></tr>
+<tr class="memdesc:aab99b1c86d2191807c5c658706cfafe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">位周期 1.25us：ARR = SYSCLK / 800kHz - 1 = 211  <br /></td></tr>
+<tr class="memitem:a44f10736ad3cf7da33b9c55cf273a456" id="r_a44f10736ad3cf7da33b9c55cf273a456"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a44f10736ad3cf7da33b9c55cf273a456">BOARD_WS2812_CCR_0</a>&#160;&#160;&#160;(58U)</td></tr>
+<tr class="memitem:accc18e76f854bea190b727e9b777070c" id="r_accc18e76f854bea190b727e9b777070c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#accc18e76f854bea190b727e9b777070c">BOARD_WS2812_CCR_1</a>&#160;&#160;&#160;(136U)</td></tr>
+<tr class="memitem:a42b09680f2f493af3a25ac6bb17c613f" id="r_a42b09680f2f493af3a25ac6bb17c613f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a42b09680f2f493af3a25ac6bb17c613f">BOARD_WS2812_ORDER_RGB</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memitem:ac328c919d562f5cc2b4a4028216e075d" id="r_ac328c919d562f5cc2b4a4028216e075d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ac328c919d562f5cc2b4a4028216e075d">BOARD_LED_BRIGHTNESS_DEFAULT</a>&#160;&#160;&#160;(40U)</td></tr>
+<tr class="memitem:a814763c53bd6bb2fc124d6f2fac5272b" id="r_a814763c53bd6bb2fc124d6f2fac5272b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a814763c53bd6bb2fc124d6f2fac5272b">BOARD_ENC_GPIO_PORT</a>&#160;&#160;&#160;GPIOB</td></tr>
+<tr class="memdesc:a814763c53bd6bb2fc124d6f2fac5272b"><td class="mdescLeft">&#160;</td><td class="mdescRight">网表实际接线：CSN=PB4、CLK=PB5、DO=PB6（无硬件 SPI 复用可用，位带模拟）  <br /></td></tr>
+<tr class="memitem:ab36b4534f44f309658a35c20ad68a0ae" id="r_ab36b4534f44f309658a35c20ad68a0ae"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab36b4534f44f309658a35c20ad68a0ae">BOARD_ENC_CSN_PIN</a>&#160;&#160;&#160;GPIO_PIN_4</td></tr>
+<tr class="memitem:ab5280be52e14476db2115952d7b25317" id="r_ab5280be52e14476db2115952d7b25317"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab5280be52e14476db2115952d7b25317">BOARD_ENC_CLK_PIN</a>&#160;&#160;&#160;GPIO_PIN_5</td></tr>
+<tr class="memitem:a73954cf3b8847e23662e1cdb4ed66e1d" id="r_a73954cf3b8847e23662e1cdb4ed66e1d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a73954cf3b8847e23662e1cdb4ed66e1d">BOARD_ENC_DO_PIN</a>&#160;&#160;&#160;GPIO_PIN_6</td></tr>
+<tr class="memitem:a87efa9294596fd5945b884db631bf1d6" id="r_a87efa9294596fd5945b884db631bf1d6"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a87efa9294596fd5945b884db631bf1d6">BOARD_ENC_DO_PIN_POS</a>&#160;&#160;&#160;(6U)</td></tr>
+<tr class="memitem:abd60cc39afa21bfbf23ac15fc22a324e" id="r_abd60cc39afa21bfbf23ac15fc22a324e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abd60cc39afa21bfbf23ac15fc22a324e">BOARD_IRQPRIO_FOC</a>&#160;&#160;&#160;(1U)</td></tr>
+<tr class="memdesc:abd60cc39afa21bfbf23ac15fc22a324e"><td class="mdescLeft">&#160;</td><td class="mdescRight">NVIC_PRIORITYGROUP_4：数值越小优先级越高，SysTick 已固定为 15  <br /></td></tr>
+<tr class="memitem:aa26571a54f745bf294941c4f8c3a8caf" id="r_aa26571a54f745bf294941c4f8c3a8caf"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa26571a54f745bf294941c4f8c3a8caf">BOARD_IRQPRIO_CAN</a>&#160;&#160;&#160;(3U)</td></tr>
+<tr class="memitem:af999ec4630e03fb7821e7144b740d136" id="r_af999ec4630e03fb7821e7144b740d136"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af999ec4630e03fb7821e7144b740d136">BOARD_IRQPRIO_UART</a>&#160;&#160;&#160;(6U)</td></tr>
+<tr class="memitem:a4069990512938e0cf6f663547e2a8123" id="r_a4069990512938e0cf6f663547e2a8123"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4069990512938e0cf6f663547e2a8123">BOARD_IRQPRIO_UART_DMA</a>&#160;&#160;&#160;(7U)</td></tr>
+<tr class="memitem:a28ef4d2a8d1cd2413569add7779edd2b" id="r_a28ef4d2a8d1cd2413569add7779edd2b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a28ef4d2a8d1cd2413569add7779edd2b">BOARD_IRQPRIO_LED_DMA</a>&#160;&#160;&#160;(8U)</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>板级硬件参数统一配置（GIM4310/4305 电机控制器 V0.0 板） </p>
+<dl class="section note"><dt>注解</dt><dd>本文件集中定义与电路板绑定的全部硬件参数与引脚/通道映射， 依据为网表 Netlist_Schematic1_2026-07-11.tel 与原理图 V1.0：<ul>
+<li>TIM1 CH1/CH2/CH3 = U/V/W 相（FD6288Q 同相驱动）；</li>
+<li>电流采样：U/V 两相低侧腿独立 5mR + 公共母线回流 5mR， 内部 OPAMP 差分放大 25 倍，偏置约半量程（上电实测补偿）；</li>
+<li>MT6701 编码器为 GPIO 位带模拟 SSI（PB4=CSN/PB5=CLK/PB6=DO， 无硬件 SPI 复用可用）；</li>
+<li>EN_120（PA15）高电平接入 CAN 120R 终端电阻（TS5A3159 IN=H 连 NO）。</li>
+</ul>
+</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd></dd></dl>
+<p>Copyright (c) 2026 Z.Xusheng SPDX-License-Identifier: MIT</p>
+<p>This file is part of the GIM4310/GIM4305 joint motor controller firmware, distributed under the MIT License. See the LICENSE file in the repository root for full terms. </p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="a9072a593d066b96a7b39441989e28c5b" name="a9072a593d066b96a7b39441989e28c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9072a593d066b96a7b39441989e28c5b">&#9670;&#160;</a></span>BOARD_ADC1_JCH_CUR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ADC1_JCH_CUR&#160;&#160;&#160;ADC_CHANNEL_12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ADC 注入通道映射（网表确认）： IU = OPAMP3_VOUT = PB1 = ADC1_IN12 IBUS= OPAMP1_VOUT = PA2 = ADC1_IN3（峰值采样时刻恒≈0，仅诊断用） IV = OPAMP2_VOUT = PA6 = ADC2_IN3 VBUS= PB12 = ADC1_IN11 </p>
+
+</div>
+</div>
+<a id="af712de11608a50329d77ddcde6d630b9" name="af712de11608a50329d77ddcde6d630b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af712de11608a50329d77ddcde6d630b9">&#9670;&#160;</a></span>BOARD_ADC1_JCH_IBUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ADC1_JCH_IBUS&#160;&#160;&#160;ADC_CHANNEL_3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af20e4ff4f91d387e659df648dd541de7" name="af20e4ff4f91d387e659df648dd541de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af20e4ff4f91d387e659df648dd541de7">&#9670;&#160;</a></span>BOARD_ADC1_JCH_VBUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ADC1_JCH_VBUS&#160;&#160;&#160;ADC_CHANNEL_11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c2baf0164a9ccfda5b3768dd8f5424c" name="a8c2baf0164a9ccfda5b3768dd8f5424c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c2baf0164a9ccfda5b3768dd8f5424c">&#9670;&#160;</a></span>BOARD_ADC1_RCH_MOSNTC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ADC1_RCH_MOSNTC&#160;&#160;&#160;ADC_CHANNEL_14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>规则组通道：MOS NTC = PB11 = ADC1_IN14，电机 NTC = PC4 = ADC2_IN5 </p>
+
+</div>
+</div>
+<a id="ae5c19a896e942846553bff257dac6d1b" name="ae5c19a896e942846553bff257dac6d1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c19a896e942846553bff257dac6d1b">&#9670;&#160;</a></span>BOARD_ADC2_JCH_CUR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ADC2_JCH_CUR&#160;&#160;&#160;ADC_CHANNEL_3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a594e272632958f0d857917052d8482e5" name="a594e272632958f0d857917052d8482e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a594e272632958f0d857917052d8482e5">&#9670;&#160;</a></span>BOARD_ADC2_RCH_MOTNTC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ADC2_RCH_MOTNTC&#160;&#160;&#160;ADC_CHANNEL_5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaeab1d5f873cde4d302e6558f631ad9b" name="aaeab1d5f873cde4d302e6558f631ad9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeab1d5f873cde4d302e6558f631ad9b">&#9670;&#160;</a></span>BOARD_ADC_CUR_SMPTIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ADC_CUR_SMPTIME&#160;&#160;&#160;ADC_SAMPLETIME_6CYCLES_5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>采样时间（ADC 时钟 = SYSCLK/4 = 42.5MHz） </p>
+
+</div>
+</div>
+<a id="a60fc80edb38e939ab44bf022c3e6724e" name="a60fc80edb38e939ab44bf022c3e6724e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60fc80edb38e939ab44bf022c3e6724e">&#9670;&#160;</a></span>BOARD_ADC_NTC_SMPTIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ADC_NTC_SMPTIME&#160;&#160;&#160;ADC_SAMPLETIME_247CYCLES_5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78d3afcd554c93d37fe2e59be527235f" name="a78d3afcd554c93d37fe2e59be527235f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d3afcd554c93d37fe2e59be527235f">&#9670;&#160;</a></span>BOARD_ADC_OFFSET_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ADC_OFFSET_MAX&#160;&#160;&#160;(3900.0f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a069c088a57f31bd30721a0b064970096" name="a069c088a57f31bd30721a0b064970096"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a069c088a57f31bd30721a0b064970096">&#9670;&#160;</a></span>BOARD_ADC_OFFSET_MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ADC_OFFSET_MIN&#160;&#160;&#160;(300.0f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>零流偏置合理窗口 [LSB]：标称 1.65V 对应 2048，但网表所示偏置网络存在 直流工作点疑问（详见 doc/Firmware.md 硬件注意事项），窗口放宽并在 偏置校准时打印实测值供核对 </p>
+
+</div>
+</div>
+<a id="a696f782b84c7a257851d9428c1d7baf2" name="a696f782b84c7a257851d9428c1d7baf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a696f782b84c7a257851d9428c1d7baf2">&#9670;&#160;</a></span>BOARD_ADC_RAIL_HIGH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ADC_RAIL_HIGH&#160;&#160;&#160;(4075U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4cdf1437fde188ada4c2ab7ae068d63" name="aa4cdf1437fde188ada4c2ab7ae068d63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4cdf1437fde188ada4c2ab7ae068d63">&#9670;&#160;</a></span>BOARD_ADC_RAIL_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ADC_RAIL_LOW&#160;&#160;&#160;(20U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>电流通道贴轨判定阈值 [LSB]：原始值越过即视为放大器/ADC 饱和（过流） </p>
+
+</div>
+</div>
+<a id="aaf4f98cd0e05cbf852a5e436d3912b5c" name="aaf4f98cd0e05cbf852a5e436d3912b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf4f98cd0e05cbf852a5e436d3912b5c">&#9670;&#160;</a></span>BOARD_ADC_VBUS_SMPTIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ADC_VBUS_SMPTIME&#160;&#160;&#160;ADC_SAMPLETIME_24CYCLES_5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ab8e7370a550b1dc932aa1a4235809c" name="a5ab8e7370a550b1dc932aa1a4235809c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab8e7370a550b1dc932aa1a4235809c">&#9670;&#160;</a></span>BOARD_ADC_VREF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ADC_VREF&#160;&#160;&#160;(3.3f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>VREF+ = AVCC </p>
+
+</div>
+</div>
+<a id="a202147b9350276f50927d97faa328a23" name="a202147b9350276f50927d97faa328a23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a202147b9350276f50927d97faa328a23">&#9670;&#160;</a></span>BOARD_CAN_BROADCAST_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_CAN_BROADCAST_ID&#160;&#160;&#160;(0x000U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>广播 ID（全体节点接收特殊帧） </p>
+
+</div>
+</div>
+<a id="a1a0ce54b2c34bed1a4e2fe2354b6df38" name="a1a0ce54b2c34bed1a4e2fe2354b6df38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a0ce54b2c34bed1a4e2fe2354b6df38">&#9670;&#160;</a></span>BOARD_CAN_CFG_ID_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_CAN_CFG_ID_BASE&#160;&#160;&#160;(0x600U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>配置协议请求 ID = 0x600 + NodeId </p>
+
+</div>
+</div>
+<a id="ab31802725d7154c2474ce9e7e2b39b5b" name="ab31802725d7154c2474ce9e7e2b39b5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab31802725d7154c2474ce9e7e2b39b5b">&#9670;&#160;</a></span>BOARD_CAN_CFG_REPLY_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_CAN_CFG_REPLY_BASE&#160;&#160;&#160;(0x680U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>配置协议应答 ID = 0x680 + NodeId </p>
+
+</div>
+</div>
+<a id="abf5b023975de260399e97803cd41170c" name="abf5b023975de260399e97803cd41170c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf5b023975de260399e97803cd41170c">&#9670;&#160;</a></span>BOARD_CAN_MASTER_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_CAN_MASTER_ID&#160;&#160;&#160;(0x000U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>MIT 反馈帧目标 ID（mini-cheetah 主机约定） </p>
+
+</div>
+</div>
+<a id="a17323fdfab5668e699770fef68768089" name="a17323fdfab5668e699770fef68768089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17323fdfab5668e699770fef68768089">&#9670;&#160;</a></span>BOARD_CAN_NODE_ID_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_CAN_NODE_ID_MAX&#160;&#160;&#160;(63U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>节点 ID 范围 1~63（配置协议地址空间约束） </p>
+
+</div>
+</div>
+<a id="a28110982ef5c85a64ea51845e6ecd702" name="a28110982ef5c85a64ea51845e6ecd702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28110982ef5c85a64ea51845e6ecd702">&#9670;&#160;</a></span>BOARD_CAN_TERM_ACTIVE_HIGH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_CAN_TERM_ACTIVE_HIGH&#160;&#160;&#160;(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>EN_120 高电平 = 120R 接入（TS5A3159 IN=H 连 NO） </p>
+
+</div>
+</div>
+<a id="a2ec6ad813763f2391f3597d49f6b7fdc" name="a2ec6ad813763f2391f3597d49f6b7fdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ec6ad813763f2391f3597d49f6b7fdc">&#9670;&#160;</a></span>BOARD_CSA_GAIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_CSA_GAIN&#160;&#160;&#160;(25.0f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>OPAMP 差分增益（原理图注释值） </p>
+
+</div>
+</div>
+<a id="aa9bfe22acf0e1495121ecad6d04c4987" name="aa9bfe22acf0e1495121ecad6d04c4987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9bfe22acf0e1495121ecad6d04c4987">&#9670;&#160;</a></span>BOARD_CUR_LSB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_CUR_LSB&#160;&#160;&#160;(<a class="el" href="#a5ab8e7370a550b1dc932aa1a4235809c">BOARD_ADC_VREF</a> / 4096.0f / (<a class="el" href="#a2ec6ad813763f2391f3597d49f6b7fdc">BOARD_CSA_GAIN</a> * <a class="el" href="#a6972a7e17b7e1847574f6780d82d2bd2">BOARD_SHUNT_OHM</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>电流分辨率 [A/LSB] = VREF / 4096 / (增益 * 采样电阻) ≈ 6.45mA </p>
+
+</div>
+</div>
+<a id="a5235c1299405728490745838d9124965" name="a5235c1299405728490745838d9124965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5235c1299405728490745838d9124965">&#9670;&#160;</a></span>BOARD_CUR_MEAS_RANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_CUR_MEAS_RANGE&#160;&#160;&#160;(13.2f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>电流通道硬件量程 [A]（偏置在半量程时约 ±13.2A，超出即放大器/ADC 饱和） </p>
+
+</div>
+</div>
+<a id="ae63005289d1a5ff7432ebf5db039de8d" name="ae63005289d1a5ff7432ebf5db039de8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae63005289d1a5ff7432ebf5db039de8d">&#9670;&#160;</a></span>BOARD_CUR_SIGN_BUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_CUR_SIGN_BUS&#160;&#160;&#160;(1.0f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6d0ad9a27b737a6f394fcdec571597e" name="ac6d0ad9a27b737a6f394fcdec571597e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6d0ad9a27b737a6f394fcdec571597e">&#9670;&#160;</a></span>BOARD_CUR_SIGN_U</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_CUR_SIGN_U&#160;&#160;&#160;(-1.0f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>电流符号：低侧续流窗口内，相电流流入电机时 shunt 压差为负（网表推导）， 正方向定义为电流流入电机 </p>
+
+</div>
+</div>
+<a id="a26aa85955e77bd0faff5660a081ab19b" name="a26aa85955e77bd0faff5660a081ab19b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26aa85955e77bd0faff5660a081ab19b">&#9670;&#160;</a></span>BOARD_CUR_SIGN_V</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_CUR_SIGN_V&#160;&#160;&#160;(-1.0f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5280be52e14476db2115952d7b25317" name="ab5280be52e14476db2115952d7b25317"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5280be52e14476db2115952d7b25317">&#9670;&#160;</a></span>BOARD_ENC_CLK_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ENC_CLK_PIN&#160;&#160;&#160;GPIO_PIN_5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab36b4534f44f309658a35c20ad68a0ae" name="ab36b4534f44f309658a35c20ad68a0ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab36b4534f44f309658a35c20ad68a0ae">&#9670;&#160;</a></span>BOARD_ENC_CSN_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ENC_CSN_PIN&#160;&#160;&#160;GPIO_PIN_4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73954cf3b8847e23662e1cdb4ed66e1d" name="a73954cf3b8847e23662e1cdb4ed66e1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73954cf3b8847e23662e1cdb4ed66e1d">&#9670;&#160;</a></span>BOARD_ENC_DO_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ENC_DO_PIN&#160;&#160;&#160;GPIO_PIN_6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87efa9294596fd5945b884db631bf1d6" name="a87efa9294596fd5945b884db631bf1d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87efa9294596fd5945b884db631bf1d6">&#9670;&#160;</a></span>BOARD_ENC_DO_PIN_POS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ENC_DO_PIN_POS&#160;&#160;&#160;(6U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IDR 位号 </p>
+
+</div>
+</div>
+<a id="a814763c53bd6bb2fc124d6f2fac5272b" name="a814763c53bd6bb2fc124d6f2fac5272b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a814763c53bd6bb2fc124d6f2fac5272b">&#9670;&#160;</a></span>BOARD_ENC_GPIO_PORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_ENC_GPIO_PORT&#160;&#160;&#160;GPIOB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>网表实际接线：CSN=PB4、CLK=PB5、DO=PB6（无硬件 SPI 复用可用，位带模拟） </p>
+
+</div>
+</div>
+<a id="ac9edcae3d1f60f60ac9cb59f0a1318db" name="ac9edcae3d1f60f60ac9cb59f0a1318db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9edcae3d1f60f60ac9cb59f0a1318db">&#9670;&#160;</a></span>BOARD_HSE_FREQ_HZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_HSE_FREQ_HZ&#160;&#160;&#160;(20000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>板载晶振 20MHz（非常见 8MHz，勿照搬例程） </p>
+
+</div>
+</div>
+<a id="aa26571a54f745bf294941c4f8c3a8caf" name="aa26571a54f745bf294941c4f8c3a8caf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa26571a54f745bf294941c4f8c3a8caf">&#9670;&#160;</a></span>BOARD_IRQPRIO_CAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_IRQPRIO_CAN&#160;&#160;&#160;(3U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>CAN 接收解析 </p>
+
+</div>
+</div>
+<a id="abd60cc39afa21bfbf23ac15fc22a324e" name="abd60cc39afa21bfbf23ac15fc22a324e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd60cc39afa21bfbf23ac15fc22a324e">&#9670;&#160;</a></span>BOARD_IRQPRIO_FOC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_IRQPRIO_FOC&#160;&#160;&#160;(1U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NVIC_PRIORITYGROUP_4：数值越小优先级越高，SysTick 已固定为 15 </p>
+<p>ADC 注入完成 = 电流环 </p>
+
+</div>
+</div>
+<a id="a28ef4d2a8d1cd2413569add7779edd2b" name="a28ef4d2a8d1cd2413569add7779edd2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ef4d2a8d1cd2413569add7779edd2b">&#9670;&#160;</a></span>BOARD_IRQPRIO_LED_DMA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_IRQPRIO_LED_DMA&#160;&#160;&#160;(8U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>WS2812 DMA </p>
+
+</div>
+</div>
+<a id="af999ec4630e03fb7821e7144b740d136" name="af999ec4630e03fb7821e7144b740d136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af999ec4630e03fb7821e7144b740d136">&#9670;&#160;</a></span>BOARD_IRQPRIO_UART</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_IRQPRIO_UART&#160;&#160;&#160;(6U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>串口收发 </p>
+
+</div>
+</div>
+<a id="a4069990512938e0cf6f663547e2a8123" name="a4069990512938e0cf6f663547e2a8123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4069990512938e0cf6f663547e2a8123">&#9670;&#160;</a></span>BOARD_IRQPRIO_UART_DMA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_IRQPRIO_UART_DMA&#160;&#160;&#160;(7U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>串口 DMA </p>
+
+</div>
+</div>
+<a id="ac328c919d562f5cc2b4a4028216e075d" name="ac328c919d562f5cc2b4a4028216e075d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac328c919d562f5cc2b4a4028216e075d">&#9670;&#160;</a></span>BOARD_LED_BRIGHTNESS_DEFAULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_LED_BRIGHTNESS_DEFAULT&#160;&#160;&#160;(40U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>默认亮度（0~255） </p>
+
+</div>
+</div>
+<a id="abaf708838731d0078c1b86bde2857afb" name="abaf708838731d0078c1b86bde2857afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaf708838731d0078c1b86bde2857afb">&#9670;&#160;</a></span>BOARD_NTC_FAULT_TEMP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_NTC_FAULT_TEMP&#160;&#160;&#160;(250.0f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>开路/短路时返回的故障温度 [C] </p>
+
+</div>
+</div>
+<a id="a331acb47ee1d0260f04fee442b95e4b1" name="a331acb47ee1d0260f04fee442b95e4b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a331acb47ee1d0260f04fee442b95e4b1">&#9670;&#160;</a></span>BOARD_NTC_MOS_BETA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_NTC_MOS_BETA&#160;&#160;&#160;(3950.0f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4296307746e7b70e8d9cc039d2b62679" name="a4296307746e7b70e8d9cc039d2b62679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4296307746e7b70e8d9cc039d2b62679">&#9670;&#160;</a></span>BOARD_NTC_MOS_R25</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_NTC_MOS_R25&#160;&#160;&#160;(10000.0f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>板载 KNTC0603/10KF3950 </p>
+
+</div>
+</div>
+<a id="af06d461c2cdb5c971efc1efe248cee8a" name="af06d461c2cdb5c971efc1efe248cee8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af06d461c2cdb5c971efc1efe248cee8a">&#9670;&#160;</a></span>BOARD_NTC_MOT_BETA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_NTC_MOT_BETA&#160;&#160;&#160;(3950.0f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a462dc439550e5208d74aa77f967d50f9" name="a462dc439550e5208d74aa77f967d50f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a462dc439550e5208d74aa77f967d50f9">&#9670;&#160;</a></span>BOARD_NTC_MOT_R25</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_NTC_MOT_R25&#160;&#160;&#160;(10000.0f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>电机内置 NTC（R25 厂家惯例值，B 值未公开， 待实测标定，见 doc/Firmware.md 第 10 节） </p>
+
+</div>
+</div>
+<a id="aed925ebe16a29b3e86f206d6cfae7359" name="aed925ebe16a29b3e86f206d6cfae7359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed925ebe16a29b3e86f206d6cfae7359">&#9670;&#160;</a></span>BOARD_NTC_PULLUP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_NTC_PULLUP&#160;&#160;&#160;(10000.0f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>上拉电阻（两路同为 10k 接 VCC） </p>
+
+</div>
+</div>
+<a id="aaf286d012b58f701c1bad0fc362dc445" name="aaf286d012b58f701c1bad0fc362dc445"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf286d012b58f701c1bad0fc362dc445">&#9670;&#160;</a></span>BOARD_PWM_ADC_TRIG_ADVANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_PWM_ADC_TRIG_ADVANCE&#160;&#160;&#160;(40U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ADC 注入组触发提前量 [计数拍]：OC4 上升沿相对计数器峰值的提前时间， 40 拍 = 235ns，保证采样落在低侧导通窗口中心附近 </p>
+
+</div>
+</div>
+<a id="aafb68e7d4294c7e20691c8cda1957090" name="aafb68e7d4294c7e20691c8cda1957090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafb68e7d4294c7e20691c8cda1957090">&#9670;&#160;</a></span>BOARD_PWM_ARR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_PWM_ARR&#160;&#160;&#160;((uint32_t)(<a class="el" href="#a6644d550835215fbe4a8b10b0b4ddb04">BOARD_TIM1_CLK_HZ</a> / (2UL * <a class="el" href="#a7debcd2a2db73be1ffea657d2fd3e715">BOARD_PWM_FREQ_HZ</a>)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>中心对齐模式：ARR = TIM1CLK / (2 * PWM_FREQ) = 4250 </p>
+
+</div>
+</div>
+<a id="a5a0e1d82570458abe695e32acf4aa299" name="a5a0e1d82570458abe695e32acf4aa299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a0e1d82570458abe695e32acf4aa299">&#9670;&#160;</a></span>BOARD_PWM_CCR_U</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_PWM_CCR_U&#160;&#160;&#160;CCR1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>相别 -&gt; TIM1 CCR 寄存器成员映射（网表确认 CH1=U/CH2=V/CH3=W） </p>
+
+</div>
+</div>
+<a id="afd02ac954cfcb5990001b66ddf576de5" name="afd02ac954cfcb5990001b66ddf576de5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd02ac954cfcb5990001b66ddf576de5">&#9670;&#160;</a></span>BOARD_PWM_CCR_V</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_PWM_CCR_V&#160;&#160;&#160;CCR2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b80a7742e7d892d9aeb5016160728e4" name="a7b80a7742e7d892d9aeb5016160728e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b80a7742e7d892d9aeb5016160728e4">&#9670;&#160;</a></span>BOARD_PWM_CCR_W</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_PWM_CCR_W&#160;&#160;&#160;CCR3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d718b375104185711a0a901dbc14790" name="a0d718b375104185711a0a901dbc14790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d718b375104185711a0a901dbc14790">&#9670;&#160;</a></span>BOARD_PWM_DEADTIME_DTG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_PWM_DEADTIME_DTG&#160;&#160;&#160;(34U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>死区：200ns @ tDTS=5.88ns -&gt; DTG=34；FD6288 另有 100~300ns 内部死区叠加 </p>
+
+</div>
+</div>
+<a id="a7debcd2a2db73be1ffea657d2fd3e715" name="a7debcd2a2db73be1ffea657d2fd3e715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7debcd2a2db73be1ffea657d2fd3e715">&#9670;&#160;</a></span>BOARD_PWM_FREQ_HZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_PWM_FREQ_HZ&#160;&#160;&#160;(20000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PWM/电流环频率 </p>
+
+</div>
+</div>
+<a id="a7fec8551c3700e2ecbeb4a8544d4cf84" name="a7fec8551c3700e2ecbeb4a8544d4cf84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fec8551c3700e2ecbeb4a8544d4cf84">&#9670;&#160;</a></span>BOARD_PWM_MAX_DUTY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_PWM_MAX_DUTY&#160;&#160;&#160;(0.94f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>每相占空比上限：保证低侧 shunt 采样窗口 &gt;= 3us 且高/低侧脉宽 &gt;= 500ns （FD6288 输入滤波对窄脉冲的吞没风险） </p>
+
+</div>
+</div>
+<a id="a6972a7e17b7e1847574f6780d82d2bd2" name="a6972a7e17b7e1847574f6780d82d2bd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6972a7e17b7e1847574f6780d82d2bd2">&#9670;&#160;</a></span>BOARD_SHUNT_OHM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_SHUNT_OHM&#160;&#160;&#160;(0.005f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>低侧采样电阻 </p>
+
+</div>
+</div>
+<a id="ad29bfbd9ccafdae6b91d5c274b2b685e" name="ad29bfbd9ccafdae6b91d5c274b2b685e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad29bfbd9ccafdae6b91d5c274b2b685e">&#9670;&#160;</a></span>BOARD_SYSCLK_HZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_SYSCLK_HZ&#160;&#160;&#160;(170000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>系统时钟 </p>
+
+</div>
+</div>
+<a id="a6644d550835215fbe4a8b10b0b4ddb04" name="a6644d550835215fbe4a8b10b0b4ddb04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6644d550835215fbe4a8b10b0b4ddb04">&#9670;&#160;</a></span>BOARD_TIM1_CLK_HZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_TIM1_CLK_HZ&#160;&#160;&#160;(170000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TIM1 内核时钟（APB2 x1） </p>
+
+</div>
+</div>
+<a id="a7e9f8bc22ce424d47c209695874218ad" name="a7e9f8bc22ce424d47c209695874218ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e9f8bc22ce424d47c209695874218ad">&#9670;&#160;</a></span>BOARD_UART_BAUDRATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_UART_BAUDRATE&#160;&#160;&#160;(921600UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>高速调试打印；终端不支持时改 115200 </p>
+
+</div>
+</div>
+<a id="adf2221688d30eef9e7b97d5a9eba02d0" name="adf2221688d30eef9e7b97d5a9eba02d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf2221688d30eef9e7b97d5a9eba02d0">&#9670;&#160;</a></span>BOARD_VBUS_LPF_ALPHA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_VBUS_LPF_ALPHA&#160;&#160;&#160;(0.05f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>母线电压一阶低通系数（20kHz 采样，约 160Hz 截止） </p>
+
+</div>
+</div>
+<a id="a38625ac42ca0d6d46779435209eb870c" name="a38625ac42ca0d6d46779435209eb870c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38625ac42ca0d6d46779435209eb870c">&#9670;&#160;</a></span>BOARD_VBUS_LSB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_VBUS_LSB&#160;&#160;&#160;(<a class="el" href="#a5ab8e7370a550b1dc932aa1a4235809c">BOARD_ADC_VREF</a> / 4096.0f * ((<a class="el" href="#af223b1ca71efbb7d2208098aeeb8ef21">BOARD_VBUS_R_TOP</a> + <a class="el" href="#ab6c63ce9cf47f1c6ebba19e94dd4f989">BOARD_VBUS_R_BOT</a>) / <a class="el" href="#ab6c63ce9cf47f1c6ebba19e94dd4f989">BOARD_VBUS_R_BOT</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>电压分辨率 [V/LSB] ≈ 19.55mV，满量程 ≈ 80V </p>
+
+</div>
+</div>
+<a id="ab6c63ce9cf47f1c6ebba19e94dd4f989" name="ab6c63ce9cf47f1c6ebba19e94dd4f989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c63ce9cf47f1c6ebba19e94dd4f989">&#9670;&#160;</a></span>BOARD_VBUS_R_BOT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_VBUS_R_BOT&#160;&#160;&#160;(4.3f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>分压下电阻 [kOhm] </p>
+
+</div>
+</div>
+<a id="af223b1ca71efbb7d2208098aeeb8ef21" name="af223b1ca71efbb7d2208098aeeb8ef21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af223b1ca71efbb7d2208098aeeb8ef21">&#9670;&#160;</a></span>BOARD_VBUS_R_TOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_VBUS_R_TOP&#160;&#160;&#160;(100.0f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>分压上电阻 [kOhm] </p>
+
+</div>
+</div>
+<a id="aab99b1c86d2191807c5c658706cfafe3" name="aab99b1c86d2191807c5c658706cfafe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab99b1c86d2191807c5c658706cfafe3">&#9670;&#160;</a></span>BOARD_WS2812_ARR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_WS2812_ARR&#160;&#160;&#160;((uint32_t)(<a class="el" href="#ad29bfbd9ccafdae6b91d5c274b2b685e">BOARD_SYSCLK_HZ</a> / 800000UL - 1UL))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>位周期 1.25us：ARR = SYSCLK / 800kHz - 1 = 211 </p>
+
+</div>
+</div>
+<a id="a44f10736ad3cf7da33b9c55cf273a456" name="a44f10736ad3cf7da33b9c55cf273a456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44f10736ad3cf7da33b9c55cf273a456">&#9670;&#160;</a></span>BOARD_WS2812_CCR_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_WS2812_CCR_0&#160;&#160;&#160;(58U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>0 码高电平 ~0.34us </p>
+
+</div>
+</div>
+<a id="accc18e76f854bea190b727e9b777070c" name="accc18e76f854bea190b727e9b777070c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accc18e76f854bea190b727e9b777070c">&#9670;&#160;</a></span>BOARD_WS2812_CCR_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_WS2812_CCR_1&#160;&#160;&#160;(136U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>1 码高电平 ~0.80us </p>
+
+</div>
+</div>
+<a id="a42b09680f2f493af3a25ac6bb17c613f" name="a42b09680f2f493af3a25ac6bb17c613f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42b09680f2f493af3a25ac6bb17c613f">&#9670;&#160;</a></span>BOARD_WS2812_ORDER_RGB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOARD_WS2812_ORDER_RGB&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>0 = 标准 GRB 发送序 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_eb1463819d84903762eb6f59cc0c4383.html">Application</a></li><li class="navelem"><a href="dir_33ba2c43ef16f0140a9216fe79248d2d.html">config</a></li><li class="navelem"><a href="board__config_8h.html">board_config.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

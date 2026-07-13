@@ -1,0 +1,5 @@
+<map id="HAL_UART_MspInit" name="HAL_UART_MspInit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,172,35"/>
+<area shape="rect" id="Node000002" href="$main_8c.html#a1730ffe1e560465665eb47d9264826f9" title="This function is executed in case of error occurrence." alt="" coords="220,5,342,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,18,207,20,201,20,172,23"/>
+</map>

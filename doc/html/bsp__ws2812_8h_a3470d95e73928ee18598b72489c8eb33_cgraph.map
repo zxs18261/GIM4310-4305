@@ -1,0 +1,5 @@
+<map id="BSP_WS2812_Poll" name="BSP_WS2812_Poll">
+<area shape="rect" id="Node000001" title="后台轮询：颜色有更新且 DMA 空闲时发送一帧" alt="" coords="5,5,168,35"/>
+<area shape="rect" id="Node000002" href="$bsp__ws2812_8c.html#af78d71e38b5babd81761d5c6e92f6acf" title="将 24bit 颜色编码为 CCR 序列" alt="" coords="216,5,405,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,18,203,20,197,20,168,23"/>
+</map>

@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: PID_HandleTypeDef结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('struct_p_i_d___handle_type_def.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">PID_HandleTypeDef结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>PID 控制器句柄结构体  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="pid_8h_source.html">pid.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:aa691a183d9a1949aa688d19a6b58b6dc" id="r_aa691a183d9a1949aa688d19a6b58b6dc"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aa691a183d9a1949aa688d19a6b58b6dc">Kp</a></td></tr>
+<tr class="memitem:ae2542209d7ae8bde4c56400f1e8b27f8" id="r_ae2542209d7ae8bde4c56400f1e8b27f8"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ae2542209d7ae8bde4c56400f1e8b27f8">Ki</a></td></tr>
+<tr class="memitem:a204a99c0a87d1801a5ef860c48144b99" id="r_a204a99c0a87d1801a5ef860c48144b99"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a204a99c0a87d1801a5ef860c48144b99">Kd</a></td></tr>
+<tr class="memitem:aafd17764a18701c29ac8028c472d47ed" id="r_aafd17764a18701c29ac8028c472d47ed"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aafd17764a18701c29ac8028c472d47ed">OutMin</a></td></tr>
+<tr class="memitem:acd5c20a4af4a11ef70f47a331f9ddef7" id="r_acd5c20a4af4a11ef70f47a331f9ddef7"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#acd5c20a4af4a11ef70f47a331f9ddef7">OutMax</a></td></tr>
+<tr class="memitem:a654b622bfaf1ddf3fb6cf90b80c36e16" id="r_a654b622bfaf1ddf3fb6cf90b80c36e16"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a654b622bfaf1ddf3fb6cf90b80c36e16">Integral</a></td></tr>
+<tr class="memitem:ab9471492abd758b819b7e64c15a60424" id="r_ab9471492abd758b819b7e64c15a60424"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ab9471492abd758b819b7e64c15a60424">PrevErr</a></td></tr>
+<tr class="memitem:a1d4db8183d2820880ab61a7ac0d0b5ea" id="r_a1d4db8183d2820880ab61a7ac0d0b5ea"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a1d4db8183d2820880ab61a7ac0d0b5ea">Out</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>PID 控制器句柄结构体 </p>
+<dl class="section note"><dt>注解</dt><dd>积分项采用 clamping 抗饱和（anti-windup）：输出饱和且误差同向时冻结积分。 </dd></dl>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">结构体成员变量说明</h2>
+<a id="a654b622bfaf1ddf3fb6cf90b80c36e16" name="a654b622bfaf1ddf3fb6cf90b80c36e16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a654b622bfaf1ddf3fb6cf90b80c36e16">&#9670;&#160;</a></span>Integral</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PID_HandleTypeDef::Integral</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>积分累加器 </p>
+
+</div>
+</div>
+<a id="a204a99c0a87d1801a5ef860c48144b99" name="a204a99c0a87d1801a5ef860c48144b99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204a99c0a87d1801a5ef860c48144b99">&#9670;&#160;</a></span>Kd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PID_HandleTypeDef::Kd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>微分增益（单位含采样周期，即离散增益 Kd/Ts），不用时置 0 </p>
+
+</div>
+</div>
+<a id="ae2542209d7ae8bde4c56400f1e8b27f8" name="ae2542209d7ae8bde4c56400f1e8b27f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2542209d7ae8bde4c56400f1e8b27f8">&#9670;&#160;</a></span>Ki</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PID_HandleTypeDef::Ki</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>积分增益（单位含采样周期，即离散增益 Ki*Ts） </p>
+
+</div>
+</div>
+<a id="aa691a183d9a1949aa688d19a6b58b6dc" name="aa691a183d9a1949aa688d19a6b58b6dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa691a183d9a1949aa688d19a6b58b6dc">&#9670;&#160;</a></span>Kp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PID_HandleTypeDef::Kp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>比例增益 </p>
+
+</div>
+</div>
+<a id="a1d4db8183d2820880ab61a7ac0d0b5ea" name="a1d4db8183d2820880ab61a7ac0d0b5ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d4db8183d2820880ab61a7ac0d0b5ea">&#9670;&#160;</a></span>Out</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PID_HandleTypeDef::Out</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>最近一次输出（饱和后） </p>
+
+</div>
+</div>
+<a id="acd5c20a4af4a11ef70f47a331f9ddef7" name="acd5c20a4af4a11ef70f47a331f9ddef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd5c20a4af4a11ef70f47a331f9ddef7">&#9670;&#160;</a></span>OutMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PID_HandleTypeDef::OutMax</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>输出上限 </p>
+
+</div>
+</div>
+<a id="aafd17764a18701c29ac8028c472d47ed" name="aafd17764a18701c29ac8028c472d47ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafd17764a18701c29ac8028c472d47ed">&#9670;&#160;</a></span>OutMin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PID_HandleTypeDef::OutMin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>输出下限 </p>
+
+</div>
+</div>
+<a id="ab9471492abd758b819b7e64c15a60424" name="ab9471492abd758b819b7e64c15a60424"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9471492abd758b819b7e64c15a60424">&#9670;&#160;</a></span>PrevErr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PID_HandleTypeDef::PrevErr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>上次误差（微分用） </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>Application/control/<a class="el" href="pid_8h_source.html">pid.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

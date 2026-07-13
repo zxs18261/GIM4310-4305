@@ -1,0 +1,60 @@
+<map id="PID_Reset" name="PID_Reset">
+<area shape="rect" id="Node000001" title="复位 PID 内部状态（积分/历史误差/输出）" alt="" coords="1471,137,1570,167"/>
+<area shape="rect" id="Node000002" href="$foc_8c.html#aa25cf599086b4ad815ae5ad72dcfdec4" title="复位电流环状态（封波后重新使能前调用，防止积分残留冲击）" alt="" coords="1317,111,1423,140"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1453,141,1424,138,1424,132,1458,141"/>
+<area shape="rect" id="Node000007" href="$motor__ctrl_8c.html#aceb46c7be868a0b12dffa105e3d0581e" title="封波（ISR 安全）" alt="" coords="1130,112,1241,142"/>
+<area shape="poly" id="edge33_Node000001_Node000007" title=" " alt="" coords="1453,155,1388,159,1316,155,1241,142,1241,137,1317,150,1388,153,1458,155"/>
+<area shape="rect" id="Node000019" href="$motor__ctrl_8c.html#a8d1ee75d00d8c0f2d2d78f89d002efec" title="使能功率输出" alt="" coords="1132,59,1239,88"/>
+<area shape="poly" id="edge34_Node000001_Node000019" title=" " alt="" coords="1482,128,1454,115,1422,101,1375,89,1326,82,1239,76,1239,71,1327,77,1376,84,1424,96,1457,110,1488,129"/>
+<area shape="rect" id="Node000021" href="$pid_8c.html#a476429033a7322ee2bd627805ca46816" title="初始化 PID 控制器" alt="" coords="1331,215,1409,244"/>
+<area shape="poly" id="edge35_Node000001_Node000021" title=" " alt="" coords="1479,174,1402,217,1400,212,1474,175"/>
+<area shape="rect" id="Node000003" href="$foc_8c.html#aebd9eaf8fdc1eec2e646d0ed4a4a3d2c" title="初始化 FOC 电流环" alt="" coords="1143,215,1228,244"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1331,148,1215,217,1213,212,1326,149"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="1299,126,1241,129,1241,124,1304,126"/>
+<area shape="poly" id="edge26_Node000002_Node000019" title=" " alt="" coords="1299,106,1239,91,1239,86,1304,107"/>
+<area shape="rect" id="Node000020" href="$motor__ctrl_8c.html#afb3414a066c16e68add2218d01f59942" title="启动预定位校准（封波状态下）" alt="" coords="1102,5,1269,35"/>
+<area shape="poly" id="edge30_Node000002_Node000020" title=" " alt="" coords="1339,100,1307,75,1267,49,1243,38,1243,33,1270,44,1310,70,1345,101"/>
+<area shape="rect" id="Node000004" href="$motor__ctrl_8c.html#a6289107a27126667fef8194dc34ad71f" title="初始化电机控制模块" alt="" coords="924,267,1000,296"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1131,242,1001,275,1000,270,1125,243"/>
+<area shape="rect" id="Node000005" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="291,163,375,192"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="911,287,821,296,707,297,581,286,518,275,456,259,425,246,396,229,351,195,352,190,399,224,428,241,458,254,519,270,582,281,707,291,821,291,906,288"/>
+<area shape="rect" id="Node000006" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,112,62,142"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="274,170,62,134,62,129,277,166"/>
+<area shape="rect" id="Node000008" href="$app__can__protocol_8c.html#a962b5bb63f0dca9cd0efbd25455d6002" title="配置通道处理" alt="" coords="870,59,1054,88"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1113,110,1027,92,1028,86,1118,110"/>
+<area shape="rect" id="Node000013" href="$app__can__protocol_8c.html#a287ab0ebbb13b297320ec4082c51365b" title="MIT 运控通道处理" alt="" coords="872,112,1052,142"/>
+<area shape="poly" id="edge14_Node000007_Node000013" title=" " alt="" coords="1112,127,1053,129,1052,124,1118,127"/>
+<area shape="rect" id="Node000014" href="$app__shell_8c.html#ad6303a346f63752b165b847c5dcefbb7" title="解析并执行一行命令" alt="" coords="871,5,1053,35"/>
+<area shape="poly" id="edge16_Node000007_Node000014" title=" " alt="" coords="1113,107,1101,102,1085,89,1076,75,1067,62,1053,49,1031,38,1032,33,1056,45,1071,58,1081,72,1089,85,1104,98,1119,108"/>
+<area shape="rect" id="Node000016" href="$motor__ctrl_8c.html#a5c982a7374da291bb0e5d06d26893def" title="FOC 主循环（ADC 注入完成 ISR，20kHz）" alt="" coords="474,215,573,244"/>
+<area shape="poly" id="edge19_Node000007_Node000016" title=" " alt="" coords="1139,147,1055,179,920,205,785,221,664,229,574,232,574,226,664,223,784,215,919,200,1054,174,1134,149"/>
+<area shape="rect" id="Node000017" href="$motor__ctrl_8c.html#a0254f4cdae07bdb4781c9df4b540ffe8" title="触发故障：立即封波并锁存（ISR 安全）" alt="" coords="671,163,789,192"/>
+<area shape="poly" id="edge21_Node000007_Node000017" title=" " alt="" coords="1118,142,1055,156,912,171,789,178,789,173,911,166,1054,151,1113,143"/>
+<area shape="rect" id="Node000009" href="$app__can__protocol_8c.html#a0c342291cd7188f387f12f9b2157c4e9" title="CAN 接收分发（ISR 上下文）" alt="" coords="638,59,822,88"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="851,74,823,76,822,71,857,73"/>
+<area shape="rect" id="Node000010" href="$app__can__protocol_8c.html#af389bd7cff6ae0b5df76c2feb46f25f6" title="初始化 CAN 应用协议（按持久化参数配置 BSP）" alt="" coords="459,57,588,87"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="620,73,588,75,587,70,625,72"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="470,93,459,101,403,134,357,164,355,160,400,129,456,96,465,95"/>
+<area shape="rect" id="Node000011" href="$app__can__protocol_8c.html#a6c2f3bebbd2597376fd87038ef059996" title="后台轮询：处理通信参数变更后的重新初始化" alt="" coords="266,59,401,88"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="441,73,401,76,400,70,446,72"/>
+<area shape="rect" id="Node000012" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,72,209,102"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="248,81,210,86,208,81,253,79"/>
+<area shape="poly" id="edge12_Node000012_Node000006" title=" " alt="" coords="94,109,64,120,60,116,98,105"/>
+<area shape="poly" id="edge15_Node000013_Node000009" title=" " alt="" coords="877,108,798,92,798,86,882,108"/>
+<area shape="rect" id="Node000015" href="$app__shell_8c.html#ab93a15148be82ad3c0999b099de7c29e" title="shell 轮询（后台调用）" alt="" coords="257,5,409,35"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="854,22,410,23,409,18,857,18"/>
+<area shape="poly" id="edge18_Node000015_Node000012" title=" " alt="" coords="271,42,258,49,198,74,195,69,256,44,275,39"/>
+<area shape="poly" id="edge20_Node000016_Node000005" title=" " alt="" coords="456,212,375,192,376,186,461,212"/>
+<area shape="poly" id="edge22_Node000017_Node000005" title=" " alt="" coords="653,179,376,180,376,175,657,176"/>
+<area shape="poly" id="edge25_Node000017_Node000016" title=" " alt="" coords="658,196,574,220,573,214,653,197"/>
+<area shape="rect" id="Node000018" href="$app__main_8c.html#a9d7a99f268e16f853238569586d275aa" title="慢任务：温度采样/过温保护/CAN 指令超时" alt="" coords="457,111,590,140"/>
+<area shape="poly" id="edge23_Node000017_Node000018" title=" " alt="" coords="653,159,585,144,585,138,658,159"/>
+<area shape="poly" id="edge24_Node000018_Node000012" title=" " alt="" coords="439,120,257,103,210,97,209,91,257,98,444,117"/>
+<area shape="poly" id="edge27_Node000019_Node000008" title=" " alt="" coords="1114,74,1055,76,1054,71,1119,73"/>
+<area shape="poly" id="edge28_Node000019_Node000013" title=" " alt="" coords="1120,89,1028,114,1027,109,1114,90"/>
+<area shape="poly" id="edge29_Node000019_Node000014" title=" " alt="" coords="1114,57,1027,38,1027,33,1120,57"/>
+<area shape="poly" id="edge31_Node000020_Node000008" title=" " alt="" coords="1108,39,1028,61,1027,55,1103,40"/>
+<area shape="poly" id="edge32_Node000020_Node000014" title=" " alt="" coords="1084,21,1054,23,1054,18,1089,20"/>
+<area shape="poly" id="edge36_Node000021_Node000003" title=" " alt="" coords="1313,230,1229,232,1229,227,1318,229"/>
+<area shape="poly" id="edge37_Node000021_Node000004" title=" " alt="" coords="1319,245,1269,259,1121,276,1001,283,1001,278,1120,271,1268,254,1313,246"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="APP_CAN_CfgReply" name="APP_CAN_CfgReply">
+<area shape="rect" id="Node000001" title="配置通道应答：cmd + 状态 + float 值" alt="" coords="5,5,180,35"/>
+<area shape="rect" id="Node000002" href="$bsp__can_8c.html#a70c1a9dd4f5e80dddb8aa8c476c15af7" title="发送一帧经典 CAN 数据帧（非阻塞，入 TX FIFO）" alt="" coords="228,5,373,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,18,215,20,210,20,180,23"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="BSP_ENC_Preload" name="BSP_ENC_Preload">
+<area shape="rect" id="Node000001" title="预置编码器状态（上电首读，避免多圈计数误跳）" alt="" coords="5,5,169,35"/>
+<area shape="rect" id="Node000002" href="$bsp__encoder_8c.html#a952d9a4a6bd64cde7ae4b60a8757c430" title="读取一次编码器角度（ISR 安全，阻塞约 5us）" alt="" coords="217,5,363,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,18,204,20,198,20,169,23"/>
+<area shape="rect" id="Node000003" href="$bsp__encoder_8c.html#a05a73d1c3440289f913db2b8a47a954a" title="CRC6 计算（X^6 + X + 1，初值 0，MSB 先入）" alt="" coords="411,5,552,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="363,18,398,20,393,20,363,23"/>
+</map>

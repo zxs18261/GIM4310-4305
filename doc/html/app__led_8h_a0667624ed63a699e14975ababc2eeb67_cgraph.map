@@ -1,0 +1,20 @@
+<map id="APP_LED_Poll" name="APP_LED_Poll">
+<area shape="rect" id="Node000001" title="灯语轮询（后台调用，内部按 HAL tick 计时）" alt="" coords="5,139,138,168"/>
+<area shape="rect" id="Node000002" href="$app__led_8c.html#aa5c9874a71538d3adde7861bbc32fe8d" title="呼吸亮度三角波（16~255）" alt="" coords="208,5,398,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,136,124,90,153,65,184,45,200,39,196,43,187,49,156,70,128,94,87,140"/>
+<area shape="rect" id="Node000003" href="$bsp__ws2812_8c.html#aa37a05d3f08e933332ee61dfb411e731" title="读取当前全局亮度" alt="" coords="186,59,421,88"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="99,136,139,116,185,98,211,91,207,94,187,103,142,121,103,140"/>
+<area shape="rect" id="Node000004" href="$bsp__ws2812_8c.html#a3470d95e73928ee18598b72489c8eb33" title="后台轮询：颜色有更新且 DMA 空闲时发送一帧" alt="" coords="222,112,384,142"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="137,143,209,136,205,140,139,148"/>
+<area shape="rect" id="Node000006" href="$bsp__ws2812_8c.html#aa343d7fb9bc7f5c802804cd659494aea" title="设置全局亮度（0~255，线性缩放）" alt="" coords="186,165,420,195"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="137,158,173,164,168,166,139,164"/>
+<area shape="rect" id="Node000008" href="$bsp__ws2812_8c.html#a14f4272e51ac6b64194ad2368ed44a71" title="设置目标颜色（缓存，Poll 时发送）" alt="" coords="205,219,402,248"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="101,166,142,186,187,204,212,214,207,215,185,209,139,191,101,172"/>
+<area shape="rect" id="Node000009" href="$protection_8c.html#a36b53f217ddfdc3e968ee7f7c4ebc113" title="是否处于告警区（LED 黄色显示用）" alt="" coords="230,272,377,302"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="85,166,128,213,156,237,187,258,217,272,212,272,184,263,153,242,124,217,84,171"/>
+<area shape="rect" id="Node000005" href="$bsp__ws2812_8c.html#af78d71e38b5babd81761d5c6e92f6acf" title="将 24bit 颜色编码为 CCR 序列" alt="" coords="492,112,681,142"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="385,124,479,126,473,128,385,129"/>
+<area shape="rect" id="Node000007" href="$bsp__ws2812_8c.html#a414a0748f0ef37a68dc8383d5356ddf6" title="按亮度缩放当前颜色并生成发送序颜色字，标记待发送" alt="" coords="469,192,703,222"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="421,189,456,194,451,195,421,194"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="402,222,456,219,451,220,403,227"/>
+</map>

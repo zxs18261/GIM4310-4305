@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['param_5fmagic_0',['PARAM_MAGIC',['../bsp__flash_8c.html#a78425bbe8e5e6bc716b4d5296c06e554',1,'bsp_flash.c']]],
+  ['param_5fpage_5faddr_1',['PARAM_PAGE_ADDR',['../bsp__flash_8c.html#a7baa589ab4725c5dfe0768bb7d454a86',1,'bsp_flash.c']]],
+  ['param_5fpage_5findex_2',['PARAM_PAGE_INDEX',['../bsp__flash_8c.html#a4e2ad7b749f2e07f1c1e84d848fdabea',1,'bsp_flash.c']]],
+  ['param_5fpage_5fsize_3',['PARAM_PAGE_SIZE',['../bsp__flash_8c.html#a937a907eb1f1f4abaf036a7e0816c9e0',1,'bsp_flash.c']]],
+  ['params_5fsave_5ffailed_4',['PARAMS_SAVE_FAILED',['../app__params_8h.html#a98f070cc06c969f9da860412e1370465',1,'app_params.h']]],
+  ['params_5fsave_5fnone_5',['PARAMS_SAVE_NONE',['../app__params_8h.html#a8a6b496182864b9bb67b91ce826a8cc9',1,'app_params.h']]],
+  ['params_5fsave_5fok_6',['PARAMS_SAVE_OK',['../app__params_8h.html#a60fc713e67a381a491653604dec5b929',1,'app_params.h']]],
+  ['params_5fversion_7',['PARAMS_VERSION',['../app__params_8h.html#a18c1c8d3d3acd5214c7d8076e2da9ef8',1,'app_params.h']]],
+  ['prot_5fcan_5ftimeout_5fms_8',['PROT_CAN_TIMEOUT_MS',['../motor__config_8h.html#a18584f39f8ca88e9ef600756fcf37931',1,'motor_config.h']]],
+  ['prot_5fenc_5ferr_5flimit_9',['PROT_ENC_ERR_LIMIT',['../motor__config_8h.html#a1e40567af219e808aa4177d6bd734f13',1,'motor_config.h']]],
+  ['prot_5fmos_5fot_5flimit_5fc_10',['PROT_MOS_OT_LIMIT_C',['../motor__config_8h.html#a3d76988dbd2040119301b95a5ca12720',1,'motor_config.h']]],
+  ['prot_5fmos_5fwarn_5fc_11',['PROT_MOS_WARN_C',['../motor__config_8h.html#a57781c067af5ea7c723722043be53e4d',1,'motor_config.h']]],
+  ['prot_5fmot_5fot_5flimit_5fc_12',['PROT_MOT_OT_LIMIT_C',['../motor__config_8h.html#ab0ecaea51ee5b86eb69d223de2813fdd',1,'motor_config.h']]],
+  ['prot_5fmot_5fwarn_5fc_13',['PROT_MOT_WARN_C',['../motor__config_8h.html#ac69e8ac0442c55016243ccac4a6bbe47',1,'motor_config.h']]],
+  ['prot_5foc_5flimit_5fa_14',['PROT_OC_LIMIT_A',['../motor__config_8h.html#ae2f8e979ff9ed2c7373283b05e556e52',1,'motor_config.h']]],
+  ['prot_5fov_5flimit_5fv_15',['PROT_OV_LIMIT_V',['../motor__config_8h.html#a6164b87cf53a6602df79563a3a205662',1,'motor_config.h']]],
+  ['prot_5fuv_5flimit_5fv_16',['PROT_UV_LIMIT_V',['../motor__config_8h.html#a6a7321c7e4f9cf3ceee949267efbe7a4',1,'motor_config.h']]],
+  ['prot_5fvbus_5ffault_5fcycles_17',['PROT_VBUS_FAULT_CYCLES',['../protection_8c.html#af4e09028a869da59a0be6ce71b2fb6cf',1,'protection.c']]],
+  ['prot_5fvbus_5ffault_5fms_18',['PROT_VBUS_FAULT_MS',['../motor__config_8h.html#aed6c44a25c8609a2b320a8e7b99b14f5',1,'motor_config.h']]]
+];

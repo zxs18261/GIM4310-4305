@@ -1,0 +1,12 @@
+<map id="FOC_Update" name="FOC_Update">
+<area shape="rect" id="Node000001" title="执行一个电流环周期（在 ADC 注入转换完成 ISR 中调用）" alt="" coords="517,32,633,62"/>
+<area shape="rect" id="Node000002" href="$calibration_8c.html#a51f1133ceba653e8e1e600c24b54987e" title="校准状态机单步（电流环 ISR 调用，模式 = MC_MODE_CALIB）" alt="" coords="389,5,469,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="499,33,469,30,469,25,504,33"/>
+<area shape="rect" id="Node000003" href="$motor__ctrl_8c.html#a5c982a7374da291bb0e5d06d26893def" title="FOC 主循环（ADC 注入完成 ISR，20kHz）" alt="" coords="242,32,341,62"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="498,47,342,49,342,44,504,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="376,31,342,40,342,35,371,31"/>
+<area shape="rect" id="Node000004" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="110,32,194,62"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="224,47,195,49,194,44,229,47"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,32,62,62"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="92,48,62,49,62,44,97,46"/>
+</map>

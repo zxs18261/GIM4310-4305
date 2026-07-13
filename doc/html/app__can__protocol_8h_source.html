@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: Application/app/app_can_protocol.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('app__can__protocol_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">app_can_protocol.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="app__can__protocol_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef __APP_CAN_PROTOCOL_H</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define __APP_CAN_PROTOCOL_H</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">/* Includes ------------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="main_8h.html">main.h</a>&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">/* Exported constants --------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#ad5451539ec49b470f0f9d85429235f89">   31</a></span><span class="preprocessor">#define CANCFG_CMD_STATUS       (0x01U)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#aca74404ecbb6924dc8d47d0eca3049a7">   32</a></span><span class="preprocessor">#define CANCFG_CMD_ENABLE       (0x02U)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#a95c551b681969ad65cf6655660d87bfc">   33</a></span><span class="preprocessor">#define CANCFG_CMD_DISABLE      (0x03U)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#ac1999aac908b9a2f212c321e3670b1a7">   34</a></span><span class="preprocessor">#define CANCFG_CMD_CLEARFAULT   (0x04U)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#ade95ec6c30b9cf558944a50e43795eb1">   35</a></span><span class="preprocessor">#define CANCFG_CMD_CALIBRATE    (0x05U)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#a64d66b991a8127f8d14d747195f7def9">   36</a></span><span class="preprocessor">#define CANCFG_CMD_SETZERO      (0x06U)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#a01ccd5f1a635c64d0b986a100973eb26">   37</a></span><span class="preprocessor">#define CANCFG_CMD_TARGET       (0x07U)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#a016b516c3fff54bc8b2b28b7d2284c6f">   38</a></span><span class="preprocessor">#define CANCFG_CMD_GETPARAM     (0x10U)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#ae2acf958a86ec40632e60cb1f024e481">   39</a></span><span class="preprocessor">#define CANCFG_CMD_SETPARAM     (0x11U)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#a4364ea57abc0e16cb8c0f18ddcb590e8">   40</a></span><span class="preprocessor">#define CANCFG_CMD_SAVE         (0x12U)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#a96511fb7f8b1554e414c034bdcb41ebe">   41</a></span><span class="preprocessor">#define CANCFG_CMD_DEFAULTS     (0x13U)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#a6db50a24bbb200b05c5ee5ec0a720978">   44</a></span><span class="preprocessor">#define CANCFG_P_NODEID         (0U)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#a3cd3a4f4b28db49478528809e1c854ab">   45</a></span><span class="preprocessor">#define CANCFG_P_CANBAUD        (1U)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#acbe76bb4bb64eb27a504119aa7987b93">   46</a></span><span class="preprocessor">#define CANCFG_P_CANTERM        (2U)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#a43a6f7d9261c502901d5461d2eb4d9a9">   47</a></span><span class="preprocessor">#define CANCFG_P_TIMEOUT_MS     (3U)</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#ab4ddd13e3bb4038627a2fb78e7b43def">   48</a></span><span class="preprocessor">#define CANCFG_P_SPEED_KP       (4U)</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#af25c53421ff2ca81f7911acd2d9109e7">   49</a></span><span class="preprocessor">#define CANCFG_P_SPEED_KI       (5U)</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#a5ff98c29f1be50b89783dd352ca86de0">   50</a></span><span class="preprocessor">#define CANCFG_P_POS_KP         (6U)</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#a94f9b5fc7e549d49de6aac75a1ca3f91">   51</a></span><span class="preprocessor">#define CANCFG_P_CUR_MAX        (7U)</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#aea6d1a1aab5ca54d6c74df01b3327a83">   52</a></span><span class="preprocessor">#define CANCFG_P_SPEED_MAX      (8U)</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#a43815f9134ad959c9ed1927b59068435">   53</a></span><span class="preprocessor">#define CANCFG_P_LED_BRIGHT     (9U)</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#a1d835b3f41cfbb460d5d9eecb2cdf7e2">   54</a></span><span class="preprocessor">#define CANCFG_P_ELEC_OFFSET    (10U)   </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#a2ec96e45cabfb8797504d90e22cab8d8">   55</a></span><span class="preprocessor">#define CANCFG_P_POLE_PAIRS     (11U)   </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#a501f69a9568a970169b4c434e55df7b7">   56</a></span><span class="preprocessor">#define CANCFG_P_ENC_INVERT     (12U)   </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="app__can__protocol_8h.html#a313d826ba2e0e015fd3025d661c2f6f3">   57</a></span><span class="preprocessor">#define CANCFG_P_CALIBRATED     (13U)   </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">/* Exported functions prototypes ---------------------------------------------*/</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keywordtype">void</span>    <a class="code hl_function" href="app__can__protocol_8h.html#af389bd7cff6ae0b5df76c2feb46f25f6">APP_CAN_Init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keywordtype">void</span>    <a class="code hl_function" href="app__can__protocol_8h.html#a6c2f3bebbd2597376fd87038ef059996">APP_CAN_Poll</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keywordtype">void</span>    <a class="code hl_function" href="app__can__protocol_8h.html#a3ab260e65506988e3c93e42c2a2ce2b3">APP_CAN_RequestReinit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>uint8_t <a class="code hl_function" href="app__can__protocol_8h.html#aa7ee6d44a81d3042e0e6f9a3d161cda2">APP_CAN_IsCanControlled</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keywordtype">void</span>    <a class="code hl_function" href="app__can__protocol_8h.html#a32c56ede856a112ad210fd60fdb7b111">APP_CAN_SetControlled</a>(uint8_t controlled);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keywordtype">float</span>   <a class="code hl_function" href="app__can__protocol_8h.html#ae97d64d8caba7a4aee7b6ef40a26afb7">APP_CAN_GetParamByIndex</a>(uint8_t index, uint8_t *ok);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>uint8_t <a class="code hl_function" href="app__can__protocol_8h.html#a1c22c988dc67c917a70b53b3386fcfca">APP_CAN_SetParamByIndex</a>(uint8_t index, <span class="keywordtype">float</span> value);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#endif </span><span class="comment">/* __APP_CAN_PROTOCOL_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aapp__can__protocol_8h_html_a1c22c988dc67c917a70b53b3386fcfca"><div class="ttname"><a href="app__can__protocol_8h.html#a1c22c988dc67c917a70b53b3386fcfca">APP_CAN_SetParamByIndex</a></div><div class="ttdeci">uint8_t APP_CAN_SetParamByIndex(uint8_t index, float value)</div><div class="ttdoc">按索引写参数（只读项与非法值拒绝，CAN 配置通道与 shell 共用）</div><div class="ttdef"><b>定义</b> app_can_protocol.c:426</div></div>
+<div class="ttc" id="aapp__can__protocol_8h_html_a32c56ede856a112ad210fd60fdb7b111"><div class="ttname"><a href="app__can__protocol_8h.html#a32c56ede856a112ad210fd60fdb7b111">APP_CAN_SetControlled</a></div><div class="ttdeci">void APP_CAN_SetControlled(uint8_t controlled)</div><div class="ttdoc">设置 CAN 控制标志（shell 使能时清零，豁免超时保护）</div><div class="ttdef"><b>定义</b> app_can_protocol.c:113</div></div>
+<div class="ttc" id="aapp__can__protocol_8h_html_a3ab260e65506988e3c93e42c2a2ce2b3"><div class="ttname"><a href="app__can__protocol_8h.html#a3ab260e65506988e3c93e42c2a2ce2b3">APP_CAN_RequestReinit</a></div><div class="ttdeci">void APP_CAN_RequestReinit(void)</div><div class="ttdoc">请求后台重新初始化 CAN（shell 恢复默认参数等场景）</div><div class="ttdef"><b>定义</b> app_can_protocol.c:97</div></div>
+<div class="ttc" id="aapp__can__protocol_8h_html_a6c2f3bebbd2597376fd87038ef059996"><div class="ttname"><a href="app__can__protocol_8h.html#a6c2f3bebbd2597376fd87038ef059996">APP_CAN_Poll</a></div><div class="ttdeci">void APP_CAN_Poll(void)</div><div class="ttdoc">后台轮询：处理通信参数变更后的重新初始化</div><div class="ttdef"><b>定义</b> app_can_protocol.c:85</div></div>
+<div class="ttc" id="aapp__can__protocol_8h_html_aa7ee6d44a81d3042e0e6f9a3d161cda2"><div class="ttname"><a href="app__can__protocol_8h.html#aa7ee6d44a81d3042e0e6f9a3d161cda2">APP_CAN_IsCanControlled</a></div><div class="ttdeci">uint8_t APP_CAN_IsCanControlled(void)</div><div class="ttdoc">查询当前使能是否由 CAN 发起（指令超时保护范围判定）</div><div class="ttdef"><b>定义</b> app_can_protocol.c:105</div></div>
+<div class="ttc" id="aapp__can__protocol_8h_html_ae97d64d8caba7a4aee7b6ef40a26afb7"><div class="ttname"><a href="app__can__protocol_8h.html#ae97d64d8caba7a4aee7b6ef40a26afb7">APP_CAN_GetParamByIndex</a></div><div class="ttdeci">float APP_CAN_GetParamByIndex(uint8_t index, uint8_t *ok)</div><div class="ttdoc">按索引读参数（CAN 配置通道与 shell 共用）</div><div class="ttdef"><b>定义</b> app_can_protocol.c:398</div></div>
+<div class="ttc" id="aapp__can__protocol_8h_html_af389bd7cff6ae0b5df76c2feb46f25f6"><div class="ttname"><a href="app__can__protocol_8h.html#af389bd7cff6ae0b5df76c2feb46f25f6">APP_CAN_Init</a></div><div class="ttdeci">void APP_CAN_Init(void)</div><div class="ttdoc">初始化 CAN 应用协议（按持久化参数配置 BSP）</div><div class="ttdef"><b>定义</b> app_can_protocol.c:66</div></div>
+<div class="ttc" id="amain_8h_html"><div class="ttname"><a href="main_8h.html">main.h</a></div><div class="ttdoc">: Header for main.c file.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_eb1463819d84903762eb6f59cc0c4383.html">Application</a></li><li class="navelem"><a href="dir_e5579ab33bbf4d2eff4e2d0df4c2a59a.html">app</a></li><li class="navelem"><a href="app__can__protocol_8h.html">app_can_protocol.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

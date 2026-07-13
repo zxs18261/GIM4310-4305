@@ -1,0 +1,5 @@
+<map id="MC_SetSpeedRef" name="MC_SetSpeedRef">
+<area shape="rect" id="Node000001" title="设置输出轴速度给定（SPEED 模式）" alt="" coords="5,5,157,35"/>
+<area shape="rect" id="Node000002" href="$motor__ctrl_8c.html#a5cbc0a7993d542a75e755f2e4dc5ab1e" title="对称限幅" alt="" coords="205,5,307,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,18,192,20,186,20,157,23"/>
+</map>

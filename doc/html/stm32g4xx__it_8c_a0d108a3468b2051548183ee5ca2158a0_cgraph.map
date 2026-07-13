@@ -1,0 +1,5 @@
+<map id="USART3_IRQHandler" name="USART3_IRQHandler">
+<area shape="rect" id="Node000001" title="USART3 中断：RXNE 接收 + DMA TX 收尾 TC" alt="" coords="5,5,185,35"/>
+<area shape="rect" id="Node000002" href="$bsp__uart_8c.html#ad511fb8c53c72f8a639714db852e85b7" title="USART3 中断服务（stm32g4xx_it.c 用户区调用）" alt="" coords="233,5,434,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,18,220,20,214,20,185,23"/>
+</map>

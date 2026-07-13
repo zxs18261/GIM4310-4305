@@ -1,0 +1,24 @@
+<map id="Application/app/app_params.c" name="Application/app/app_params.c">
+<area shape="rect" id="Node000001" title="运行参数管理（RAM 副本 + Flash 持久化）" alt="" coords="247,5,410,54"/>
+<area shape="rect" id="Node000002" href="$app__params_8h.html" title="运行参数管理头文件（RAM 副本 + Flash 持久化）" alt="" coords="5,102,129,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,57,126,99,124,94,257,52"/>
+<area shape="rect" id="Node000006" href="$bsp__flash_8h.html" title="片内 Flash 参数持久化 BSP 头文件" alt="" coords="153,102,256,132"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="292,56,239,95,236,91,296,53"/>
+<area shape="rect" id="Node000007" href="$bsp__can_8h.html" title="FDCAN1 通信 BSP 头文件（经典 CAN 模式）" alt="" coords="281,102,376,132"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="330,52,331,87,326,85,327,57"/>
+<area shape="rect" id="Node000008" href="$motor__config_8h.html" title="电机参数与控制参数统一配置" alt="" coords="400,102,526,132"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="366,52,430,93,425,93,366,57"/>
+<area shape="rect" id="Node000009" href="$board__config_8h.html" title="板级硬件参数统一配置（GIM4310/4305 电机控制器 V0.0 板）" alt="" coords="449,180,576,209"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="410,34,446,42,481,55,514,74,540,101,547,117,546,135,533,169,529,165,541,134,541,118,535,103,510,78,479,59,445,47,411,39"/>
+<area shape="rect" id="Node000003" href="$main_8h.html" title=": Header for main.c file." alt="" coords="216,180,286,209"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,130,205,172,200,175,101,135"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="120,180,192,209"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="84,130,131,169,126,170,83,135"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="180,257,322,287"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="253,208,253,243,249,240,249,212"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="214,130,237,166,232,166,212,135"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="197,130,175,168,171,165,193,134"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="316,131,278,171,275,167,312,134"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="294,134,203,176,201,171,298,131"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="473,130,497,167,492,166,471,135"/>
+</map>

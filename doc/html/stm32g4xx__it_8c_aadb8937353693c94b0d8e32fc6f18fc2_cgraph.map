@@ -1,0 +1,5 @@
+<map id="DMA1_Channel3_IRQHandler" name="DMA1_Channel3_IRQHandler">
+<area shape="rect" id="Node000001" title="DMA1 通道 3：TIM2_CH1（WS2812）" alt="" coords="5,5,245,35"/>
+<area shape="rect" id="Node000002" href="$bsp__ws2812_8c.html#a64571b29a37314c8f47d43c44338a774" title="DMA1 通道 3（TIM2_CH1）中断服务" alt="" coords="293,5,546,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,18,280,20,274,20,245,23"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Core/Src/opamp.c" name="Core/Src/opamp.c">
+<area shape="rect" id="Node000001" title="This file provides code for the configuration of the OPAMP instances." alt="" coords="5,5,155,35"/>
+<area shape="rect" id="Node000002" href="$opamp_8h.html" title="This file contains all the function prototypes for the opamp.c file" alt="" coords="38,83,122,113"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,33,83,68,77,67,79,38"/>
+<area shape="rect" id="Node000003" href="$main_8h.html" title=": Header for main.c file." alt="" coords="45,161,115,190"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,111,83,145,77,144,79,116"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="9,238,151,268"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="82,189,83,223,77,222,78,193"/>
+</map>

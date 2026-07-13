@@ -1,0 +1,5 @@
+<map id="MC_ClearFault" name="MC_ClearFault">
+<area shape="rect" id="Node000001" title="清除故障（故障源已消失时）" alt="" coords="5,5,136,35"/>
+<area shape="rect" id="Node000002" href="$protection_8c.html#a2edece24ac432f98c28ec146bfc9eb54" title="初始化保护模块" alt="" coords="184,5,280,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,18,171,20,165,20,136,23"/>
+</map>

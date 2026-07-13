@@ -1,0 +1,89 @@
+<map id="MC_FocIsr" name="MC_FocIsr">
+<area shape="rect" id="Node000001" title="FOC 主循环（ADC 注入完成 ISR，20kHz）" alt="" coords="5,473,105,503"/>
+<area shape="rect" id="Node000002" href="$app__params_8c.html#a2c145abd191edf697c7d319f120390fb" title="请求保存参数（任意上下文安全，后台择机执行）" alt="" coords="153,5,389,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,473,64,387,83,260,96,195,111,135,129,86,151,52,166,41,163,45,155,55,134,88,116,137,101,196,88,261,69,387,60,473"/>
+<area shape="rect" id="Node000003" href="$bsp__encoder_8c.html#a9f9d4545ad55a3bc5bc15920257754d3" title="预置编码器状态（上电首读，避免多圈计数误跳）" alt="" coords="189,109,352,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="53,473,55,414,67,329,79,283,97,237,120,194,151,156,177,139,174,144,154,159,124,196,101,239,84,284,72,330,61,414,59,473"/>
+<area shape="rect" id="Node000004" href="$bsp__encoder_8c.html#a952d9a4a6bd64cde7ae4b60a8757c430" title="读取一次编码器角度（ISR 安全，阻塞约 5us）" alt="" coords="454,80,601,110"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="55,472,64,393,82,278,95,219,110,166,129,123,151,96,188,73,228,58,270,50,314,48,397,56,470,74,465,76,397,62,314,54,271,56,229,63,190,78,154,99,134,126,115,168,100,221,87,279,69,393,60,473"/>
+<area shape="rect" id="Node000006" href="$bsp__encoder_8c.html#aeb49ab86be385a4a6edd057538820937" title="设置方向反转标志（预定位校准结果）" alt="" coords="442,184,613,214"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="53,473,55,419,67,343,79,302,97,263,120,228,151,199,188,178,228,164,270,157,313,155,396,162,467,178,463,181,395,167,313,160,271,162,230,170,190,183,154,204,124,232,101,266,84,304,73,344,61,419,59,473"/>
+<area shape="rect" id="Node000007" href="$bsp__pwm_8c.html#a733fb50d63fb8078b605200dc54981d9" title="写入三相占空比（电流环 ISR 中调用）" alt="" coords="187,213,355,243"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="55,472,62,429,79,369,107,307,127,278,151,253,174,240,171,245,154,257,131,281,112,309,84,371,68,430,61,473"/>
+<area shape="rect" id="Node000008" href="$bsp__pwm_8c.html#af4a87e2cef845a3eba6d0170011ff08d" title="三相占空比清零（低侧全导通：自举预充/动态刹车态）" alt="" coords="170,267,372,296"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="58,472,69,439,88,396,115,351,151,313,173,301,170,305,154,317,119,354,92,399,74,441,63,474"/>
+<area shape="rect" id="Node000009" href="$calibration_8c.html#a51f1133ceba653e8e1e600c24b54987e" title="校准状态机单步（电流环 ISR 调用，模式 = MC_MODE_CALIB）" alt="" coords="231,371,310,400"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="71,471,107,443,152,416,218,394,215,399,154,421,110,448,76,474"/>
+<area shape="rect" id="Node000011" href="$foc_8c.html#a42501e789c00841a74f2ce755c5d03d6" title="设置 d/q 电流给定" alt="" coords="444,472,611,502"/>
+<area shape="poly" id="edge29_Node000001_Node000011" title=" " alt="" coords="105,485,431,485,428,489,106,491"/>
+<area shape="rect" id="Node000015" href="$foc_8c.html#adeb37d340903f5f803d273080550032d" title="执行一个电流环周期（在 ADC 注入转换完成 ISR 中调用）" alt="" coords="470,261,586,291"/>
+<area shape="poly" id="edge30_Node000001_Node000015" title=" " alt="" coords="61,472,94,415,120,383,151,357,183,339,212,327,265,318,320,315,389,306,456,292,452,295,389,311,321,320,266,323,214,332,186,343,154,361,123,387,98,418,66,474"/>
+<area shape="rect" id="Node000023" href="$foc_8c.html#ae75f2892abb7689a482d566582276071" title="直接输出 d/q 电压矢量（开环模式 / 校准注入用，不经过电流 PI）" alt="" coords="445,368,610,398"/>
+<area shape="poly" id="edge25_Node000001_Node000023" title=" " alt="" coords="104,475,444,399,442,404,106,480"/>
+<area shape="rect" id="Node000024" href="$motor__ctrl_8c.html#a5cbc0a7993d542a75e755f2e4dc5ab1e" title="对称限幅" alt="" coords="476,680,579,710"/>
+<area shape="poly" id="edge31_Node000001_Node000024" title=" " alt="" coords="70,501,107,534,154,564,187,578,217,586,270,593,324,597,355,604,390,615,489,671,483,673,388,620,353,609,323,603,269,598,216,592,186,583,151,569,104,538,71,506"/>
+<area shape="rect" id="Node000025" href="$motor__ctrl_8c.html#aceb46c7be868a0b12dffa105e3d0581e" title="封波（ISR 安全）" alt="" coords="472,733,583,763"/>
+<area shape="poly" id="edge32_Node000001_Node000025" title=" " alt="" coords="60,501,72,537,90,583,117,630,134,651,154,668,268,694,459,733,455,736,267,699,151,673,130,654,113,633,85,585,67,539,60,506"/>
+<area shape="rect" id="Node000029" href="$motor__ctrl_8c.html#a314b8aad615262b23be0463fa16b9ceb" title="转子展开机械角 [rad]：整数圈 + 单圈角分离合成" alt="" coords="210,629,332,659"/>
+<area shape="poly" id="edge37_Node000001_Node000029" title=" " alt="" coords="64,501,100,555,125,584,154,609,197,629,192,632,151,613,121,588,96,558,64,506"/>
+<area shape="rect" id="Node000030" href="$motor__ctrl_8c.html#a9dd4aa02cb15dd5ea27aa8085155adb7" title="慢环（1kHz）：电流限幅刷新与速度/位置外环" alt="" coords="207,525,334,555"/>
+<area shape="poly" id="edge38_Node000001_Node000030" title=" " alt="" coords="104,498,194,520,190,523,106,503"/>
+<area shape="rect" id="Node000032" href="$motor__ctrl_8c.html#a0254f4cdae07bdb4781c9df4b540ffe8" title="触发故障：立即封波并锁存（ISR 安全）" alt="" coords="212,733,330,763"/>
+<area shape="poly" id="edge44_Node000001_Node000032" title=" " alt="" coords="58,501,69,545,85,602,113,662,132,689,154,713,175,726,199,737,194,739,172,731,151,717,128,692,108,664,80,603,64,546,58,506"/>
+<area shape="rect" id="Node000033" href="$motor__ctrl_8c.html#adc1f5b8a41b8c741dd3a8be02c3dff49" title="由单圈原始计数计算电角度" alt="" coords="180,787,362,816"/>
+<area shape="poly" id="edge46_Node000001_Node000033" title=" " alt="" coords="57,501,63,555,77,628,89,668,105,706,127,742,154,773,169,784,164,785,151,777,123,745,101,709,84,669,72,630,58,556,56,506"/>
+<area shape="rect" id="Node000034" href="$filter_8c.html#a92c4dfa4557978b294c448b59f485614" title="预置 PLL 跟踪角度（上电对准编码器初值，避免速度冲击）" alt="" coords="470,836,585,866"/>
+<area shape="poly" id="edge47_Node000001_Node000034" title=" " alt="" coords="58,501,72,573,91,672,119,767,136,803,154,826,188,848,225,863,264,873,305,878,385,876,457,868,452,869,385,882,305,883,264,878,223,868,185,853,151,830,132,806,114,769,86,673,67,574,58,506"/>
+<area shape="rect" id="Node000035" href="$filter_8c.html#a684e4c63e2e5d52d06110c3b0a486c28" title="执行一次 PLL 跟踪" alt="" coords="472,889,583,919"/>
+<area shape="poly" id="edge49_Node000001_Node000035" title=" " alt="" coords="58,501,69,584,87,700,100,759,115,813,134,856,154,883,176,895,206,903,286,912,375,912,459,910,454,911,375,917,285,917,205,909,174,900,151,888,129,859,110,815,95,761,82,701,64,584,57,506"/>
+<area shape="rect" id="Node000036" href="$protection_8c.html#addca5297e672b45c65c3ae3e7ead254d" title="快速保护检查（电流环 ISR 调用）" alt="" coords="195,941,347,971"/>
+<area shape="poly" id="edge51_Node000001_Node000036" title=" " alt="" coords="58,501,69,589,88,715,101,780,116,840,134,888,155,921,183,942,177,942,151,925,129,891,111,841,96,781,83,716,64,590,57,506"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="351,113,441,103,437,107,354,117"/>
+<area shape="rect" id="Node000005" href="$bsp__encoder_8c.html#a05a73d1c3440289f913db2b8a47a954a" title="CRC6 计算（X^6 + X + 1，初值 0，MSB 先入）" alt="" coords="679,80,820,110"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="600,92,665,94,661,96,603,97"/>
+<area shape="poly" id="edge10_Node000009_Node000006" title=" " alt="" coords="298,368,342,341,387,306,401,291,411,277,420,263,435,247,481,219,478,223,439,252,424,266,415,280,406,294,391,310,345,345,302,372"/>
+<area shape="rect" id="Node000010" href="$calibration_8c.html#a26fea34b7ac90079fc8454f8012f95e0" title="偏置测量点的强制角序列" alt="" coords="437,315,618,344"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="309,375,443,346,439,350,312,379"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="308,398,438,451,472,465,467,467,436,456,309,404"/>
+<area shape="rect" id="Node000012" href="$foc__math_8c.html#a39d4aea10aec434cb4d2490fafb98632" title="查表+线性插值同时计算 sin/cos" alt="" coords="691,421,808,451"/>
+<area shape="poly" id="edge13_Node000009_Node000012" title=" " alt="" coords="310,389,437,407,678,430,674,433,437,412,312,394"/>
+<area shape="poly" id="edge16_Node000009_Node000015" title=" " alt="" coords="309,378,349,367,388,350,402,338,411,326,420,313,436,301,457,292,453,296,438,305,424,317,415,329,406,342,390,354,351,372,313,382"/>
+<area shape="rect" id="Node000013" href="$foc__math_8c.html#ac63ab3ffd2685338c76dc6de24c953b1" title="构建 sin 查找表（仅初始化时执行一次）" alt="" coords="881,421,1074,451"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="808,434,868,435,863,437,810,439"/>
+<area shape="rect" id="Node000014" href="$foc__math_8c.html#a4cc9d35ffa1c5f6ab5668cbe7623d018" title="角度归一化到 [0, 2pi)" alt="" coords="888,836,1067,866"/>
+<area shape="poly" id="edge15_Node000012_Node000014" title=" " alt="" coords="789,449,815,464,835,485,854,521,863,553,866,584,865,614,863,675,869,709,883,746,913,789,948,826,943,825,909,792,878,748,864,710,858,676,859,614,861,584,858,554,849,523,831,488,811,469,789,454"/>
+<area shape="poly" id="edge21_Node000015_Node000012" title=" " alt="" coords="586,283,620,301,632,314,639,328,645,355,651,382,657,395,668,408,680,417,674,417,665,411,653,398,645,384,640,357,634,330,628,317,617,305,587,288"/>
+<area shape="rect" id="Node000016" href="$foc__math_8c.html#a7b6dc337ca6db7a63bc15c20d5772fb7" title="Clarke 变换（等幅值变换，3 相 &#45;&gt; alpha/beta）" alt="" coords="694,155,805,184"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="555,259,617,223,641,208,665,194,682,189,678,192,668,199,643,212,620,228,558,263"/>
+<area shape="rect" id="Node000017" href="$foc_8c.html#aa9db75377abf9b36c243b87f58172dd6" title="快速平方根（M4F 上编译为 VSQRT 单指令）" alt="" coords="687,208,812,238"/>
+<area shape="poly" id="edge18_Node000015_Node000017" title=" " alt="" coords="585,260,674,240,670,243,587,265"/>
+<area shape="rect" id="Node000018" href="$foc__math_8c.html#ae7e0a68727625c071145c38236b08cfe" title="Park 反变换（d/q &#45;&gt; alpha/beta）" alt="" coords="690,315,809,344"/>
+<area shape="poly" id="edge19_Node000015_Node000018" title=" " alt="" coords="585,287,678,311,673,313,587,293"/>
+<area shape="rect" id="Node000019" href="$foc__math_8c.html#a002780099733b401167923e53120d292" title="Park 变换（alpha/beta &#45;&gt; d/q）" alt="" coords="701,261,798,291"/>
+<area shape="poly" id="edge20_Node000015_Node000019" title=" " alt="" coords="585,274,687,275,683,277,587,279"/>
+<area shape="rect" id="Node000020" href="$foc__math_8c.html#a81c018372d65f69c5d8bd6abdeb9f1d2" title="SVPWM 调制（注入零序的 min&#45;max 中点平移法）" alt="" coords="687,368,812,398"/>
+<area shape="poly" id="edge22_Node000015_Node000020" title=" " alt="" coords="586,286,620,301,635,314,645,328,653,341,668,354,677,361,672,361,665,358,649,345,640,331,631,318,617,305,587,291"/>
+<area shape="rect" id="Node000021" href="$pid_8c.html#ad7fced70a610f756fa6319fccc4ae725" title="运行中修改输出限幅，并把积分收拢到新限幅内" alt="" coords="688,499,811,528"/>
+<area shape="poly" id="edge23_Node000015_Node000021" title=" " alt="" coords="586,282,605,289,620,301,636,321,644,341,648,380,650,420,656,440,668,461,683,476,701,491,696,491,679,480,664,464,651,442,645,421,642,381,639,342,631,324,616,305,602,294,587,287"/>
+<area shape="rect" id="Node000022" href="$pid_8c.html#a0cc51ef261cec84e3e35382345ac95a0" title="执行一次 PID 计算" alt="" coords="695,601,804,631"/>
+<area shape="poly" id="edge24_Node000015_Node000022" title=" " alt="" coords="586,281,605,289,620,301,641,331,652,360,654,388,652,416,650,475,655,506,669,539,690,567,716,592,710,591,686,570,664,541,650,507,644,475,647,416,649,388,646,361,637,333,616,305,602,293,587,286"/>
+<area shape="poly" id="edge27_Node000023_Node000012" title=" " alt="" coords="592,396,678,418,673,419,593,401"/>
+<area shape="poly" id="edge26_Node000023_Node000018" title=" " alt="" coords="591,365,677,346,673,349,594,370"/>
+<area shape="poly" id="edge28_Node000023_Node000020" title=" " alt="" coords="610,380,673,382,669,384,611,385"/>
+<area shape="rect" id="Node000026" href="$bsp__pwm_8c.html#a2664b56ad93d867fb05741e710ff942d" title="封波（输出高阻，电机 freewheel）" alt="" coords="666,784,833,814"/>
+<area shape="poly" id="edge33_Node000025_Node000026" title=" " alt="" coords="583,758,669,780,664,780,583,763"/>
+<area shape="rect" id="Node000027" href="$foc_8c.html#aa25cf599086b4ad815ae5ad72dcfdec4" title="复位电流环状态（封波后重新使能前调用，防止积分残留冲击）" alt="" coords="696,680,803,710"/>
+<area shape="poly" id="edge34_Node000025_Node000027" title=" " alt="" coords="582,732,683,710,678,712,584,738"/>
+<area shape="rect" id="Node000028" href="$pid_8c.html#acb76685b15d3fde29d9bd5548b3268c1" title="复位 PID 内部状态（积分/历史误差/输出）" alt="" coords="928,705,1027,735"/>
+<area shape="poly" id="edge36_Node000025_Node000028" title=" " alt="" coords="583,742,914,723,910,725,584,747"/>
+<area shape="poly" id="edge35_Node000027_Node000028" title=" " alt="" coords="803,698,915,713,909,713,803,703"/>
+<area shape="poly" id="edge39_Node000030_Node000011" title=" " alt="" coords="334,525,440,504,436,507,336,529"/>
+<area shape="poly" id="edge41_Node000030_Node000021" title=" " alt="" coords="334,534,674,516,670,520,336,539"/>
+<area shape="poly" id="edge42_Node000030_Node000022" title=" " alt="" coords="334,550,390,571,405,583,414,595,423,606,438,615,499,631,563,637,625,634,682,630,677,631,625,640,563,642,499,637,436,620,420,610,410,599,401,587,388,576,335,555"/>
+<area shape="poly" id="edge40_Node000030_Node000024" title=" " alt="" coords="334,546,364,556,391,571,409,594,416,616,423,638,439,660,465,677,460,678,435,663,418,641,411,618,404,596,387,576,362,561,335,551"/>
+<area shape="rect" id="Node000031" href="$protection_8c.html#a87d1ad0c7e39a4c5c88dc7b62e964da7" title="读取温度降额系数（乘到电流限幅上；0 表示已达过温故障）" alt="" coords="447,576,608,606"/>
+<area shape="poly" id="edge43_Node000030_Node000031" title=" " alt="" coords="334,550,436,571,432,574,336,555"/>
+<area shape="poly" id="edge45_Node000032_Node000025" title=" " alt="" coords="330,746,459,747,455,749,331,751"/>
+<area shape="poly" id="edge48_Node000034_Node000014" title=" " alt="" coords="585,848,875,850,869,851,586,853"/>
+<area shape="poly" id="edge50_Node000035_Node000014" title=" " alt="" coords="583,895,875,863,869,864,584,900"/>
+</map>

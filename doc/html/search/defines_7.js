@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['mc_5finv_5fgear_0',['MC_INV_GEAR',['../motor__ctrl_8c.html#a5bef9103778977cea70d439a84b2a7c0',1,'motor_ctrl.c']]],
+  ['mc_5fprecharge_5fcycles_1',['MC_PRECHARGE_CYCLES',['../motor__ctrl_8c.html#ae546f435caa4227af061f88208b085f5',1,'motor_ctrl.c']]],
+  ['mc_5frad_5fper_5fcount_2',['MC_RAD_PER_COUNT',['../motor__ctrl_8c.html#adb53a2b437c19c68abef3c954c485ee2',1,'motor_ctrl.c']]],
+  ['mit_5fkd_5fmax_3',['MIT_KD_MAX',['../motor__config_8h.html#a808f2f06409d54811263a09632ec42d6',1,'motor_config.h']]],
+  ['mit_5fkp_5fmax_4',['MIT_KP_MAX',['../motor__config_8h.html#ad30233faa2d16243bf11fa9548668afb',1,'motor_config.h']]],
+  ['mit_5fp_5fmax_5',['MIT_P_MAX',['../motor__config_8h.html#a304d96d1a029e06c217f6a58a4df64b5',1,'motor_config.h']]],
+  ['mit_5fspecial_5fenter_6',['MIT_SPECIAL_ENTER',['../app__can__protocol_8c.html#a50a0d75d5820f6c9e24c07d6e1092a3e',1,'app_can_protocol.c']]],
+  ['mit_5fspecial_5fexit_7',['MIT_SPECIAL_EXIT',['../app__can__protocol_8c.html#a23b025091e52b9c837f91822a81fd66f',1,'app_can_protocol.c']]],
+  ['mit_5fspecial_5fzero_8',['MIT_SPECIAL_ZERO',['../app__can__protocol_8c.html#aa402ee0b16d90b1ab32e461f9a1d3a36',1,'app_can_protocol.c']]],
+  ['mit_5ft_5fmax_9',['MIT_T_MAX',['../motor__config_8h.html#ac45681041a154c53a07790b0c21151f8',1,'motor_config.h']]],
+  ['mit_5fv_5fmax_10',['MIT_V_MAX',['../motor__config_8h.html#a42700d8fc86f29d4ea4fc15de4ac4a5e',1,'motor_config.h']]],
+  ['motor_5fcur_5fpeak_5fa_11',['MOTOR_CUR_PEAK_A',['../motor__config_8h.html#ad0a884dca0c424a90dc41a1aca99190d',1,'motor_config.h']]],
+  ['motor_5fcur_5frated_5fa_12',['MOTOR_CUR_RATED_A',['../motor__config_8h.html#a505dfc967e0fdea61830e68aefef8c1a',1,'motor_config.h']]],
+  ['motor_5fgear_5fratio_13',['MOTOR_GEAR_RATIO',['../motor__config_8h.html#ae81121f5c96e4be602d9679ecf73f1de',1,'motor_config.h']]],
+  ['motor_5fkt_5fout_14',['MOTOR_KT_OUT',['../motor__config_8h.html#ade588e33bb7be31a4e5ba526e83cb181',1,'motor_config.h']]],
+  ['motor_5fkt_5frotor_15',['MOTOR_KT_ROTOR',['../motor__config_8h.html#a6da40e82e04eb184fec48ccb5d7c8ab8',1,'motor_config.h']]],
+  ['motor_5fls_5fh_16',['MOTOR_LS_H',['../motor__config_8h.html#a6c0a6e236c3b029adfc1968cc20d6662',1,'motor_config.h']]],
+  ['motor_5fname_17',['MOTOR_NAME',['../motor__config_8h.html#a2b676d5e7bf7b2bfd7841ec197efa545',1,'motor_config.h']]],
+  ['motor_5fpole_5fpairs_18',['MOTOR_POLE_PAIRS',['../motor__config_8h.html#a759963b79fc5399773d8e0ce5de8338b',1,'motor_config.h']]],
+  ['motor_5frs_5fohm_19',['MOTOR_RS_OHM',['../motor__config_8h.html#afca9cbf1abc82a4c2997cd37803b4728',1,'motor_config.h']]],
+  ['motor_5fspeed_5fmax_5frads_20',['MOTOR_SPEED_MAX_RADS',['../motor__config_8h.html#a575ec235dcf9aedb3da9daf832bc3c16',1,'motor_config.h']]],
+  ['motor_5ftype_21',['MOTOR_TYPE',['../motor__config_8h.html#ad47970668f4c1d0ab4b2364fabf0d4a6',1,'motor_config.h']]],
+  ['motor_5ftype_5fgim4305_5f10_22',['MOTOR_TYPE_GIM4305_10',['../motor__config_8h.html#aefef2e4d37ba5e4f229370a62600b65c',1,'motor_config.h']]],
+  ['motor_5ftype_5fgim4310_5f10_23',['MOTOR_TYPE_GIM4310_10',['../motor__config_8h.html#a49058fc792337604c800ee6fe253dbbc',1,'motor_config.h']]]
+];

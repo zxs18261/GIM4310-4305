@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: Application/app/app_main.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('app__main_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">app_main.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>应用入口模块（前后台调度）  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="app__main_8h_source.html">app_main.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="app__params_8h_source.html">app_params.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="app__can__protocol_8h_source.html">app_can_protocol.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="app__led_8h_source.html">app_led.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="app__shell_8h_source.html">app_shell.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="app__monitor_8h_source.html">app_monitor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="motor__ctrl_8h_source.html">motor_ctrl.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="protection_8h_source.html">protection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bsp__clock_8h_source.html">bsp_clock.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bsp__uart_8h_source.html">bsp_uart.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bsp__pwm_8h_source.html">bsp_pwm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bsp__adc_8h_source.html">bsp_adc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bsp__encoder_8h_source.html">bsp_encoder.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bsp__ws2812_8h_source.html">bsp_ws2812.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="board__config_8h_source.html">board_config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="motor__config_8h_source.html">motor_config.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+app_main.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__main_8c__incl.svg" width="100%" height="578"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ad21972077df30d6ae513b863b7124ef5" id="r_ad21972077df30d6ae513b863b7124ef5"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad21972077df30d6ae513b863b7124ef5">APP_SLOW_TASK_MS</a>&#160;&#160;&#160;(100U)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a9d7a99f268e16f853238569586d275aa" id="r_a9d7a99f268e16f853238569586d275aa"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a9d7a99f268e16f853238569586d275aa">APP_SlowTask</a> (void)</td></tr>
+<tr class="memdesc:a9d7a99f268e16f853238569586d275aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">慢任务：温度采样/过温保护/CAN 指令超时  <br /></td></tr>
+<tr class="memitem:a4759d3fdff6b33e2c0a0ae151452112f" id="r_a4759d3fdff6b33e2c0a0ae151452112f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4759d3fdff6b33e2c0a0ae151452112f">APP_Init</a> (void)</td></tr>
+<tr class="memdesc:a4759d3fdff6b33e2c0a0ae151452112f"><td class="mdescLeft">&#160;</td><td class="mdescRight">应用初始化（main 的 USER CODE BEGIN 2 调用）  <br /></td></tr>
+<tr class="memitem:a6709d26bb67f905916b7c7f048b8396c" id="r_a6709d26bb67f905916b7c7f048b8396c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6709d26bb67f905916b7c7f048b8396c">APP_Loop</a> (void)</td></tr>
+<tr class="memdesc:a6709d26bb67f905916b7c7f048b8396c"><td class="mdescLeft">&#160;</td><td class="mdescRight">后台超级循环体（main 的 while(1) 内调用）  <br /></td></tr>
+<tr class="memitem:ac8ace74f779c511fb8d2815fc84da4cd" id="r_ac8ace74f779c511fb8d2815fc84da4cd"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ac8ace74f779c511fb8d2815fc84da4cd">APP_GetMosTemp</a> (void)</td></tr>
+<tr class="memdesc:ac8ace74f779c511fb8d2815fc84da4cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取 MOS 温度缓存 [C]  <br /></td></tr>
+<tr class="memitem:af1c8ed1fa98ee3361a1d12b25d58e298" id="r_af1c8ed1fa98ee3361a1d12b25d58e298"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#af1c8ed1fa98ee3361a1d12b25d58e298">APP_GetMotorTemp</a> (void)</td></tr>
+<tr class="memdesc:af1c8ed1fa98ee3361a1d12b25d58e298"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取电机温度缓存 [C]  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:acd6ec5eb3eadd55cc044072d3adff870" id="r_acd6ec5eb3eadd55cc044072d3adff870"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#acd6ec5eb3eadd55cc044072d3adff870">slowTaskTick</a> = 0U</td></tr>
+<tr class="memitem:a3f93840883272d1356c7732ae2747915" id="r_a3f93840883272d1356c7732ae2747915"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a3f93840883272d1356c7732ae2747915">mosTemp</a> = 25.0f</td></tr>
+<tr class="memitem:adf4cca4e15700419969edf3ce2ffe6e6" id="r_adf4cca4e15700419969edf3ce2ffe6e6"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#adf4cca4e15700419969edf3ce2ffe6e6">motorTemp</a> = 25.0f</td></tr>
+<tr class="memitem:a46a37612c6dd418d8566948b5e46bc33" id="r_a46a37612c6dd418d8566948b5e46bc33"><td class="memItemLeft">static uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a46a37612c6dd418d8566948b5e46bc33">mosNtcOk</a> = 1U</td></tr>
+<tr class="memitem:a7b33c29750a936f9010a7f16db75451e" id="r_a7b33c29750a936f9010a7f16db75451e"><td class="memItemLeft">static uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a7b33c29750a936f9010a7f16db75451e">motNtcOk</a> = 1U</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>应用入口模块（前后台调度） </p>
+<dl class="section note"><dt>注解</dt><dd>裸机前后台架构：<ul>
+<li>前台：MC_FocIsr（ADC 注入完成中断，20kHz，见 motor_ctrl.c）、 CAN 接收解析（FDCAN ISR）、串口收发（USART/DMA ISR）；</li>
+<li>后台：APP_Loop 超级循环，非阻塞轮询 shell / 灯语 / 温度保护 / 周期日志 / 参数落盘，均以 HAL tick 分频，无任何忙等。</li>
+</ul>
+</dd></dl>
+<p>APP_Init 由 <a class="el" href="main_8c.html" title=": Main program body">main.c</a> 的 USER CODE BEGIN 2 调用（MX_*_Init 之后）， APP_Loop 由 while(1) 内调用。</p>
+<dl class="section attention"><dt>注意</dt><dd></dd></dl>
+<p>Copyright (c) 2026 Z.Xusheng SPDX-License-Identifier: MIT</p>
+<p>This file is part of the GIM4310/GIM4305 joint motor controller firmware, distributed under the MIT License. See the LICENSE file in the repository root for full terms. </p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="ad21972077df30d6ae513b863b7124ef5" name="ad21972077df30d6ae513b863b7124ef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad21972077df30d6ae513b863b7124ef5">&#9670;&#160;</a></span>APP_SLOW_TASK_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APP_SLOW_TASK_MS&#160;&#160;&#160;(100U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>温度/超时等慢任务周期 </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="ac8ace74f779c511fb8d2815fc84da4cd" name="ac8ace74f779c511fb8d2815fc84da4cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ace74f779c511fb8d2815fc84da4cd">&#9670;&#160;</a></span>APP_GetMosTemp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float APP_GetMosTemp </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取 MOS 温度缓存 [C] </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__main_8c_ac8ace74f779c511fb8d2815fc84da4cd_icgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="af1c8ed1fa98ee3361a1d12b25d58e298" name="af1c8ed1fa98ee3361a1d12b25d58e298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1c8ed1fa98ee3361a1d12b25d58e298">&#9670;&#160;</a></span>APP_GetMotorTemp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float APP_GetMotorTemp </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取电机温度缓存 [C] </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__main_8c_af1c8ed1fa98ee3361a1d12b25d58e298_icgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a4759d3fdff6b33e2c0a0ae151452112f" name="a4759d3fdff6b33e2c0a0ae151452112f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4759d3fdff6b33e2c0a0ae151452112f">&#9670;&#160;</a></span>APP_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void APP_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>应用初始化（main 的 USER CODE BEGIN 2 调用） </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__main_8c_a4759d3fdff6b33e2c0a0ae151452112f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__main_8c_a4759d3fdff6b33e2c0a0ae151452112f_icgraph.svg" width="200" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6709d26bb67f905916b7c7f048b8396c" name="a6709d26bb67f905916b7c7f048b8396c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6709d26bb67f905916b7c7f048b8396c">&#9670;&#160;</a></span>APP_Loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void APP_Loop </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>后台超级循环体（main 的 while(1) 内调用） </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__main_8c_a6709d26bb67f905916b7c7f048b8396c_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__main_8c_a6709d26bb67f905916b7c7f048b8396c_icgraph.svg" width="215" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a9d7a99f268e16f853238569586d275aa" name="a9d7a99f268e16f853238569586d275aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d7a99f268e16f853238569586d275aa">&#9670;&#160;</a></span>APP_SlowTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void APP_SlowTask </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>慢任务：温度采样/过温保护/CAN 指令超时 </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__main_8c_a9d7a99f268e16f853238569586d275aa_cgraph.svg" width="100%" height="570"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__main_8c_a9d7a99f268e16f853238569586d275aa_icgraph.svg" width="395" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">变量说明</h2>
+<a id="a46a37612c6dd418d8566948b5e46bc33" name="a46a37612c6dd418d8566948b5e46bc33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46a37612c6dd418d8566948b5e46bc33">&#9670;&#160;</a></span>mosNtcOk</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mosNtcOk = 1U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>板载 NTC 有效标志（开路/短路时打印告警并退出过温判定） </p>
+
+</div>
+</div>
+<a id="a3f93840883272d1356c7732ae2747915" name="a3f93840883272d1356c7732ae2747915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f93840883272d1356c7732ae2747915">&#9670;&#160;</a></span>mosTemp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float mosTemp = 25.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>MOS 温度缓存 [C] </p>
+
+</div>
+</div>
+<a id="a7b33c29750a936f9010a7f16db75451e" name="a7b33c29750a936f9010a7f16db75451e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b33c29750a936f9010a7f16db75451e">&#9670;&#160;</a></span>motNtcOk</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t motNtcOk = 1U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>电机 NTC 有效标志（同上，未接时不故障便于裸板调试） </p>
+
+</div>
+</div>
+<a id="adf4cca4e15700419969edf3ce2ffe6e6" name="adf4cca4e15700419969edf3ce2ffe6e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf4cca4e15700419969edf3ce2ffe6e6">&#9670;&#160;</a></span>motorTemp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float motorTemp = 25.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>电机温度缓存 [C] </p>
+
+</div>
+</div>
+<a id="acd6ec5eb3eadd55cc044072d3adff870" name="acd6ec5eb3eadd55cc044072d3adff870"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd6ec5eb3eadd55cc044072d3adff870">&#9670;&#160;</a></span>slowTaskTick</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t slowTaskTick = 0U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_eb1463819d84903762eb6f59cc0c4383.html">Application</a></li><li class="navelem"><a href="dir_e5579ab33bbf4d2eff4e2d0df4c2a59a.html">app</a></li><li class="navelem"><a href="app__main_8c.html">app_main.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: Application/bsp/bsp_ws2812.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('bsp__ws2812_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">bsp_ws2812.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>WS2812 类 RGB 状态灯 BSP（TIM2_CH1 PWM + DMA，单灯）  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="bsp__ws2812_8h_source.html">bsp_ws2812.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="board__config_8h_source.html">board_config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="tim_8h_source.html">tim.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+bsp_ws2812.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__ws2812_8c__incl.svg" width="368" height="292"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a996a9bc5c139c873f615eef13e5b05df" id="r_a996a9bc5c139c873f615eef13e5b05df"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a996a9bc5c139c873f615eef13e5b05df">WS2812_BIT_COUNT</a>&#160;&#160;&#160;(24U)</td></tr>
+<tr class="memitem:aff889ea6debeeac01adc4ab2ad925f2c" id="r_aff889ea6debeeac01adc4ab2ad925f2c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aff889ea6debeeac01adc4ab2ad925f2c">WS2812_RESET_SLOTS</a>&#160;&#160;&#160;(80U)</td></tr>
+<tr class="memitem:af5ec9453c40f135b727a9469964ecb15" id="r_af5ec9453c40f135b727a9469964ecb15"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af5ec9453c40f135b727a9469964ecb15">WS2812_BUF_LEN</a>&#160;&#160;&#160;(<a class="el" href="#a996a9bc5c139c873f615eef13e5b05df">WS2812_BIT_COUNT</a> + <a class="el" href="#aff889ea6debeeac01adc4ab2ad925f2c">WS2812_RESET_SLOTS</a>)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:af78d71e38b5babd81761d5c6e92f6acf" id="r_af78d71e38b5babd81761d5c6e92f6acf"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#af78d71e38b5babd81761d5c6e92f6acf">BSP_WS2812_Encode</a> (uint32_t grb)</td></tr>
+<tr class="memdesc:af78d71e38b5babd81761d5c6e92f6acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 24bit 颜色编码为 CCR 序列  <br /></td></tr>
+<tr class="memitem:a414a0748f0ef37a68dc8383d5356ddf6" id="r_a414a0748f0ef37a68dc8383d5356ddf6"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a414a0748f0ef37a68dc8383d5356ddf6">BSP_WS2812_RefreshTarget</a> (void)</td></tr>
+<tr class="memdesc:a414a0748f0ef37a68dc8383d5356ddf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">按亮度缩放当前颜色并生成发送序颜色字，标记待发送  <br /></td></tr>
+<tr class="memitem:acad123fd7d3377dda0013ffc74a9445a" id="r_acad123fd7d3377dda0013ffc74a9445a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acad123fd7d3377dda0013ffc74a9445a">BSP_WS2812_Init</a> (void)</td></tr>
+<tr class="memdesc:acad123fd7d3377dda0013ffc74a9445a"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化 WS2812 驱动（重配 TIM2 + DMA）  <br /></td></tr>
+<tr class="memitem:aa343d7fb9bc7f5c802804cd659494aea" id="r_aa343d7fb9bc7f5c802804cd659494aea"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa343d7fb9bc7f5c802804cd659494aea">BSP_WS2812_SetBrightness</a> (uint8_t value)</td></tr>
+<tr class="memdesc:aa343d7fb9bc7f5c802804cd659494aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置全局亮度（0~255，线性缩放）  <br /></td></tr>
+<tr class="memitem:aa37a05d3f08e933332ee61dfb411e731" id="r_aa37a05d3f08e933332ee61dfb411e731"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#aa37a05d3f08e933332ee61dfb411e731">BSP_WS2812_GetBrightness</a> (void)</td></tr>
+<tr class="memdesc:aa37a05d3f08e933332ee61dfb411e731"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取当前全局亮度  <br /></td></tr>
+<tr class="memitem:a14f4272e51ac6b64194ad2368ed44a71" id="r_a14f4272e51ac6b64194ad2368ed44a71"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a14f4272e51ac6b64194ad2368ed44a71">BSP_WS2812_SetColor</a> (uint8_t r, uint8_t g, uint8_t b)</td></tr>
+<tr class="memdesc:a14f4272e51ac6b64194ad2368ed44a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置目标颜色（缓存，Poll 时发送）  <br /></td></tr>
+<tr class="memitem:a3470d95e73928ee18598b72489c8eb33" id="r_a3470d95e73928ee18598b72489c8eb33"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3470d95e73928ee18598b72489c8eb33">BSP_WS2812_Poll</a> (void)</td></tr>
+<tr class="memdesc:a3470d95e73928ee18598b72489c8eb33"><td class="mdescLeft">&#160;</td><td class="mdescRight">后台轮询：颜色有更新且 DMA 空闲时发送一帧  <br /></td></tr>
+<tr class="memitem:a64571b29a37314c8f47d43c44338a774" id="r_a64571b29a37314c8f47d43c44338a774"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a64571b29a37314c8f47d43c44338a774">BSP_WS2812_DmaIRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a64571b29a37314c8f47d43c44338a774"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA1 通道 3（TIM2_CH1）中断服务  <br /></td></tr>
+<tr class="memitem:a07e5fc4d223b16bec2fd6bed547cf91d" id="r_a07e5fc4d223b16bec2fd6bed547cf91d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a07e5fc4d223b16bec2fd6bed547cf91d">HAL_TIM_PWM_PulseFinishedCallback</a> (TIM_HandleTypeDef *htim)</td></tr>
+<tr class="memdesc:a07e5fc4d223b16bec2fd6bed547cf91d"><td class="mdescLeft">&#160;</td><td class="mdescRight">HAL PWM DMA 发送完成回调：停止 PWM 释放通道  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ab051b95fbef5ff0c90c0782a26ab85ba" id="r_ab051b95fbef5ff0c90c0782a26ab85ba"><td class="memItemLeft">static DMA_HandleTypeDef&#160;</td><td class="memItemRight"><a class="el" href="#ab051b95fbef5ff0c90c0782a26ab85ba">hdma_tim2_ch1</a></td></tr>
+<tr class="memitem:a981ce9e7db6e0a80a5e5523813c46aad" id="r_a981ce9e7db6e0a80a5e5523813c46aad"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a981ce9e7db6e0a80a5e5523813c46aad">pwmBuf</a> [<a class="el" href="#af5ec9453c40f135b727a9469964ecb15">WS2812_BUF_LEN</a>]</td></tr>
+<tr class="memitem:a39fb2529745f4b3f148bb22abd3792cc" id="r_a39fb2529745f4b3f148bb22abd3792cc"><td class="memItemLeft">static volatile uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a39fb2529745f4b3f148bb22abd3792cc">busy</a> = 0U</td></tr>
+<tr class="memitem:a9d2d606eb59975a939d89547ab4467cc" id="r_a9d2d606eb59975a939d89547ab4467cc"><td class="memItemLeft">static volatile uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a9d2d606eb59975a939d89547ab4467cc">pending</a> = 0U</td></tr>
+<tr class="memitem:a677cbc28d92a5f6cc40f36a28c62f186" id="r_a677cbc28d92a5f6cc40f36a28c62f186"><td class="memItemLeft">static volatile uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a677cbc28d92a5f6cc40f36a28c62f186">targetGrb</a> = 0U</td></tr>
+<tr class="memitem:a837c871f200f8c3d19d0c7f2e031ffc4" id="r_a837c871f200f8c3d19d0c7f2e031ffc4"><td class="memItemLeft">static uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a837c871f200f8c3d19d0c7f2e031ffc4">brightness</a> = <a class="el" href="board__config_8h.html#ac328c919d562f5cc2b4a4028216e075d">BOARD_LED_BRIGHTNESS_DEFAULT</a></td></tr>
+<tr class="memitem:a75a522e5bdf357dcd2150fa44aa8d5e7" id="r_a75a522e5bdf357dcd2150fa44aa8d5e7"><td class="memItemLeft">static uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a75a522e5bdf357dcd2150fa44aa8d5e7">curR</a> = 0U</td></tr>
+<tr class="memitem:aa444094fcde9d7823012ce386bfa25b7" id="r_aa444094fcde9d7823012ce386bfa25b7"><td class="memItemLeft">static uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#aa444094fcde9d7823012ce386bfa25b7">curG</a> = 0U</td></tr>
+<tr class="memitem:a78c1d74a82610e8cb926ce78305078b3" id="r_a78c1d74a82610e8cb926ce78305078b3"><td class="memItemLeft">static uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a78c1d74a82610e8cb926ce78305078b3">curB</a> = 0U</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>WS2812 类 RGB 状态灯 BSP（TIM2_CH1 PWM + DMA，单灯） </p>
+<dl class="section note"><dt>注解</dt><dd>- 每个数据位映射为一个 PWM 周期，占空比区分 0/1 码，DMA 逐周期 刷新 CCR1，帧尾附零占空比时隙形成 reset 码；<ul>
+<li>SetColor 仅缓存目标色，Poll 在后台检测变化并触发一次 DMA 发送， 发送期间的新颜色请求自动合并到下一帧，无阻塞；</li>
+<li>亮度全局缩放（0~255），由 app 层持久化。</li>
+</ul>
+</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd></dd></dl>
+<p>Copyright (c) 2026 Z.Xusheng SPDX-License-Identifier: MIT</p>
+<p>This file is part of the GIM4310/GIM4305 joint motor controller firmware, distributed under the MIT License. See the LICENSE file in the repository root for full terms. </p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="a996a9bc5c139c873f615eef13e5b05df" name="a996a9bc5c139c873f615eef13e5b05df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a996a9bc5c139c873f615eef13e5b05df">&#9670;&#160;</a></span>WS2812_BIT_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WS2812_BIT_COUNT&#160;&#160;&#160;(24U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>单灯 24bit GRB（XL-3528RGBW-WS2812B 实为 3 通道，"W"指雾状封装） </p>
+
+</div>
+</div>
+<a id="af5ec9453c40f135b727a9469964ecb15" name="af5ec9453c40f135b727a9469964ecb15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ec9453c40f135b727a9469964ecb15">&#9670;&#160;</a></span>WS2812_BUF_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WS2812_BUF_LEN&#160;&#160;&#160;(<a class="el" href="#a996a9bc5c139c873f615eef13e5b05df">WS2812_BIT_COUNT</a> + <a class="el" href="#aff889ea6debeeac01adc4ab2ad925f2c">WS2812_RESET_SLOTS</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff889ea6debeeac01adc4ab2ad925f2c" name="aff889ea6debeeac01adc4ab2ad925f2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff889ea6debeeac01adc4ab2ad925f2c">&#9670;&#160;</a></span>WS2812_RESET_SLOTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WS2812_RESET_SLOTS&#160;&#160;&#160;(80U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>reset 码时隙数：80*1.25us = 100us（该型号要求 &gt;= 80us） </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="a64571b29a37314c8f47d43c44338a774" name="a64571b29a37314c8f47d43c44338a774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64571b29a37314c8f47d43c44338a774">&#9670;&#160;</a></span>BSP_WS2812_DmaIRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_WS2812_DmaIRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DMA1 通道 3（TIM2_CH1）中断服务 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__ws2812_8c_a64571b29a37314c8f47d43c44338a774_icgraph.svg" width="552" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af78d71e38b5babd81761d5c6e92f6acf" name="af78d71e38b5babd81761d5c6e92f6acf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af78d71e38b5babd81761d5c6e92f6acf">&#9670;&#160;</a></span>BSP_WS2812_Encode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_WS2812_Encode </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>grb</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将 24bit 颜色编码为 CCR 序列 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grb</td><td>发送序颜色字（bit23 首发） </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__ws2812_8c_af78d71e38b5babd81761d5c6e92f6acf_icgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aa37a05d3f08e933332ee61dfb411e731" name="aa37a05d3f08e933332ee61dfb411e731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa37a05d3f08e933332ee61dfb411e731">&#9670;&#160;</a></span>BSP_WS2812_GetBrightness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t BSP_WS2812_GetBrightness </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取当前全局亮度 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__ws2812_8c_aa37a05d3f08e933332ee61dfb411e731_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="acad123fd7d3377dda0013ffc74a9445a" name="acad123fd7d3377dda0013ffc74a9445a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad123fd7d3377dda0013ffc74a9445a">&#9670;&#160;</a></span>BSP_WS2812_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_WS2812_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化 WS2812 驱动（重配 TIM2 + DMA） </p>
+<dl class="section note"><dt>注解</dt><dd>须在 MX_TIM2_Init 之后调用；CubeMX 的 ARR/CCR 为占位值，此处重配。 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__ws2812_8c_acad123fd7d3377dda0013ffc74a9445a_cgraph.svg" width="100%" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__ws2812_8c_acad123fd7d3377dda0013ffc74a9445a_icgraph.svg" width="403" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a3470d95e73928ee18598b72489c8eb33" name="a3470d95e73928ee18598b72489c8eb33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3470d95e73928ee18598b72489c8eb33">&#9670;&#160;</a></span>BSP_WS2812_Poll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_WS2812_Poll </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>后台轮询：颜色有更新且 DMA 空闲时发送一帧 </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__ws2812_8c_a3470d95e73928ee18598b72489c8eb33_cgraph.svg" width="411" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__ws2812_8c_a3470d95e73928ee18598b72489c8eb33_icgraph.svg" width="628" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a414a0748f0ef37a68dc8383d5356ddf6" name="a414a0748f0ef37a68dc8383d5356ddf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414a0748f0ef37a68dc8383d5356ddf6">&#9670;&#160;</a></span>BSP_WS2812_RefreshTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_WS2812_RefreshTarget </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>按亮度缩放当前颜色并生成发送序颜色字，标记待发送 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__ws2812_8c_a414a0748f0ef37a68dc8383d5356ddf6_icgraph.svg" width="100%" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aa343d7fb9bc7f5c802804cd659494aea" name="aa343d7fb9bc7f5c802804cd659494aea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa343d7fb9bc7f5c802804cd659494aea">&#9670;&#160;</a></span>BSP_WS2812_SetBrightness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_WS2812_SetBrightness </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置全局亮度（0~255，线性缩放） </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__ws2812_8c_aa343d7fb9bc7f5c802804cd659494aea_cgraph.svg" width="528" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__ws2812_8c_aa343d7fb9bc7f5c802804cd659494aea_icgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a14f4272e51ac6b64194ad2368ed44a71" name="a14f4272e51ac6b64194ad2368ed44a71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14f4272e51ac6b64194ad2368ed44a71">&#9670;&#160;</a></span>BSP_WS2812_SetColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_WS2812_SetColor </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>g</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置目标颜色（缓存，Poll 时发送） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r/g/b</td><td>原始颜色分量（未缩放亮度） </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__ws2812_8c_a14f4272e51ac6b64194ad2368ed44a71_cgraph.svg" width="491" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__ws2812_8c_a14f4272e51ac6b64194ad2368ed44a71_icgraph.svg" width="663" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a07e5fc4d223b16bec2fd6bed547cf91d" name="a07e5fc4d223b16bec2fd6bed547cf91d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07e5fc4d223b16bec2fd6bed547cf91d">&#9670;&#160;</a></span>HAL_TIM_PWM_PulseFinishedCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_TIM_PWM_PulseFinishedCallback </td>
+          <td>(</td>
+          <td class="paramtype">TIM_HandleTypeDef *</td>          <td class="paramname"><span class="paramname"><em>htim</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>HAL PWM DMA 发送完成回调：停止 PWM 释放通道 </p>
+<dl class="section note"><dt>注解</dt><dd>本工程仅 TIM2_CH1 使用 PWM DMA，回调独占。 </dd></dl>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">变量说明</h2>
+<a id="a837c871f200f8c3d19d0c7f2e031ffc4" name="a837c871f200f8c3d19d0c7f2e031ffc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a837c871f200f8c3d19d0c7f2e031ffc4">&#9670;&#160;</a></span>brightness</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t brightness = <a class="el" href="board__config_8h.html#ac328c919d562f5cc2b4a4028216e075d">BOARD_LED_BRIGHTNESS_DEFAULT</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>全局亮度 </p>
+
+</div>
+</div>
+<a id="a39fb2529745f4b3f148bb22abd3792cc" name="a39fb2529745f4b3f148bb22abd3792cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39fb2529745f4b3f148bb22abd3792cc">&#9670;&#160;</a></span>busy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t busy = 0U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>DMA 发送中标志 </p>
+
+</div>
+</div>
+<a id="a78c1d74a82610e8cb926ce78305078b3" name="a78c1d74a82610e8cb926ce78305078b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78c1d74a82610e8cb926ce78305078b3">&#9670;&#160;</a></span>curB</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t curB = 0U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa444094fcde9d7823012ce386bfa25b7" name="aa444094fcde9d7823012ce386bfa25b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa444094fcde9d7823012ce386bfa25b7">&#9670;&#160;</a></span>curG</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t curG = 0U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75a522e5bdf357dcd2150fa44aa8d5e7" name="a75a522e5bdf357dcd2150fa44aa8d5e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75a522e5bdf357dcd2150fa44aa8d5e7">&#9670;&#160;</a></span>curR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t curR = 0U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab051b95fbef5ff0c90c0782a26ab85ba" name="ab051b95fbef5ff0c90c0782a26ab85ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab051b95fbef5ff0c90c0782a26ab85ba">&#9670;&#160;</a></span>hdma_tim2_ch1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DMA_HandleTypeDef hdma_tim2_ch1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d2d606eb59975a939d89547ab4467cc" name="a9d2d606eb59975a939d89547ab4467cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d2d606eb59975a939d89547ab4467cc">&#9670;&#160;</a></span>pending</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t pending = 0U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>有待发送的新颜色 </p>
+
+</div>
+</div>
+<a id="a981ce9e7db6e0a80a5e5523813c46aad" name="a981ce9e7db6e0a80a5e5523813c46aad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a981ce9e7db6e0a80a5e5523813c46aad">&#9670;&#160;</a></span>pwmBuf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t pwmBuf[<a class="el" href="#af5ec9453c40f135b727a9469964ecb15">WS2812_BUF_LEN</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>CCR 序列缓冲 </p>
+
+</div>
+</div>
+<a id="a677cbc28d92a5f6cc40f36a28c62f186" name="a677cbc28d92a5f6cc40f36a28c62f186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a677cbc28d92a5f6cc40f36a28c62f186">&#9670;&#160;</a></span>targetGrb</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint32_t targetGrb = 0U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>目标颜色（已按亮度缩放，G&lt;&lt;16|R&lt;&lt;8|B） </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_eb1463819d84903762eb6f59cc0c4383.html">Application</a></li><li class="navelem"><a href="dir_f8a9e981ae9517ef8ddac90afb3b230c.html">bsp</a></li><li class="navelem"><a href="bsp__ws2812_8c.html">bsp_ws2812.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

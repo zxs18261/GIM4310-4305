@@ -1,0 +1,7 @@
+<map id="BSP_ADC_ReadMotorTemp" name="BSP_ADC_ReadMotorTemp">
+<area shape="rect" id="Node000001" title="读取电机绕组温度 [摄氏度]（阻塞轮询规则组，后台调用）" alt="" coords="5,32,231,62"/>
+<area shape="rect" id="Node000002" href="$bsp__adc_8c.html#a711d70fa87d9e888250585328414146f" title="NTC 原始值转温度" alt="" coords="306,5,493,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,33,292,30,287,31,231,39"/>
+<area shape="rect" id="Node000003" href="$bsp__adc_8c.html#a900bb32d34d9ee14f746741c3e985a4f" title="软件触发单次规则组转换（NTC 慢通道专用）" alt="" coords="279,59,520,88"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,55,266,60,260,61,231,60"/>
+</map>

@@ -1,0 +1,30 @@
+<map id="Application/control/pid.h" name="Application/control/pid.h">
+<area shape="rect" id="Node000001" title="位置式抗饱和（clamping anti&#45;windup）PID 控制器模块头文件" alt="" coords="529,5,683,54"/>
+<area shape="rect" id="Node000002" href="$foc_8h.html" title="FOC 电流环模块头文件" alt="" coords="396,102,549,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="563,62,507,104,505,99,558,65"/>
+<area shape="rect" id="Node000008" href="$motor__ctrl_8h.html" title="电机控制核心模块头文件（模式状态机 + FOC 主循环）" alt="" coords="548,199,701,247"/>
+<area shape="poly" id="edge14_Node000001_Node000008" title=" " alt="" coords="612,68,625,199,620,197,608,72"/>
+<area shape="rect" id="Node000013" href="$pid_8c.html" title="位置式抗饱和 PID 控制器模块" alt="" coords="644,102,797,151"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="647,61,695,102,689,101,645,66"/>
+<area shape="rect" id="Node000003" href="$calibration_8h.html" title="预定位校准模块头文件（编码器方向/极对数/电角度偏置）" alt="" coords="365,199,519,247"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="462,163,452,200,448,196,458,167"/>
+<area shape="rect" id="Node000007" href="$foc_8c.html" title="FOC 电流环模块" alt="" coords="188,199,341,247"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="404,159,318,201,316,196,409,156"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="524,156,589,198,584,198,523,161"/>
+<area shape="rect" id="Node000004" href="$app__monitor_8c.html" title="调试数据打印模块" alt="" coords="360,295,524,344"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="444,261,444,296,440,293,440,265"/>
+<area shape="rect" id="Node000005" href="$calibration_8c.html" title="预定位校准模块（编码器方向/极对数/电角度偏置）" alt="" coords="5,295,159,344"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="351,251,171,298,160,301,159,296,169,293,350,246"/>
+<area shape="rect" id="Node000006" href="$motor__ctrl_8c.html" title="电机控制核心模块（模式状态机 + 20kHz FOC 主循环）" alt="" coords="183,295,336,344"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="385,254,306,297,304,292,380,255"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="568,254,489,297,487,292,563,255"/>
+<area shape="poly" id="edge13_Node000008_Node000006" title=" " alt="" coords="535,248,349,298,337,301,336,296,348,293,530,248"/>
+<area shape="rect" id="Node000009" href="$app__can__protocol_8c.html" title="CAN 应用协议（MIT 运控协议 + 配置协议）" alt="" coords="1112,295,1276,344"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="717,233,895,258,1100,293,1115,298,1109,298,1099,298,894,263,717,238"/>
+<area shape="rect" id="Node000010" href="$app__led_8c.html" title="状态灯语模块（单颗 WS2812，亮度全局可调）" alt="" coords="548,295,712,344"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="629,261,631,296,627,293,625,265"/>
+<area shape="rect" id="Node000011" href="$app__main_8c.html" title="应用入口模块（前后台调度）" alt="" coords="736,295,900,344"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="687,252,772,295,767,295,686,257"/>
+<area shape="rect" id="Node000012" href="$app__shell_8c.html" title="调试 shell 模块（USART3，行式命令）" alt="" coords="924,295,1088,344"/>
+<area shape="poly" id="edge12_Node000008_Node000012" title=" " alt="" coords="717,244,926,298,921,298,716,250"/>
+</map>

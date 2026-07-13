@@ -1,0 +1,28 @@
+var motor__ctrl_8c =
+[
+    [ "MC_INV_GEAR", "motor__ctrl_8c.html#a5bef9103778977cea70d439a84b2a7c0", null ],
+    [ "MC_PRECHARGE_CYCLES", "motor__ctrl_8c.html#ae546f435caa4227af061f88208b085f5", null ],
+    [ "MC_RAD_PER_COUNT", "motor__ctrl_8c.html#adb53a2b437c19c68abef3c954c485ee2", null ],
+    [ "MC_ApplyPidParams", "motor__ctrl_8c.html#acd57a3a6a71d8ec4261dca794251a12a", null ],
+    [ "MC_Clamp", "motor__ctrl_8c.html#a5cbc0a7993d542a75e755f2e4dc5ab1e", null ],
+    [ "MC_ClearFault", "motor__ctrl_8c.html#a827231f68dfabeb070811b39e11a267c", null ],
+    [ "MC_Disable", "motor__ctrl_8c.html#aceb46c7be868a0b12dffa105e3d0581e", null ],
+    [ "MC_Enable", "motor__ctrl_8c.html#a8d1ee75d00d8c0f2d2d78f89d002efec", null ],
+    [ "MC_FocIsr", "motor__ctrl_8c.html#a5c982a7374da291bb0e5d06d26893def", null ],
+    [ "MC_Init", "motor__ctrl_8c.html#a6289107a27126667fef8194dc34ad71f", null ],
+    [ "MC_PosRotor", "motor__ctrl_8c.html#a314b8aad615262b23be0463fa16b9ceb", null ],
+    [ "MC_RebaseEncoder", "motor__ctrl_8c.html#a9c872c216c8943d5ba135b71957aea31", null ],
+    [ "MC_SetIqRef", "motor__ctrl_8c.html#ac0fc8fc29952d28418cd7b90e772cd91", null ],
+    [ "MC_SetMitCommand", "motor__ctrl_8c.html#a594eac2b46116c156ad61f86ae7e4678", null ],
+    [ "MC_SetMode", "motor__ctrl_8c.html#ab0638fb9fe58dcbe6f0fb3d5ed81d28c", null ],
+    [ "MC_SetOpenLoop", "motor__ctrl_8c.html#aad7e38546468590517b680c75594f844", null ],
+    [ "MC_SetPosRef", "motor__ctrl_8c.html#a99b65c0c0b41906fc3146d52e1b879be", null ],
+    [ "MC_SetSpeedRef", "motor__ctrl_8c.html#ad9fdc2a937331479bd701139807ad7b2", null ],
+    [ "MC_SetTorque", "motor__ctrl_8c.html#aef22984edf5c5a02be46b64d26f8534a", null ],
+    [ "MC_SetZeroHere", "motor__ctrl_8c.html#a64722c426a5d2fd53b95c12a85f22120", null ],
+    [ "MC_SlowLoop", "motor__ctrl_8c.html#a9dd4aa02cb15dd5ea27aa8085155adb7", null ],
+    [ "MC_StartCalibration", "motor__ctrl_8c.html#afb3414a066c16e68add2218d01f59942", null ],
+    [ "MC_TripFault", "motor__ctrl_8c.html#a0254f4cdae07bdb4781c9df4b540ffe8", null ],
+    [ "MC_UpdateElecAngle", "motor__ctrl_8c.html#adc1f5b8a41b8c741dd3a8be02c3dff49", null ],
+    [ "g_Mc", "motor__ctrl_8c.html#a4fbe3f2bedbd95852227b46ab29d4998", null ]
+];
