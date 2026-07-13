@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: Application/control/protection.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('protection_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">protection.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="protection_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef __PROTECTION_H</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define __PROTECTION_H</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">/* Includes ------------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/* Exported types ------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="protection_8h.html#acc1085881b4943645612598fe8087ddd">   33</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="protection_8h.html#acc1085881b4943645612598fe8087ddda310bdf86a6ad78c2997c0f88e11aae28">   35</a></span>    <a class="code hl_enumvalue" href="protection_8h.html#acc1085881b4943645612598fe8087ddda310bdf86a6ad78c2997c0f88e11aae28">FAULT_NONE</a>        = 0U,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="protection_8h.html#acc1085881b4943645612598fe8087dddac8a6c26cb83770e30e36d3bc6217173c">   36</a></span>    <a class="code hl_enumvalue" href="protection_8h.html#acc1085881b4943645612598fe8087dddac8a6c26cb83770e30e36d3bc6217173c">FAULT_OVERCURRENT</a> = 1U,     </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="protection_8h.html#acc1085881b4943645612598fe8087ddda2bb4010eaf0280423954220015c45709">   37</a></span>    <a class="code hl_enumvalue" href="protection_8h.html#acc1085881b4943645612598fe8087ddda2bb4010eaf0280423954220015c45709">FAULT_OVERVOLT</a>    = 2U,     </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="protection_8h.html#acc1085881b4943645612598fe8087ddda34e1898b88e6b046a33940789843cb7b">   38</a></span>    <a class="code hl_enumvalue" href="protection_8h.html#acc1085881b4943645612598fe8087ddda34e1898b88e6b046a33940789843cb7b">FAULT_UNDERVOLT</a>   = 3U,     </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="protection_8h.html#acc1085881b4943645612598fe8087ddda6aef97862895be309d2cfd319221d723">   39</a></span>    <a class="code hl_enumvalue" href="protection_8h.html#acc1085881b4943645612598fe8087ddda6aef97862895be309d2cfd319221d723">FAULT_MOS_OT</a>      = 4U,     </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="protection_8h.html#acc1085881b4943645612598fe8087ddda8c841f1ed1850fcb5bbc1a19b5b33367">   40</a></span>    <a class="code hl_enumvalue" href="protection_8h.html#acc1085881b4943645612598fe8087ddda8c841f1ed1850fcb5bbc1a19b5b33367">FAULT_MOTOR_OT</a>    = 5U,     </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="protection_8h.html#acc1085881b4943645612598fe8087ddda64983ca89265d40348b1e6a6d0c11e55">   41</a></span>    <a class="code hl_enumvalue" href="protection_8h.html#acc1085881b4943645612598fe8087ddda64983ca89265d40348b1e6a6d0c11e55">FAULT_ENCODER</a>     = 6U,     </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="protection_8h.html#acc1085881b4943645612598fe8087ddda896104ef6894df38890335896268f417">   42</a></span>    <a class="code hl_enumvalue" href="protection_8h.html#acc1085881b4943645612598fe8087ddda896104ef6894df38890335896268f417">FAULT_CAL_FAIL</a>    = 7U,     </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="protection_8h.html#acc1085881b4943645612598fe8087ddda5c4707bdb59a2f2ad87c364800c00439">   43</a></span>    <a class="code hl_enumvalue" href="protection_8h.html#acc1085881b4943645612598fe8087ddda5c4707bdb59a2f2ad87c364800c00439">FAULT_CAN_TIMEOUT</a> = 8U,     </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="protection_8h.html#acc1085881b4943645612598fe8087dddafd7c6632790fe74c5eb2a58a22974c3b">   44</a></span>    <a class="code hl_enumvalue" href="protection_8h.html#acc1085881b4943645612598fe8087dddafd7c6632790fe74c5eb2a58a22974c3b">FAULT_ADC_OFFSET</a>  = 9U,     </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>} <a class="code hl_enumeration" href="protection_8h.html#acc1085881b4943645612598fe8087ddd">PROT_FaultTypeDef</a>;</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">/* Exported functions prototypes ---------------------------------------------*/</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keywordtype">void</span>              <a class="code hl_function" href="protection_8h.html#a2edece24ac432f98c28ec146bfc9eb54">PROT_Init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><a class="code hl_enumeration" href="protection_8h.html#acc1085881b4943645612598fe8087ddd">PROT_FaultTypeDef</a> <a class="code hl_function" href="protection_8h.html#addca5297e672b45c65c3ae3e7ead254d">PROT_CheckFast</a>(<span class="keywordtype">float</span> iu, <span class="keywordtype">float</span> iv, <span class="keywordtype">float</span> iw, <span class="keywordtype">float</span> vbus, uint8_t encConsErr);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">void</span>              <a class="code hl_function" href="protection_8h.html#a69316e4d1e7f8cb9a4dfd6161c3b437e">PROT_CheckSlow</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="app__main_8c.html#a3f93840883272d1356c7732ae2747915">mosTemp</a>, <span class="keywordtype">float</span> <a class="code hl_variable" href="app__main_8c.html#adf4cca4e15700419969edf3ce2ffe6e6">motorTemp</a>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">float</span>             <a class="code hl_function" href="protection_8h.html#a87d1ad0c7e39a4c5c88dc7b62e964da7">PROT_GetDerating</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>uint8_t           <a class="code hl_function" href="protection_8h.html#a36b53f217ddfdc3e968ee7f7c4ebc113">PROT_IsWarning</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">void</span>              <a class="code hl_function" href="protection_8h.html#a06029022ac7e5b95690b0119794c83d6">PROT_FeedCanWatchdog</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>uint8_t           <a class="code hl_function" href="protection_8h.html#a80cdeb76b44bac1774ce87967ddd77aa">PROT_CheckCanTimeout</a>(uint32_t timeoutMs);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif </span><span class="comment">/* __PROTECTION_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aapp__main_8c_html_a3f93840883272d1356c7732ae2747915"><div class="ttname"><a href="app__main_8c.html#a3f93840883272d1356c7732ae2747915">mosTemp</a></div><div class="ttdeci">static float mosTemp</div><div class="ttdef"><b>定义</b> app_main.c:48</div></div>
+<div class="ttc" id="aapp__main_8c_html_adf4cca4e15700419969edf3ce2ffe6e6"><div class="ttname"><a href="app__main_8c.html#adf4cca4e15700419969edf3ce2ffe6e6">motorTemp</a></div><div class="ttdeci">static float motorTemp</div><div class="ttdef"><b>定义</b> app_main.c:49</div></div>
+<div class="ttc" id="aprotection_8h_html_a06029022ac7e5b95690b0119794c83d6"><div class="ttname"><a href="protection_8h.html#a06029022ac7e5b95690b0119794c83d6">PROT_FeedCanWatchdog</a></div><div class="ttdeci">void PROT_FeedCanWatchdog(void)</div><div class="ttdoc">喂 CAN 指令看门狗（收到有效运动指令时调用）</div><div class="ttdef"><b>定义</b> protection.c:145</div></div>
+<div class="ttc" id="aprotection_8h_html_a2edece24ac432f98c28ec146bfc9eb54"><div class="ttname"><a href="protection_8h.html#a2edece24ac432f98c28ec146bfc9eb54">PROT_Init</a></div><div class="ttdeci">void PROT_Init(void)</div><div class="ttdoc">初始化保护模块</div><div class="ttdef"><b>定义</b> protection.c:48</div></div>
+<div class="ttc" id="aprotection_8h_html_a36b53f217ddfdc3e968ee7f7c4ebc113"><div class="ttname"><a href="protection_8h.html#a36b53f217ddfdc3e968ee7f7c4ebc113">PROT_IsWarning</a></div><div class="ttdeci">uint8_t PROT_IsWarning(void)</div><div class="ttdoc">是否处于告警区（LED 黄色显示用）</div><div class="ttdef"><b>定义</b> protection.c:137</div></div>
+<div class="ttc" id="aprotection_8h_html_a69316e4d1e7f8cb9a4dfd6161c3b437e"><div class="ttname"><a href="protection_8h.html#a69316e4d1e7f8cb9a4dfd6161c3b437e">PROT_CheckSlow</a></div><div class="ttdeci">void PROT_CheckSlow(float mosTemp, float motorTemp)</div><div class="ttdoc">慢速保护检查（后台约 10Hz 调用）</div><div class="ttdef"><b>定义</b> protection.c:117</div></div>
+<div class="ttc" id="aprotection_8h_html_a80cdeb76b44bac1774ce87967ddd77aa"><div class="ttname"><a href="protection_8h.html#a80cdeb76b44bac1774ce87967ddd77aa">PROT_CheckCanTimeout</a></div><div class="ttdeci">uint8_t PROT_CheckCanTimeout(uint32_t timeoutMs)</div><div class="ttdoc">检查 CAN 指令超时</div><div class="ttdef"><b>定义</b> protection.c:155</div></div>
+<div class="ttc" id="aprotection_8h_html_a87d1ad0c7e39a4c5c88dc7b62e964da7"><div class="ttname"><a href="protection_8h.html#a87d1ad0c7e39a4c5c88dc7b62e964da7">PROT_GetDerating</a></div><div class="ttdeci">float PROT_GetDerating(void)</div><div class="ttdoc">读取温度降额系数（乘到电流限幅上；0 表示已达过温故障）</div><div class="ttdef"><b>定义</b> protection.c:129</div></div>
+<div class="ttc" id="aprotection_8h_html_acc1085881b4943645612598fe8087ddd"><div class="ttname"><a href="protection_8h.html#acc1085881b4943645612598fe8087ddd">PROT_FaultTypeDef</a></div><div class="ttdeci">PROT_FaultTypeDef</div><div class="ttdoc">故障码枚举</div><div class="ttdef"><b>定义</b> protection.h:34</div></div>
+<div class="ttc" id="aprotection_8h_html_acc1085881b4943645612598fe8087ddda2bb4010eaf0280423954220015c45709"><div class="ttname"><a href="protection_8h.html#acc1085881b4943645612598fe8087ddda2bb4010eaf0280423954220015c45709">FAULT_OVERVOLT</a></div><div class="ttdeci">@ FAULT_OVERVOLT</div><div class="ttdef"><b>定义</b> protection.h:37</div></div>
+<div class="ttc" id="aprotection_8h_html_acc1085881b4943645612598fe8087ddda310bdf86a6ad78c2997c0f88e11aae28"><div class="ttname"><a href="protection_8h.html#acc1085881b4943645612598fe8087ddda310bdf86a6ad78c2997c0f88e11aae28">FAULT_NONE</a></div><div class="ttdeci">@ FAULT_NONE</div><div class="ttdef"><b>定义</b> protection.h:35</div></div>
+<div class="ttc" id="aprotection_8h_html_acc1085881b4943645612598fe8087ddda34e1898b88e6b046a33940789843cb7b"><div class="ttname"><a href="protection_8h.html#acc1085881b4943645612598fe8087ddda34e1898b88e6b046a33940789843cb7b">FAULT_UNDERVOLT</a></div><div class="ttdeci">@ FAULT_UNDERVOLT</div><div class="ttdef"><b>定义</b> protection.h:38</div></div>
+<div class="ttc" id="aprotection_8h_html_acc1085881b4943645612598fe8087ddda5c4707bdb59a2f2ad87c364800c00439"><div class="ttname"><a href="protection_8h.html#acc1085881b4943645612598fe8087ddda5c4707bdb59a2f2ad87c364800c00439">FAULT_CAN_TIMEOUT</a></div><div class="ttdeci">@ FAULT_CAN_TIMEOUT</div><div class="ttdef"><b>定义</b> protection.h:43</div></div>
+<div class="ttc" id="aprotection_8h_html_acc1085881b4943645612598fe8087ddda64983ca89265d40348b1e6a6d0c11e55"><div class="ttname"><a href="protection_8h.html#acc1085881b4943645612598fe8087ddda64983ca89265d40348b1e6a6d0c11e55">FAULT_ENCODER</a></div><div class="ttdeci">@ FAULT_ENCODER</div><div class="ttdef"><b>定义</b> protection.h:41</div></div>
+<div class="ttc" id="aprotection_8h_html_acc1085881b4943645612598fe8087ddda6aef97862895be309d2cfd319221d723"><div class="ttname"><a href="protection_8h.html#acc1085881b4943645612598fe8087ddda6aef97862895be309d2cfd319221d723">FAULT_MOS_OT</a></div><div class="ttdeci">@ FAULT_MOS_OT</div><div class="ttdef"><b>定义</b> protection.h:39</div></div>
+<div class="ttc" id="aprotection_8h_html_acc1085881b4943645612598fe8087ddda896104ef6894df38890335896268f417"><div class="ttname"><a href="protection_8h.html#acc1085881b4943645612598fe8087ddda896104ef6894df38890335896268f417">FAULT_CAL_FAIL</a></div><div class="ttdeci">@ FAULT_CAL_FAIL</div><div class="ttdef"><b>定义</b> protection.h:42</div></div>
+<div class="ttc" id="aprotection_8h_html_acc1085881b4943645612598fe8087ddda8c841f1ed1850fcb5bbc1a19b5b33367"><div class="ttname"><a href="protection_8h.html#acc1085881b4943645612598fe8087ddda8c841f1ed1850fcb5bbc1a19b5b33367">FAULT_MOTOR_OT</a></div><div class="ttdeci">@ FAULT_MOTOR_OT</div><div class="ttdef"><b>定义</b> protection.h:40</div></div>
+<div class="ttc" id="aprotection_8h_html_acc1085881b4943645612598fe8087dddac8a6c26cb83770e30e36d3bc6217173c"><div class="ttname"><a href="protection_8h.html#acc1085881b4943645612598fe8087dddac8a6c26cb83770e30e36d3bc6217173c">FAULT_OVERCURRENT</a></div><div class="ttdeci">@ FAULT_OVERCURRENT</div><div class="ttdef"><b>定义</b> protection.h:36</div></div>
+<div class="ttc" id="aprotection_8h_html_acc1085881b4943645612598fe8087dddafd7c6632790fe74c5eb2a58a22974c3b"><div class="ttname"><a href="protection_8h.html#acc1085881b4943645612598fe8087dddafd7c6632790fe74c5eb2a58a22974c3b">FAULT_ADC_OFFSET</a></div><div class="ttdeci">@ FAULT_ADC_OFFSET</div><div class="ttdef"><b>定义</b> protection.h:44</div></div>
+<div class="ttc" id="aprotection_8h_html_addca5297e672b45c65c3ae3e7ead254d"><div class="ttname"><a href="protection_8h.html#addca5297e672b45c65c3ae3e7ead254d">PROT_CheckFast</a></div><div class="ttdeci">PROT_FaultTypeDef PROT_CheckFast(float iu, float iv, float iw, float vbus, uint8_t encConsErr)</div><div class="ttdoc">快速保护检查（电流环 ISR 调用）</div><div class="ttdef"><b>定义</b> protection.c:64</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_eb1463819d84903762eb6f59cc0c4383.html">Application</a></li><li class="navelem"><a href="dir_9432622812bb694a54394c78af40a15c.html">control</a></li><li class="navelem"><a href="protection_8h.html">protection.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

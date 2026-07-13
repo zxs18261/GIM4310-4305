@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: Application/config/motor_config.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('motor__config_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">motor_config.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="motor__config_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#ifndef __MOTOR_CONFIG_H</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define __MOTOR_CONFIG_H</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/* Includes ------------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;<a class="code" href="board__config_8h.html">board_config.h</a>&quot;</span>   <span class="comment">/* 电流环周期等派生参数与板级 PWM 频率联动 */</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">/* ============================ 电机选型 ==================================== */</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a49058fc792337604c800ee6fe253dbbc">   34</a></span><span class="preprocessor">#define MOTOR_TYPE_GIM4310_10       (1)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="motor__config_8h.html#aefef2e4d37ba5e4f229370a62600b65c">   35</a></span><span class="preprocessor">#define MOTOR_TYPE_GIM4305_10       (2)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#ifndef MOTOR_TYPE</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="motor__config_8h.html#ad47970668f4c1d0ab4b2364fabf0d4a6">   38</a></span><span class="preprocessor">#define MOTOR_TYPE                  MOTOR_TYPE_GIM4310_10</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">/* ======================= GIM4310-10 参数段 ================================ */</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">/* 来源：doc/GIM4310-10.png（随机附带的官方参数表，48V 额定版本，权威）。</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">   表中&quot;线电阻/线电感&quot;为线-线值，FOC 采用星形等效相参数 = 线-线值 / 2；</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">   线电感表列单位 mH 但数值 668.47 实为 uH（0.668mH）；</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">   极对数由预定位校准实测复核。 */</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#if (MOTOR_TYPE == MOTOR_TYPE_GIM4310_10)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a2b676d5e7bf7b2bfd7841ec197efa545">   48</a></span><span class="preprocessor">#define MOTOR_NAME                  &quot;GIM4310-10&quot;</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a759963b79fc5399773d8e0ce5de8338b">   49</a></span><span class="preprocessor">#define MOTOR_POLE_PAIRS            (14U)       </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="motor__config_8h.html#ae81121f5c96e4be602d9679ecf73f1de">   50</a></span><span class="preprocessor">#define MOTOR_GEAR_RATIO            (10.0f)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="motor__config_8h.html#afca9cbf1abc82a4c2997cd37803b4728">   51</a></span><span class="preprocessor">#define MOTOR_RS_OHM                (0.98f)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a6c0a6e236c3b029adfc1968cc20d6662">   52</a></span><span class="preprocessor">#define MOTOR_LS_H                  (0.000334f) </span><span class="preprocessor"></span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a6da40e82e04eb184fec48ccb5d7c8ab8">   56</a></span><span class="preprocessor">#define MOTOR_KT_ROTOR              (0.078f)</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a505dfc967e0fdea61830e68aefef8c1a">   57</a></span><span class="preprocessor">#define MOTOR_CUR_RATED_A           (2.1f)      </span><span class="preprocessor"></span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="motor__config_8h.html#ad0a884dca0c424a90dc41a1aca99190d">   60</a></span><span class="preprocessor">#define MOTOR_CUR_PEAK_A            (12.0f)</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a575ec235dcf9aedb3da9daf832bc3c16">   61</a></span><span class="preprocessor">#define MOTOR_SPEED_MAX_RADS        (50.0f)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">/* ======================= GIM4305-10 参数段 ================================ */</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">/* 来源：doc/GIM4305-10.png（随机附带的官方参数表，权威）。</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">   线电感表列 283.96（单位标 mH 实为 uH）。 */</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#elif (MOTOR_TYPE == MOTOR_TYPE_GIM4305_10)</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#define MOTOR_NAME                  &quot;GIM4305-10&quot;</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#define MOTOR_POLE_PAIRS            (14U)       </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#define MOTOR_GEAR_RATIO            (10.0f)</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#define MOTOR_RS_OHM                (0.555f)    </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#define MOTOR_LS_H                  (0.000142f) </span><span class="preprocessor"></span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#define MOTOR_KT_ROTOR              (0.05f)</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#define MOTOR_CUR_RATED_A           (2.0f)      </span><span class="preprocessor"></span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#define MOTOR_CUR_PEAK_A            (12.0f)</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#define MOTOR_SPEED_MAX_RADS        (81.0f)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#error &quot;MOTOR_TYPE not supported&quot;</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="motor__config_8h.html#ade588e33bb7be31a4e5ba526e83cb181">   86</a></span><span class="preprocessor">#define MOTOR_KT_OUT                (MOTOR_KT_ROTOR * MOTOR_GEAR_RATIO)</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">/* ============================ 控制参数 ==================================== */</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="motor__config_8h.html#acebabc49f949e90bca0dd40b0df4b9bb">   90</a></span><span class="preprocessor">#define CTRL_CURRENT_TS             (1.0f / (float)BOARD_PWM_FREQ_HZ)   </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a10566875894aef4ab4a909c23e490528">   91</a></span><span class="preprocessor">#define CTRL_CURRENT_BW_RADS        (6283.2f)           </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a3f615640bdf68e5e4200fc66babc9adf">   92</a></span><span class="preprocessor">#define CTRL_DECOUPLE_ENABLE        (1U)                </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="motor__config_8h.html#aac9e83d3a4a0ddfcdf5c38352a925107">   95</a></span><span class="preprocessor">#define CTRL_SLOW_LOOP_DIV          (20U)</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a3bbb6061d1e4ae5dede211881bd2d69a">   96</a></span><span class="preprocessor">#define CTRL_SLOW_TS                (CTRL_CURRENT_TS * (float)CTRL_SLOW_LOOP_DIV)</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="motor__config_8h.html#af0956805a5e2d847c0249e35f2e5f3a1">   98</a></span><span class="preprocessor">#define CTRL_SPEED_KP               (1.5f)</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="motor__config_8h.html#af830d43eaad4ec65326331ff5a89476b">   99</a></span><span class="preprocessor">#define CTRL_SPEED_KI               (15.0f)             </span><span class="preprocessor"></span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a333356ca55accb4b15436e2e734ce530">  101</a></span><span class="preprocessor">#define CTRL_POS_KP                 (20.0f)</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a1b1e9c9cc4516bb5f822c8e6e49d6ede">  103</a></span><span class="preprocessor">#define CTRL_POS_SPEED_LIMIT        (15.0f)</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a0143fff491bbf5c91180faea35b39a1a">  106</a></span><span class="preprocessor">#define CTRL_PLL_BW_RADS            (1256.6f)           </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">/* ============================ 校准参数 ==================================== */</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a03559e3f7e55b0d0e4d363565a65a6f0">  109</a></span><span class="preprocessor">#define CAL_CURRENT_A               (3.0f)      </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="motor__config_8h.html#aa871e335157884c8393b43f6a08ce163">  110</a></span><span class="preprocessor">#define CAL_RAMP_TIME_S             (0.5f)      </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="motor__config_8h.html#ae3cd8fe7fadc2e20e90751101fa3c250">  111</a></span><span class="preprocessor">#define CAL_SETTLE_TIME_S           (0.8f)      </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a8da72b2e2032a8df99342b2beb91432f">  112</a></span><span class="preprocessor">#define CAL_ROTATE_EREV             (8U)        </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a06423054d00cddaa217b587f299b8c28">  115</a></span><span class="preprocessor">#define CAL_ROTATE_SPEED_ERADS      (12.57f)    </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a83397c24478a17f50f3909d5dc4c31b3">  116</a></span><span class="preprocessor">#define CAL_OFFSET_POINTS           (16U)       </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">/* ============================ 保护参数 ==================================== */</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="motor__config_8h.html#ae2f8e979ff9ed2c7373283b05e556e52">  119</a></span><span class="preprocessor">#define PROT_OC_LIMIT_A             (13.0f)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a6164b87cf53a6602df79563a3a205662">  121</a></span><span class="preprocessor">#define PROT_OV_LIMIT_V             (30.0f)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a6a7321c7e4f9cf3ceee949267efbe7a4">  122</a></span><span class="preprocessor">#define PROT_UV_LIMIT_V             (9.0f)      </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="motor__config_8h.html#aed6c44a25c8609a2b320a8e7b99b14f5">  123</a></span><span class="preprocessor">#define PROT_VBUS_FAULT_MS          (10U)       </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a3d76988dbd2040119301b95a5ca12720">  124</a></span><span class="preprocessor">#define PROT_MOS_OT_LIMIT_C         (90.0f)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a57781c067af5ea7c723722043be53e4d">  125</a></span><span class="preprocessor">#define PROT_MOS_WARN_C             (75.0f)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="motor__config_8h.html#ab0ecaea51ee5b86eb69d223de2813fdd">  126</a></span><span class="preprocessor">#define PROT_MOT_OT_LIMIT_C         (110.0f)    </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="motor__config_8h.html#ac69e8ac0442c55016243ccac4a6bbe47">  127</a></span><span class="preprocessor">#define PROT_MOT_WARN_C             (90.0f)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a1e40567af219e808aa4177d6bd734f13">  128</a></span><span class="preprocessor">#define PROT_ENC_ERR_LIMIT          (16U)       </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a18584f39f8ca88e9ef600756fcf37931">  129</a></span><span class="preprocessor">#define PROT_CAN_TIMEOUT_MS         (500U)      </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">/* ========================= MIT 协议量程 ==================================== */</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a304d96d1a029e06c217f6a58a4df64b5">  135</a></span><span class="preprocessor">#define MIT_P_MAX                   (12.5f)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a42700d8fc86f29d4ea4fc15de4ac4a5e">  136</a></span><span class="preprocessor">#define MIT_V_MAX                   (65.0f)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="motor__config_8h.html#ad30233faa2d16243bf11fa9548668afb">  139</a></span><span class="preprocessor">#define MIT_KP_MAX                  (500.0f)    </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="motor__config_8h.html#a808f2f06409d54811263a09632ec42d6">  140</a></span><span class="preprocessor">#define MIT_KD_MAX                  (5.0f)      </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="motor__config_8h.html#ac45681041a154c53a07790b0c21151f8">  141</a></span><span class="preprocessor">#define MIT_T_MAX                   (18.0f)     </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>}</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="preprocessor">#endif </span><span class="comment">/* __MOTOR_CONFIG_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aboard__config_8h_html"><div class="ttname"><a href="board__config_8h.html">board_config.h</a></div><div class="ttdoc">板级硬件参数统一配置（GIM4310/4305 电机控制器 V0.0 板）</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_eb1463819d84903762eb6f59cc0c4383.html">Application</a></li><li class="navelem"><a href="dir_33ba2c43ef16f0140a9216fe79248d2d.html">config</a></li><li class="navelem"><a href="motor__config_8h.html">motor_config.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

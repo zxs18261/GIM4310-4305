@@ -1,0 +1,21 @@
+digraph "BSP_ADC_NtcToTemp"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=12,bgcolor=transparent,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=12,bgcolor=transparent,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="BSP_ADC_NtcToTemp",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="NTC 原始值转温度"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="BSP_ADC_ReadMosTemp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$bsp__adc_8c.html#afa9f3886839c064af2f9ea65e1809550",tooltip="读取 MOS 管温度 [摄氏度]（阻塞轮询规则组，后台调用）"];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="APP_SlowTask",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$app__main_8c.html#a9d7a99f268e16f853238569586d275aa",tooltip="慢任务：温度采样/过温保护/CAN 指令超时"];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="APP_Loop",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c",tooltip="后台超级循环体（main 的 while(1) 内调用）"];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe",tooltip="The application entry point."];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="BSP_ADC_ReadMotorTemp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$bsp__adc_8c.html#a48bb754e0f48feedd1f16cf6a5cc4abe",tooltip="读取电机绕组温度 [摄氏度]（阻塞轮询规则组，后台调用）"];
+  Node6 -> Node3 [id="edge6_Node000006_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

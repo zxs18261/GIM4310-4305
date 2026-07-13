@@ -1,0 +1,12 @@
+digraph "BSP_FLASH_SaveParams"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=12,bgcolor=transparent,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=12,bgcolor=transparent,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="BSP_FLASH_SaveParams",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="保存参数到参数页（擦除 + 双字编程）"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="BSP_FLASH_Crc32",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$bsp__flash_8c.html#aa1c7fee83ecbb51032b9dad44332a207",tooltip="硬件 CRC32 计算（默认多项式 0x4C11DB7，全字复位初值）"];
+}

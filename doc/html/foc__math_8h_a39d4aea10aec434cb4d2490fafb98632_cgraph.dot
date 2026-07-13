@@ -1,0 +1,14 @@
+digraph "FOC_SinCos"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=12,bgcolor=transparent,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=12,bgcolor=transparent,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="FOC_SinCos",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="查表+线性插值同时计算 sin/cos"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="FOC_MATH_BuildTable",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$foc__math_8c.html#ac63ab3ffd2685338c76dc6de24c953b1",tooltip="构建 sin 查找表（仅初始化时执行一次）"];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="FOC_NormalizeAngle",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$foc__math_8c.html#a4cc9d35ffa1c5f6ab5668cbe7623d018",tooltip="角度归一化到 [0, 2pi)"];
+}

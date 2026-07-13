@@ -1,0 +1,17 @@
+digraph "APP_LED_Init"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=12,bgcolor=transparent,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=12,bgcolor=transparent,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="APP_LED_Init",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="初始化灯语模块"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="BSP_WS2812_SetBrightness",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$bsp__ws2812_8c.html#aa343d7fb9bc7f5c802804cd659494aea",tooltip="设置全局亮度（0~255，线性缩放）"];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="BSP_WS2812_RefreshTarget",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$bsp__ws2812_8c.html#a414a0748f0ef37a68dc8383d5356ddf6",tooltip="按亮度缩放当前颜色并生成发送序颜色字，标记待发送"];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="BSP_WS2812_SetColor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$bsp__ws2812_8c.html#a14f4272e51ac6b64194ad2368ed44a71",tooltip="设置目标颜色（缓存，Poll 时发送）"];
+  Node4 -> Node3 [id="edge4_Node000004_Node000003",color="steelblue1",style="solid",tooltip=" "];
+}

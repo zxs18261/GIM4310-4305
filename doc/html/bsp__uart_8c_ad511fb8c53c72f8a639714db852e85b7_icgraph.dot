@@ -1,0 +1,12 @@
+digraph "BSP_UART_IRQHandler"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=12,bgcolor=transparent,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=12,bgcolor=transparent,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="BSP_UART_IRQHandler",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="USART3 中断服务（stm32g4xx_it.c 用户区调用）"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="USART3_IRQHandler",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$stm32g4xx__it_8c.html#a0d108a3468b2051548183ee5ca2158a0",tooltip="USART3 中断：RXNE 接收 + DMA TX 收尾 TC"];
+}

@@ -1,0 +1,16 @@
+digraph "APP_CAN_SetParamByIndex"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=12,bgcolor=transparent,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=12,bgcolor=transparent,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="APP_CAN_SetParamByIndex",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="按索引写参数（只读项与非法值拒绝，CAN 配置通道与 shell 共用）"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="BSP_CAN_SetTermination",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$bsp__can_8c.html#ab09830a7aa5df9b3a6fa393538f81ab8",tooltip="切换 120 欧终端电阻（TS5A3159 模拟开关）"];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="MC_ApplyPidParams",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$motor__ctrl_8c.html#acd57a3a6a71d8ec4261dca794251a12a",tooltip="参数修改后刷新 PID 增益（shell/CAN 调参后调用）"];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="PID_SetGains",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$pid_8c.html#a8977cc689f8f72deff8a981ff5da901f",tooltip="运行中修改增益（不复位积分，保证无扰切换）"];
+}
