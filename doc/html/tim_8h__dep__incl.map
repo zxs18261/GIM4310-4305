@@ -1,0 +1,11 @@
+<map id="Core/Inc/tim.h" name="Core/Inc/tim.h">
+<area shape="rect" id="Node000001" title="This file contains all the function prototypes for the tim.c file" alt="" coords="297,5,416,35"/>
+<area shape="rect" id="Node000002" href="$bsp__pwm_8c.html" title="TIM1 三相互补 PWM BSP" alt="" coords="5,83,167,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="294,41,162,85,161,80,299,39"/>
+<area shape="rect" id="Node000003" href="$bsp__ws2812_8c.html" title="WS2812 类 RGB 状态灯 BSP（TIM2_CH1 PWM + DMA，单灯）" alt="" coords="191,83,352,132"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="334,45,297,85,294,80,329,47"/>
+<area shape="rect" id="Node000004" href="$main_8c.html" title=": Main program body" alt="" coords="376,92,511,122"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="383,44,432,93,427,92,381,49"/>
+<area shape="rect" id="Node000005" href="$tim_8c.html" title="This file provides code for the configuration of the TIM instances." alt="" coords="535,92,656,122"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="411,38,558,92,553,92,410,43"/>
+</map>

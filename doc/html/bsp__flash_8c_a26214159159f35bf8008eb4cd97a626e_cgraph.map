@@ -1,0 +1,5 @@
+<map id="BSP_FLASH_SaveParams" name="BSP_FLASH_SaveParams">
+<area shape="rect" id="Node000001" title="保存参数到参数页（擦除 + 双字编程）" alt="" coords="5,5,223,35"/>
+<area shape="rect" id="Node000002" href="$bsp__flash_8c.html#aa1c7fee83ecbb51032b9dad44332a207" title="硬件 CRC32 计算（默认多项式 0x4C11DB7，全字复位初值）" alt="" coords="271,5,439,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,18,258,20,252,20,223,23"/>
+</map>

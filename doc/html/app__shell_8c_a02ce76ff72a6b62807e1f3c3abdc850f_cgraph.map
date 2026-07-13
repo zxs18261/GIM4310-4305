@@ -1,0 +1,21 @@
+<map id="APP_SHELL_GetSet" name="APP_SHELL_GetSet">
+<area shape="rect" id="Node000001" title="get/set 命令处理" alt="" coords="5,85,179,115"/>
+<area shape="rect" id="Node000002" href="$app__can__protocol_8c.html#ae97d64d8caba7a4aee7b6ef40a26afb7" title="按索引读参数（CAN 配置通道与 shell 共用）" alt="" coords="227,5,464,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,82,226,44,256,38,251,40,228,49,128,87"/>
+<area shape="rect" id="Node000003" href="$app__can__protocol_8c.html#a1c22c988dc67c917a70b53b3386fcfca" title="按索引写参数（只读项与非法值拒绝，CAN 配置通道与 shell 共用）" alt="" coords="227,59,464,88"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,88,214,87,209,89,180,94"/>
+<area shape="rect" id="Node000007" href="$app__shell_8c.html#a7715eb44f2cff0acbc6fe08f5fcc6eb8" title="参数名查表" alt="" coords="244,112,447,142"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="179,107,231,114,226,115,179,112"/>
+<area shape="rect" id="Node000008" href="$bsp__uart_8c.html#ac8fe8954e03174bb365847f52531e218" title="格式化打印到调试串口（非阻塞）" alt="" coords="269,165,422,195"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="128,113,228,151,257,161,251,161,226,156,127,118"/>
+<area shape="rect" id="Node000004" href="$bsp__can_8c.html#ab09830a7aa5df9b3a6fa393538f81ab8" title="切换 120 欧终端电阻（TS5A3159 模拟开关）" alt="" coords="512,32,726,62"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="464,59,499,58,494,59,465,65"/>
+<area shape="rect" id="Node000005" href="$motor__ctrl_8c.html#acd57a3a6a71d8ec4261dca794251a12a" title="参数修改后刷新 PID 增益（shell/CAN 调参后调用）" alt="" coords="532,85,707,115"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="464,82,518,90,513,90,464,88"/>
+<area shape="rect" id="Node000006" href="$pid_8c.html#a8977cc689f8f72deff8a981ff5da901f" title="运行中修改增益（不复位积分，保证无扰切换）" alt="" coords="803,85,927,115"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="707,98,791,100,785,100,707,103"/>
+<area shape="rect" id="Node000009" href="$bsp__uart_8c.html#a67e2eb7d361398076d0800612430f13c" title="向 TX 环形缓冲写入数据（非阻塞）" alt="" coords="542,165,696,195"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="423,178,529,180,524,180,423,183"/>
+<area shape="rect" id="Node000010" href="$bsp__uart_8c.html#ad4dee4b2dd593f1d4c141de95156546d" title="若 DMA 空闲且缓冲有数据，则启动下一段 DMA 传输" alt="" coords="774,165,956,195"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="696,178,761,180,756,180,696,183"/>
+</map>

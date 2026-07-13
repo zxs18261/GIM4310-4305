@@ -1,0 +1,11 @@
+<map id="APP_MON_PrintBanner" name="APP_MON_PrintBanner">
+<area shape="rect" id="Node000001" title="打印上电横幅" alt="" coords="5,32,200,62"/>
+<area shape="rect" id="Node000002" href="$bsp__clock_8c.html#ab4d0216441ad073522f9bdf7202a53ff" title="查询当前 PLL 源是否为 HSE" alt="" coords="248,5,417,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,33,234,31,229,32,201,38"/>
+<area shape="rect" id="Node000003" href="$bsp__uart_8c.html#ac8fe8954e03174bb365847f52531e218" title="格式化打印到调试串口（非阻塞）" alt="" coords="256,59,409,88"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,55,243,63,237,63,200,61"/>
+<area shape="rect" id="Node000004" href="$bsp__uart_8c.html#a67e2eb7d361398076d0800612430f13c" title="向 TX 环形缓冲写入数据（非阻塞）" alt="" coords="465,59,618,88"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="409,71,452,73,447,74,409,76"/>
+<area shape="rect" id="Node000005" href="$bsp__uart_8c.html#ad4dee4b2dd593f1d4c141de95156546d" title="若 DMA 空闲且缓冲有数据，则启动下一段 DMA 传输" alt="" coords="666,59,848,88"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="619,71,653,73,648,74,619,76"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="APP_MON_Poll" name="APP_MON_Poll">
+<area shape="rect" id="Node000001" title="周期日志轮询（后台调用）" alt="" coords="5,85,143,115"/>
+<area shape="rect" id="Node000002" href="$app__main_8c.html#ac8ace74f779c511fb8d2815fc84da4cd" title="读取 MOS 温度缓存 [C]" alt="" coords="196,5,353,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,83,190,44,210,39,205,42,192,49,107,87"/>
+<area shape="rect" id="Node000003" href="$app__main_8c.html#af1c8ed1fa98ee3361a1d12b25d58e298" title="读取电机温度缓存 [C]" alt="" coords="191,59,358,88"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,89,178,86,173,88,144,94"/>
+<area shape="rect" id="Node000004" href="$bsp__uart_8c.html#ac8fe8954e03174bb365847f52531e218" title="格式化打印到调试串口（非阻塞）" alt="" coords="198,112,351,142"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,107,185,114,180,115,143,112"/>
+<area shape="rect" id="Node000007" href="$bsp__uart_8c.html#ad53db0bf6b7aefc698e0d23d6fdda51e" title="查询 TX 环形缓冲剩余空间" alt="" coords="191,165,358,195"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="106,113,192,151,210,160,205,160,190,156,105,118"/>
+<area shape="rect" id="Node000005" href="$bsp__uart_8c.html#a67e2eb7d361398076d0800612430f13c" title="向 TX 环形缓冲写入数据（非阻塞）" alt="" coords="406,112,559,142"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="351,124,393,127,388,127,352,129"/>
+<area shape="rect" id="Node000006" href="$bsp__uart_8c.html#ad4dee4b2dd593f1d4c141de95156546d" title="若 DMA 空闲且缓冲有数据，则启动下一段 DMA 传输" alt="" coords="607,112,789,142"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="559,124,594,127,589,127,560,129"/>
+</map>

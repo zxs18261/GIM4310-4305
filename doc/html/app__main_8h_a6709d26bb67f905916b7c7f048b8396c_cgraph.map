@@ -1,0 +1,115 @@
+<map id="APP_Loop" name="APP_Loop">
+<area shape="rect" id="Node000001" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="5,827,105,856"/>
+<area shape="rect" id="Node000002" href="$app__can__protocol_8c.html#a6c2f3bebbd2597376fd87038ef059996" title="后台轮询：处理通信参数变更后的重新初始化" alt="" coords="232,165,368,195"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,826,64,722,83,562,111,399,129,333,150,285,171,259,196,235,252,200,249,205,200,240,175,262,155,288,134,335,116,401,88,563,69,722,60,827"/>
+<area shape="rect" id="Node000042" href="$app__led_8c.html#a0667624ed63a699e14975ababc2eeb67" title="灯语轮询（后台调用，内部按 HAL tick 计时）" alt="" coords="234,299,366,328"/>
+<area shape="poly" id="edge7_Node000001_Node000042" title=" " alt="" coords="54,826,60,763,75,668,104,558,125,504,150,452,175,417,204,385,265,335,263,340,208,389,179,420,155,455,129,506,109,560,80,669,65,764,60,827"/>
+<area shape="rect" id="Node000051" href="$app__monitor_8c.html#aa50de6c3c6d7de9ecbd381513d6eb095" title="周期日志轮询（后台调用）" alt="" coords="835,457,972,487"/>
+<area shape="poly" id="edge17_Node000001_Node000051" title=" " alt="" coords="57,826,67,790,86,744,113,696,131,673,151,654,231,600,319,557,411,525,504,501,594,485,680,475,821,469,817,472,680,480,595,490,505,507,412,530,321,562,234,605,154,658,135,677,118,699,91,746,73,792,62,827"/>
+<area shape="rect" id="Node000054" href="$bsp__uart_8c.html#ac8fe8954e03174bb365847f52531e218" title="格式化打印到调试串口（非阻塞）" alt="" coords="1084,748,1237,778"/>
+<area shape="poly" id="edge59_Node000001_Node000054" title=" " alt="" coords="104,834,248,820,435,813,529,815,614,823,683,839,711,851,732,865,747,880,757,897,766,931,764,966,756,1001,749,1036,747,1070,756,1102,766,1117,780,1131,800,1143,830,1150,902,1156,976,1149,1006,1142,1027,1131,1065,1097,1094,1055,1117,1009,1133,960,1144,911,1151,865,1158,795,1161,791,1157,866,1150,912,1138,961,1122,1011,1099,1058,1069,1101,1030,1136,1008,1147,977,1155,902,1162,829,1156,798,1148,777,1136,761,1120,751,1104,742,1071,744,1036,751,1000,758,965,761,931,752,899,743,884,729,869,708,855,682,844,613,829,528,820,435,818,249,826,107,838"/>
+<area shape="rect" id="Node000058" href="$app__params_8c.html#aab3defc159c797691082564ab70c665f" title="查询是否有挂起的保存请求" alt="" coords="176,1039,424,1068"/>
+<area shape="poly" id="edge23_Node000001_Node000058" title=" " alt="" coords="59,854,72,892,90,938,117,985,134,1007,154,1025,164,1032,159,1034,151,1029,130,1010,112,989,85,940,67,893,60,860"/>
+<area shape="rect" id="Node000059" href="$app__params_8c.html#a9afc1399fb8fb19c72cd51a7a6e38051" title="处理挂起的保存请求（后台循环调用）" alt="" coords="153,1171,447,1200"/>
+<area shape="poly" id="edge24_Node000001_Node000059" title=" " alt="" coords="59,854,72,898,91,956,118,1019,155,1079,178,1103,204,1126,257,1162,252,1164,200,1130,174,1107,151,1082,113,1022,86,957,67,899,60,860"/>
+<area shape="rect" id="Node000063" href="$app__shell_8c.html#ab93a15148be82ad3c0999b099de7c29e" title="shell 轮询（后台调用）" alt="" coords="224,668,376,698"/>
+<area shape="poly" id="edge27_Node000001_Node000063" title=" " alt="" coords="78,825,264,704,261,709,82,828"/>
+<area shape="rect" id="Node000086" href="$app__main_8c.html#a9d7a99f268e16f853238569586d275aa" title="慢任务：温度采样/过温保护/CAN 指令超时" alt="" coords="234,985,366,1015"/>
+<area shape="poly" id="edge51_Node000001_Node000086" title=" " alt="" coords="79,854,265,975,260,978,80,859"/>
+<area shape="rect" id="Node000096" href="$motor__ctrl_8c.html#a9c872c216c8943d5ba135b71957aea31" title="重建编码器多圈基准并保持用户位置连续（参数落盘后调用）" alt="" coords="214,1329,386,1359"/>
+<area shape="poly" id="edge60_Node000001_Node000096" title=" " alt="" coords="57,854,66,917,81,1008,109,1111,130,1163,155,1211,179,1243,207,1273,265,1320,259,1321,203,1277,175,1247,150,1214,125,1165,104,1113,76,1009,61,918,57,859"/>
+<area shape="rect" id="Node000003" href="$app__can__protocol_8c.html#af389bd7cff6ae0b5df76c2feb46f25f6" title="初始化 CAN 应用协议（按持久化参数配置 BSP）" alt="" coords="548,85,677,115"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="353,163,494,124,535,116,532,119,496,129,357,167"/>
+<area shape="rect" id="Node000004" href="$app__can__protocol_8c.html#a0c342291cd7188f387f12f9b2157c4e9" title="CAN 接收分发（ISR 上下文）" alt="" coords="811,5,996,35"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="656,83,778,44,812,37,808,41,779,49,659,87"/>
+<area shape="rect" id="Node000039" href="$bsp__can_8c.html#a8bb055feb01e6f0fdee0f7921f821e5c" title="初始化 CAN（重配位时序 + 滤波器 + 中断）" alt="" coords="839,59,968,88"/>
+<area shape="poly" id="edge4_Node000003_Node000039" title=" " alt="" coords="676,92,826,79,822,82,679,97"/>
+<area shape="rect" id="Node000041" href="$bsp__can_8c.html#a9792d3480dca4b5570e43d806dfdb092" title="注册接收回调（ISR 上下文执行，须轻量）" alt="" coords="778,112,1029,142"/>
+<area shape="poly" id="edge5_Node000003_Node000041" title=" " alt="" coords="676,104,765,113,761,115,678,108"/>
+<area shape="rect" id="Node000010" href="$bsp__can_8c.html#ab09830a7aa5df9b3a6fa393538f81ab8" title="切换 120 欧终端电阻（TS5A3159 模拟开关）" alt="" coords="796,165,1011,195"/>
+<area shape="poly" id="edge6_Node000003_Node000010" title=" " alt="" coords="676,109,731,124,756,138,779,151,803,160,798,162,777,156,753,143,729,129,678,114"/>
+<area shape="rect" id="Node000043" href="$app__led_8c.html#aa5c9874a71538d3adde7861bbc32fe8d" title="呼吸亮度三角波（16~255）" alt="" coords="518,139,708,168"/>
+<area shape="poly" id="edge8_Node000042_Node000043" title=" " alt="" coords="319,296,409,231,457,199,494,178,514,171,511,175,496,183,460,203,412,236,324,300"/>
+<area shape="rect" id="Node000044" href="$bsp__ws2812_8c.html#aa37a05d3f08e933332ee61dfb411e731" title="读取当前全局亮度" alt="" coords="495,192,730,222"/>
+<area shape="poly" id="edge9_Node000042_Node000044" title=" " alt="" coords="332,296,406,264,494,231,523,224,519,228,496,236,408,269,336,300"/>
+<area shape="rect" id="Node000045" href="$bsp__ws2812_8c.html#a3470d95e73928ee18598b72489c8eb33" title="后台轮询：颜色有更新且 DMA 空闲时发送一帧" alt="" coords="532,245,694,275"/>
+<area shape="poly" id="edge10_Node000042_Node000045" title=" " alt="" coords="365,300,518,275,515,278,368,304"/>
+<area shape="rect" id="Node000047" href="$bsp__ws2812_8c.html#aa343d7fb9bc7f5c802804cd659494aea" title="设置全局亮度（0~255，线性缩放）" alt="" coords="496,299,730,328"/>
+<area shape="poly" id="edge12_Node000042_Node000047" title=" " alt="" coords="365,311,482,312,478,315,368,316"/>
+<area shape="rect" id="Node000049" href="$bsp__ws2812_8c.html#a14f4272e51ac6b64194ad2368ed44a71" title="设置目标颜色（缓存，Poll 时发送）" alt="" coords="514,352,711,382"/>
+<area shape="poly" id="edge14_Node000042_Node000049" title=" " alt="" coords="365,322,509,347,504,350,368,327"/>
+<area shape="rect" id="Node000050" href="$protection_8c.html#a36b53f217ddfdc3e968ee7f7c4ebc113" title="是否处于告警区（LED 黄色显示用）" alt="" coords="539,405,686,435"/>
+<area shape="poly" id="edge16_Node000042_Node000050" title=" " alt="" coords="333,326,408,358,496,391,526,401,522,403,494,396,406,363,335,331"/>
+<area shape="rect" id="Node000046" href="$bsp__ws2812_8c.html#af78d71e38b5babd81761d5c6e92f6acf" title="将 24bit 颜色编码为 CCR 序列" alt="" coords="809,245,998,275"/>
+<area shape="poly" id="edge11_Node000045_Node000046" title=" " alt="" coords="693,258,796,259,791,262,695,263"/>
+<area shape="rect" id="Node000048" href="$bsp__ws2812_8c.html#a414a0748f0ef37a68dc8383d5356ddf6" title="按亮度缩放当前颜色并生成发送序颜色字，标记待发送" alt="" coords="786,325,1021,355"/>
+<area shape="poly" id="edge13_Node000047_Node000048" title=" " alt="" coords="729,322,773,327,768,329,731,327"/>
+<area shape="poly" id="edge15_Node000049_Node000048" title=" " alt="" coords="711,355,773,351,769,354,713,360"/>
+<area shape="rect" id="Node000052" href="$app__main_8c.html#ac8ace74f779c511fb8d2815fc84da4cd" title="读取 MOS 温度缓存 [C]" alt="" coords="1082,564,1239,594"/>
+<area shape="poly" id="edge18_Node000051_Node000052" title=" " alt="" coords="972,476,1002,484,1030,497,1046,510,1055,524,1064,537,1078,550,1088,557,1082,557,1075,554,1060,540,1051,526,1042,513,1027,501,1001,489,973,481"/>
+<area shape="rect" id="Node000053" href="$app__main_8c.html#af1c8ed1fa98ee3361a1d12b25d58e298" title="读取电机温度缓存 [C]" alt="" coords="1077,511,1244,540"/>
+<area shape="poly" id="edge19_Node000051_Node000053" title=" " alt="" coords="972,484,1073,506,1068,508,973,489"/>
+<area shape="poly" id="edge20_Node000051_Node000054" title=" " alt="" coords="972,473,1003,481,1030,497,1052,521,1062,546,1068,573,1079,604,1146,735,1141,734,1074,607,1063,574,1057,548,1048,524,1027,501,1001,486,973,478"/>
+<area shape="rect" id="Node000057" href="$bsp__uart_8c.html#ad53db0bf6b7aefc698e0d23d6fdda51e" title="查询 TX 环形缓冲剩余空间" alt="" coords="1077,457,1244,487"/>
+<area shape="poly" id="edge22_Node000051_Node000057" title=" " alt="" coords="972,470,1064,471,1059,473,974,475"/>
+<area shape="rect" id="Node000055" href="$bsp__uart_8c.html#a67e2eb7d361398076d0800612430f13c" title="向 TX 环形缓冲写入数据（非阻塞）" alt="" coords="1292,617,1445,647"/>
+<area shape="poly" id="edge21_Node000054_Node000055" title=" " alt="" coords="1184,745,1329,657,1333,654,1187,750"/>
+<area shape="rect" id="Node000060" href="$app__params_8c.html#ac523ba0893e64080fcd28850bbf687fa" title="立即保存参数（仅限电机封波状态下调用）" alt="" coords="524,1249,701,1279"/>
+<area shape="poly" id="edge25_Node000059_Node000060" title=" " alt="" coords="362,1198,538,1244,534,1246,362,1204"/>
+<area shape="rect" id="Node000061" href="$bsp__flash_8c.html#a26214159159f35bf8008eb4cd97a626e" title="保存参数到参数页（擦除 + 双字编程）" alt="" coords="795,1249,1012,1279"/>
+<area shape="poly" id="edge26_Node000060_Node000061" title=" " alt="" coords="701,1262,782,1264,776,1265,702,1267"/>
+<area shape="poly" id="edge48_Node000063_Node000054" title=" " alt="" coords="332,665,452,618,535,593,629,571,729,557,832,554,883,559,933,568,982,581,1030,600,1070,627,1103,663,1129,700,1148,735,1143,733,1125,703,1099,666,1067,631,1027,605,981,586,932,573,882,564,832,560,729,562,630,576,537,598,454,624,336,670"/>
+<area shape="poly" id="edge50_Node000063_Node000055" title=" " alt="" coords="320,666,391,617,500,551,565,518,634,487,705,462,778,443,910,412,966,399,1019,391,1070,389,1123,396,1181,413,1245,443,1268,458,1288,476,1321,519,1345,563,1360,603,1355,602,1340,565,1316,522,1284,480,1264,462,1243,448,1179,418,1122,401,1070,394,1019,396,967,405,912,417,779,448,707,467,636,492,567,523,503,556,394,621,324,669"/>
+<area shape="rect" id="Node000064" href="$app__shell_8c.html#ad6303a346f63752b165b847c5dcefbb7" title="解析并执行一行命令" alt="" coords="522,775,704,804"/>
+<area shape="poly" id="edge28_Node000063_Node000064" title=" " alt="" coords="345,695,555,768,550,771,346,701"/>
+<area shape="rect" id="Node000085" href="$bsp__uart_8c.html#aeb805ee3cc2dd1b170fe67c367c7e0f4" title="从 RX 环形缓冲读取一个字节" alt="" coords="519,668,706,698"/>
+<area shape="poly" id="edge49_Node000063_Node000085" title=" " alt="" coords="376,680,506,681,502,684,378,685"/>
+<area shape="poly" id="edge47_Node000064_Node000054" title=" " alt="" coords="704,802,732,821,750,848,758,875,757,903,754,930,750,956,751,982,760,1005,780,1028,812,1049,842,1064,871,1073,901,1075,930,1071,961,1062,1027,1027,1056,1005,1081,977,1101,945,1117,912,1140,846,1153,795,1156,791,1145,848,1122,914,1105,948,1085,980,1060,1008,1030,1032,963,1067,932,1076,901,1080,870,1078,840,1069,809,1054,777,1031,755,1008,746,983,745,956,748,929,752,903,752,876,746,850,728,825,704,807"/>
+<area shape="rect" id="Node000065" href="$app__can__protocol_8c.html#a3ab260e65506988e3c93e42c2a2ce2b3" title="请求后台重新初始化 CAN（shell 恢复默认参数等场景）" alt="" coords="799,935,1008,964"/>
+<area shape="poly" id="edge29_Node000064_Node000065" title=" " alt="" coords="699,802,732,821,744,833,751,847,757,873,762,898,769,909,780,921,788,928,783,928,777,925,765,913,757,900,751,874,746,849,739,837,729,825,700,808"/>
+<area shape="rect" id="Node000066" href="$app__can__protocol_8c.html#a32c56ede856a112ad210fd60fdb7b111" title="设置 CAN 控制标志（shell 使能时清零，豁免超时保护）" alt="" coords="801,988,1006,1018"/>
+<area shape="poly" id="edge30_Node000064_Node000066" title=" " alt="" coords="703,802,732,821,747,840,755,861,756,900,758,938,766,956,780,974,790,983,784,983,776,978,761,959,753,939,751,900,749,862,743,843,729,825,704,808"/>
+<area shape="rect" id="Node000067" href="$app__monitor_8c.html#a69348472c5378c7ae2787d865d1b626e" title="打印上电横幅" alt="" coords="806,1092,1001,1122"/>
+<area shape="poly" id="edge31_Node000064_Node000067" title=" " alt="" coords="704,802,732,821,754,853,762,885,761,917,757,949,752,980,752,1011,760,1041,780,1072,796,1086,790,1085,776,1075,755,1043,746,1011,747,980,751,948,756,917,757,886,749,855,728,825,704,807"/>
+<area shape="rect" id="Node000069" href="$app__monitor_8c.html#a9bb383e6ceed1252d51dd3ebbc075668" title="打印完整状态快照（shell &quot;status&quot;）" alt="" coords="810,511,997,540"/>
+<area shape="poly" id="edge33_Node000064_Node000069" title=" " alt="" coords="644,772,687,745,728,708,745,680,751,655,759,629,776,601,812,569,855,546,850,550,815,574,780,605,764,631,757,657,750,683,732,711,690,749,647,776"/>
+<area shape="rect" id="Node000077" href="$app__monitor_8c.html#a22c38d8c76224ba2db01a5a69b925982" title="设置周期日志开关与速率" alt="" coords="823,615,984,644"/>
+<area shape="poly" id="edge37_Node000064_Node000077" title=" " alt="" coords="638,772,682,744,729,708,742,693,751,679,761,666,777,654,811,642,806,645,780,658,764,670,755,682,746,696,732,711,685,748,641,776"/>
+<area shape="rect" id="Node000013" href="$app__params_8c.html#afa4da68e24e6b332803f4e131cd9ea31" title="加载编译期默认参数" alt="" coords="786,721,1021,751"/>
+<area shape="poly" id="edge39_Node000064_Node000013" title=" " alt="" coords="697,772,806,753,801,756,699,776"/>
+<area shape="rect" id="Node000014" href="$app__params_8c.html#a2c145abd191edf697c7d319f120390fb" title="请求保存参数（任意上下文安全，后台择机执行）" alt="" coords="785,775,1022,804"/>
+<area shape="poly" id="edge40_Node000064_Node000014" title=" " alt="" coords="704,787,772,788,767,791,705,792"/>
+<area shape="rect" id="Node000078" href="$app__shell_8c.html#aae99ca6c66313d23c6f3a593badf4961" title="boot0 命令：检查/编程 nSWBOOT0 选项字节" alt="" coords="820,668,987,698"/>
+<area shape="poly" id="edge41_Node000064_Node000078" title=" " alt="" coords="639,772,701,739,777,707,808,700,803,703,779,712,703,744,642,776"/>
+<area shape="rect" id="Node000080" href="$app__shell_8c.html#a02ce76ff72a6b62807e1f3c3abdc850f" title="get/set 命令处理" alt="" coords="817,828,990,858"/>
+<area shape="poly" id="edge43_Node000064_Node000080" title=" " alt="" coords="697,802,806,824,801,825,698,808"/>
+<area shape="rect" id="Node000082" href="$app__shell_8c.html#a6d537e45ceeac530b13b4645c1e0961c" title="help 输出" alt="" coords="824,881,983,911"/>
+<area shape="poly" id="edge45_Node000064_Node000082" title=" " alt="" coords="688,802,732,821,747,833,756,845,765,856,780,867,812,882,807,883,777,872,762,860,752,848,743,836,729,825,689,807"/>
+<area shape="poly" id="edge32_Node000067_Node000054" title=" " alt="" coords="998,1089,1027,1071,1056,1041,1081,1005,1102,967,1118,927,1141,852,1154,795,1157,791,1146,853,1123,929,1107,969,1086,1008,1061,1044,1030,1076,1000,1094"/>
+<area shape="poly" id="edge34_Node000069_Node000052" title=" " alt="" coords="978,538,1073,559,1068,561,979,544"/>
+<area shape="poly" id="edge35_Node000069_Node000053" title=" " alt="" coords="997,523,1064,524,1059,527,999,528"/>
+<area shape="poly" id="edge36_Node000069_Node000054" title=" " alt="" coords="994,538,1030,557,1073,597,1108,645,1133,693,1151,735,1146,733,1129,695,1103,648,1069,601,1027,561,994,543"/>
+<area shape="poly" id="edge38_Node000077_Node000054" title=" " alt="" coords="984,638,1030,654,1061,672,1090,693,1137,737,1132,737,1086,697,1058,676,1028,659,984,643"/>
+<area shape="poly" id="edge42_Node000078_Node000054" title=" " alt="" coords="986,696,1029,707,1114,741,1109,742,1028,712,987,701"/>
+<area shape="poly" id="edge44_Node000080_Node000054" title=" " alt="" coords="986,825,1028,814,1114,783,1109,786,1029,819,988,830"/>
+<area shape="poly" id="edge46_Node000082_Node000054" title=" " alt="" coords="982,883,1028,867,1058,850,1086,829,1132,790,1137,787,1090,833,1061,854,1030,872,984,888"/>
+<area shape="poly" id="edge55_Node000086_Node000054" title=" " alt="" coords="366,995,410,1003,430,1012,449,1025,465,1045,472,1066,472,1109,471,1130,473,1149,480,1168,496,1185,527,1192,590,1196,766,1195,941,1187,1001,1181,1027,1175,1068,1136,1099,1088,1123,1035,1139,979,1149,925,1155,873,1159,796,1162,791,1160,874,1154,925,1144,981,1128,1036,1104,1090,1072,1139,1030,1180,1001,1186,941,1192,767,1200,590,1201,526,1197,494,1189,476,1171,468,1151,466,1130,467,1109,467,1067,460,1047,445,1029,428,1017,408,1008,367,1000"/>
+<area shape="rect" id="Node000087" href="$app__can__protocol_8c.html#aa7ee6d44a81d3042e0e6f9a3d161cda2" title="查询当前使能是否由 CAN 发起（指令超时保护范围判定）" alt="" coords="501,879,724,908"/>
+<area shape="poly" id="edge52_Node000086_Node000087" title=" " alt="" coords="332,983,406,950,494,918,523,911,519,914,496,923,408,955,335,987"/>
+<area shape="rect" id="Node000088" href="$bsp__adc_8c.html#afa9f3886839c064af2f9ea65e1809550" title="读取 MOS 管温度 [摄氏度]（阻塞轮询规则组，后台调用）" alt="" coords="505,932,720,962"/>
+<area shape="poly" id="edge53_Node000086_Node000088" title=" " alt="" coords="365,986,509,963,504,966,368,991"/>
+<area shape="rect" id="Node000091" href="$bsp__adc_8c.html#a48bb754e0f48feedd1f16cf6a5cc4abe" title="读取电机绕组温度 [摄氏度]（阻塞轮询规则组，后台调用）" alt="" coords="500,985,725,1015"/>
+<area shape="poly" id="edge54_Node000086_Node000091" title=" " alt="" coords="366,998,487,999,482,1002,367,1003"/>
+<area shape="rect" id="Node000092" href="$motor__ctrl_8c.html#a0254f4cdae07bdb4781c9df4b540ffe8" title="触发故障：立即封波并锁存（ISR 安全）" alt="" coords="554,1039,672,1068"/>
+<area shape="poly" id="edge56_Node000086_Node000092" title=" " alt="" coords="366,1009,541,1040,536,1042,367,1014"/>
+<area shape="rect" id="Node000093" href="$protection_8c.html#a80cdeb76b44bac1774ce87967ddd77aa" title="检查 CAN 指令超时" alt="" coords="508,1092,717,1122"/>
+<area shape="poly" id="edge57_Node000086_Node000093" title=" " alt="" coords="366,1000,408,1009,448,1025,464,1038,473,1052,482,1065,496,1078,508,1085,503,1086,494,1082,478,1069,469,1055,460,1041,446,1029,407,1014,367,1006"/>
+<area shape="rect" id="Node000094" href="$protection_8c.html#a69316e4d1e7f8cb9a4dfd6161c3b437e" title="慢速保护检查（后台约 10Hz 调用）" alt="" coords="534,1145,691,1175"/>
+<area shape="poly" id="edge58_Node000086_Node000094" title=" " alt="" coords="366,997,409,1005,430,1013,449,1025,461,1038,469,1052,474,1079,479,1107,485,1119,497,1131,522,1148,517,1148,493,1136,481,1122,474,1108,469,1080,464,1053,457,1041,445,1029,428,1018,408,1010,367,1002"/>
+<area shape="rect" id="Node000097" href="$bsp__encoder_8c.html#a9f9d4545ad55a3bc5bc15920257754d3" title="预置编码器状态（上电首读，避免多圈计数误跳）" alt="" coords="531,1303,694,1332"/>
+<area shape="poly" id="edge61_Node000096_Node000097" title=" " alt="" coords="386,1334,518,1325,513,1326,386,1340"/>
+<area shape="rect" id="Node000100" href="$motor__ctrl_8c.html#a314b8aad615262b23be0463fa16b9ceb" title="转子展开机械角 [rad]：整数圈 + 单圈角分离合成" alt="" coords="552,1356,674,1386"/>
+<area shape="poly" id="edge62_Node000096_Node000100" title=" " alt="" coords="386,1349,539,1364,534,1365,386,1354"/>
+<area shape="rect" id="Node000101" href="$filter_8c.html#a92c4dfa4557978b294c448b59f485614" title="预置 PLL 跟踪角度（上电对准编码器初值，避免速度冲击）" alt="" coords="555,1409,670,1439"/>
+<area shape="poly" id="edge63_Node000096_Node000101" title=" " alt="" coords="355,1357,496,1395,543,1408,537,1408,494,1400,355,1362"/>
+</map>

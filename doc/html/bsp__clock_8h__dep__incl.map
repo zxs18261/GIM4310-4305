@@ -1,0 +1,9 @@
+<map id="Application/bsp/bsp_clock.h" name="Application/bsp/bsp_clock.h">
+<area shape="rect" id="Node000001" title="时钟切换 BSP 头文件（HSI &#45;&gt; HSE 20MHz）" alt="" coords="194,5,356,54"/>
+<area shape="rect" id="Node000002" href="$app__main_8c.html" title="应用入口模块（前后台调度）" alt="" coords="5,102,169,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,60,135,104,133,99,212,62"/>
+<area shape="rect" id="Node000003" href="$app__monitor_8c.html" title="调试数据打印模块" alt="" coords="193,102,357,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="277,67,277,103,273,100,273,71"/>
+<area shape="rect" id="Node000004" href="$bsp__clock_8c.html" title="时钟切换 BSP（HSI &#45;&gt; HSE 20MHz，SYSCLK 维持 170MHz）" alt="" coords="381,102,542,151"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="336,59,418,101,412,102,335,64"/>
+</map>

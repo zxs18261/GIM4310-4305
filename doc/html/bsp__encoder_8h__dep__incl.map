@@ -1,0 +1,26 @@
+<map id="Application/bsp/bsp_encoder.h" name="Application/bsp/bsp_encoder.h">
+<area shape="rect" id="Node000001" title="MT6701 磁编码器 BSP 头文件（GPIO 位带模拟 SSI）" alt="" coords="456,5,617,54"/>
+<area shape="rect" id="Node000002" href="$app__main_8c.html" title="应用入口模块（前后台调度）" alt="" coords="183,199,346,247"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="444,58,401,80,362,104,337,126,314,152,280,201,276,196,310,149,333,123,359,100,398,76,439,60"/>
+<area shape="rect" id="Node000003" href="$bsp__encoder_8c.html" title="MT6701 磁编码器 BSP（GPIO 位带模拟 SSI）" alt="" coords="729,102,891,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="620,57,744,101,739,102,619,62"/>
+<area shape="rect" id="Node000004" href="$calibration_8h.html" title="预定位校准模块头文件（编码器方向/极对数/电角度偏置）" alt="" coords="372,102,525,151"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="507,64,472,104,469,99,502,67"/>
+<area shape="rect" id="Node000008" href="$motor__ctrl_8h.html" title="电机控制核心模块头文件（模式状态机 + FOC 主循环）" alt="" coords="552,102,705,151"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="571,62,608,102,603,101,569,67"/>
+<area shape="rect" id="Node000005" href="$app__monitor_8c.html" title="调试数据打印模块" alt="" coords="548,199,712,247"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="508,156,587,198,582,198,507,161"/>
+<area shape="rect" id="Node000006" href="$calibration_8c.html" title="预定位校准模块（编码器方向/极对数/电角度偏置）" alt="" coords="5,199,159,247"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="357,154,172,201,160,204,158,199,171,196,356,149"/>
+<area shape="rect" id="Node000007" href="$motor__ctrl_8c.html" title="电机控制核心模块（模式状态机 + 20kHz FOC 主循环）" alt="" coords="371,199,524,247"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="450,164,450,200,446,196,446,168"/>
+<area shape="poly" id="edge10_Node000008_Node000002" title=" " alt="" coords="539,151,347,203,346,198,534,152"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="631,164,632,200,628,196,627,168"/>
+<area shape="poly" id="edge13_Node000008_Node000007" title=" " alt="" coords="572,157,494,201,492,196,567,159"/>
+<area shape="rect" id="Node000009" href="$app__can__protocol_8c.html" title="CAN 应用协议（MIT 运控协议 + 配置协议）" alt="" coords="736,199,900,247"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="690,155,773,198,768,198,689,161"/>
+<area shape="rect" id="Node000010" href="$app__led_8c.html" title="状态灯语模块（单颗 WS2812，亮度全局可调）" alt="" coords="924,199,1088,247"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="721,149,927,202,921,202,720,154"/>
+<area shape="rect" id="Node000011" href="$app__shell_8c.html" title="调试 shell 模块（USART3，行式命令）" alt="" coords="1112,199,1276,247"/>
+<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="721,148,828,165,912,172,995,180,1100,196,1115,201,1109,201,1099,201,995,186,911,178,827,170,720,154"/>
+</map>

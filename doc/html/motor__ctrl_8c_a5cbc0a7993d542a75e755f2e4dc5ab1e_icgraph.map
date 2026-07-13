@@ -1,0 +1,31 @@
+<map id="MC_Clamp" name="MC_Clamp">
+<area shape="rect" id="Node000001" title="对称限幅" alt="" coords="1305,32,1407,62"/>
+<area shape="rect" id="Node000002" href="$motor__ctrl_8c.html#a5c982a7374da291bb0e5d06d26893def" title="FOC 主循环（ADC 注入完成 ISR，20kHz）" alt="" coords="916,5,1015,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1290,27,1256,23,1191,17,1126,15,1015,19,1015,14,1126,10,1192,12,1257,18,1296,28"/>
+<area shape="rect" id="Node000005" href="$motor__ctrl_8c.html#ad9fdc2a937331479bd701139807ad7b2" title="设置输出轴速度给定（SPEED 模式）" alt="" coords="1105,85,1257,115"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1293,66,1233,87,1232,82,1288,67"/>
+<area shape="rect" id="Node000013" href="$motor__ctrl_8c.html#a9dd4aa02cb15dd5ea27aa8085155adb7" title="慢环（1kHz）：电流限幅刷新与速度/位置外环" alt="" coords="1117,32,1245,62"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="1286,47,1245,49,1245,44,1292,47"/>
+<area shape="rect" id="Node000003" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="282,7,367,36"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="899,23,367,24,367,19,901,18"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,35,62,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="266,30,63,49,62,44,267,24"/>
+<area shape="rect" id="Node000006" href="$app__can__protocol_8c.html#a962b5bb63f0dca9cd0efbd25455d6002" title="配置通道处理" alt="" coords="873,59,1057,88"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1088,89,1058,88,1058,82,1093,89"/>
+<area shape="rect" id="Node000011" href="$app__shell_8c.html#ad6303a346f63752b165b847c5dcefbb7" title="解析并执行一行命令" alt="" coords="874,112,1056,142"/>
+<area shape="poly" id="edge12_Node000005_Node000011" title=" " alt="" coords="1093,111,1057,118,1057,113,1088,112"/>
+<area shape="rect" id="Node000007" href="$app__can__protocol_8c.html#a0c342291cd7188f387f12f9b2157c4e9" title="CAN 接收分发（ISR 上下文）" alt="" coords="641,59,825,88"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="854,74,826,76,826,71,860,73"/>
+<area shape="rect" id="Node000008" href="$app__can__protocol_8c.html#af389bd7cff6ae0b5df76c2feb46f25f6" title="初始化 CAN 应用协议（按持久化参数配置 BSP）" alt="" coords="452,59,581,88"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="623,74,581,76,581,71,628,73"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="442,54,367,36,367,30,447,54"/>
+<area shape="rect" id="Node000009" href="$app__can__protocol_8c.html#a6c2f3bebbd2597376fd87038ef059996" title="后台轮询：处理通信参数变更后的重新初始化" alt="" coords="257,60,392,90"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="434,74,393,77,392,72,440,74"/>
+<area shape="rect" id="Node000010" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,60,209,90"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="239,75,210,77,209,72,244,74"/>
+<area shape="poly" id="edge10_Node000010_Node000004" title=" " alt="" coords="92,63,63,58,62,53,97,60"/>
+<area shape="rect" id="Node000012" href="$app__shell_8c.html#ab93a15148be82ad3c0999b099de7c29e" title="shell 轮询（后台调用）" alt="" coords="440,112,593,142"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="856,127,593,129,593,124,861,127"/>
+<area shape="poly" id="edge14_Node000012_Node000010" title=" " alt="" coords="422,122,343,117,256,104,209,93,209,87,258,99,343,111,428,122"/>
+<area shape="poly" id="edge16_Node000013_Node000002" title=" " alt="" coords="1099,37,1015,29,1015,24,1104,37"/>
+</map>

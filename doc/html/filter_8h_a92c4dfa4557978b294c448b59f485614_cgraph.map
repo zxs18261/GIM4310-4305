@@ -1,0 +1,5 @@
+<map id="PLL_Preload" name="PLL_Preload">
+<area shape="rect" id="Node000001" title="预置 PLL 跟踪角度（上电对准编码器初值，避免速度冲击）" alt="" coords="5,5,121,35"/>
+<area shape="rect" id="Node000002" href="$foc__math_8c.html#a4cc9d35ffa1c5f6ab5668cbe7623d018" title="角度归一化到 [0, 2pi)" alt="" coords="169,5,348,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,18,156,20,150,20,121,23"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="APP_LED_Init" name="APP_LED_Init">
+<area shape="rect" id="Node000001" title="初始化灯语模块" alt="" coords="5,32,131,62"/>
+<area shape="rect" id="Node000002" href="$bsp__ws2812_8c.html#aa343d7fb9bc7f5c802804cd659494aea" title="设置全局亮度（0~255，线性缩放）" alt="" coords="179,5,413,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,37,165,35,160,37,131,42"/>
+<area shape="rect" id="Node000004" href="$bsp__ws2812_8c.html#a14f4272e51ac6b64194ad2368ed44a71" title="设置目标颜色（缓存，Poll 时发送）" alt="" coords="197,59,394,88"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="131,51,185,60,179,61,131,57"/>
+<area shape="rect" id="Node000003" href="$bsp__ws2812_8c.html#a414a0748f0ef37a68dc8383d5356ddf6" title="按亮度缩放当前颜色并生成发送序颜色字，标记待发送" alt="" coords="461,32,695,62"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="413,29,448,34,443,34,413,34"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="395,62,443,60,448,59,395,67"/>
+</map>

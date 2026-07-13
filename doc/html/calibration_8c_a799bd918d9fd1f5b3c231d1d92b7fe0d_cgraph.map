@@ -1,0 +1,5 @@
+<map id="CAL_Start" name="CAL_Start">
+<area shape="rect" id="Node000001" title="启动校准状态机" alt="" coords="5,5,101,35"/>
+<area shape="rect" id="Node000002" href="$bsp__encoder_8c.html#a3daa1572c53aadb74b5ef71eb5422da8" title="读取方向反转标志" alt="" coords="149,5,320,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,18,136,20,130,20,101,23"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="BSP_UART_IRQHandler" name="BSP_UART_IRQHandler">
+<area shape="rect" id="Node000001" title="USART3 中断服务（stm32g4xx_it.c 用户区调用）" alt="" coords="233,5,434,35"/>
+<area shape="rect" id="Node000002" href="$stm32g4xx__it_8c.html#a0d108a3468b2051548183ee5ca2158a0" title="USART3 中断：RXNE 接收 + DMA TX 收尾 TC" alt="" coords="5,5,185,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,20,185,23,185,18,220,20"/>
+</map>

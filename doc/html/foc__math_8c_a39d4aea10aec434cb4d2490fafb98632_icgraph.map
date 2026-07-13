@@ -1,0 +1,21 @@
+<map id="FOC_SinCos" name="FOC_SinCos">
+<area shape="rect" id="Node000001" title="查表+线性插值同时计算 sin/cos" alt="" coords="730,84,847,114"/>
+<area shape="rect" id="Node000002" href="$calibration_8c.html#a51f1133ceba653e8e1e600c24b54987e" title="校准状态机单步（电流环 ISR 调用，模式 = MC_MODE_CALIB）" alt="" coords="389,57,469,87"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="712,94,469,78,469,72,717,93"/>
+<area shape="rect" id="Node000006" href="$foc_8c.html#ae75f2892abb7689a482d566582276071" title="直接输出 d/q 电压矢量（开环模式 / 校准注入用，不经过电流 PI）" alt="" coords="517,109,682,139"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="717,108,683,116,682,110,712,109"/>
+<area shape="rect" id="Node000007" href="$foc_8c.html#adeb37d340903f5f803d273080550032d" title="执行一个电流环周期（在 ADC 注入转换完成 ISR 中调用）" alt="" coords="541,5,658,35"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="736,77,681,56,638,38,639,33,683,51,741,78"/>
+<area shape="rect" id="Node000008" href="$motor__ctrl_8c.html#a6289107a27126667fef8194dc34ad71f" title="初始化电机控制模块" alt="" coords="391,161,467,191"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="752,121,718,140,683,153,625,166,566,174,468,179,468,174,566,169,624,161,681,148,716,135,747,122"/>
+<area shape="rect" id="Node000003" href="$motor__ctrl_8c.html#a5c982a7374da291bb0e5d06d26893def" title="FOC 主循环（ADC 注入完成 ISR，20kHz）" alt="" coords="242,109,341,139"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="377,92,334,111,332,106,372,93"/>
+<area shape="rect" id="Node000004" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="110,136,194,166"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="224,137,195,145,194,140,229,136"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,136,62,166"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="92,152,62,153,62,148,97,150"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="499,125,342,127,341,122,504,124"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="537,39,470,63,468,58,532,41"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="523,20,458,29,424,36,390,48,366,61,343,78,308,111,305,107,340,74,363,57,388,43,422,31,458,23,528,18"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="374,173,194,157,195,152,378,170"/>
+</map>

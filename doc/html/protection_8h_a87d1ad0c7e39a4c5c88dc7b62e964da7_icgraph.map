@@ -1,0 +1,20 @@
+<map id="PROT_GetDerating" name="PROT_GetDerating">
+<area shape="rect" id="Node000001" title="读取温度降额系数（乘到电流限幅上；0 表示已达过温故障）" alt="" coords="923,32,1084,62"/>
+<area shape="rect" id="Node000002" href="$app__monitor_8c.html#a9bb383e6ceed1252d51dd3ebbc075668" title="打印完整状态快照（shell &quot;status&quot;）" alt="" coords="688,5,875,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="905,35,875,34,876,29,910,35"/>
+<area shape="rect" id="Node000007" href="$motor__ctrl_8c.html#a9dd4aa02cb15dd5ea27aa8085155adb7" title="慢环（1kHz）：电流限幅刷新与速度/位置外环" alt="" coords="718,59,845,88"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="910,58,846,69,845,63,905,59"/>
+<area shape="rect" id="Node000003" href="$app__shell_8c.html#ad6303a346f63752b165b847c5dcefbb7" title="解析并执行一行命令" alt="" coords="457,5,640,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="669,20,640,23,640,18,675,20"/>
+<area shape="rect" id="Node000004" href="$app__shell_8c.html#ab93a15148be82ad3c0999b099de7c29e" title="shell 轮询（后台调用）" alt="" coords="257,5,409,35"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="439,20,410,23,409,18,444,20"/>
+<area shape="rect" id="Node000005" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,5,209,35"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="239,21,210,23,209,18,244,20"/>
+<area shape="rect" id="Node000006" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,32,62,62"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="92,35,63,43,61,38,97,32"/>
+<area shape="rect" id="Node000008" href="$motor__ctrl_8c.html#a5c982a7374da291bb0e5d06d26893def" title="FOC 主循环（ADC 注入完成 ISR，20kHz）" alt="" coords="499,59,598,88"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="699,74,599,76,599,71,704,73"/>
+<area shape="rect" id="Node000009" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="117,59,202,88"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="483,76,202,76,202,71,483,71"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="100,63,62,55,62,50,104,60"/>
+</map>

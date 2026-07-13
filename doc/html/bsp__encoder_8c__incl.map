@@ -1,0 +1,16 @@
+<map id="Application/bsp/bsp_encoder.c" name="Application/bsp/bsp_encoder.c">
+<area shape="rect" id="Node000001" title="MT6701 磁编码器 BSP（GPIO 位带模拟 SSI）" alt="" coords="138,5,300,54"/>
+<area shape="rect" id="Node000002" href="$bsp__encoder_8h.html" title="MT6701 磁编码器 BSP 头文件（GPIO 位带模拟 SSI）" alt="" coords="5,102,132,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,57,109,96,105,92,179,52"/>
+<area shape="rect" id="Node000006" href="$board__config_8h.html" title="板级硬件参数统一配置（GIM4310/4305 电机控制器 V0.0 板）" alt="" coords="156,102,283,132"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="220,52,222,87,217,85,218,57"/>
+<area shape="rect" id="Node000007" href="$spi_8h.html" title="This file contains all the function prototypes for the spi.c file" alt="" coords="308,102,363,132"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="252,52,306,92,301,93,251,57"/>
+<area shape="rect" id="Node000003" href="$main_8h.html" title=": Header for main.c file." alt="" coords="214,180,283,209"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,130,203,172,199,175,102,135"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="32,180,105,209"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="69,130,71,164,66,163,68,135"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="177,257,320,287"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="250,208,251,243,246,240,247,212"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="321,131,278,171,275,167,317,134"/>
+</map>

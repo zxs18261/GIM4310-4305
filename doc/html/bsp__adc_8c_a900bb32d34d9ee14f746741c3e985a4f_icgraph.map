@@ -1,0 +1,14 @@
+<map id="BSP_ADC_ReadRegularOnce" name="BSP_ADC_ReadRegularOnce">
+<area shape="rect" id="Node000001" title="软件触发单次规则组转换（NTC 慢通道专用）" alt="" coords="711,32,952,62"/>
+<area shape="rect" id="Node000002" href="$bsp__adc_8c.html#afa9f3886839c064af2f9ea65e1809550" title="读取 MOS 管温度 [摄氏度]（阻塞轮询规则组，后台调用）" alt="" coords="442,5,658,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="692,34,658,33,658,28,698,34"/>
+<area shape="rect" id="Node000006" href="$bsp__adc_8c.html#a48bb754e0f48feedd1f16cf6a5cc4abe" title="读取电机绕组温度 [摄氏度]（阻塞轮询规则组，后台调用）" alt="" coords="437,59,663,88"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="698,60,663,65,663,60,692,60"/>
+<area shape="rect" id="Node000003" href="$app__main_8c.html#a9d7a99f268e16f853238569586d275aa" title="慢任务：温度采样/过温保护/CAN 指令超时" alt="" coords="257,32,389,62"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="424,35,390,42,389,36,429,34"/>
+<area shape="rect" id="Node000004" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,32,209,62"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="239,47,210,49,209,44,244,47"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,32,62,62"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="92,48,63,49,62,44,96,46"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="419,58,390,57,390,52,425,58"/>
+</map>

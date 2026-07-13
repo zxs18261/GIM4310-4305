@@ -1,0 +1,12 @@
+<map id="MC_TripFault" name="MC_TripFault">
+<area shape="rect" id="Node000001" title="触发故障：立即封波并锁存（ISR 安全）" alt="" coords="5,59,124,88"/>
+<area shape="rect" id="Node000002" href="$motor__ctrl_8c.html#aceb46c7be868a0b12dffa105e3d0581e" title="封波（ISR 安全）" alt="" coords="172,59,282,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,71,159,73,154,74,124,76"/>
+<area shape="rect" id="Node000003" href="$bsp__pwm_8c.html#a2664b56ad93d867fb05741e710ff942d" title="封波（输出高阻，电机 freewheel）" alt="" coords="330,5,496,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="281,55,342,40,347,39,282,61"/>
+<area shape="rect" id="Node000004" href="$foc_8c.html#aa25cf599086b4ad815ae5ad72dcfdec4" title="复位电流环状态（封波后重新使能前调用，防止积分残留冲击）" alt="" coords="360,59,466,88"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="282,71,347,73,342,74,282,76"/>
+<area shape="rect" id="Node000005" href="$pid_8c.html#acb76685b15d3fde29d9bd5548b3268c1" title="复位 PID 内部状态（积分/历史误差/输出）" alt="" coords="544,85,644,115"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="277,86,330,98,435,104,526,105,532,105,435,109,330,103,277,92"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="467,79,532,91,526,91,467,84"/>
+</map>
