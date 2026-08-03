@@ -1,0 +1,7 @@
+<map id="APP_PARAMS_Init" name="APP_PARAMS_Init">
+<area shape="rect" id="Node000001" title="参数初始化：从 Flash 加载，失败（首次上电/版本不符）则用默认值" alt="" coords="242,5,402,35"/>
+<area shape="rect" id="Node000002" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="110,5,194,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,20,195,23,194,18,229,20"/>
+<area shape="rect" id="Node000003" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,62,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,21,62,23,62,18,97,19"/>
+</map>

@@ -1,0 +1,26 @@
+<map id="Core/Src/stm32g4xx_it.c" name="Core/Src/stm32g4xx_it.c">
+<area shape="rect" id="Node000001" title="Interrupt Service Routines." alt="" coords="157,5,351,35"/>
+<area shape="rect" id="Node000002" href="$main_8h.html" title=": Header for main.c file." alt="" coords="160,161,229,190"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,36,71,56,37,69,16,85,9,101,11,114,23,127,41,138,92,154,147,166,142,169,90,160,39,142,20,131,7,117,3,100,12,81,34,65,69,51,158,32"/>
+<area shape="rect" id="Node000004" href="$stm32g4xx__it_8h.html" title="This file contains the headers of the interrupt handlers." alt="" coords="535,83,664,113"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="319,33,522,78,518,80,319,38"/>
+<area shape="rect" id="Node000005" href="$bsp__adc_8h.html" title="ADC 采样 BSP 头文件（电流/母线电压注入组 + 温度规则组）" alt="" coords="27,83,122,113"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="219,38,123,79,120,74,222,33"/>
+<area shape="rect" id="Node000007" href="$bsp__can_8h.html" title="FDCAN1 通信 BSP 头文件（经典 CAN 模式）" alt="" coords="147,83,242,113"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="245,34,217,72,213,69,241,38"/>
+<area shape="rect" id="Node000008" href="$bsp__uart_8h.html" title="USART3 调试串口 BSP 头文件（DMA TX 环形缓冲 + RXNE 中断接收）" alt="" coords="266,83,362,113"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="266,33,296,71,291,71,265,38"/>
+<area shape="rect" id="Node000009" href="$bsp__ws2812_8h.html" title="WS2812 类 RGB 状态灯 BSP 头文件（TIM2_CH1 PWM + DMA）" alt="" coords="386,83,512,113"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="291,33,401,76,396,78,291,38"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="123,238,265,268"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="196,189,196,224,192,221,192,193"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="97,111,162,151,157,153,96,116"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="265,161,337,190"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="117,111,252,155,247,159,117,116"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="196,111,197,146,192,144,193,116"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="215,111,271,151,266,152,214,116"/>
+<area shape="poly" id="edge11_Node000008_Node000002" title=" " alt="" coords="294,112,230,155,228,150,289,115"/>
+<area shape="poly" id="edge12_Node000008_Node000006" title=" " alt="" coords="313,111,308,147,304,144,310,115"/>
+<area shape="poly" id="edge14_Node000009_Node000002" title=" " alt="" coords="399,114,245,162,243,157,403,112"/>
+<area shape="poly" id="edge15_Node000009_Node000006" title=" " alt="" coords="423,112,343,156,341,151,419,114"/>
+</map>

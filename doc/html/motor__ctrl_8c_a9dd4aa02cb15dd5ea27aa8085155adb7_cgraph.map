@@ -1,0 +1,13 @@
+<map id="MC_SlowLoop" name="MC_SlowLoop">
+<area shape="rect" id="Node000001" title="慢环（1kHz）：电流限幅刷新与速度/位置外环" alt="" coords="5,112,133,142"/>
+<area shape="rect" id="Node000002" href="$foc_8c.html#a42501e789c00841a74f2ce755c5d03d6" title="设置 d/q 电流给定" alt="" coords="181,5,347,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,109,127,77,179,44,195,40,191,43,182,49,130,81,90,113"/>
+<area shape="rect" id="Node000003" href="$motor__ctrl_8c.html#a5cbc0a7993d542a75e755f2e4dc5ab1e" title="对称限幅" alt="" coords="213,59,315,88"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,109,200,90,196,93,127,114"/>
+<area shape="rect" id="Node000004" href="$pid_8c.html#ad7fced70a610f756fa6319fccc4ae725" title="运行中修改输出限幅，并把积分收拢到新限幅内" alt="" coords="202,112,326,142"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="133,124,189,126,184,128,134,129"/>
+<area shape="rect" id="Node000005" href="$pid_8c.html#a0cc51ef261cec84e3e35382345ac95a0" title="执行一次 PID 计算" alt="" coords="209,165,318,195"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="126,140,197,160,192,162,126,145"/>
+<area shape="rect" id="Node000006" href="$protection_8c.html#a87d1ad0c7e39a4c5c88dc7b62e964da7" title="读取温度降额系数（乘到电流限幅上；0 表示已达过温故障）" alt="" coords="183,219,344,248"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="88,140,130,172,182,204,195,213,190,212,179,209,127,177,87,145"/>
+</map>

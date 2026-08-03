@@ -1,12 +1,19 @@
-﻿# Root ignores for both project trees
+# Root ignores for both project trees
 **/MDK-ARM/**/build.log
 **/MDK-ARM/**/*.lnp
 **/MDK-ARM/**/*.iex
+**/MDK-ARM/**/*.htm
+**/MDK-ARM/**/*.map
 **/MDK-ARM/**/*.uvguix.*
 **/*.uvguix.*
 **/MDK-ARM/JLinkLog.txt
 **/MDK-ARM/JLinkSettings.ini
 **/MDK-ARM/DebugConfig/
+
+# Keil MDK 构建产物（输出目录名与工程同名，含全角括号）
+MDK-ARM/GIM4310（V0.0）/
+手搓/MDK-ARM/GIM4310（V0.0）/
+
 *.bak
 *.orig
 *.tmp

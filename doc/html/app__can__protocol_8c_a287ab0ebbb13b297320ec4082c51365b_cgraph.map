@@ -1,0 +1,37 @@
+<map id="APP_CAN_HandleMit" name="APP_CAN_HandleMit">
+<area shape="rect" id="Node000001" title="MIT 运控通道处理" alt="" coords="5,347,186,376"/>
+<area shape="rect" id="Node000002" href="$app__can__protocol_8c.html#a3f462aec782e36efd750a47844167fae" title="发送 MIT 反馈帧（B0=ID，P16 V12 T12，发往主机 ID）" alt="" coords="234,59,471,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,345,156,270,232,176,276,133,321,96,318,101,279,137,236,179,160,273,109,348"/>
+<area shape="rect" id="Node000005" href="$motor__ctrl_8c.html#aceb46c7be868a0b12dffa105e3d0581e" title="封波（ISR 安全）" alt="" coords="297,189,408,219"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="112,344,164,301,232,254,298,224,294,227,235,258,168,305,116,348"/>
+<area shape="rect" id="Node000009" href="$motor__ctrl_8c.html#a8d1ee75d00d8c0f2d2d78f89d002efec" title="使能功率输出" alt="" coords="299,268,406,298"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="140,344,233,314,287,300,282,303,234,319,143,348"/>
+<area shape="rect" id="Node000012" href="$protection_8c.html#a06029022ac7e5b95690b0119794c83d6" title="喂 CAN 指令看门狗（收到有效运动指令时调用）" alt="" coords="519,373,733,403"/>
+<area shape="poly" id="edge19_Node000001_Node000012" title=" " alt="" coords="185,358,234,358,352,354,405,353,471,358,543,370,538,370,471,363,404,359,353,359,234,363,187,363"/>
+<area shape="rect" id="Node000013" href="$motor__ctrl_8c.html#a594eac2b46116c156ad61f86ae7e4678" title="设置 MIT 阻抗指令（五元组原子更新）" alt="" coords="265,372,440,402"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="186,368,252,376,247,378,187,373"/>
+<area shape="rect" id="Node000014" href="$motor__ctrl_8c.html#ab0638fb9fe58dcbe6f0fb3d5ed81d28c" title="切换控制模式（仅封波状态允许）" alt="" coords="293,425,412,455"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="133,374,234,411,280,424,275,426,233,416,133,379"/>
+<area shape="rect" id="Node000015" href="$motor__ctrl_8c.html#a64722c426a5d2fd53b95c12a85f22120" title="以当前位置为输出轴零位" alt="" coords="279,479,426,508"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="113,374,165,420,199,444,235,464,266,478,261,478,233,469,196,449,162,424,112,380"/>
+<area shape="rect" id="Node000016" href="$app__can__protocol_8c.html#a53bb63a1ac49bb84cd3f88ef1cc02112" title="mini&#45;cheetah 解包：无符号整数 &#45;&gt; float" alt="" coords="283,532,422,562"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="106,374,127,406,155,445,192,485,235,518,270,535,265,535,232,522,188,489,151,448,122,409,105,379"/>
+<area shape="rect" id="Node000003" href="$bsp__can_8c.html#a70c1a9dd4f5e80dddb8aa8c476c15af7" title="发送一帧经典 CAN 数据帧（非阻塞，入 TX FIFO）" alt="" coords="554,5,699,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="431,56,541,36,536,39,434,60"/>
+<area shape="rect" id="Node000004" href="$app__can__protocol_8c.html#a374783cd12e7c5b94cb6926640bc0980" title="mini&#45;cheetah 打包：float &#45;&gt; 无符号整数" alt="" coords="556,59,696,88"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="471,71,544,72,539,75,472,76"/>
+<area shape="rect" id="Node000006" href="$bsp__pwm_8c.html#a2664b56ad93d867fb05741e710ff942d" title="封波（输出高阻，电机 freewheel）" alt="" coords="543,112,709,142"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="407,186,559,145,554,148,409,191"/>
+<area shape="rect" id="Node000007" href="$foc_8c.html#aa25cf599086b4ad815ae5ad72dcfdec4" title="复位电流环状态（封波后重新使能前调用，防止积分残留冲击）" alt="" coords="573,216,679,246"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="407,207,560,223,555,225,408,212"/>
+<area shape="rect" id="Node000008" href="$pid_8c.html#acb76685b15d3fde29d9bd5548b3268c1" title="复位 PID 内部状态（积分/历史误差/输出）" alt="" coords="832,216,932,246"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="407,199,555,195,644,196,734,202,819,216,814,217,733,207,644,201,555,200,409,204"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="680,228,819,230,814,232,680,233"/>
+<area shape="poly" id="edge12_Node000009_Node000007" title=" " alt="" coords="405,270,560,242,556,245,407,275"/>
+<area shape="poly" id="edge13_Node000009_Node000008" title=" " alt="" coords="405,279,553,271,733,255,819,243,814,245,734,260,554,276,407,284"/>
+<area shape="rect" id="Node000010" href="$bsp__pwm_8c.html#a4bdefcd18b0b080f1e8db825e33c80e8" title="使能功率输出（解除封波）" alt="" coords="545,320,707,350"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="406,290,532,316,527,317,406,296"/>
+<area shape="poly" id="edge14_Node000009_Node000012" title=" " alt="" coords="406,289,440,299,472,314,488,325,497,337,506,349,520,359,534,367,528,367,518,364,502,352,493,341,484,329,470,318,438,304,406,295"/>
+<area shape="rect" id="Node000011" href="$bsp__pwm_8c.html#af4a87e2cef845a3eba6d0170011ff08d" title="三相占空比清零（低侧全导通：自举预充/动态刹车态）" alt="" coords="781,320,983,350"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="708,332,769,334,763,335,708,337"/>
+</map>

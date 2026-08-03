@@ -1,0 +1,9 @@
+<map id="Application/bsp/bsp_adc.h" name="Application/bsp/bsp_adc.h">
+<area shape="rect" id="Node000001" title="ADC 采样 BSP 头文件（电流/母线电压注入组 + 温度规则组）" alt="" coords="42,5,204,54"/>
+<area shape="rect" id="Node000002" href="$main_8h.html" title=": Header for main.c file." alt="" coords="42,102,111,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,52,94,90,89,87,109,57"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="135,102,207,132"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="137,52,158,88,153,88,136,57"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,180,148,209"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="78,130,79,165,74,163,75,134"/>
+</map>

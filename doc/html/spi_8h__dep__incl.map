@@ -1,0 +1,9 @@
+<map id="Core/Inc/spi.h" name="Core/Inc/spi.h">
+<area shape="rect" id="Node000001" title="This file contains all the function prototypes for the spi.c file" alt="" coords="198,5,318,35"/>
+<area shape="rect" id="Node000002" href="$bsp__encoder_8c.html" title="MT6701 磁编码器 BSP（GPIO 位带模拟 SSI）" alt="" coords="5,83,167,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,42,135,85,133,80,213,43"/>
+<area shape="rect" id="Node000003" href="$main_8c.html" title=": Main program body" alt="" coords="190,92,326,122"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="260,49,260,94,256,91,256,52"/>
+<area shape="rect" id="Node000004" href="$spi_8c.html" title="This file provides code for the configuration of the SPI instances." alt="" coords="349,92,471,122"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="297,40,388,92,382,92,296,46"/>
+</map>

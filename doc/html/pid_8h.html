@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: Application/control/pid.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('pid_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">pid.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>位置式抗饱和（clamping anti-windup）PID 控制器模块头文件  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+pid.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="pid_8h__incl.svg" width="164" height="138"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="pid_8h__dep__incl.svg" width="100%" height="562"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="pid_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:PID_5FHandleTypeDef" id="r_PID_5FHandleTypeDef"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID 控制器句柄结构体  <a href="struct_p_i_d___handle_type_def.html#details">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a476429033a7322ee2bd627805ca46816" id="r_a476429033a7322ee2bd627805ca46816"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a476429033a7322ee2bd627805ca46816">PID_Init</a> (<a class="el" href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a> *hpid, float kp, float ki, float kd, float outMin, float outMax)</td></tr>
+<tr class="memdesc:a476429033a7322ee2bd627805ca46816"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化 PID 控制器  <br /></td></tr>
+<tr class="memitem:a8977cc689f8f72deff8a981ff5da901f" id="r_a8977cc689f8f72deff8a981ff5da901f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8977cc689f8f72deff8a981ff5da901f">PID_SetGains</a> (<a class="el" href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a> *hpid, float kp, float ki, float kd)</td></tr>
+<tr class="memdesc:a8977cc689f8f72deff8a981ff5da901f"><td class="mdescLeft">&#160;</td><td class="mdescRight">运行中修改增益（不复位积分，保证无扰切换）  <br /></td></tr>
+<tr class="memitem:ad7fced70a610f756fa6319fccc4ae725" id="r_ad7fced70a610f756fa6319fccc4ae725"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad7fced70a610f756fa6319fccc4ae725">PID_SetLimits</a> (<a class="el" href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a> *hpid, float outMin, float outMax)</td></tr>
+<tr class="memdesc:ad7fced70a610f756fa6319fccc4ae725"><td class="mdescLeft">&#160;</td><td class="mdescRight">运行中修改输出限幅，并把积分收拢到新限幅内  <br /></td></tr>
+<tr class="memitem:acb76685b15d3fde29d9bd5548b3268c1" id="r_acb76685b15d3fde29d9bd5548b3268c1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acb76685b15d3fde29d9bd5548b3268c1">PID_Reset</a> (<a class="el" href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a> *hpid)</td></tr>
+<tr class="memdesc:acb76685b15d3fde29d9bd5548b3268c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">复位 PID 内部状态（积分/历史误差/输出）  <br /></td></tr>
+<tr class="memitem:a0cc51ef261cec84e3e35382345ac95a0" id="r_a0cc51ef261cec84e3e35382345ac95a0"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a0cc51ef261cec84e3e35382345ac95a0">PID_Update</a> (<a class="el" href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a> *hpid, float error)</td></tr>
+<tr class="memdesc:a0cc51ef261cec84e3e35382345ac95a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行一次 PID 计算  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>位置式抗饱和（clamping anti-windup）PID 控制器模块头文件 </p>
+<dl class="section note"><dt>注解</dt><dd>GIM4310/GIM4305 关节电机控制器应用代码，供电流环/速度环/位置环复用。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd></dd></dl>
+<p>Copyright (c) 2026 Z.Xusheng SPDX-License-Identifier: MIT</p>
+<p>This file is part of the GIM4310/GIM4305 joint motor controller firmware, distributed under the MIT License. See the LICENSE file in the repository root for full terms. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="a476429033a7322ee2bd627805ca46816" name="a476429033a7322ee2bd627805ca46816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a476429033a7322ee2bd627805ca46816">&#9670;&#160;</a></span>PID_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PID_Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>hpid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>kp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>ki</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>kd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>outMin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>outMax</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化 PID 控制器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hpid</td><td>PID 句柄 </td></tr>
+    <tr><td class="paramname">kp</td><td>比例增益 </td></tr>
+    <tr><td class="paramname">ki</td><td>离散积分增益（连续 Ki * Ts） </td></tr>
+    <tr><td class="paramname">kd</td><td>离散微分增益（连续 Kd / Ts） </td></tr>
+    <tr><td class="paramname">outMin</td><td>输出下限 </td></tr>
+    <tr><td class="paramname">outMax</td><td>输出上限 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="pid_8h_a476429033a7322ee2bd627805ca46816_cgraph.svg" width="236" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="pid_8h_a476429033a7322ee2bd627805ca46816_icgraph.svg" width="584" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="acb76685b15d3fde29d9bd5548b3268c1" name="acb76685b15d3fde29d9bd5548b3268c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb76685b15d3fde29d9bd5548b3268c1">&#9670;&#160;</a></span>PID_Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PID_Reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>hpid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>复位 PID 内部状态（积分/历史误差/输出） </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="pid_8h_acb76685b15d3fde29d9bd5548b3268c1_icgraph.svg" width="100%" height="526"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a8977cc689f8f72deff8a981ff5da901f" name="a8977cc689f8f72deff8a981ff5da901f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8977cc689f8f72deff8a981ff5da901f">&#9670;&#160;</a></span>PID_SetGains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PID_SetGains </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>hpid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>kp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>ki</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>kd</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>运行中修改增益（不复位积分，保证无扰切换） </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="pid_8h_a8977cc689f8f72deff8a981ff5da901f_icgraph.svg" width="100%" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ad7fced70a610f756fa6319fccc4ae725" name="ad7fced70a610f756fa6319fccc4ae725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7fced70a610f756fa6319fccc4ae725">&#9670;&#160;</a></span>PID_SetLimits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PID_SetLimits </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>hpid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>outMin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>outMax</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>运行中修改输出限幅，并把积分收拢到新限幅内 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="pid_8h_ad7fced70a610f756fa6319fccc4ae725_icgraph.svg" width="100%" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a0cc51ef261cec84e3e35382345ac95a0" name="a0cc51ef261cec84e3e35382345ac95a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cc51ef261cec84e3e35382345ac95a0">&#9670;&#160;</a></span>PID_Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PID_Update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>hpid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>error</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>执行一次 PID 计算 </p>
+<dl class="section note"><dt>注解</dt><dd>在固定周期任务中调用（电流环 ISR / 降采样速度环）。 抗饱和策略：仅当输出未饱和、或误差方向有助于退出饱和时才累加积分。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hpid</td><td>PID 句柄 </td></tr>
+    <tr><td class="paramname">error</td><td>目标值 - 反馈值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">饱和后的控制输出</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="pid_8h_a0cc51ef261cec84e3e35382345ac95a0_icgraph.svg" width="100%" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_eb1463819d84903762eb6f59cc0c4383.html">Application</a></li><li class="navelem"><a href="dir_9432622812bb694a54394c78af40a15c.html">control</a></li><li class="navelem"><a href="pid_8h.html">pid.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

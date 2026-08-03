@@ -1,0 +1,14 @@
+<map id="MC_HandleTypeDef" name="MC_HandleTypeDef">
+<area shape="rect" id="Node000001" title="电机控制运行数据结构体（telemetry 直接读取）" alt="" coords="257,263,425,293"/>
+<area shape="rect" id="Node000002" href="$struct_e_n_c___data_type_def.html" title="编码器运行数据结构体" alt="" coords="5,159,165,188"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,192,308,261,304,264,133,197"/>
+<area shape="rect" id="Node000003" href="$struct_p_l_l___handle_type_def.html" title="PLL 型角度跟踪速度估计器句柄" alt="" coords="189,159,360,188"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="293,199,335,264,330,263,290,203"/>
+<area shape="rect" id="Node000004" href="$struct_f_o_c___handle_type_def.html" title="FOC 运行句柄结构体" alt="" coords="510,159,686,188"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="552,194,377,265,376,260,546,195"/>
+<area shape="rect" id="Node000005" href="$struct_p_i_d___handle_type_def.html" title="PID 控制器句柄结构体" alt="" coords="324,5,494,35"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="406,49,374,189,348,265,344,261,369,188,401,52"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="438,42,550,133,582,159,576,158,546,137,436,48"/>
+<area shape="rect" id="Node000006" href="$struct_f_o_c___vec2_type_def.html" title="两相正交量（alpha&#45;beta 或 d&#45;q）" alt="" coords="518,5,678,35"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="600,48,601,160,596,157,596,52"/>
+</map>

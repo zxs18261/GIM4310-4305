@@ -1,0 +1,19 @@
+<map id="Application/control/filter.h" name="Application/control/filter.h">
+<area shape="rect" id="Node000001" title="滤波与状态估计模块头文件（一阶低通滤波器、PLL 速度估计器）" alt="" coords="390,5,544,54"/>
+<area shape="rect" id="Node000002" href="$filter_8c.html" title="滤波与状态估计模块（一阶低通滤波器、PLL 速度估计器）" alt="" coords="302,102,456,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="437,64,403,104,400,99,433,67"/>
+<area shape="rect" id="Node000003" href="$motor__ctrl_8h.html" title="电机控制核心模块头文件（模式状态机 + FOC 主循环）" alt="" coords="480,102,633,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="500,63,537,102,531,101,499,68"/>
+<area shape="rect" id="Node000004" href="$app__can__protocol_8c.html" title="CAN 应用协议（MIT 运控协议 + 配置协议）" alt="" coords="5,199,169,247"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="462,152,322,178,182,201,170,204,168,199,181,196,321,173,467,151"/>
+<area shape="rect" id="Node000005" href="$app__led_8c.html" title="状态灯语模块（单颗 WS2812，亮度全局可调）" alt="" coords="193,199,357,247"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="474,156,346,201,345,195,469,157"/>
+<area shape="rect" id="Node000006" href="$app__main_8c.html" title="应用入口模块（前后台调度）" alt="" coords="381,199,545,247"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="525,160,488,200,485,196,520,163"/>
+<area shape="rect" id="Node000007" href="$app__monitor_8c.html" title="调试数据打印模块" alt="" coords="569,199,733,247"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="591,159,630,199,625,197,589,164"/>
+<area shape="rect" id="Node000008" href="$app__shell_8c.html" title="调试 shell 模块（USART3，行式命令）" alt="" coords="757,199,921,247"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="642,153,771,198,765,198,641,159"/>
+<area shape="rect" id="Node000009" href="$motor__ctrl_8c.html" title="电机控制核心模块（模式状态机 + 20kHz FOC 主循环）" alt="" coords="945,199,1098,247"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="648,141,933,196,947,202,942,201,932,201,648,146"/>
+</map>

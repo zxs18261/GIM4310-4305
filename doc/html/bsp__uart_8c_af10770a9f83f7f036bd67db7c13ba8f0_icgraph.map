@@ -1,0 +1,14 @@
+<map id="BSP_UART_Flush" name="BSP_UART_Flush">
+<area shape="rect" id="Node000001" title="阻塞等待 TX 缓冲发空（仅限故障复位前等场景，不得在 ISR 中调用）" alt="" coords="902,32,1058,62"/>
+<area shape="rect" id="Node000002" href="$app__shell_8c.html#aae99ca6c66313d23c6f3a593badf4961" title="boot0 命令：检查/编程 nSWBOOT0 选项字节" alt="" coords="688,5,854,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="884,35,854,33,855,28,889,35"/>
+<area shape="rect" id="Node000003" href="$app__shell_8c.html#ad6303a346f63752b165b847c5dcefbb7" title="解析并执行一行命令" alt="" coords="457,32,640,62"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="884,47,640,49,640,44,889,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="675,32,640,39,640,33,669,32"/>
+<area shape="rect" id="Node000004" href="$app__shell_8c.html#ab93a15148be82ad3c0999b099de7c29e" title="shell 轮询（后台调用）" alt="" coords="257,32,409,62"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="439,47,409,49,409,44,444,47"/>
+<area shape="rect" id="Node000005" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,32,209,62"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="239,47,210,49,210,44,244,47"/>
+<area shape="rect" id="Node000006" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,32,62,62"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="92,48,62,49,62,44,97,46"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="Application/bsp/bsp_ws2812.c" name="Application/bsp/bsp_ws2812.c">
+<area shape="rect" id="Node000001" title="WS2812 类 RGB 状态灯 BSP（TIM2_CH1 PWM + DMA，单灯）" alt="" coords="138,5,299,54"/>
+<area shape="rect" id="Node000002" href="$bsp__ws2812_8h.html" title="WS2812 类 RGB 状态灯 BSP 头文件（TIM2_CH1 PWM + DMA）" alt="" coords="5,102,131,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,57,108,96,105,92,178,52"/>
+<area shape="rect" id="Node000006" href="$board__config_8h.html" title="板级硬件参数统一配置（GIM4310/4305 电机控制器 V0.0 板）" alt="" coords="155,102,282,132"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="220,52,221,87,216,85,218,57"/>
+<area shape="rect" id="Node000007" href="$tim_8h.html" title="This file contains all the function prototypes for the tim.c file" alt="" coords="307,102,362,132"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="251,52,306,92,301,93,251,57"/>
+<area shape="rect" id="Node000003" href="$main_8h.html" title=": Header for main.c file." alt="" coords="213,180,283,209"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,130,203,172,198,175,102,135"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="32,180,104,209"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="69,130,71,164,65,163,67,135"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="177,257,319,287"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="250,208,250,243,246,240,246,212"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="321,131,277,171,274,167,316,134"/>
+</map>

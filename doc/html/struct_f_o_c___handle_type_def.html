@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: FOC_HandleTypeDef结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('struct_f_o_c___handle_type_def.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">FOC_HandleTypeDef结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>FOC 运行句柄结构体  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="foc_8h_source.html">foc.h</a>&gt;</code></p>
+<div class="dynheader">
+FOC_HandleTypeDef 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="struct_f_o_c___handle_type_def__coll__graph.svg" width="366" height="194"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:a63fcf40c443cd4832355e1c8f1c7757e" id="r_a63fcf40c443cd4832355e1c8f1c7757e"><td class="memItemLeft"><a class="el" href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a>&#160;</td><td class="memItemRight"><a class="el" href="#a63fcf40c443cd4832355e1c8f1c7757e">PidId</a></td></tr>
+<tr class="memitem:a75ece73fd092f7c66bf5e29b1ef7ab33" id="r_a75ece73fd092f7c66bf5e29b1ef7ab33"><td class="memItemLeft"><a class="el" href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a>&#160;</td><td class="memItemRight"><a class="el" href="#a75ece73fd092f7c66bf5e29b1ef7ab33">PidIq</a></td></tr>
+<tr class="memitem:a0cd2a3177b80556218313a0cc68b877b" id="r_a0cd2a3177b80556218313a0cc68b877b"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a0cd2a3177b80556218313a0cc68b877b">Ls</a></td></tr>
+<tr class="memitem:a840779cd1a93c710955b0358f32f651a" id="r_a840779cd1a93c710955b0358f32f651a"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a840779cd1a93c710955b0358f32f651a">Flux</a></td></tr>
+<tr class="memitem:a863e5641279e7394615bb459c9001ad1" id="r_a863e5641279e7394615bb459c9001ad1"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a863e5641279e7394615bb459c9001ad1">Ts</a></td></tr>
+<tr class="memitem:ac8a077b464f616060bc7911a537d5d7f" id="r_ac8a077b464f616060bc7911a537d5d7f"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ac8a077b464f616060bc7911a537d5d7f">MaxDuty</a></td></tr>
+<tr class="memitem:a0021e5c929c944aed460800808328723" id="r_a0021e5c929c944aed460800808328723"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a0021e5c929c944aed460800808328723">DecoupleEnable</a></td></tr>
+<tr class="memitem:afcc9b7bd5fafda775123001d4f024ff7" id="r_afcc9b7bd5fafda775123001d4f024ff7"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#afcc9b7bd5fafda775123001d4f024ff7">IdRef</a></td></tr>
+<tr class="memitem:ad0d4d12fe0a62c1c0bf9e2055a9aafca" id="r_ad0d4d12fe0a62c1c0bf9e2055a9aafca"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ad0d4d12fe0a62c1c0bf9e2055a9aafca">IqRef</a></td></tr>
+<tr class="memitem:ac2dfe81dc332f973818f65ef81327d27" id="r_ac2dfe81dc332f973818f65ef81327d27"><td class="memItemLeft"><a class="el" href="struct_f_o_c___vec2_type_def.html">FOC_Vec2TypeDef</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac2dfe81dc332f973818f65ef81327d27">IAlphaBeta</a></td></tr>
+<tr class="memitem:a12bbc9ba7fa113583c90b45af9afd72a" id="r_a12bbc9ba7fa113583c90b45af9afd72a"><td class="memItemLeft"><a class="el" href="struct_f_o_c___vec2_type_def.html">FOC_Vec2TypeDef</a>&#160;</td><td class="memItemRight"><a class="el" href="#a12bbc9ba7fa113583c90b45af9afd72a">Idq</a></td></tr>
+<tr class="memitem:aef41a911b5d1be63d28b80e43da07467" id="r_aef41a911b5d1be63d28b80e43da07467"><td class="memItemLeft"><a class="el" href="struct_f_o_c___vec2_type_def.html">FOC_Vec2TypeDef</a>&#160;</td><td class="memItemRight"><a class="el" href="#aef41a911b5d1be63d28b80e43da07467">Vdq</a></td></tr>
+<tr class="memitem:a9ae57ea5694dfd83a382fa8fa176cb77" id="r_a9ae57ea5694dfd83a382fa8fa176cb77"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a9ae57ea5694dfd83a382fa8fa176cb77">DutyA</a></td></tr>
+<tr class="memitem:a6ad3861c3bd766b8fc74203c55778f80" id="r_a6ad3861c3bd766b8fc74203c55778f80"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a6ad3861c3bd766b8fc74203c55778f80">DutyB</a></td></tr>
+<tr class="memitem:a6eb6b1af907726d26d639431918cf035" id="r_a6eb6b1af907726d26d639431918cf035"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a6eb6b1af907726d26d639431918cf035">DutyC</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>FOC 运行句柄结构体 </p>
+<dl class="section note"><dt>注解</dt><dd>Update 之后可读取内部测量/输出用于监控。 </dd></dl>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">结构体成员变量说明</h2>
+<a id="a0021e5c929c944aed460800808328723" name="a0021e5c929c944aed460800808328723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0021e5c929c944aed460800808328723">&#9670;&#160;</a></span>DecoupleEnable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t FOC_HandleTypeDef::DecoupleEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>解耦/前馈使能 </p>
+
+</div>
+</div>
+<a id="a9ae57ea5694dfd83a382fa8fa176cb77" name="a9ae57ea5694dfd83a382fa8fa176cb77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ae57ea5694dfd83a382fa8fa176cb77">&#9670;&#160;</a></span>DutyA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FOC_HandleTypeDef::DutyA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A 相占空比输出 </p>
+
+</div>
+</div>
+<a id="a6ad3861c3bd766b8fc74203c55778f80" name="a6ad3861c3bd766b8fc74203c55778f80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ad3861c3bd766b8fc74203c55778f80">&#9670;&#160;</a></span>DutyB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FOC_HandleTypeDef::DutyB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>B 相占空比输出 </p>
+
+</div>
+</div>
+<a id="a6eb6b1af907726d26d639431918cf035" name="a6eb6b1af907726d26d639431918cf035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eb6b1af907726d26d639431918cf035">&#9670;&#160;</a></span>DutyC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FOC_HandleTypeDef::DutyC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>C 相占空比输出 </p>
+
+</div>
+</div>
+<a id="a840779cd1a93c710955b0358f32f651a" name="a840779cd1a93c710955b0358f32f651a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840779cd1a93c710955b0358f32f651a">&#9670;&#160;</a></span>Flux</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FOC_HandleTypeDef::Flux</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>转子磁链（反电动势前馈用） </p>
+
+</div>
+</div>
+<a id="ac2dfe81dc332f973818f65ef81327d27" name="ac2dfe81dc332f973818f65ef81327d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2dfe81dc332f973818f65ef81327d27">&#9670;&#160;</a></span>IAlphaBeta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_f_o_c___vec2_type_def.html">FOC_Vec2TypeDef</a> FOC_HandleTypeDef::IAlphaBeta</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>测量电流 alpha/beta [A] </p>
+
+</div>
+</div>
+<a id="a12bbc9ba7fa113583c90b45af9afd72a" name="a12bbc9ba7fa113583c90b45af9afd72a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12bbc9ba7fa113583c90b45af9afd72a">&#9670;&#160;</a></span>Idq</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_f_o_c___vec2_type_def.html">FOC_Vec2TypeDef</a> FOC_HandleTypeDef::Idq</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>测量电流 d/q [A] </p>
+
+</div>
+</div>
+<a id="afcc9b7bd5fafda775123001d4f024ff7" name="afcc9b7bd5fafda775123001d4f024ff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcc9b7bd5fafda775123001d4f024ff7">&#9670;&#160;</a></span>IdRef</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FOC_HandleTypeDef::IdRef</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>d 轴电流给定 [A] </p>
+
+</div>
+</div>
+<a id="ad0d4d12fe0a62c1c0bf9e2055a9aafca" name="ad0d4d12fe0a62c1c0bf9e2055a9aafca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0d4d12fe0a62c1c0bf9e2055a9aafca">&#9670;&#160;</a></span>IqRef</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FOC_HandleTypeDef::IqRef</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>q 轴电流给定 [A] </p>
+
+</div>
+</div>
+<a id="a0cd2a3177b80556218313a0cc68b877b" name="a0cd2a3177b80556218313a0cc68b877b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cd2a3177b80556218313a0cc68b877b">&#9670;&#160;</a></span>Ls</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FOC_HandleTypeDef::Ls</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>相电感（解耦用） </p>
+
+</div>
+</div>
+<a id="ac8a077b464f616060bc7911a537d5d7f" name="ac8a077b464f616060bc7911a537d5d7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8a077b464f616060bc7911a537d5d7f">&#9670;&#160;</a></span>MaxDuty</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FOC_HandleTypeDef::MaxDuty</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>占空比上限 </p>
+
+</div>
+</div>
+<a id="a63fcf40c443cd4832355e1c8f1c7757e" name="a63fcf40c443cd4832355e1c8f1c7757e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63fcf40c443cd4832355e1c8f1c7757e">&#9670;&#160;</a></span>PidId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a> FOC_HandleTypeDef::PidId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>d 轴电流 PI </p>
+
+</div>
+</div>
+<a id="a75ece73fd092f7c66bf5e29b1ef7ab33" name="a75ece73fd092f7c66bf5e29b1ef7ab33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75ece73fd092f7c66bf5e29b1ef7ab33">&#9670;&#160;</a></span>PidIq</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a> FOC_HandleTypeDef::PidIq</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>q 轴电流 PI </p>
+
+</div>
+</div>
+<a id="a863e5641279e7394615bb459c9001ad1" name="a863e5641279e7394615bb459c9001ad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a863e5641279e7394615bb459c9001ad1">&#9670;&#160;</a></span>Ts</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float FOC_HandleTypeDef::Ts</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>电流环周期（输出角度前馈补偿用） </p>
+
+</div>
+</div>
+<a id="aef41a911b5d1be63d28b80e43da07467" name="aef41a911b5d1be63d28b80e43da07467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef41a911b5d1be63d28b80e43da07467">&#9670;&#160;</a></span>Vdq</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_f_o_c___vec2_type_def.html">FOC_Vec2TypeDef</a> FOC_HandleTypeDef::Vdq</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>输出电压 d/q [V] </p>
+
+</div>
+</div>
+<hr/>该结构体的文档由以下文件生成:<ul>
+<li>Application/control/<a class="el" href="foc_8h_source.html">foc.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="struct_f_o_c___handle_type_def.html">FOC_HandleTypeDef</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

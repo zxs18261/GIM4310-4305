@@ -1,0 +1,30 @@
+<map id="Application/control/motor_ctrl.h" name="Application/control/motor_ctrl.h">
+<area shape="rect" id="Node000001" title="电机控制核心模块头文件（模式状态机 + FOC 主循环）" alt="" coords="206,5,360,54"/>
+<area shape="rect" id="Node000002" href="$foc_8h.html" title="FOC 电流环模块头文件" alt="" coords="155,102,210,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,56,213,93,210,89,257,53"/>
+<area shape="rect" id="Node000005" href="$pid_8h.html" title="位置式抗饱和（clamping anti&#45;windup）PID 控制器模块头文件" alt="" coords="256,180,312,209"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="280,52,276,91,276,131,281,165,276,163,271,132,271,91,277,57"/>
+<area shape="rect" id="Node000006" href="$filter_8h.html" title="滤波与状态估计模块头文件（一阶低通滤波器、PLL 速度估计器）" alt="" coords="286,102,349,132"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="293,52,309,88,303,87,292,57"/>
+<area shape="rect" id="Node000007" href="$protection_8h.html" title="保护与故障管理模块头文件" alt="" coords="5,180,110,209"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="223,56,185,78,144,104,108,136,79,169,75,166,105,133,141,100,182,73,227,53"/>
+<area shape="rect" id="Node000008" href="$bsp__encoder_8h.html" title="MT6701 磁编码器 BSP 头文件（GPIO 位带模拟 SSI）" alt="" coords="373,102,499,132"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="326,52,400,94,395,95,325,57"/>
+<area shape="rect" id="Node000011" href="$bsp__adc_8h.html" title="ADC 采样 BSP 头文件（电流/母线电压注入组 + 温度规则组）" alt="" coords="523,102,618,132"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="360,51,511,96,506,98,360,56"/>
+<area shape="rect" id="Node000003" href="$foc__math_8h.html" title="FOC 数学基础模块头文件（快速三角函数、坐标变换、角度工具）" alt="" coords="133,180,232,209"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="184,130,185,165,180,163,181,135"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="202,130,256,170,251,171,201,135"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="309,257,382,287"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="214,207,304,250,299,251,213,213"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="297,208,327,246,322,244,295,212"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="322,130,343,243,338,241,318,134"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="111,207,296,255,293,260,110,212"/>
+<area shape="poly" id="edge14_Node000008_Node000004" title=" " alt="" coords="430,131,363,246,360,242,425,133"/>
+<area shape="rect" id="Node000009" href="$main_8h.html" title=": Header for main.c file." alt="" coords="454,180,523,209"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="447,130,472,167,467,166,445,135"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="417,257,559,287"/>
+<area shape="poly" id="edge13_Node000009_Node000010" title=" " alt="" coords="490,208,490,243,486,240,486,212"/>
+<area shape="poly" id="edge17_Node000011_Node000004" title=" " alt="" coords="571,131,562,171,551,193,537,211,513,226,477,240,397,262,396,257,476,235,510,221,533,207,547,190,557,170,567,134"/>
+<area shape="poly" id="edge16_Node000011_Node000009" title=" " alt="" coords="558,131,516,171,513,167,553,133"/>
+</map>

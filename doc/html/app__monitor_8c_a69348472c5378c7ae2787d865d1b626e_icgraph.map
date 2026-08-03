@@ -1,0 +1,14 @@
+<map id="APP_MON_PrintBanner" name="APP_MON_PrintBanner">
+<area shape="rect" id="Node000001" title="打印上电横幅" alt="" coords="688,33,882,63"/>
+<area shape="rect" id="Node000002" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="291,5,375,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="670,42,376,25,376,20,675,40"/>
+<area shape="rect" id="Node000004" href="$app__shell_8c.html#ad6303a346f63752b165b847c5dcefbb7" title="解析并执行一行命令" alt="" coords="457,59,640,88"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="675,60,640,66,640,61,669,60"/>
+<area shape="rect" id="Node000003" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,33,62,63"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="276,28,62,48,62,43,276,23"/>
+<area shape="rect" id="Node000005" href="$app__shell_8c.html#ab93a15148be82ad3c0999b099de7c29e" title="shell 轮询（后台调用）" alt="" coords="257,59,409,88"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="439,74,409,76,409,71,444,73"/>
+<area shape="rect" id="Node000006" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,59,209,88"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="239,74,210,76,210,71,244,73"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="92,62,62,56,62,51,97,59"/>
+</map>

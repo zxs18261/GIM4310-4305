@@ -1,0 +1,36 @@
+<map id="MC_Disable" name="MC_Disable">
+<area shape="rect" id="Node000001" title="封波（ISR 安全）" alt="" coords="1102,112,1213,142"/>
+<area shape="rect" id="Node000002" href="$app__can__protocol_8c.html#a962b5bb63f0dca9cd0efbd25455d6002" title="配置通道处理" alt="" coords="870,112,1054,142"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1084,127,1055,129,1055,124,1089,127"/>
+<area shape="rect" id="Node000009" href="$app__can__protocol_8c.html#a287ab0ebbb13b297320ec4082c51365b" title="MIT 运控通道处理" alt="" coords="872,59,1052,88"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="1085,108,1019,92,1020,86,1090,108"/>
+<area shape="rect" id="Node000010" href="$app__shell_8c.html#ad6303a346f63752b165b847c5dcefbb7" title="解析并执行一行命令" alt="" coords="871,5,1053,35"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="1127,101,1094,75,1053,49,1027,38,1028,33,1056,44,1097,71,1133,102"/>
+<area shape="rect" id="Node000012" href="$motor__ctrl_8c.html#a5c982a7374da291bb0e5d06d26893def" title="FOC 主循环（ADC 注入完成 ISR，20kHz）" alt="" coords="474,215,573,244"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="1121,149,1089,167,1055,180,989,197,921,210,786,226,665,233,574,233,574,228,665,227,785,221,920,205,988,192,1054,175,1086,163,1115,150"/>
+<area shape="rect" id="Node000013" href="$motor__ctrl_8c.html#a0254f4cdae07bdb4781c9df4b540ffe8" title="触发故障：立即封波并锁存（ISR 安全）" alt="" coords="671,163,789,192"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="1093,146,1055,156,912,173,790,179,789,174,912,167,1054,151,1087,146"/>
+<area shape="rect" id="Node000003" href="$app__can__protocol_8c.html#a0c342291cd7188f387f12f9b2157c4e9" title="CAN 接收分发（ISR 上下文）" alt="" coords="638,59,822,88"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="877,108,798,92,798,86,882,108"/>
+<area shape="rect" id="Node000004" href="$app__can__protocol_8c.html#af389bd7cff6ae0b5df76c2feb46f25f6" title="初始化 CAN 应用协议（按持久化参数配置 BSP）" alt="" coords="459,57,588,87"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="620,73,588,75,588,70,625,72"/>
+<area shape="rect" id="Node000005" href="$app__can__protocol_8c.html#a6c2f3bebbd2597376fd87038ef059996" title="后台轮询：处理通信参数变更后的重新初始化" alt="" coords="266,59,401,88"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="441,73,401,76,400,70,446,72"/>
+<area shape="rect" id="Node000008" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="291,163,375,192"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="470,93,459,101,403,134,357,164,355,160,400,129,456,96,465,95"/>
+<area shape="rect" id="Node000006" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,85,209,115"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="248,87,210,95,209,90,253,85"/>
+<area shape="rect" id="Node000007" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,112,62,142"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="93,116,64,123,61,119,96,112"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="274,170,62,134,62,129,277,166"/>
+<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="854,74,823,76,822,71,859,73"/>
+<area shape="rect" id="Node000011" href="$app__shell_8c.html#ab93a15148be82ad3c0999b099de7c29e" title="shell 轮询（后台调用）" alt="" coords="257,5,409,35"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="854,22,410,23,409,18,857,18"/>
+<area shape="poly" id="edge13_Node000011_Node000006" title=" " alt="" coords="268,42,258,49,187,87,184,82,256,44,273,40"/>
+<area shape="poly" id="edge15_Node000012_Node000008" title=" " alt="" coords="456,212,375,191,376,186,461,212"/>
+<area shape="poly" id="edge17_Node000013_Node000008" title=" " alt="" coords="653,178,376,180,376,175,658,177"/>
+<area shape="poly" id="edge20_Node000013_Node000012" title=" " alt="" coords="658,196,574,220,573,214,653,197"/>
+<area shape="rect" id="Node000014" href="$app__main_8c.html#a9d7a99f268e16f853238569586d275aa" title="慢任务：温度采样/过温保护/CAN 指令超时" alt="" coords="457,111,590,140"/>
+<area shape="poly" id="edge18_Node000013_Node000014" title=" " alt="" coords="653,159,585,144,586,138,658,159"/>
+<area shape="poly" id="edge19_Node000014_Node000006" title=" " alt="" coords="440,122,210,106,209,101,443,118"/>
+</map>

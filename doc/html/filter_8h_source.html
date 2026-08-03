@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: Application/control/filter.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('filter_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">filter.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="filter_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef __FILTER_H</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define __FILTER_H</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">/* Includes ------------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/* Exported types ------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="struct_l_p_f___handle_type_def.html">   35</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_l_p_f___handle_type_def.html#a0df5460cfa9bcda3e4e2bda803643712">   37</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_l_p_f___handle_type_def.html#a0df5460cfa9bcda3e4e2bda803643712">Alpha</a>;        </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="struct_l_p_f___handle_type_def.html#ac2c7366c56b6912e429e3a8e0c06c182">   38</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_l_p_f___handle_type_def.html#ac2c7366c56b6912e429e3a8e0c06c182">Y</a>;            </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>} <a class="code hl_struct" href="struct_l_p_f___handle_type_def.html">LPF_HandleTypeDef</a>;</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="struct_p_l_l___handle_type_def.html">   48</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="struct_p_l_l___handle_type_def.html#a11a257578a52cca78d7364f4f62c319c">   50</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_p_l_l___handle_type_def.html#a11a257578a52cca78d7364f4f62c319c">Kp</a>;           </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="struct_p_l_l___handle_type_def.html#ab14a82bc6078d017210a11e96dafba87">   51</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_p_l_l___handle_type_def.html#ab14a82bc6078d017210a11e96dafba87">Ki</a>;           </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="struct_p_l_l___handle_type_def.html#a58cffdd208eb6b0c0582660025c37379">   52</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_p_l_l___handle_type_def.html#a58cffdd208eb6b0c0582660025c37379">Ts</a>;           </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="struct_p_l_l___handle_type_def.html#a62791600825e76741494658bf78e7bee">   53</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_p_l_l___handle_type_def.html#a62791600825e76741494658bf78e7bee">Theta</a>;        </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="struct_p_l_l___handle_type_def.html#af7ca36343261bb6ff147f807a454a19c">   54</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_p_l_l___handle_type_def.html#af7ca36343261bb6ff147f807a454a19c">Speed</a>;        </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>} <a class="code hl_struct" href="struct_p_l_l___handle_type_def.html">PLL_HandleTypeDef</a>;</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">/* Exported functions prototypes ---------------------------------------------*/</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keywordtype">void</span>  <a class="code hl_function" href="filter_8h.html#a0491b930aa757847fdee2102ab1d0742">LPF_Init</a>(<a class="code hl_struct" href="struct_l_p_f___handle_type_def.html">LPF_HandleTypeDef</a> *hlpf, <span class="keywordtype">float</span> fc, <span class="keywordtype">float</span> ts);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keywordtype">void</span>  <a class="code hl_function" href="filter_8h.html#aae1999737d547785c40665adaf71769c">LPF_Preload</a>(<a class="code hl_struct" href="struct_l_p_f___handle_type_def.html">LPF_HandleTypeDef</a> *hlpf, <span class="keywordtype">float</span> y0);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keywordtype">float</span> <a class="code hl_function" href="filter_8h.html#a55c95d65fc1817bf1279218391f8664b">LPF_Update</a>(<a class="code hl_struct" href="struct_l_p_f___handle_type_def.html">LPF_HandleTypeDef</a> *hlpf, <span class="keywordtype">float</span> x);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keywordtype">void</span>  <a class="code hl_function" href="filter_8h.html#aefdb8f4eed7a1e65aec91e54f7a0f790">PLL_Init</a>(<a class="code hl_struct" href="struct_p_l_l___handle_type_def.html">PLL_HandleTypeDef</a> *hpll, <span class="keywordtype">float</span> bandwidth, <span class="keywordtype">float</span> ts);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keywordtype">void</span>  <a class="code hl_function" href="filter_8h.html#a92c4dfa4557978b294c448b59f485614">PLL_Preload</a>(<a class="code hl_struct" href="struct_p_l_l___handle_type_def.html">PLL_HandleTypeDef</a> *hpll, <span class="keywordtype">float</span> theta0);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keywordtype">void</span>  <a class="code hl_function" href="filter_8h.html#a684e4c63e2e5d52d06110c3b0a486c28">PLL_Update</a>(<a class="code hl_struct" href="struct_p_l_l___handle_type_def.html">PLL_HandleTypeDef</a> *hpll, <span class="keywordtype">float</span> theta);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif </span><span class="comment">/* __FILTER_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="afilter_8h_html_a0491b930aa757847fdee2102ab1d0742"><div class="ttname"><a href="filter_8h.html#a0491b930aa757847fdee2102ab1d0742">LPF_Init</a></div><div class="ttdeci">void LPF_Init(LPF_HandleTypeDef *hlpf, float fc, float ts)</div><div class="ttdoc">初始化一阶低通滤波器</div><div class="ttdef"><b>定义</b> filter.c:30</div></div>
+<div class="ttc" id="afilter_8h_html_a55c95d65fc1817bf1279218391f8664b"><div class="ttname"><a href="filter_8h.html#a55c95d65fc1817bf1279218391f8664b">LPF_Update</a></div><div class="ttdeci">float LPF_Update(LPF_HandleTypeDef *hlpf, float x)</div><div class="ttdoc">执行一次滤波</div><div class="ttdef"><b>定义</b> filter.c:52</div></div>
+<div class="ttc" id="afilter_8h_html_a684e4c63e2e5d52d06110c3b0a486c28"><div class="ttname"><a href="filter_8h.html#a684e4c63e2e5d52d06110c3b0a486c28">PLL_Update</a></div><div class="ttdeci">void PLL_Update(PLL_HandleTypeDef *hpll, float theta)</div><div class="ttdoc">执行一次 PLL 跟踪</div><div class="ttdef"><b>定义</b> filter.c:97</div></div>
+<div class="ttc" id="afilter_8h_html_a92c4dfa4557978b294c448b59f485614"><div class="ttname"><a href="filter_8h.html#a92c4dfa4557978b294c448b59f485614">PLL_Preload</a></div><div class="ttdeci">void PLL_Preload(PLL_HandleTypeDef *hpll, float theta0)</div><div class="ttdoc">预置 PLL 跟踪角度（上电对准编码器初值，避免速度冲击）</div><div class="ttdef"><b>定义</b> filter.c:81</div></div>
+<div class="ttc" id="afilter_8h_html_aae1999737d547785c40665adaf71769c"><div class="ttname"><a href="filter_8h.html#aae1999737d547785c40665adaf71769c">LPF_Preload</a></div><div class="ttdeci">void LPF_Preload(LPF_HandleTypeDef *hlpf, float y0)</div><div class="ttdoc">预置滤波器状态，避免起始阶跃</div><div class="ttdef"><b>定义</b> filter.c:41</div></div>
+<div class="ttc" id="afilter_8h_html_aefdb8f4eed7a1e65aec91e54f7a0f790"><div class="ttname"><a href="filter_8h.html#aefdb8f4eed7a1e65aec91e54f7a0f790">PLL_Init</a></div><div class="ttdeci">void PLL_Init(PLL_HandleTypeDef *hpll, float bandwidth, float ts)</div><div class="ttdoc">初始化 PLL 速度估计器</div><div class="ttdef"><b>定义</b> filter.c:66</div></div>
+<div class="ttc" id="astruct_l_p_f___handle_type_def_html"><div class="ttname"><a href="struct_l_p_f___handle_type_def.html">LPF_HandleTypeDef</a></div><div class="ttdoc">一阶低通滤波器（IIR）句柄</div><div class="ttdef"><b>定义</b> filter.h:36</div></div>
+<div class="ttc" id="astruct_l_p_f___handle_type_def_html_a0df5460cfa9bcda3e4e2bda803643712"><div class="ttname"><a href="struct_l_p_f___handle_type_def.html#a0df5460cfa9bcda3e4e2bda803643712">LPF_HandleTypeDef::Alpha</a></div><div class="ttdeci">float Alpha</div><div class="ttdef"><b>定义</b> filter.h:37</div></div>
+<div class="ttc" id="astruct_l_p_f___handle_type_def_html_ac2c7366c56b6912e429e3a8e0c06c182"><div class="ttname"><a href="struct_l_p_f___handle_type_def.html#ac2c7366c56b6912e429e3a8e0c06c182">LPF_HandleTypeDef::Y</a></div><div class="ttdeci">float Y</div><div class="ttdef"><b>定义</b> filter.h:38</div></div>
+<div class="ttc" id="astruct_p_l_l___handle_type_def_html"><div class="ttname"><a href="struct_p_l_l___handle_type_def.html">PLL_HandleTypeDef</a></div><div class="ttdoc">PLL 型角度跟踪速度估计器句柄</div><div class="ttdef"><b>定义</b> filter.h:49</div></div>
+<div class="ttc" id="astruct_p_l_l___handle_type_def_html_a11a257578a52cca78d7364f4f62c319c"><div class="ttname"><a href="struct_p_l_l___handle_type_def.html#a11a257578a52cca78d7364f4f62c319c">PLL_HandleTypeDef::Kp</a></div><div class="ttdeci">float Kp</div><div class="ttdef"><b>定义</b> filter.h:50</div></div>
+<div class="ttc" id="astruct_p_l_l___handle_type_def_html_a58cffdd208eb6b0c0582660025c37379"><div class="ttname"><a href="struct_p_l_l___handle_type_def.html#a58cffdd208eb6b0c0582660025c37379">PLL_HandleTypeDef::Ts</a></div><div class="ttdeci">float Ts</div><div class="ttdef"><b>定义</b> filter.h:52</div></div>
+<div class="ttc" id="astruct_p_l_l___handle_type_def_html_a62791600825e76741494658bf78e7bee"><div class="ttname"><a href="struct_p_l_l___handle_type_def.html#a62791600825e76741494658bf78e7bee">PLL_HandleTypeDef::Theta</a></div><div class="ttdeci">float Theta</div><div class="ttdef"><b>定义</b> filter.h:53</div></div>
+<div class="ttc" id="astruct_p_l_l___handle_type_def_html_ab14a82bc6078d017210a11e96dafba87"><div class="ttname"><a href="struct_p_l_l___handle_type_def.html#ab14a82bc6078d017210a11e96dafba87">PLL_HandleTypeDef::Ki</a></div><div class="ttdeci">float Ki</div><div class="ttdef"><b>定义</b> filter.h:51</div></div>
+<div class="ttc" id="astruct_p_l_l___handle_type_def_html_af7ca36343261bb6ff147f807a454a19c"><div class="ttname"><a href="struct_p_l_l___handle_type_def.html#af7ca36343261bb6ff147f807a454a19c">PLL_HandleTypeDef::Speed</a></div><div class="ttdeci">float Speed</div><div class="ttdef"><b>定义</b> filter.h:54</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_eb1463819d84903762eb6f59cc0c4383.html">Application</a></li><li class="navelem"><a href="dir_9432622812bb694a54394c78af40a15c.html">control</a></li><li class="navelem"><a href="filter_8h.html">filter.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

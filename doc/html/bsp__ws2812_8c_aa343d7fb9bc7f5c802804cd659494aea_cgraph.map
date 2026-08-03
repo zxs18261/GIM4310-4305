@@ -1,0 +1,5 @@
+<map id="BSP_WS2812_SetBrightness" name="BSP_WS2812_SetBrightness">
+<area shape="rect" id="Node000001" title="设置全局亮度（0~255，线性缩放）" alt="" coords="5,5,240,35"/>
+<area shape="rect" id="Node000002" href="$bsp__ws2812_8c.html#a414a0748f0ef37a68dc8383d5356ddf6" title="按亮度缩放当前颜色并生成发送序颜色字，标记待发送" alt="" coords="288,5,522,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,18,275,20,269,20,240,23"/>
+</map>

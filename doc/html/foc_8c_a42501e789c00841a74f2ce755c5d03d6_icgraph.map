@@ -1,0 +1,15 @@
+<map id="FOC_SetCurrentRef" name="FOC_SetCurrentRef">
+<area shape="rect" id="Node000001" title="设置 d/q 电流给定" alt="" coords="565,57,731,87"/>
+<area shape="rect" id="Node000002" href="$calibration_8c.html#a51f1133ceba653e8e1e600c24b54987e" title="校准状态机单步（电流环 ISR 调用，模式 = MC_MODE_CALIB）" alt="" coords="413,5,493,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="572,53,493,33,494,28,577,53"/>
+<area shape="rect" id="Node000003" href="$motor__ctrl_8c.html#a5c982a7374da291bb0e5d06d26893def" title="FOC 主循环（ADC 注入完成 ISR，20kHz）" alt="" coords="242,57,341,87"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="546,73,342,75,342,70,551,72"/>
+<area shape="rect" id="Node000006" href="$motor__ctrl_8c.html#a9dd4aa02cb15dd5ea27aa8085155adb7" title="慢环（1kHz）：电流限幅刷新与速度/位置外环" alt="" coords="389,109,517,139"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="577,91,512,111,511,106,572,92"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="401,37,341,59,339,54,396,38"/>
+<area shape="rect" id="Node000004" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="110,57,194,87"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="224,73,195,75,194,70,229,72"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,57,62,87"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="92,74,63,75,61,70,96,71"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="388,104,340,90,341,85,393,104"/>
+</map>

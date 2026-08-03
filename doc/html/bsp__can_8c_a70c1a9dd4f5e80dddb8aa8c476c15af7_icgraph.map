@@ -1,0 +1,26 @@
+<map id="BSP_CAN_Send" name="BSP_CAN_Send">
+<area shape="rect" id="Node000001" title="发送一帧经典 CAN 数据帧（非阻塞，入 TX FIFO）" alt="" coords="1367,57,1512,87"/>
+<area shape="rect" id="Node000002" href="$app__can__protocol_8c.html#a966f37b5d2949acd6d6432af5cbcbcec" title="配置通道应答：cmd + 状态 + float 值" alt="" coords="1113,5,1287,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1350,53,1272,38,1272,33,1355,54"/>
+<area shape="rect" id="Node000003" href="$app__can__protocol_8c.html#a962b5bb63f0dca9cd0efbd25455d6002" title="配置通道处理" alt="" coords="849,56,1033,86"/>
+<area shape="poly" id="edge10_Node000001_Node000003" title=" " alt="" coords="1349,72,1034,74,1034,68,1354,72"/>
+<area shape="rect" id="Node000010" href="$app__can__protocol_8c.html#a3f462aec782e36efd750a47844167fae" title="发送 MIT 反馈帧（B0=ID，P16 V12 T12，发往主机 ID）" alt="" coords="1081,109,1319,139"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="1355,91,1272,111,1271,106,1350,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1108,38,1021,58,1020,53,1103,39"/>
+<area shape="rect" id="Node000004" href="$app__can__protocol_8c.html#a0c342291cd7188f387f12f9b2157c4e9" title="CAN 接收分发（ISR 上下文）" alt="" coords="617,83,801,112"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="836,83,802,90,801,84,831,83"/>
+<area shape="rect" id="Node000005" href="$app__can__protocol_8c.html#af389bd7cff6ae0b5df76c2feb46f25f6" title="初始化 CAN 应用协议（按持久化参数配置 BSP）" alt="" coords="440,83,569,112"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="598,98,569,100,569,95,604,97"/>
+<area shape="rect" id="Node000006" href="$app__can__protocol_8c.html#a6c2f3bebbd2597376fd87038ef059996" title="后台轮询：处理通信参数变更后的重新初始化" alt="" coords="257,56,392,86"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="422,86,393,84,393,78,427,86"/>
+<area shape="rect" id="Node000009" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="117,108,202,138"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="425,106,202,122,202,117,425,101"/>
+<area shape="rect" id="Node000007" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,55,209,84"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="239,71,210,73,209,67,244,70"/>
+<area shape="rect" id="Node000008" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,81,62,111"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="92,85,63,93,61,88,97,82"/>
+<area shape="poly" id="edge9_Node000009_Node000008" title=" " alt="" coords="100,112,62,105,62,99,104,109"/>
+<area shape="rect" id="Node000011" href="$app__can__protocol_8c.html#a287ab0ebbb13b297320ec4082c51365b" title="MIT 运控通道处理" alt="" coords="851,109,1031,139"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="1063,124,1032,127,1032,122,1068,124"/>
+<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="833,112,802,111,802,105,838,112"/>
+</map>

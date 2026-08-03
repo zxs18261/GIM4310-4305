@@ -1,0 +1,7 @@
+<map id="Application/bsp/bsp_flash.h" name="Application/bsp/bsp_flash.h">
+<area shape="rect" id="Node000001" title="片内 Flash 参数持久化 BSP 头文件" alt="" coords="100,5,261,54"/>
+<area shape="rect" id="Node000002" href="$app__params_8c.html" title="运行参数管理（RAM 副本 + Flash 持久化）" alt="" coords="5,102,169,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,64,112,103,109,99,144,66"/>
+<area shape="rect" id="Node000003" href="$bsp__flash_8c.html" title="片内 Flash 参数持久化 BSP" alt="" coords="193,102,354,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,62,253,102,248,101,213,67"/>
+</map>

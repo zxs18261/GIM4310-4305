@@ -1,0 +1,5 @@
+<map id="BSP_UART_DmaTxIRQHandler" name="BSP_UART_DmaTxIRQHandler">
+<area shape="rect" id="Node000001" title="DMA1 通道 2（USART3_TX）中断服务" alt="" coords="293,5,546,35"/>
+<area shape="rect" id="Node000002" href="$stm32g4xx__it_8c.html#a0c3390d4dc5cfceccbeda71aa672d99d" title="DMA1 通道 2：USART3_TX" alt="" coords="5,5,245,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="274,20,245,23,245,18,280,20"/>
+</map>

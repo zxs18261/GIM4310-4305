@@ -1,0 +1,12 @@
+<map id="PID_Init" name="PID_Init">
+<area shape="rect" id="Node000001" title="初始化 PID 控制器" alt="" coords="500,32,578,62"/>
+<area shape="rect" id="Node000002" href="$foc_8c.html#aebd9eaf8fdc1eec2e646d0ed4a4a3d2c" title="初始化 FOC 电流环" alt="" coords="366,5,452,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="482,36,452,32,452,26,487,36"/>
+<area shape="rect" id="Node000003" href="$motor__ctrl_8c.html#a6289107a27126667fef8194dc34ad71f" title="初始化电机控制模块" alt="" coords="242,32,318,62"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="481,47,319,49,319,44,487,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="354,32,319,42,318,36,349,32"/>
+<area shape="rect" id="Node000004" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="110,32,194,62"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="224,47,195,49,194,44,229,47"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,32,62,62"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="92,48,62,49,62,44,97,46"/>
+</map>

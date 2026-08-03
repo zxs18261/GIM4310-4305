@@ -1,0 +1,573 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: Application/control/protection.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('protection_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">protection.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>保护与故障管理模块  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="protection_8h_source.html">protection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="motor__config_8h_source.html">motor_config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="board__config_8h_source.html">board_config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+protection.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="protection_8c__incl.svg" width="447" height="215"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:af4e09028a869da59a0be6ce71b2fb6cf" id="r_af4e09028a869da59a0be6ce71b2fb6cf"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af4e09028a869da59a0be6ce71b2fb6cf">PROT_VBUS_FAULT_CYCLES</a>&#160;&#160;&#160;((uint32_t)<a class="el" href="motor__config_8h.html#aed6c44a25c8609a2b320a8e7b99b14f5">PROT_VBUS_FAULT_MS</a> * (<a class="el" href="board__config_8h.html#a7debcd2a2db73be1ffea657d2fd3e715">BOARD_PWM_FREQ_HZ</a> / 1000U))</td></tr>
+<tr class="memdesc:af4e09028a869da59a0be6ce71b2fb6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">电压越限确认周期数（快速检查 20kHz 执行）  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a40bd77da34a0710d0ee46ecc0b4abb55" id="r_a40bd77da34a0710d0ee46ecc0b4abb55"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a40bd77da34a0710d0ee46ecc0b4abb55">PROT_DeratingOf</a> (float temp, float warnTemp, float faultTemp)</td></tr>
+<tr class="memdesc:a40bd77da34a0710d0ee46ecc0b4abb55"><td class="mdescLeft">&#160;</td><td class="mdescRight">线性降额：温度低于告警点为 1，达到故障点为 0  <br /></td></tr>
+<tr class="memitem:a2edece24ac432f98c28ec146bfc9eb54" id="r_a2edece24ac432f98c28ec146bfc9eb54"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2edece24ac432f98c28ec146bfc9eb54">PROT_Init</a> (void)</td></tr>
+<tr class="memdesc:a2edece24ac432f98c28ec146bfc9eb54"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化保护模块  <br /></td></tr>
+<tr class="memitem:addca5297e672b45c65c3ae3e7ead254d" id="r_addca5297e672b45c65c3ae3e7ead254d"><td class="memItemLeft"><a class="el" href="protection_8h.html#acc1085881b4943645612598fe8087ddd">PROT_FaultTypeDef</a>&#160;</td><td class="memItemRight"><a class="el" href="#addca5297e672b45c65c3ae3e7ead254d">PROT_CheckFast</a> (float iu, float iv, float iw, float vbus, uint8_t encConsErr)</td></tr>
+<tr class="memdesc:addca5297e672b45c65c3ae3e7ead254d"><td class="mdescLeft">&#160;</td><td class="mdescRight">快速保护检查（电流环 ISR 调用）  <br /></td></tr>
+<tr class="memitem:a69316e4d1e7f8cb9a4dfd6161c3b437e" id="r_a69316e4d1e7f8cb9a4dfd6161c3b437e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a69316e4d1e7f8cb9a4dfd6161c3b437e">PROT_CheckSlow</a> (float <a class="el" href="app__main_8c.html#a3f93840883272d1356c7732ae2747915">mosTemp</a>, float <a class="el" href="app__main_8c.html#adf4cca4e15700419969edf3ce2ffe6e6">motorTemp</a>)</td></tr>
+<tr class="memdesc:a69316e4d1e7f8cb9a4dfd6161c3b437e"><td class="mdescLeft">&#160;</td><td class="mdescRight">慢速保护检查（后台约 10Hz 调用）  <br /></td></tr>
+<tr class="memitem:a87d1ad0c7e39a4c5c88dc7b62e964da7" id="r_a87d1ad0c7e39a4c5c88dc7b62e964da7"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a87d1ad0c7e39a4c5c88dc7b62e964da7">PROT_GetDerating</a> (void)</td></tr>
+<tr class="memdesc:a87d1ad0c7e39a4c5c88dc7b62e964da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取温度降额系数（乘到电流限幅上；0 表示已达过温故障）  <br /></td></tr>
+<tr class="memitem:a36b53f217ddfdc3e968ee7f7c4ebc113" id="r_a36b53f217ddfdc3e968ee7f7c4ebc113"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a36b53f217ddfdc3e968ee7f7c4ebc113">PROT_IsWarning</a> (void)</td></tr>
+<tr class="memdesc:a36b53f217ddfdc3e968ee7f7c4ebc113"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否处于告警区（LED 黄色显示用）  <br /></td></tr>
+<tr class="memitem:a06029022ac7e5b95690b0119794c83d6" id="r_a06029022ac7e5b95690b0119794c83d6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a06029022ac7e5b95690b0119794c83d6">PROT_FeedCanWatchdog</a> (void)</td></tr>
+<tr class="memdesc:a06029022ac7e5b95690b0119794c83d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">喂 CAN 指令看门狗（收到有效运动指令时调用）  <br /></td></tr>
+<tr class="memitem:a80cdeb76b44bac1774ce87967ddd77aa" id="r_a80cdeb76b44bac1774ce87967ddd77aa"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a80cdeb76b44bac1774ce87967ddd77aa">PROT_CheckCanTimeout</a> (uint32_t timeoutMs)</td></tr>
+<tr class="memdesc:a80cdeb76b44bac1774ce87967ddd77aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查 CAN 指令超时  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a0b7753cedc4bdee08dba47353bd3d16a" id="r_a0b7753cedc4bdee08dba47353bd3d16a"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a0b7753cedc4bdee08dba47353bd3d16a">ovCounter</a> = 0U</td></tr>
+<tr class="memitem:a223839dd81dc6ec992b73ff3b7256d1c" id="r_a223839dd81dc6ec992b73ff3b7256d1c"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a223839dd81dc6ec992b73ff3b7256d1c">uvCounter</a> = 0U</td></tr>
+<tr class="memitem:a1f0abcefbae423e215214e11ede434da" id="r_a1f0abcefbae423e215214e11ede434da"><td class="memItemLeft">static volatile float&#160;</td><td class="memItemRight"><a class="el" href="#a1f0abcefbae423e215214e11ede434da">derating</a> = 1.0f</td></tr>
+<tr class="memitem:a17826f7a3802f68e8480e318e61acd19" id="r_a17826f7a3802f68e8480e318e61acd19"><td class="memItemLeft">static volatile uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a17826f7a3802f68e8480e318e61acd19">warning</a> = 0U</td></tr>
+<tr class="memitem:a0a042711b7a39a85c7912ee87892b929" id="r_a0a042711b7a39a85c7912ee87892b929"><td class="memItemLeft">static volatile uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a0a042711b7a39a85c7912ee87892b929">canFeedTick</a> = 0U</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>保护与故障管理模块 </p>
+<dl class="section note"><dt>注解</dt><dd>- 快速检查（电流环 ISR，20kHz）：过流瞬时判定、母线电压带 确认时间判定、编码器连续错误；<ul>
+<li>慢速检查（后台，约 10Hz）：MOS/电机温度，含告警与线性降额；</li>
+<li>CAN 指令看门狗：收到有效指令喂狗，超时由控制层决定动作；</li>
+<li>本模块只做"判定"，封波与故障锁存动作由 motor_ctrl 执行， 保持判定逻辑可独立测试。</li>
+</ul>
+</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd></dd></dl>
+<p>Copyright (c) 2026 Z.Xusheng SPDX-License-Identifier: MIT</p>
+<p>This file is part of the GIM4310/GIM4305 joint motor controller firmware, distributed under the MIT License. See the LICENSE file in the repository root for full terms. </p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="af4e09028a869da59a0be6ce71b2fb6cf" name="af4e09028a869da59a0be6ce71b2fb6cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4e09028a869da59a0be6ce71b2fb6cf">&#9670;&#160;</a></span>PROT_VBUS_FAULT_CYCLES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PROT_VBUS_FAULT_CYCLES&#160;&#160;&#160;((uint32_t)<a class="el" href="motor__config_8h.html#aed6c44a25c8609a2b320a8e7b99b14f5">PROT_VBUS_FAULT_MS</a> * (<a class="el" href="board__config_8h.html#a7debcd2a2db73be1ffea657d2fd3e715">BOARD_PWM_FREQ_HZ</a> / 1000U))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>电压越限确认周期数（快速检查 20kHz 执行） </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="a80cdeb76b44bac1774ce87967ddd77aa" name="a80cdeb76b44bac1774ce87967ddd77aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80cdeb76b44bac1774ce87967ddd77aa">&#9670;&#160;</a></span>PROT_CheckCanTimeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t PROT_CheckCanTimeout </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>timeoutMs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>检查 CAN 指令超时 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeoutMs</td><td>超时时间 [ms]，0 = 关闭检测 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">1</td><td>= 已超时 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="protection_8c_a80cdeb76b44bac1774ce87967ddd77aa_icgraph.svg" width="651" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="addca5297e672b45c65c3ae3e7ead254d" name="addca5297e672b45c65c3ae3e7ead254d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addca5297e672b45c65c3ae3e7ead254d">&#9670;&#160;</a></span>PROT_CheckFast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="protection_8h.html#acc1085881b4943645612598fe8087ddd">PROT_FaultTypeDef</a> PROT_CheckFast </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>iu</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>iv</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>iw</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>vbus</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>encConsErr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>快速保护检查（电流环 ISR 调用） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iu/iv/iw</td><td>三相电流 [A] </td></tr>
+    <tr><td class="paramname">vbus</td><td>母线电压 [V] </td></tr>
+    <tr><td class="paramname">encConsErr</td><td>编码器连续错误计数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">触发的故障码；FAULT_NONE</td><td>表示正常 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="protection_8c_addca5297e672b45c65c3ae3e7ead254d_icgraph.svg" width="547" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a69316e4d1e7f8cb9a4dfd6161c3b437e" name="a69316e4d1e7f8cb9a4dfd6161c3b437e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69316e4d1e7f8cb9a4dfd6161c3b437e">&#9670;&#160;</a></span>PROT_CheckSlow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PROT_CheckSlow </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>mosTemp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>motorTemp</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>慢速保护检查（后台约 10Hz 调用） </p>
+<dl class="section note"><dt>注解</dt><dd>更新温度降额系数与告警标志；过温故障由返回的降额系数=0 体现， 由调用方（app 层）触发 FAULT_MOS_OT/FAULT_MOTOR_OT。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mosTemp</td><td>MOS 温度 [C] </td></tr>
+    <tr><td class="paramname">motorTemp</td><td>电机绕组温度 [C] </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="protection_8c_a69316e4d1e7f8cb9a4dfd6161c3b437e_cgraph.svg" width="368" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="protection_8c_a69316e4d1e7f8cb9a4dfd6161c3b437e_icgraph.svg" width="600" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a40bd77da34a0710d0ee46ecc0b4abb55" name="a40bd77da34a0710d0ee46ecc0b4abb55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40bd77da34a0710d0ee46ecc0b4abb55">&#9670;&#160;</a></span>PROT_DeratingOf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PROT_DeratingOf </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>temp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>warnTemp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>faultTemp</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>线性降额：温度低于告警点为 1，达到故障点为 0 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="protection_8c_a40bd77da34a0710d0ee46ecc0b4abb55_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a06029022ac7e5b95690b0119794c83d6" name="a06029022ac7e5b95690b0119794c83d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06029022ac7e5b95690b0119794c83d6">&#9670;&#160;</a></span>PROT_FeedCanWatchdog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PROT_FeedCanWatchdog </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>喂 CAN 指令看门狗（收到有效运动指令时调用） </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="protection_8c_a06029022ac7e5b95690b0119794c83d6_icgraph.svg" width="100%" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a87d1ad0c7e39a4c5c88dc7b62e964da7" name="a87d1ad0c7e39a4c5c88dc7b62e964da7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d1ad0c7e39a4c5c88dc7b62e964da7">&#9670;&#160;</a></span>PROT_GetDerating()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PROT_GetDerating </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取温度降额系数（乘到电流限幅上；0 表示已达过温故障） </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="protection_8c_a87d1ad0c7e39a4c5c88dc7b62e964da7_icgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a2edece24ac432f98c28ec146bfc9eb54" name="a2edece24ac432f98c28ec146bfc9eb54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2edece24ac432f98c28ec146bfc9eb54">&#9670;&#160;</a></span>PROT_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PROT_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化保护模块 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="protection_8c_a2edece24ac432f98c28ec146bfc9eb54_icgraph.svg" width="100%" height="409"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a36b53f217ddfdc3e968ee7f7c4ebc113" name="a36b53f217ddfdc3e968ee7f7c4ebc113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36b53f217ddfdc3e968ee7f7c4ebc113">&#9670;&#160;</a></span>PROT_IsWarning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t PROT_IsWarning </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>是否处于告警区（LED 黄色显示用） </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="protection_8c_a36b53f217ddfdc3e968ee7f7c4ebc113_icgraph.svg" width="591" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">变量说明</h2>
+<a id="a0a042711b7a39a85c7912ee87892b929" name="a0a042711b7a39a85c7912ee87892b929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a042711b7a39a85c7912ee87892b929">&#9670;&#160;</a></span>canFeedTick</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint32_t canFeedTick = 0U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>最近一次有效 CAN 指令时刻 </p>
+
+</div>
+</div>
+<a id="a1f0abcefbae423e215214e11ede434da" name="a1f0abcefbae423e215214e11ede434da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f0abcefbae423e215214e11ede434da">&#9670;&#160;</a></span>derating</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile float derating = 1.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>温度降额系数 0~1（后台写，FOC ISR 读） </p>
+
+</div>
+</div>
+<a id="a0b7753cedc4bdee08dba47353bd3d16a" name="a0b7753cedc4bdee08dba47353bd3d16a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b7753cedc4bdee08dba47353bd3d16a">&#9670;&#160;</a></span>ovCounter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ovCounter = 0U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>过压持续计数 </p>
+
+</div>
+</div>
+<a id="a223839dd81dc6ec992b73ff3b7256d1c" name="a223839dd81dc6ec992b73ff3b7256d1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a223839dd81dc6ec992b73ff3b7256d1c">&#9670;&#160;</a></span>uvCounter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t uvCounter = 0U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>欠压持续计数 </p>
+
+</div>
+</div>
+<a id="a17826f7a3802f68e8480e318e61acd19" name="a17826f7a3802f68e8480e318e61acd19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17826f7a3802f68e8480e318e61acd19">&#9670;&#160;</a></span>warning</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t warning = 0U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>告警标志（后台写，LED 轮询读） </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_eb1463819d84903762eb6f59cc0c4383.html">Application</a></li><li class="navelem"><a href="dir_9432622812bb694a54394c78af40a15c.html">control</a></li><li class="navelem"><a href="protection_8c.html">protection.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

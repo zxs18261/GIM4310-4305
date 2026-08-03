@@ -1,0 +1,977 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: Application/control/motor_ctrl.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('motor__ctrl_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">motor_ctrl.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>电机控制核心模块（模式状态机 + 20kHz FOC 主循环）  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="motor__ctrl_8h_source.html">motor_ctrl.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="calibration_8h_source.html">calibration.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bsp__pwm_8h_source.html">bsp_pwm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="app__params_8h_source.html">app_params.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="motor__config_8h_source.html">motor_config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="board__config_8h_source.html">board_config.h</a>&quot;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+motor_ctrl.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c__incl.svg" width="100%" height="578"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:adb53a2b437c19c68abef3c954c485ee2" id="r_adb53a2b437c19c68abef3c954c485ee2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#adb53a2b437c19c68abef3c954c485ee2">MC_RAD_PER_COUNT</a>&#160;&#160;&#160;(<a class="el" href="foc__math_8h.html#add0c7fd5461685a35963fe4f4d71a0ce">FOC_2PI</a> / (float)<a class="el" href="bsp__encoder_8h.html#a83286000cddacbdf44640c4902172ad6">ENC_CPR</a>)</td></tr>
+<tr class="memitem:a5bef9103778977cea70d439a84b2a7c0" id="r_a5bef9103778977cea70d439a84b2a7c0"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5bef9103778977cea70d439a84b2a7c0">MC_INV_GEAR</a>&#160;&#160;&#160;(1.0f / <a class="el" href="motor__config_8h.html#ae81121f5c96e4be602d9679ecf73f1de">MOTOR_GEAR_RATIO</a>)</td></tr>
+<tr class="memitem:ae546f435caa4227af061f88208b085f5" id="r_ae546f435caa4227af061f88208b085f5"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ae546f435caa4227af061f88208b085f5">MC_PRECHARGE_CYCLES</a>&#160;&#160;&#160;(40U)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a9dd4aa02cb15dd5ea27aa8085155adb7" id="r_a9dd4aa02cb15dd5ea27aa8085155adb7"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a9dd4aa02cb15dd5ea27aa8085155adb7">MC_SlowLoop</a> (void)</td></tr>
+<tr class="memdesc:a9dd4aa02cb15dd5ea27aa8085155adb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">慢环（1kHz）：电流限幅刷新与速度/位置外环  <br /></td></tr>
+<tr class="memitem:a5cbc0a7993d542a75e755f2e4dc5ab1e" id="r_a5cbc0a7993d542a75e755f2e4dc5ab1e"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a5cbc0a7993d542a75e755f2e4dc5ab1e">MC_Clamp</a> (float value, float limit)</td></tr>
+<tr class="memdesc:a5cbc0a7993d542a75e755f2e4dc5ab1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">对称限幅  <br /></td></tr>
+<tr class="memitem:adc1f5b8a41b8c741dd3a8be02c3dff49" id="r_adc1f5b8a41b8c741dd3a8be02c3dff49"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#adc1f5b8a41b8c741dd3a8be02c3dff49">MC_UpdateElecAngle</a> (void)</td></tr>
+<tr class="memdesc:adc1f5b8a41b8c741dd3a8be02c3dff49"><td class="mdescLeft">&#160;</td><td class="mdescRight">由单圈原始计数计算电角度  <br /></td></tr>
+<tr class="memitem:a314b8aad615262b23be0463fa16b9ceb" id="r_a314b8aad615262b23be0463fa16b9ceb"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a314b8aad615262b23be0463fa16b9ceb">MC_PosRotor</a> (void)</td></tr>
+<tr class="memdesc:a314b8aad615262b23be0463fa16b9ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">转子展开机械角 [rad]：整数圈 + 单圈角分离合成  <br /></td></tr>
+<tr class="memitem:a6289107a27126667fef8194dc34ad71f" id="r_a6289107a27126667fef8194dc34ad71f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6289107a27126667fef8194dc34ad71f">MC_Init</a> (void)</td></tr>
+<tr class="memdesc:a6289107a27126667fef8194dc34ad71f"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化电机控制模块  <br /></td></tr>
+<tr class="memitem:a5c982a7374da291bb0e5d06d26893def" id="r_a5c982a7374da291bb0e5d06d26893def"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5c982a7374da291bb0e5d06d26893def">MC_FocIsr</a> (const <a class="el" href="struct_a_d_c___foc_meas_type_def.html">ADC_FocMeasTypeDef</a> *meas)</td></tr>
+<tr class="memdesc:a5c982a7374da291bb0e5d06d26893def"><td class="mdescLeft">&#160;</td><td class="mdescRight">FOC 主循环（ADC 注入完成 ISR，20kHz）  <br /></td></tr>
+<tr class="memitem:a8d1ee75d00d8c0f2d2d78f89d002efec" id="r_a8d1ee75d00d8c0f2d2d78f89d002efec"><td class="memItemLeft">HAL_StatusTypeDef&#160;</td><td class="memItemRight"><a class="el" href="#a8d1ee75d00d8c0f2d2d78f89d002efec">MC_Enable</a> (void)</td></tr>
+<tr class="memdesc:a8d1ee75d00d8c0f2d2d78f89d002efec"><td class="mdescLeft">&#160;</td><td class="mdescRight">使能功率输出  <br /></td></tr>
+<tr class="memitem:aceb46c7be868a0b12dffa105e3d0581e" id="r_aceb46c7be868a0b12dffa105e3d0581e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aceb46c7be868a0b12dffa105e3d0581e">MC_Disable</a> (void)</td></tr>
+<tr class="memdesc:aceb46c7be868a0b12dffa105e3d0581e"><td class="mdescLeft">&#160;</td><td class="mdescRight">封波（ISR 安全）  <br /></td></tr>
+<tr class="memitem:ab0638fb9fe58dcbe6f0fb3d5ed81d28c" id="r_ab0638fb9fe58dcbe6f0fb3d5ed81d28c"><td class="memItemLeft">HAL_StatusTypeDef&#160;</td><td class="memItemRight"><a class="el" href="#ab0638fb9fe58dcbe6f0fb3d5ed81d28c">MC_SetMode</a> (<a class="el" href="motor__ctrl_8h.html#a49e3df0baa89627040125b0ac1409e7c">MC_ModeTypeDef</a> mode)</td></tr>
+<tr class="memdesc:ab0638fb9fe58dcbe6f0fb3d5ed81d28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">切换控制模式（仅封波状态允许）  <br /></td></tr>
+<tr class="memitem:afb3414a066c16e68add2218d01f59942" id="r_afb3414a066c16e68add2218d01f59942"><td class="memItemLeft">HAL_StatusTypeDef&#160;</td><td class="memItemRight"><a class="el" href="#afb3414a066c16e68add2218d01f59942">MC_StartCalibration</a> (void)</td></tr>
+<tr class="memdesc:afb3414a066c16e68add2218d01f59942"><td class="mdescLeft">&#160;</td><td class="mdescRight">启动预定位校准（封波状态下）  <br /></td></tr>
+<tr class="memitem:a827231f68dfabeb070811b39e11a267c" id="r_a827231f68dfabeb070811b39e11a267c"><td class="memItemLeft">HAL_StatusTypeDef&#160;</td><td class="memItemRight"><a class="el" href="#a827231f68dfabeb070811b39e11a267c">MC_ClearFault</a> (void)</td></tr>
+<tr class="memdesc:a827231f68dfabeb070811b39e11a267c"><td class="mdescLeft">&#160;</td><td class="mdescRight">清除故障（故障源已消失时）  <br /></td></tr>
+<tr class="memitem:a0254f4cdae07bdb4781c9df4b540ffe8" id="r_a0254f4cdae07bdb4781c9df4b540ffe8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0254f4cdae07bdb4781c9df4b540ffe8">MC_TripFault</a> (<a class="el" href="protection_8h.html#acc1085881b4943645612598fe8087ddd">PROT_FaultTypeDef</a> fault)</td></tr>
+<tr class="memdesc:a0254f4cdae07bdb4781c9df4b540ffe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">触发故障：立即封波并锁存（ISR 安全）  <br /></td></tr>
+<tr class="memitem:a64722c426a5d2fd53b95c12a85f22120" id="r_a64722c426a5d2fd53b95c12a85f22120"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a64722c426a5d2fd53b95c12a85f22120">MC_SetZeroHere</a> (void)</td></tr>
+<tr class="memdesc:a64722c426a5d2fd53b95c12a85f22120"><td class="mdescLeft">&#160;</td><td class="mdescRight">以当前位置为输出轴零位  <br /></td></tr>
+<tr class="memitem:ac0fc8fc29952d28418cd7b90e772cd91" id="r_ac0fc8fc29952d28418cd7b90e772cd91"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac0fc8fc29952d28418cd7b90e772cd91">MC_SetIqRef</a> (float iq)</td></tr>
+<tr class="memdesc:ac0fc8fc29952d28418cd7b90e772cd91"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 q 轴电流给定（TORQUE 模式）  <br /></td></tr>
+<tr class="memitem:aef22984edf5c5a02be46b64d26f8534a" id="r_aef22984edf5c5a02be46b64d26f8534a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aef22984edf5c5a02be46b64d26f8534a">MC_SetTorque</a> (float torque)</td></tr>
+<tr class="memdesc:aef22984edf5c5a02be46b64d26f8534a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置输出轴转矩给定（TORQUE 模式，内部折算为 iq）  <br /></td></tr>
+<tr class="memitem:ad9fdc2a937331479bd701139807ad7b2" id="r_ad9fdc2a937331479bd701139807ad7b2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad9fdc2a937331479bd701139807ad7b2">MC_SetSpeedRef</a> (float speed)</td></tr>
+<tr class="memdesc:ad9fdc2a937331479bd701139807ad7b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置输出轴速度给定（SPEED 模式）  <br /></td></tr>
+<tr class="memitem:a99b65c0c0b41906fc3146d52e1b879be" id="r_a99b65c0c0b41906fc3146d52e1b879be"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a99b65c0c0b41906fc3146d52e1b879be">MC_SetPosRef</a> (float pos)</td></tr>
+<tr class="memdesc:a99b65c0c0b41906fc3146d52e1b879be"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置输出轴位置给定（POSITION 模式）  <br /></td></tr>
+<tr class="memitem:a594eac2b46116c156ad61f86ae7e4678" id="r_a594eac2b46116c156ad61f86ae7e4678"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a594eac2b46116c156ad61f86ae7e4678">MC_SetMitCommand</a> (float pDes, float vDes, float kp, float kd, float tff)</td></tr>
+<tr class="memdesc:a594eac2b46116c156ad61f86ae7e4678"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 MIT 阻抗指令（五元组原子更新）  <br /></td></tr>
+<tr class="memitem:aad7e38546468590517b680c75594f844" id="r_aad7e38546468590517b680c75594f844"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aad7e38546468590517b680c75594f844">MC_SetOpenLoop</a> (float vd, float vq, float speedE)</td></tr>
+<tr class="memdesc:aad7e38546468590517b680c75594f844"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置开环电压矢量（OPENLOOP 模式）  <br /></td></tr>
+<tr class="memitem:a9c872c216c8943d5ba135b71957aea31" id="r_a9c872c216c8943d5ba135b71957aea31"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9c872c216c8943d5ba135b71957aea31">MC_RebaseEncoder</a> (void)</td></tr>
+<tr class="memdesc:a9c872c216c8943d5ba135b71957aea31"><td class="mdescLeft">&#160;</td><td class="mdescRight">重建编码器多圈基准并保持用户位置连续（参数落盘后调用）  <br /></td></tr>
+<tr class="memitem:acd57a3a6a71d8ec4261dca794251a12a" id="r_acd57a3a6a71d8ec4261dca794251a12a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acd57a3a6a71d8ec4261dca794251a12a">MC_ApplyPidParams</a> (void)</td></tr>
+<tr class="memdesc:acd57a3a6a71d8ec4261dca794251a12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">参数修改后刷新 PID 增益（shell/CAN 调参后调用）  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a4fbe3f2bedbd95852227b46ab29d4998" id="r_a4fbe3f2bedbd95852227b46ab29d4998"><td class="memItemLeft"><a class="el" href="struct_m_c___handle_type_def.html">MC_HandleTypeDef</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4fbe3f2bedbd95852227b46ab29d4998">g_Mc</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>电机控制核心模块（模式状态机 + 20kHz FOC 主循环） </p>
+<dl class="section note"><dt>注解</dt><dd>前后台架构中的"前台"：MC_FocIsr 由 ADC 注入完成中断（TIM1 触发， 20kHz）驱动，完成 编码器读取 -&gt; 角度/速度解算 -&gt; 保护 -&gt; 各模式 控制律 -&gt; SVPWM 输出 的完整链路；速度/位置环在 ISR 内 20 分频 （1kHz）执行。后台（app 层）只做慢速任务与通信。</dd></dl>
+<p>约定：</p><ul>
+<li>正方向 = 校准后编码器计数增大方向，正 q 轴电流产生正方向转矩；</li>
+<li>输出轴量 = 转子量 / MOTOR_GEAR_RATIO，对外接口均为输出轴量纲；</li>
+<li>模式切换仅允许在封波状态进行（MIT 进入指令 = 切模式 + 使能）。</li>
+</ul>
+<dl class="section attention"><dt>注意</dt><dd></dd></dl>
+<p>Copyright (c) 2026 Z.Xusheng SPDX-License-Identifier: MIT</p>
+<p>This file is part of the GIM4310/GIM4305 joint motor controller firmware, distributed under the MIT License. See the LICENSE file in the repository root for full terms. </p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="a5bef9103778977cea70d439a84b2a7c0" name="a5bef9103778977cea70d439a84b2a7c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bef9103778977cea70d439a84b2a7c0">&#9670;&#160;</a></span>MC_INV_GEAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MC_INV_GEAR&#160;&#160;&#160;(1.0f / <a class="el" href="motor__config_8h.html#ae81121f5c96e4be602d9679ecf73f1de">MOTOR_GEAR_RATIO</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae546f435caa4227af061f88208b085f5" name="ae546f435caa4227af061f88208b085f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae546f435caa4227af061f88208b085f5">&#9670;&#160;</a></span>MC_PRECHARGE_CYCLES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MC_PRECHARGE_CYCLES&#160;&#160;&#160;(40U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>使能后自举预充周期数（2ms @20kHz） </p>
+
+</div>
+</div>
+<a id="adb53a2b437c19c68abef3c954c485ee2" name="adb53a2b437c19c68abef3c954c485ee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb53a2b437c19c68abef3c954c485ee2">&#9670;&#160;</a></span>MC_RAD_PER_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MC_RAD_PER_COUNT&#160;&#160;&#160;(<a class="el" href="foc__math_8h.html#add0c7fd5461685a35963fe4f4d71a0ce">FOC_2PI</a> / (float)<a class="el" href="bsp__encoder_8h.html#a83286000cddacbdf44640c4902172ad6">ENC_CPR</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>转子机械角分辨率 </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="acd57a3a6a71d8ec4261dca794251a12a" name="acd57a3a6a71d8ec4261dca794251a12a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd57a3a6a71d8ec4261dca794251a12a">&#9670;&#160;</a></span>MC_ApplyPidParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MC_ApplyPidParams </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参数修改后刷新 PID 增益（shell/CAN 调参后调用） </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_acd57a3a6a71d8ec4261dca794251a12a_cgraph.svg" width="358" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_acd57a3a6a71d8ec4261dca794251a12a_icgraph.svg" width="100%" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a5cbc0a7993d542a75e755f2e4dc5ab1e" name="a5cbc0a7993d542a75e755f2e4dc5ab1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cbc0a7993d542a75e755f2e4dc5ab1e">&#9670;&#160;</a></span>MC_Clamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MC_Clamp </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>limit</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>对称限幅 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a5cbc0a7993d542a75e755f2e4dc5ab1e_icgraph.svg" width="100%" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a827231f68dfabeb070811b39e11a267c" name="a827231f68dfabeb070811b39e11a267c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a827231f68dfabeb070811b39e11a267c">&#9670;&#160;</a></span>MC_ClearFault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_StatusTypeDef MC_ClearFault </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>清除故障（故障源已消失时） </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a827231f68dfabeb070811b39e11a267c_cgraph.svg" width="286" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a827231f68dfabeb070811b39e11a267c_icgraph.svg" width="100%" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aceb46c7be868a0b12dffa105e3d0581e" name="aceb46c7be868a0b12dffa105e3d0581e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceb46c7be868a0b12dffa105e3d0581e">&#9670;&#160;</a></span>MC_Disable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MC_Disable </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>封波（ISR 安全） </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_aceb46c7be868a0b12dffa105e3d0581e_cgraph.svg" width="483" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_aceb46c7be868a0b12dffa105e3d0581e_icgraph.svg" width="100%" height="487"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a8d1ee75d00d8c0f2d2d78f89d002efec" name="a8d1ee75d00d8c0f2d2d78f89d002efec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d1ee75d00d8c0f2d2d78f89d002efec">&#9670;&#160;</a></span>MC_Enable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_StatusTypeDef MC_Enable </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使能功率输出 </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">HAL_OK；故障未清除</td><td>/ 校准缺失（闭环模式）/ 模式为封波时返回 HAL_ERROR </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a8d1ee75d00d8c0f2d2d78f89d002efec_cgraph.svg" width="630" height="198"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a8d1ee75d00d8c0f2d2d78f89d002efec_icgraph.svg" width="100%" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a5c982a7374da291bb0e5d06d26893def" name="a5c982a7374da291bb0e5d06d26893def"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c982a7374da291bb0e5d06d26893def">&#9670;&#160;</a></span>MC_FocIsr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MC_FocIsr </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_a_d_c___foc_meas_type_def.html">ADC_FocMeasTypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>meas</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FOC 主循环（ADC 注入完成 ISR，20kHz） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meas</td><td>本周期电流/电压测量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a5c982a7374da291bb0e5d06d26893def_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a5c982a7374da291bb0e5d06d26893def_icgraph.svg" width="347" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6289107a27126667fef8194dc34ad71f" name="a6289107a27126667fef8194dc34ad71f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6289107a27126667fef8194dc34ad71f">&#9670;&#160;</a></span>MC_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MC_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化电机控制模块 </p>
+<dl class="section note"><dt>注解</dt><dd>须在参数加载（APP_PARAMS_Init）与编码器初始化之后调用。 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a6289107a27126667fef8194dc34ad71f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a6289107a27126667fef8194dc34ad71f_icgraph.svg" width="324" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a314b8aad615262b23be0463fa16b9ceb" name="a314b8aad615262b23be0463fa16b9ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a314b8aad615262b23be0463fa16b9ceb">&#9670;&#160;</a></span>MC_PosRotor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MC_PosRotor </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>转子展开机械角 [rad]：整数圈 + 单圈角分离合成 </p>
+<dl class="section note"><dt>注解</dt><dd>Turns 为 int32 整数域（±21 亿圈），float 合成精度损失只发生在 Turns*2pi 的大数区（千圈级误差 &lt;0.5mrad），无溢出风险。 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a314b8aad615262b23be0463fa16b9ceb_icgraph.svg" width="604" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a9c872c216c8943d5ba135b71957aea31" name="a9c872c216c8943d5ba135b71957aea31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c872c216c8943d5ba135b71957aea31">&#9670;&#160;</a></span>MC_RebaseEncoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MC_RebaseEncoder </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>重建编码器多圈基准并保持用户位置连续（参数落盘后调用） </p>
+<dl class="section note"><dt>注解</dt><dd>落盘期间全程关中断约 20ms+，编码器停采；若期间关节被外力 反拖超过转子半圈，多圈跳变判定会滑圈。本函数重新预读编码器 并调整会话零位使 Pos 读数连续（假设落盘期间关节未动）。 须在 FOC 中断屏蔽状态下由后台调用。 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a9c872c216c8943d5ba135b71957aea31_cgraph.svg" width="100%" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a9c872c216c8943d5ba135b71957aea31_icgraph.svg" width="434" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac0fc8fc29952d28418cd7b90e772cd91" name="ac0fc8fc29952d28418cd7b90e772cd91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0fc8fc29952d28418cd7b90e772cd91">&#9670;&#160;</a></span>MC_SetIqRef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MC_SetIqRef </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>iq</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置 q 轴电流给定（TORQUE 模式） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iq</td><td>q 轴电流 [A]，慢环中按限幅裁剪 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_ac0fc8fc29952d28418cd7b90e772cd91_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a594eac2b46116c156ad61f86ae7e4678" name="a594eac2b46116c156ad61f86ae7e4678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a594eac2b46116c156ad61f86ae7e4678">&#9670;&#160;</a></span>MC_SetMitCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MC_SetMitCommand </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>pDes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>vDes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>kp</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>kd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tff</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置 MIT 阻抗指令（五元组原子更新） </p>
+<dl class="section note"><dt>注解</dt><dd>调用上下文为 CAN ISR（优先级低于 FOC ISR），短暂关中断保证 五个字段不被 FOC ISR 撕裂成新旧混合的一拍指令。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDes/vDes</td><td>期望位置 [rad] / 速度 [rad/s]（输出轴） </td></tr>
+    <tr><td class="paramname">kp/kd</td><td>刚度 [N*m/rad] / 阻尼 [N*m*s/rad] </td></tr>
+    <tr><td class="paramname">tff</td><td>前馈转矩 [N*m] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a594eac2b46116c156ad61f86ae7e4678_icgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ab0638fb9fe58dcbe6f0fb3d5ed81d28c" name="ab0638fb9fe58dcbe6f0fb3d5ed81d28c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0638fb9fe58dcbe6f0fb3d5ed81d28c">&#9670;&#160;</a></span>MC_SetMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_StatusTypeDef MC_SetMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="motor__ctrl_8h.html#a49e3df0baa89627040125b0ac1409e7c">MC_ModeTypeDef</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>切换控制模式（仅封波状态允许） </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_ab0638fb9fe58dcbe6f0fb3d5ed81d28c_icgraph.svg" width="100%" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aad7e38546468590517b680c75594f844" name="aad7e38546468590517b680c75594f844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad7e38546468590517b680c75594f844">&#9670;&#160;</a></span>MC_SetOpenLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MC_SetOpenLoop </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>vd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>vq</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>speedE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置开环电压矢量（OPENLOOP 模式） </p>
+<dl class="section note"><dt>注解</dt><dd>开环不经电流 PI，电压矢量幅值限制为 Rs*峰值电流对应的 稳态压降，防止误输入造成持续大电流（开环无温度降额通道， 贴轨检测与软件过流阈值仍然生效）。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vd/vq</td><td>d/q 轴电压 [V] </td></tr>
+    <tr><td class="paramname">speedE</td><td>电角速度 [rad/s]（内部积分生成旋转角） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_aad7e38546468590517b680c75594f844_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a99b65c0c0b41906fc3146d52e1b879be" name="a99b65c0c0b41906fc3146d52e1b879be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99b65c0c0b41906fc3146d52e1b879be">&#9670;&#160;</a></span>MC_SetPosRef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MC_SetPosRef </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>pos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置输出轴位置给定（POSITION 模式） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>输出轴位置 [rad]（会话零位坐标） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a99b65c0c0b41906fc3146d52e1b879be_icgraph.svg" width="100%" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ad9fdc2a937331479bd701139807ad7b2" name="ad9fdc2a937331479bd701139807ad7b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9fdc2a937331479bd701139807ad7b2">&#9670;&#160;</a></span>MC_SetSpeedRef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MC_SetSpeedRef </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>speed</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置输出轴速度给定（SPEED 模式） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>输出轴角速度 [rad/s]，按 SpeedMax 限幅 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_ad9fdc2a937331479bd701139807ad7b2_cgraph.svg" width="312" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_ad9fdc2a937331479bd701139807ad7b2_icgraph.svg" width="100%" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aef22984edf5c5a02be46b64d26f8534a" name="aef22984edf5c5a02be46b64d26f8534a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef22984edf5c5a02be46b64d26f8534a">&#9670;&#160;</a></span>MC_SetTorque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MC_SetTorque </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>torque</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置输出轴转矩给定（TORQUE 模式，内部折算为 iq） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">torque</td><td>输出轴转矩 [N*m] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_aef22984edf5c5a02be46b64d26f8534a_icgraph.svg" width="100%" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a64722c426a5d2fd53b95c12a85f22120" name="a64722c426a5d2fd53b95c12a85f22120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64722c426a5d2fd53b95c12a85f22120">&#9670;&#160;</a></span>MC_SetZeroHere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MC_SetZeroHere </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>以当前位置为输出轴零位 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a64722c426a5d2fd53b95c12a85f22120_icgraph.svg" width="100%" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a9dd4aa02cb15dd5ea27aa8085155adb7" name="a9dd4aa02cb15dd5ea27aa8085155adb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dd4aa02cb15dd5ea27aa8085155adb7">&#9670;&#160;</a></span>MC_SlowLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MC_SlowLoop </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>慢环（1kHz）：电流限幅刷新与速度/位置外环 </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a9dd4aa02cb15dd5ea27aa8085155adb7_cgraph.svg" width="352" height="254"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a9dd4aa02cb15dd5ea27aa8085155adb7_icgraph.svg" width="523" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="afb3414a066c16e68add2218d01f59942" name="afb3414a066c16e68add2218d01f59942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb3414a066c16e68add2218d01f59942">&#9670;&#160;</a></span>MC_StartCalibration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_StatusTypeDef MC_StartCalibration </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>启动预定位校准（封波状态下） </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_afb3414a066c16e68add2218d01f59942_cgraph.svg" width="638" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_afb3414a066c16e68add2218d01f59942_icgraph.svg" width="100%" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a0254f4cdae07bdb4781c9df4b540ffe8" name="a0254f4cdae07bdb4781c9df4b540ffe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0254f4cdae07bdb4781c9df4b540ffe8">&#9670;&#160;</a></span>MC_TripFault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MC_TripFault </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="protection_8h.html#acc1085881b4943645612598fe8087ddd">PROT_FaultTypeDef</a></td>          <td class="paramname"><span class="paramname"><em>fault</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>触发故障：立即封波并锁存（ISR 安全） </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a0254f4cdae07bdb4781c9df4b540ffe8_cgraph.svg" width="650" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_a0254f4cdae07bdb4781c9df4b540ffe8_icgraph.svg" width="562" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="adc1f5b8a41b8c741dd3a8be02c3dff49" name="adc1f5b8a41b8c741dd3a8be02c3dff49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc1f5b8a41b8c741dd3a8be02c3dff49">&#9670;&#160;</a></span>MC_UpdateElecAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MC_UpdateElecAngle </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>由单圈原始计数计算电角度 </p>
+<dl class="section note"><dt>注解</dt><dd>theta_e = raw * PP * (2pi/CPR) - ElecOffset；整数乘法自然回卷。 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="motor__ctrl_8c_adc1f5b8a41b8c741dd3a8be02c3dff49_icgraph.svg" width="576" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">变量说明</h2>
+<a id="a4fbe3f2bedbd95852227b46ab29d4998" name="a4fbe3f2bedbd95852227b46ab29d4998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fbe3f2bedbd95852227b46ab29d4998">&#9670;&#160;</a></span>g_Mc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_c___handle_type_def.html">MC_HandleTypeDef</a> g_Mc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_eb1463819d84903762eb6f59cc0c4383.html">Application</a></li><li class="navelem"><a href="dir_9432622812bb694a54394c78af40a15c.html">control</a></li><li class="navelem"><a href="motor__ctrl_8c.html">motor_ctrl.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

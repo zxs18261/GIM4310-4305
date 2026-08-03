@@ -1,0 +1,11 @@
+<map id="BSP_FLASH_SaveParams" name="BSP_FLASH_SaveParams">
+<area shape="rect" id="Node000001" title="保存参数到参数页（擦除 + 双字编程）" alt="" coords="824,5,1041,35"/>
+<area shape="rect" id="Node000002" href="$app__params_8c.html#ac523ba0893e64080fcd28850bbf687fa" title="立即保存参数（仅限电机封波状态下调用）" alt="" coords="599,5,776,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="805,20,776,23,776,18,811,20"/>
+<area shape="rect" id="Node000003" href="$app__params_8c.html#a9afc1399fb8fb19c72cd51a7a6e38051" title="处理挂起的保存请求（后台循环调用）" alt="" coords="257,5,551,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="581,20,552,23,551,18,586,20"/>
+<area shape="rect" id="Node000004" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,5,209,35"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="239,20,210,23,209,18,244,20"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,62,35"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="92,21,62,23,62,18,97,19"/>
+</map>

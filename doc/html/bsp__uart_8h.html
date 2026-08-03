@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: Application/bsp/bsp_uart.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('bsp__uart_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">bsp_uart.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>USART3 调试串口 BSP 头文件（DMA TX 环形缓冲 + RXNE 中断接收）  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+bsp_uart.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__uart_8h__incl.svg" width="214" height="215"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__uart_8h__dep__incl.svg" width="100%" height="417"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="bsp__uart_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a95db1d8588b8f6c4a2ab1ba8d8a81aad" id="r_a95db1d8588b8f6c4a2ab1ba8d8a81aad"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a95db1d8588b8f6c4a2ab1ba8d8a81aad">BSP_UART_Init</a> (void)</td></tr>
+<tr class="memdesc:a95db1d8588b8f6c4a2ab1ba8d8a81aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化调试串口（重配波特率 + DMA + 中断）  <br /></td></tr>
+<tr class="memitem:a67e2eb7d361398076d0800612430f13c" id="r_a67e2eb7d361398076d0800612430f13c"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a67e2eb7d361398076d0800612430f13c">BSP_UART_Write</a> (const uint8_t *data, uint32_t len)</td></tr>
+<tr class="memdesc:a67e2eb7d361398076d0800612430f13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">向 TX 环形缓冲写入数据（非阻塞）  <br /></td></tr>
+<tr class="memitem:ac8fe8954e03174bb365847f52531e218" id="r_ac8fe8954e03174bb365847f52531e218"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#ac8fe8954e03174bb365847f52531e218">BSP_UART_Printf</a> (const char *fmt,...)</td></tr>
+<tr class="memdesc:ac8fe8954e03174bb365847f52531e218"><td class="mdescLeft">&#160;</td><td class="mdescRight">格式化打印到调试串口（非阻塞）  <br /></td></tr>
+<tr class="memitem:aeb805ee3cc2dd1b170fe67c367c7e0f4" id="r_aeb805ee3cc2dd1b170fe67c367c7e0f4"><td class="memItemLeft">int32_t&#160;</td><td class="memItemRight"><a class="el" href="#aeb805ee3cc2dd1b170fe67c367c7e0f4">BSP_UART_ReadByte</a> (void)</td></tr>
+<tr class="memdesc:aeb805ee3cc2dd1b170fe67c367c7e0f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">从 RX 环形缓冲读取一个字节  <br /></td></tr>
+<tr class="memitem:ad53db0bf6b7aefc698e0d23d6fdda51e" id="r_ad53db0bf6b7aefc698e0d23d6fdda51e"><td class="memItemLeft">uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#ad53db0bf6b7aefc698e0d23d6fdda51e">BSP_UART_TxFree</a> (void)</td></tr>
+<tr class="memdesc:ad53db0bf6b7aefc698e0d23d6fdda51e"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询 TX 环形缓冲剩余空间  <br /></td></tr>
+<tr class="memitem:af10770a9f83f7f036bd67db7c13ba8f0" id="r_af10770a9f83f7f036bd67db7c13ba8f0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af10770a9f83f7f036bd67db7c13ba8f0">BSP_UART_Flush</a> (void)</td></tr>
+<tr class="memdesc:af10770a9f83f7f036bd67db7c13ba8f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">阻塞等待 TX 缓冲发空（仅限故障复位前等场景，不得在 ISR 中调用）  <br /></td></tr>
+<tr class="memitem:ad511fb8c53c72f8a639714db852e85b7" id="r_ad511fb8c53c72f8a639714db852e85b7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad511fb8c53c72f8a639714db852e85b7">BSP_UART_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:ad511fb8c53c72f8a639714db852e85b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">USART3 中断服务（stm32g4xx_it.c 用户区调用）  <br /></td></tr>
+<tr class="memitem:a478b893145d5d60368997811b47d7437" id="r_a478b893145d5d60368997811b47d7437"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a478b893145d5d60368997811b47d7437">BSP_UART_DmaTxIRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a478b893145d5d60368997811b47d7437"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA1 通道 2（USART3_TX）中断服务  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>USART3 调试串口 BSP 头文件（DMA TX 环形缓冲 + RXNE 中断接收） </p>
+<dl class="section attention"><dt>注意</dt><dd></dd></dl>
+<p>Copyright (c) 2026 Z.Xusheng SPDX-License-Identifier: MIT</p>
+<p>This file is part of the GIM4310/GIM4305 joint motor controller firmware, distributed under the MIT License. See the LICENSE file in the repository root for full terms. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="a478b893145d5d60368997811b47d7437" name="a478b893145d5d60368997811b47d7437"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a478b893145d5d60368997811b47d7437">&#9670;&#160;</a></span>BSP_UART_DmaTxIRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_UART_DmaTxIRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DMA1 通道 2（USART3_TX）中断服务 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__uart_8h_a478b893145d5d60368997811b47d7437_icgraph.svg" width="552" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af10770a9f83f7f036bd67db7c13ba8f0" name="af10770a9f83f7f036bd67db7c13ba8f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af10770a9f83f7f036bd67db7c13ba8f0">&#9670;&#160;</a></span>BSP_UART_Flush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_UART_Flush </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>阻塞等待 TX 缓冲发空（仅限故障复位前等场景，不得在 ISR 中调用） </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__uart_8h_af10770a9f83f7f036bd67db7c13ba8f0_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a95db1d8588b8f6c4a2ab1ba8d8a81aad" name="a95db1d8588b8f6c4a2ab1ba8d8a81aad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95db1d8588b8f6c4a2ab1ba8d8a81aad">&#9670;&#160;</a></span>BSP_UART_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_UART_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化调试串口（重配波特率 + DMA + 中断） </p>
+<dl class="section note"><dt>注解</dt><dd>须在 MX_USART3_UART_Init 之后调用。 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__uart_8h_a95db1d8588b8f6c4a2ab1ba8d8a81aad_cgraph.svg" width="319" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__uart_8h_a95db1d8588b8f6c4a2ab1ba8d8a81aad_icgraph.svg" width="386" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ad511fb8c53c72f8a639714db852e85b7" name="ad511fb8c53c72f8a639714db852e85b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad511fb8c53c72f8a639714db852e85b7">&#9670;&#160;</a></span>BSP_UART_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_UART_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>USART3 中断服务（stm32g4xx_it.c 用户区调用） </p>
+<dl class="section note"><dt>注解</dt><dd>先于 HAL 消费 RXNE，再交 HAL 处理 DMA TX 收尾的 TC 中断。 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__uart_8h_ad511fb8c53c72f8a639714db852e85b7_icgraph.svg" width="440" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac8fe8954e03174bb365847f52531e218" name="ac8fe8954e03174bb365847f52531e218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8fe8954e03174bb365847f52531e218">&#9670;&#160;</a></span>BSP_UART_Printf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t BSP_UART_Printf </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>fmt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>...</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>格式化打印到调试串口（非阻塞） </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">实际写入字节数</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__uart_8h_ac8fe8954e03174bb365847f52531e218_cgraph.svg" width="595" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__uart_8h_ac8fe8954e03174bb365847f52531e218_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aeb805ee3cc2dd1b170fe67c367c7e0f4" name="aeb805ee3cc2dd1b170fe67c367c7e0f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb805ee3cc2dd1b170fe67c367c7e0f4">&#9670;&#160;</a></span>BSP_UART_ReadByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t BSP_UART_ReadByte </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从 RX 环形缓冲读取一个字节 </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0~255</td><td>为有效字节；-1 表示无数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__uart_8h_aeb805ee3cc2dd1b170fe67c367c7e0f4_icgraph.svg" width="651" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ad53db0bf6b7aefc698e0d23d6fdda51e" name="ad53db0bf6b7aefc698e0d23d6fdda51e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad53db0bf6b7aefc698e0d23d6fdda51e">&#9670;&#160;</a></span>BSP_UART_TxFree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t BSP_UART_TxFree </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查询 TX 环形缓冲剩余空间 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__uart_8h_ad53db0bf6b7aefc698e0d23d6fdda51e_icgraph.svg" width="615" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a67e2eb7d361398076d0800612430f13c" name="a67e2eb7d361398076d0800612430f13c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67e2eb7d361398076d0800612430f13c">&#9670;&#160;</a></span>BSP_UART_Write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t BSP_UART_Write </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>len</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>向 TX 环形缓冲写入数据（非阻塞） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>数据指针 </td></tr>
+    <tr><td class="paramname">len</td><td>长度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">实际写入字节数（缓冲满时小于</td><td>len，差值计入丢弃计数） </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__uart_8h_a67e2eb7d361398076d0800612430f13c_cgraph.svg" width="394" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__uart_8h_a67e2eb7d361398076d0800612430f13c_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_eb1463819d84903762eb6f59cc0c4383.html">Application</a></li><li class="navelem"><a href="dir_f8a9e981ae9517ef8ddac90afb3b230c.html">bsp</a></li><li class="navelem"><a href="bsp__uart_8h.html">bsp_uart.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

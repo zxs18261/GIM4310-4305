@@ -1,0 +1,5 @@
+<map id="BSP_UART_Write" name="BSP_UART_Write">
+<area shape="rect" id="Node000001" title="向 TX 环形缓冲写入数据（非阻塞）" alt="" coords="5,5,159,35"/>
+<area shape="rect" id="Node000002" href="$bsp__uart_8c.html#ad4dee4b2dd593f1d4c141de95156546d" title="若 DMA 空闲且缓冲有数据，则启动下一段 DMA 传输" alt="" coords="207,5,388,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,18,194,20,188,20,159,23"/>
+</map>

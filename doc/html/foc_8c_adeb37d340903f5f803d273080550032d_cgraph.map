@@ -1,0 +1,23 @@
+<map id="FOC_Update" name="FOC_Update">
+<area shape="rect" id="Node000001" title="执行一个电流环周期（在 ADC 注入转换完成 ISR 中调用）" alt="" coords="5,192,122,222"/>
+<area shape="rect" id="Node000002" href="$foc__math_8c.html#a7b6dc337ca6db7a63bc15c20d5772fb7" title="Clarke 变换（等幅值变换，3 相 &#45;&gt; alpha/beta）" alt="" coords="177,5,288,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,190,105,122,133,81,168,45,176,41,173,45,171,49,137,84,109,125,74,193"/>
+<area shape="rect" id="Node000003" href="$foc_8c.html#aa9db75377abf9b36c243b87f58172dd6" title="快速平方根（M4F 上编译为 VSQRT 单指令）" alt="" coords="170,59,294,88"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="74,190,113,146,140,121,168,98,178,94,174,98,171,102,143,125,117,149,79,193"/>
+<area shape="rect" id="Node000004" href="$foc__math_8c.html#ae7e0a68727625c071145c38236b08cfe" title="Park 反变换（d/q &#45;&gt; alpha/beta）" alt="" coords="173,112,292,142"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="92,189,169,151,183,147,179,150,171,156,96,193"/>
+<area shape="rect" id="Node000005" href="$foc__math_8c.html#a002780099733b401167923e53120d292" title="Park 变换（alpha/beta &#45;&gt; d/q）" alt="" coords="184,165,281,195"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="121,195,170,189,166,192,123,200"/>
+<area shape="rect" id="Node000006" href="$foc__math_8c.html#a39d4aea10aec434cb4d2490fafb98632" title="查表+线性插值同时计算 sin/cos" alt="" coords="174,219,291,248"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="121,213,160,220,156,223,123,219"/>
+<area shape="rect" id="Node000009" href="$foc__math_8c.html#a81c018372d65f69c5d8bd6abdeb9f1d2" title="SVPWM 调制（注入零序的 min&#45;max 中点平移法）" alt="" coords="170,272,295,302"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="94,220,171,258,183,265,178,266,169,263,94,225"/>
+<area shape="rect" id="Node000010" href="$pid_8c.html#ad7fced70a610f756fa6319fccc4ae725" title="运行中修改输出限幅，并把积分收拢到新限幅内" alt="" coords="171,325,294,355"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="77,219,117,264,143,289,171,311,179,318,174,318,168,316,140,293,113,268,76,225"/>
+<area shape="rect" id="Node000011" href="$pid_8c.html#a0cc51ef261cec84e3e35382345ac95a0" title="执行一次 PID 计算" alt="" coords="178,379,287,408"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="72,220,109,289,137,329,171,365,177,371,172,370,168,369,133,333,105,292,70,225"/>
+<area shape="rect" id="Node000007" href="$foc__math_8c.html#ac63ab3ffd2685338c76dc6de24c953b1" title="构建 sin 查找表（仅初始化时执行一次）" alt="" coords="343,192,536,222"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="290,223,330,220,325,222,292,229"/>
+<area shape="rect" id="Node000008" href="$foc__math_8c.html#a4cc9d35ffa1c5f6ab5668cbe7623d018" title="角度归一化到 [0, 2pi)" alt="" coords="350,245,529,275"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="291,238,337,246,332,247,292,244"/>
+</map>
