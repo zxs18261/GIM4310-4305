@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: Application/control/foc.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('foc_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">foc.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="foc_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#ifndef __FOC_H</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#define __FOC_H</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">/* Includes ------------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="foc__math_8h.html">foc_math.h</a>&quot;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="pid_8h.html">pid.h</a>&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/* Exported types ------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="struct_f_o_c___init_type_def.html">   35</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_f_o_c___init_type_def.html#a65912961e96a962ff97a7f8b264753e7">   37</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_f_o_c___init_type_def.html#a65912961e96a962ff97a7f8b264753e7">Ts</a>;               </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="struct_f_o_c___init_type_def.html#ae1a031af5f0ff81c408de5d88f320542">   38</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_f_o_c___init_type_def.html#ae1a031af5f0ff81c408de5d88f320542">CurrentBandwidth</a>; </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="struct_f_o_c___init_type_def.html#ab398b7affd0f4e33049f05c0fd89ca4e">   39</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_f_o_c___init_type_def.html#ab398b7affd0f4e33049f05c0fd89ca4e">Rs</a>;               </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="struct_f_o_c___init_type_def.html#ae175c2b1612c275939cbca7a286ca294">   40</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_f_o_c___init_type_def.html#ae175c2b1612c275939cbca7a286ca294">Ls</a>;               </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="struct_f_o_c___init_type_def.html#afc3e7414e60ec7e76b6da5899771a5fc">   41</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_f_o_c___init_type_def.html#afc3e7414e60ec7e76b6da5899771a5fc">Flux</a>;             </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="struct_f_o_c___init_type_def.html#a9bf86581d8bd70fc1b071df5686b5251">   42</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_f_o_c___init_type_def.html#a9bf86581d8bd70fc1b071df5686b5251">MaxDuty</a>;          </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="struct_f_o_c___init_type_def.html#a4c2fa84001ebfffc2f64f43d2448eb74">   43</a></span>    uint8_t <a class="code hl_variable" href="struct_f_o_c___init_type_def.html#a4c2fa84001ebfffc2f64f43d2448eb74">DecoupleEnable</a>; </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>} <a class="code hl_struct" href="struct_f_o_c___init_type_def.html">FOC_InitTypeDef</a>;</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="};">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="struct_f_o_c___handle_type_def.html">   50</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="struct_f_o_c___handle_type_def.html#a63fcf40c443cd4832355e1c8f1c7757e">   52</a></span>    <a class="code hl_struct" href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a> <a class="code hl_variable" href="struct_f_o_c___handle_type_def.html#a63fcf40c443cd4832355e1c8f1c7757e">PidId</a>;    </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="struct_f_o_c___handle_type_def.html#a75ece73fd092f7c66bf5e29b1ef7ab33">   53</a></span>    <a class="code hl_struct" href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a> <a class="code hl_variable" href="struct_f_o_c___handle_type_def.html#a75ece73fd092f7c66bf5e29b1ef7ab33">PidIq</a>;    </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="struct_f_o_c___handle_type_def.html#a0cd2a3177b80556218313a0cc68b877b">   54</a></span>    <span class="keywordtype">float</span>   <a class="code hl_variable" href="struct_f_o_c___handle_type_def.html#a0cd2a3177b80556218313a0cc68b877b">Ls</a>;                 </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="struct_f_o_c___handle_type_def.html#a840779cd1a93c710955b0358f32f651a">   55</a></span>    <span class="keywordtype">float</span>   <a class="code hl_variable" href="struct_f_o_c___handle_type_def.html#a840779cd1a93c710955b0358f32f651a">Flux</a>;               </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="struct_f_o_c___handle_type_def.html#a863e5641279e7394615bb459c9001ad1">   56</a></span>    <span class="keywordtype">float</span>   <a class="code hl_variable" href="struct_f_o_c___handle_type_def.html#a863e5641279e7394615bb459c9001ad1">Ts</a>;                 </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="struct_f_o_c___handle_type_def.html#ac8a077b464f616060bc7911a537d5d7f">   57</a></span>    <span class="keywordtype">float</span>   <a class="code hl_variable" href="struct_f_o_c___handle_type_def.html#ac8a077b464f616060bc7911a537d5d7f">MaxDuty</a>;            </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="struct_f_o_c___handle_type_def.html#a0021e5c929c944aed460800808328723">   58</a></span>    uint8_t <a class="code hl_variable" href="struct_f_o_c___handle_type_def.html#a0021e5c929c944aed460800808328723">DecoupleEnable</a>;     </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="struct_f_o_c___handle_type_def.html#afcc9b7bd5fafda775123001d4f024ff7">   60</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_f_o_c___handle_type_def.html#afcc9b7bd5fafda775123001d4f024ff7">IdRef</a>;                </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="struct_f_o_c___handle_type_def.html#ad0d4d12fe0a62c1c0bf9e2055a9aafca">   61</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_f_o_c___handle_type_def.html#ad0d4d12fe0a62c1c0bf9e2055a9aafca">IqRef</a>;                </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="struct_f_o_c___handle_type_def.html#ac2dfe81dc332f973818f65ef81327d27">   63</a></span>    <a class="code hl_struct" href="struct_f_o_c___vec2_type_def.html">FOC_Vec2TypeDef</a> <a class="code hl_variable" href="struct_f_o_c___handle_type_def.html#ac2dfe81dc332f973818f65ef81327d27">IAlphaBeta</a>; </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="struct_f_o_c___handle_type_def.html#a12bbc9ba7fa113583c90b45af9afd72a">   64</a></span>    <a class="code hl_struct" href="struct_f_o_c___vec2_type_def.html">FOC_Vec2TypeDef</a> <a class="code hl_variable" href="struct_f_o_c___handle_type_def.html#a12bbc9ba7fa113583c90b45af9afd72a">Idq</a>;        </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="struct_f_o_c___handle_type_def.html#aef41a911b5d1be63d28b80e43da07467">   65</a></span>    <a class="code hl_struct" href="struct_f_o_c___vec2_type_def.html">FOC_Vec2TypeDef</a> <a class="code hl_variable" href="struct_f_o_c___handle_type_def.html#aef41a911b5d1be63d28b80e43da07467">Vdq</a>;        </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="struct_f_o_c___handle_type_def.html#a9ae57ea5694dfd83a382fa8fa176cb77">   66</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_f_o_c___handle_type_def.html#a9ae57ea5694dfd83a382fa8fa176cb77">DutyA</a>;                </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="struct_f_o_c___handle_type_def.html#a6ad3861c3bd766b8fc74203c55778f80">   67</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_f_o_c___handle_type_def.html#a6ad3861c3bd766b8fc74203c55778f80">DutyB</a>;                </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="struct_f_o_c___handle_type_def.html#a6eb6b1af907726d26d639431918cf035">   68</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_f_o_c___handle_type_def.html#a6eb6b1af907726d26d639431918cf035">DutyC</a>;                </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>} <a class="code hl_struct" href="struct_f_o_c___handle_type_def.html">FOC_HandleTypeDef</a>;</div>
+</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">/* Exported functions prototypes ---------------------------------------------*/</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keywordtype">void</span> <a class="code hl_function" href="foc_8h.html#aebd9eaf8fdc1eec2e646d0ed4a4a3d2c">FOC_Init</a>(<a class="code hl_struct" href="struct_f_o_c___handle_type_def.html">FOC_HandleTypeDef</a> *hfoc, <span class="keyword">const</span> <a class="code hl_struct" href="struct_f_o_c___init_type_def.html">FOC_InitTypeDef</a> *init);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keywordtype">void</span> <a class="code hl_function" href="foc_8h.html#aa25cf599086b4ad815ae5ad72dcfdec4">FOC_Reset</a>(<a class="code hl_struct" href="struct_f_o_c___handle_type_def.html">FOC_HandleTypeDef</a> *hfoc);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keywordtype">void</span> <a class="code hl_function" href="foc_8h.html#a42501e789c00841a74f2ce755c5d03d6">FOC_SetCurrentRef</a>(<a class="code hl_struct" href="struct_f_o_c___handle_type_def.html">FOC_HandleTypeDef</a> *hfoc, <span class="keywordtype">float</span> idRef, <span class="keywordtype">float</span> iqRef);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keywordtype">void</span> <a class="code hl_function" href="foc_8h.html#adeb37d340903f5f803d273080550032d">FOC_Update</a>(<a class="code hl_struct" href="struct_f_o_c___handle_type_def.html">FOC_HandleTypeDef</a> *hfoc, <span class="keywordtype">float</span> ia, <span class="keywordtype">float</span> ib, <span class="keywordtype">float</span> ic,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <span class="keywordtype">float</span> thetaE, <span class="keywordtype">float</span> we, <span class="keywordtype">float</span> vbus);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keywordtype">void</span> <a class="code hl_function" href="foc_8h.html#ae75f2892abb7689a482d566582276071">FOC_OutputVoltage</a>(<a class="code hl_struct" href="struct_f_o_c___handle_type_def.html">FOC_HandleTypeDef</a> *hfoc, <span class="keywordtype">float</span> vd, <span class="keywordtype">float</span> vq,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                       <span class="keywordtype">float</span> thetaE, <span class="keywordtype">float</span> vbus);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#endif </span><span class="comment">/* __FOC_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="afoc_8h_html_a42501e789c00841a74f2ce755c5d03d6"><div class="ttname"><a href="foc_8h.html#a42501e789c00841a74f2ce755c5d03d6">FOC_SetCurrentRef</a></div><div class="ttdeci">void FOC_SetCurrentRef(FOC_HandleTypeDef *hfoc, float idRef, float iqRef)</div><div class="ttdoc">设置 d/q 电流给定</div><div class="ttdef"><b>定义</b> foc.c:73</div></div>
+<div class="ttc" id="afoc_8h_html_aa25cf599086b4ad815ae5ad72dcfdec4"><div class="ttname"><a href="foc_8h.html#aa25cf599086b4ad815ae5ad72dcfdec4">FOC_Reset</a></div><div class="ttdeci">void FOC_Reset(FOC_HandleTypeDef *hfoc)</div><div class="ttdoc">复位电流环状态（封波后重新使能前调用，防止积分残留冲击）</div><div class="ttdef"><b>定义</b> foc.c:56</div></div>
+<div class="ttc" id="afoc_8h_html_adeb37d340903f5f803d273080550032d"><div class="ttname"><a href="foc_8h.html#adeb37d340903f5f803d273080550032d">FOC_Update</a></div><div class="ttdeci">void FOC_Update(FOC_HandleTypeDef *hfoc, float ia, float ib, float ic, float thetaE, float we, float vbus)</div><div class="ttdoc">执行一个电流环周期（在 ADC 注入转换完成 ISR 中调用）</div><div class="ttdef"><b>定义</b> foc.c:88</div></div>
+<div class="ttc" id="afoc_8h_html_ae75f2892abb7689a482d566582276071"><div class="ttname"><a href="foc_8h.html#ae75f2892abb7689a482d566582276071">FOC_OutputVoltage</a></div><div class="ttdeci">void FOC_OutputVoltage(FOC_HandleTypeDef *hfoc, float vd, float vq, float thetaE, float vbus)</div><div class="ttdoc">直接输出 d/q 电压矢量（开环模式 / 校准注入用，不经过电流 PI）</div><div class="ttdef"><b>定义</b> foc.c:164</div></div>
+<div class="ttc" id="afoc_8h_html_aebd9eaf8fdc1eec2e646d0ed4a4a3d2c"><div class="ttname"><a href="foc_8h.html#aebd9eaf8fdc1eec2e646d0ed4a4a3d2c">FOC_Init</a></div><div class="ttdeci">void FOC_Init(FOC_HandleTypeDef *hfoc, const FOC_InitTypeDef *init)</div><div class="ttdoc">初始化 FOC 电流环</div><div class="ttdef"><b>定义</b> foc.c:33</div></div>
+<div class="ttc" id="afoc__math_8h_html"><div class="ttname"><a href="foc__math_8h.html">foc_math.h</a></div><div class="ttdoc">FOC 数学基础模块头文件（快速三角函数、坐标变换、角度工具）</div></div>
+<div class="ttc" id="apid_8h_html"><div class="ttname"><a href="pid_8h.html">pid.h</a></div><div class="ttdoc">位置式抗饱和（clamping anti-windup）PID 控制器模块头文件</div></div>
+<div class="ttc" id="astruct_f_o_c___handle_type_def_html"><div class="ttname"><a href="struct_f_o_c___handle_type_def.html">FOC_HandleTypeDef</a></div><div class="ttdoc">FOC 运行句柄结构体</div><div class="ttdef"><b>定义</b> foc.h:51</div></div>
+<div class="ttc" id="astruct_f_o_c___handle_type_def_html_a0021e5c929c944aed460800808328723"><div class="ttname"><a href="struct_f_o_c___handle_type_def.html#a0021e5c929c944aed460800808328723">FOC_HandleTypeDef::DecoupleEnable</a></div><div class="ttdeci">uint8_t DecoupleEnable</div><div class="ttdef"><b>定义</b> foc.h:58</div></div>
+<div class="ttc" id="astruct_f_o_c___handle_type_def_html_a0cd2a3177b80556218313a0cc68b877b"><div class="ttname"><a href="struct_f_o_c___handle_type_def.html#a0cd2a3177b80556218313a0cc68b877b">FOC_HandleTypeDef::Ls</a></div><div class="ttdeci">float Ls</div><div class="ttdef"><b>定义</b> foc.h:54</div></div>
+<div class="ttc" id="astruct_f_o_c___handle_type_def_html_a12bbc9ba7fa113583c90b45af9afd72a"><div class="ttname"><a href="struct_f_o_c___handle_type_def.html#a12bbc9ba7fa113583c90b45af9afd72a">FOC_HandleTypeDef::Idq</a></div><div class="ttdeci">FOC_Vec2TypeDef Idq</div><div class="ttdef"><b>定义</b> foc.h:64</div></div>
+<div class="ttc" id="astruct_f_o_c___handle_type_def_html_a63fcf40c443cd4832355e1c8f1c7757e"><div class="ttname"><a href="struct_f_o_c___handle_type_def.html#a63fcf40c443cd4832355e1c8f1c7757e">FOC_HandleTypeDef::PidId</a></div><div class="ttdeci">PID_HandleTypeDef PidId</div><div class="ttdef"><b>定义</b> foc.h:52</div></div>
+<div class="ttc" id="astruct_f_o_c___handle_type_def_html_a6ad3861c3bd766b8fc74203c55778f80"><div class="ttname"><a href="struct_f_o_c___handle_type_def.html#a6ad3861c3bd766b8fc74203c55778f80">FOC_HandleTypeDef::DutyB</a></div><div class="ttdeci">float DutyB</div><div class="ttdef"><b>定义</b> foc.h:67</div></div>
+<div class="ttc" id="astruct_f_o_c___handle_type_def_html_a6eb6b1af907726d26d639431918cf035"><div class="ttname"><a href="struct_f_o_c___handle_type_def.html#a6eb6b1af907726d26d639431918cf035">FOC_HandleTypeDef::DutyC</a></div><div class="ttdeci">float DutyC</div><div class="ttdef"><b>定义</b> foc.h:68</div></div>
+<div class="ttc" id="astruct_f_o_c___handle_type_def_html_a75ece73fd092f7c66bf5e29b1ef7ab33"><div class="ttname"><a href="struct_f_o_c___handle_type_def.html#a75ece73fd092f7c66bf5e29b1ef7ab33">FOC_HandleTypeDef::PidIq</a></div><div class="ttdeci">PID_HandleTypeDef PidIq</div><div class="ttdef"><b>定义</b> foc.h:53</div></div>
+<div class="ttc" id="astruct_f_o_c___handle_type_def_html_a840779cd1a93c710955b0358f32f651a"><div class="ttname"><a href="struct_f_o_c___handle_type_def.html#a840779cd1a93c710955b0358f32f651a">FOC_HandleTypeDef::Flux</a></div><div class="ttdeci">float Flux</div><div class="ttdef"><b>定义</b> foc.h:55</div></div>
+<div class="ttc" id="astruct_f_o_c___handle_type_def_html_a863e5641279e7394615bb459c9001ad1"><div class="ttname"><a href="struct_f_o_c___handle_type_def.html#a863e5641279e7394615bb459c9001ad1">FOC_HandleTypeDef::Ts</a></div><div class="ttdeci">float Ts</div><div class="ttdef"><b>定义</b> foc.h:56</div></div>
+<div class="ttc" id="astruct_f_o_c___handle_type_def_html_a9ae57ea5694dfd83a382fa8fa176cb77"><div class="ttname"><a href="struct_f_o_c___handle_type_def.html#a9ae57ea5694dfd83a382fa8fa176cb77">FOC_HandleTypeDef::DutyA</a></div><div class="ttdeci">float DutyA</div><div class="ttdef"><b>定义</b> foc.h:66</div></div>
+<div class="ttc" id="astruct_f_o_c___handle_type_def_html_ac2dfe81dc332f973818f65ef81327d27"><div class="ttname"><a href="struct_f_o_c___handle_type_def.html#ac2dfe81dc332f973818f65ef81327d27">FOC_HandleTypeDef::IAlphaBeta</a></div><div class="ttdeci">FOC_Vec2TypeDef IAlphaBeta</div><div class="ttdef"><b>定义</b> foc.h:63</div></div>
+<div class="ttc" id="astruct_f_o_c___handle_type_def_html_ac8a077b464f616060bc7911a537d5d7f"><div class="ttname"><a href="struct_f_o_c___handle_type_def.html#ac8a077b464f616060bc7911a537d5d7f">FOC_HandleTypeDef::MaxDuty</a></div><div class="ttdeci">float MaxDuty</div><div class="ttdef"><b>定义</b> foc.h:57</div></div>
+<div class="ttc" id="astruct_f_o_c___handle_type_def_html_ad0d4d12fe0a62c1c0bf9e2055a9aafca"><div class="ttname"><a href="struct_f_o_c___handle_type_def.html#ad0d4d12fe0a62c1c0bf9e2055a9aafca">FOC_HandleTypeDef::IqRef</a></div><div class="ttdeci">float IqRef</div><div class="ttdef"><b>定义</b> foc.h:61</div></div>
+<div class="ttc" id="astruct_f_o_c___handle_type_def_html_aef41a911b5d1be63d28b80e43da07467"><div class="ttname"><a href="struct_f_o_c___handle_type_def.html#aef41a911b5d1be63d28b80e43da07467">FOC_HandleTypeDef::Vdq</a></div><div class="ttdeci">FOC_Vec2TypeDef Vdq</div><div class="ttdef"><b>定义</b> foc.h:65</div></div>
+<div class="ttc" id="astruct_f_o_c___handle_type_def_html_afcc9b7bd5fafda775123001d4f024ff7"><div class="ttname"><a href="struct_f_o_c___handle_type_def.html#afcc9b7bd5fafda775123001d4f024ff7">FOC_HandleTypeDef::IdRef</a></div><div class="ttdeci">float IdRef</div><div class="ttdef"><b>定义</b> foc.h:60</div></div>
+<div class="ttc" id="astruct_f_o_c___init_type_def_html"><div class="ttname"><a href="struct_f_o_c___init_type_def.html">FOC_InitTypeDef</a></div><div class="ttdoc">FOC 初始化参数结构体</div><div class="ttdef"><b>定义</b> foc.h:36</div></div>
+<div class="ttc" id="astruct_f_o_c___init_type_def_html_a4c2fa84001ebfffc2f64f43d2448eb74"><div class="ttname"><a href="struct_f_o_c___init_type_def.html#a4c2fa84001ebfffc2f64f43d2448eb74">FOC_InitTypeDef::DecoupleEnable</a></div><div class="ttdeci">uint8_t DecoupleEnable</div><div class="ttdef"><b>定义</b> foc.h:43</div></div>
+<div class="ttc" id="astruct_f_o_c___init_type_def_html_a65912961e96a962ff97a7f8b264753e7"><div class="ttname"><a href="struct_f_o_c___init_type_def.html#a65912961e96a962ff97a7f8b264753e7">FOC_InitTypeDef::Ts</a></div><div class="ttdeci">float Ts</div><div class="ttdef"><b>定义</b> foc.h:37</div></div>
+<div class="ttc" id="astruct_f_o_c___init_type_def_html_a9bf86581d8bd70fc1b071df5686b5251"><div class="ttname"><a href="struct_f_o_c___init_type_def.html#a9bf86581d8bd70fc1b071df5686b5251">FOC_InitTypeDef::MaxDuty</a></div><div class="ttdeci">float MaxDuty</div><div class="ttdef"><b>定义</b> foc.h:42</div></div>
+<div class="ttc" id="astruct_f_o_c___init_type_def_html_ab398b7affd0f4e33049f05c0fd89ca4e"><div class="ttname"><a href="struct_f_o_c___init_type_def.html#ab398b7affd0f4e33049f05c0fd89ca4e">FOC_InitTypeDef::Rs</a></div><div class="ttdeci">float Rs</div><div class="ttdef"><b>定义</b> foc.h:39</div></div>
+<div class="ttc" id="astruct_f_o_c___init_type_def_html_ae175c2b1612c275939cbca7a286ca294"><div class="ttname"><a href="struct_f_o_c___init_type_def.html#ae175c2b1612c275939cbca7a286ca294">FOC_InitTypeDef::Ls</a></div><div class="ttdeci">float Ls</div><div class="ttdef"><b>定义</b> foc.h:40</div></div>
+<div class="ttc" id="astruct_f_o_c___init_type_def_html_ae1a031af5f0ff81c408de5d88f320542"><div class="ttname"><a href="struct_f_o_c___init_type_def.html#ae1a031af5f0ff81c408de5d88f320542">FOC_InitTypeDef::CurrentBandwidth</a></div><div class="ttdeci">float CurrentBandwidth</div><div class="ttdef"><b>定义</b> foc.h:38</div></div>
+<div class="ttc" id="astruct_f_o_c___init_type_def_html_afc3e7414e60ec7e76b6da5899771a5fc"><div class="ttname"><a href="struct_f_o_c___init_type_def.html#afc3e7414e60ec7e76b6da5899771a5fc">FOC_InitTypeDef::Flux</a></div><div class="ttdeci">float Flux</div><div class="ttdef"><b>定义</b> foc.h:41</div></div>
+<div class="ttc" id="astruct_f_o_c___vec2_type_def_html"><div class="ttname"><a href="struct_f_o_c___vec2_type_def.html">FOC_Vec2TypeDef</a></div><div class="ttdoc">两相正交量（alpha-beta 或 d-q）</div><div class="ttdef"><b>定义</b> foc_math.h:43</div></div>
+<div class="ttc" id="astruct_p_i_d___handle_type_def_html"><div class="ttname"><a href="struct_p_i_d___handle_type_def.html">PID_HandleTypeDef</a></div><div class="ttdoc">PID 控制器句柄结构体</div><div class="ttdef"><b>定义</b> pid.h:35</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_eb1463819d84903762eb6f59cc0c4383.html">Application</a></li><li class="navelem"><a href="dir_9432622812bb694a54394c78af40a15c.html">control</a></li><li class="navelem"><a href="foc_8h.html">foc.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

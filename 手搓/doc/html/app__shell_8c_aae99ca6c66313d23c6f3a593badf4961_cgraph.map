@@ -1,0 +1,11 @@
+<map id="APP_SHELL_Boot0" name="APP_SHELL_Boot0">
+<area shape="rect" id="Node000001" title="boot0 命令：检查/编程 nSWBOOT0 选项字节" alt="" coords="5,32,172,62"/>
+<area shape="rect" id="Node000002" href="$bsp__uart_8c.html#af10770a9f83f7f036bd67db7c13ba8f0" title="阻塞等待 TX 缓冲发空（仅限故障复位前等场景，不得在 ISR 中调用）" alt="" coords="220,5,376,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,34,207,31,202,33,173,39"/>
+<area shape="rect" id="Node000003" href="$bsp__uart_8c.html#ac8fe8954e03174bb365847f52531e218" title="格式化打印到调试串口（非阻塞）" alt="" coords="221,59,374,88"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,55,208,62,203,62,172,60"/>
+<area shape="rect" id="Node000004" href="$bsp__uart_8c.html#a67e2eb7d361398076d0800612430f13c" title="向 TX 环形缓冲写入数据（非阻塞）" alt="" coords="424,59,577,88"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="375,71,411,73,406,74,375,76"/>
+<area shape="rect" id="Node000005" href="$bsp__uart_8c.html#ad4dee4b2dd593f1d4c141de95156546d" title="若 DMA 空闲且缓冲有数据，则启动下一段 DMA 传输" alt="" coords="625,59,807,88"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="578,71,612,73,607,74,578,76"/>
+</map>

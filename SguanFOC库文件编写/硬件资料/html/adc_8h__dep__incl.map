@@ -1,0 +1,9 @@
+<map id="Core/Inc/adc.h" name="Core/Inc/adc.h">
+<area shape="rect" id="Node000001" title="This file contains all the function prototypes for the adc.c file" alt="" coords="192,5,316,35"/>
+<area shape="rect" id="Node000002" href="$bsp__adc_8c.html" title="ADC 采样 BSP（电流/母线电压注入组 + 温度规则组）" alt="" coords="5,83,167,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,42,134,85,131,80,210,43"/>
+<area shape="rect" id="Node000003" href="$adc_8c.html" title="This file provides code for the configuration of the ADC instances." alt="" coords="191,92,317,122"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="256,49,256,94,252,91,252,52"/>
+<area shape="rect" id="Node000004" href="$main_8c.html" title=": Main program body" alt="" coords="341,92,476,122"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="294,40,386,92,381,92,293,46"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="Application/bsp/bsp_pwm.c" name="Application/bsp/bsp_pwm.c">
+<area shape="rect" id="Node000001" title="TIM1 三相互补 PWM BSP" alt="" coords="116,5,278,54"/>
+<area shape="rect" id="Node000002" href="$bsp__pwm_8h.html" title="TIM1 三相互补 PWM BSP 头文件" alt="" coords="5,102,109,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,57,95,96,92,92,159,52"/>
+<area shape="rect" id="Node000006" href="$board__config_8h.html" title="板级硬件参数统一配置（GIM4310/4305 电机控制器 V0.0 板）" alt="" coords="133,102,261,132"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="198,52,200,87,194,85,196,57"/>
+<area shape="rect" id="Node000007" href="$tim_8h.html" title="This file contains all the function prototypes for the tim.c file" alt="" coords="285,102,341,132"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="230,52,284,92,279,93,229,57"/>
+<area shape="rect" id="Node000003" href="$main_8h.html" title=": Header for main.c file." alt="" coords="197,180,266,209"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,130,187,172,183,175,90,135"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="21,180,93,209"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="58,130,60,164,54,164,56,135"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="160,257,303,287"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="233,208,234,243,229,240,230,212"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="300,131,260,171,257,167,295,134"/>
+</map>

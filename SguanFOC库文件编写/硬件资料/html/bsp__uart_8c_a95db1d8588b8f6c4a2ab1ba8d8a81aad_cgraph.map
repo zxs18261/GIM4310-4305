@@ -1,0 +1,5 @@
+<map id="BSP_UART_Init" name="BSP_UART_Init">
+<area shape="rect" id="Node000001" title="初始化调试串口（重配波特率 + DMA + 中断）" alt="" coords="5,5,143,35"/>
+<area shape="rect" id="Node000002" href="$main_8c.html#a1730ffe1e560465665eb47d9264826f9" title="This function is executed in case of error occurrence." alt="" coords="191,5,313,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,18,178,20,172,20,143,23"/>
+</map>

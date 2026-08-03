@@ -1,0 +1,9 @@
+<map id="APP_SHELL_Help" name="APP_SHELL_Help">
+<area shape="rect" id="Node000001" title="help 输出" alt="" coords="5,5,164,35"/>
+<area shape="rect" id="Node000002" href="$bsp__uart_8c.html#ac8fe8954e03174bb365847f52531e218" title="格式化打印到调试串口（非阻塞）" alt="" coords="212,5,365,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,18,199,20,193,20,164,23"/>
+<area shape="rect" id="Node000003" href="$bsp__uart_8c.html#a67e2eb7d361398076d0800612430f13c" title="向 TX 环形缓冲写入数据（非阻塞）" alt="" coords="413,5,566,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="365,18,400,20,395,20,365,23"/>
+<area shape="rect" id="Node000004" href="$bsp__uart_8c.html#ad4dee4b2dd593f1d4c141de95156546d" title="若 DMA 空闲且缓冲有数据，则启动下一段 DMA 传输" alt="" coords="614,5,796,35"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="567,18,601,20,596,20,567,23"/>
+</map>

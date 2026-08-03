@@ -1,0 +1,5 @@
+<map id="MC_ApplyPidParams" name="MC_ApplyPidParams">
+<area shape="rect" id="Node000001" title="参数修改后刷新 PID 增益（shell/CAN 调参后调用）" alt="" coords="5,5,181,35"/>
+<area shape="rect" id="Node000002" href="$pid_8c.html#a8977cc689f8f72deff8a981ff5da901f" title="运行中修改增益（不复位积分，保证无扰切换）" alt="" coords="229,5,352,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,18,216,20,211,20,181,23"/>
+</map>

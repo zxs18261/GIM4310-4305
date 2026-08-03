@@ -1,0 +1,38 @@
+<map id="APP_SlowTask" name="APP_SlowTask">
+<area shape="rect" id="Node000001" title="慢任务：温度采样/过温保护/CAN 指令超时" alt="" coords="5,165,138,195"/>
+<area shape="rect" id="Node000002" href="$app__can__protocol_8c.html#aa7ee6d44a81d3042e0e6f9a3d161cda2" title="查询当前使能是否由 CAN 发起（指令超时保护范围判定）" alt="" coords="187,5,410,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,164,119,105,149,72,184,45,197,40,193,43,187,49,153,76,123,109,83,166"/>
+<area shape="rect" id="Node000003" href="$bsp__adc_8c.html#afa9f3886839c064af2f9ea65e1809550" title="读取 MOS 管温度 [摄氏度]（阻塞轮询规则组，后台调用）" alt="" coords="191,112,406,142"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,162,219,144,215,148,139,167"/>
+<area shape="rect" id="Node000006" href="$bsp__adc_8c.html#a48bb754e0f48feedd1f16cf6a5cc4abe" title="读取电机绕组温度 [摄氏度]（阻塞轮询规则组，后台调用）" alt="" coords="186,59,411,88"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="88,163,130,130,184,98,204,92,200,95,187,103,133,134,92,167"/>
+<area shape="rect" id="Node000007" href="$bsp__uart_8c.html#ac8fe8954e03174bb365847f52531e218" title="格式化打印到调试串口（非阻塞）" alt="" coords="222,165,375,195"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="138,178,209,179,204,182,139,183"/>
+<area shape="rect" id="Node000010" href="$motor__ctrl_8c.html#a0254f4cdae07bdb4781c9df4b540ffe8" title="触发故障：立即封波并锁存（ISR 安全）" alt="" coords="239,219,358,248"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="137,193,226,215,222,218,138,198"/>
+<area shape="rect" id="Node000015" href="$protection_8c.html#a80cdeb76b44bac1774ce87967ddd77aa" title="检查 CAN 指令超时" alt="" coords="194,272,402,302"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="90,193,133,226,187,258,205,267,200,267,184,263,130,230,90,198"/>
+<area shape="rect" id="Node000016" href="$protection_8c.html#a69316e4d1e7f8cb9a4dfd6161c3b437e" title="慢速保护检查（后台约 10Hz 调用）" alt="" coords="220,325,377,355"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="82,193,123,252,153,284,187,311,208,323,202,323,184,316,149,288,119,255,80,198"/>
+<area shape="rect" id="Node000004" href="$bsp__adc_8c.html#a711d70fa87d9e888250585328414146f" title="NTC 原始值转温度" alt="" coords="486,112,673,142"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="406,124,473,126,468,128,407,129"/>
+<area shape="rect" id="Node000005" href="$bsp__adc_8c.html#a900bb32d34d9ee14f746741c3e985a4f" title="软件触发单次规则组转换（NTC 慢通道专用）" alt="" coords="459,59,700,88"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="380,109,485,91,480,93,381,114"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="380,86,485,108,480,109,381,92"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="411,71,446,73,441,74,412,76"/>
+<area shape="rect" id="Node000008" href="$bsp__uart_8c.html#a67e2eb7d361398076d0800612430f13c" title="向 TX 环形缓冲写入数据（非阻塞）" alt="" coords="503,165,656,195"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="375,178,490,179,485,181,376,183"/>
+<area shape="rect" id="Node000009" href="$bsp__uart_8c.html#ad4dee4b2dd593f1d4c141de95156546d" title="若 DMA 空闲且缓冲有数据，则启动下一段 DMA 传输" alt="" coords="748,140,930,170"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="657,170,735,165,730,166,657,175"/>
+<area shape="rect" id="Node000011" href="$motor__ctrl_8c.html#aceb46c7be868a0b12dffa105e3d0581e" title="封波（ISR 安全）" alt="" coords="524,232,635,262"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="358,234,512,243,506,244,358,239"/>
+<area shape="rect" id="Node000012" href="$bsp__pwm_8c.html#a2664b56ad93d867fb05741e710ff942d" title="封波（输出高阻，电机 freewheel）" alt="" coords="756,193,922,223"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="635,236,743,222,738,223,636,241"/>
+<area shape="rect" id="Node000013" href="$foc_8c.html#aa25cf599086b4ad815ae5ad72dcfdec4" title="复位电流环状态（封波后重新使能前调用，防止积分残留冲击）" alt="" coords="786,297,892,327"/>
+<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="636,258,774,295,768,295,635,263"/>
+<area shape="rect" id="Node000014" href="$pid_8c.html#acb76685b15d3fde29d9bd5548b3268c1" title="复位 PID 内部状态（积分/历史误差/输出）" alt="" coords="978,272,1077,302"/>
+<area shape="poly" id="edge16_Node000011_Node000014" title=" " alt="" coords="635,249,965,281,959,282,635,254"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="892,302,960,296,965,295,893,308"/>
+<area shape="rect" id="Node000017" href="$protection_8c.html#a40bd77da34a0710d0ee46ecc0b4abb55" title="线性降额：温度低于告警点为 1，达到故障点为 0" alt="" coords="504,325,656,355"/>
+<area shape="poly" id="edge19_Node000016_Node000017" title=" " alt="" coords="378,338,491,340,486,340,378,343"/>
+</map>

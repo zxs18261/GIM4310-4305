@@ -1,0 +1,22 @@
+<map id="Application/bsp/bsp_uart.c" name="Application/bsp/bsp_uart.c">
+<area shape="rect" id="Node000001" title="USART3 调试串口 BSP（DMA TX 环形缓冲 + RXNE 中断接收）" alt="" coords="280,5,441,54"/>
+<area shape="rect" id="Node000002" href="$bsp__uart_8h.html" title="USART3 调试串口 BSP 头文件（DMA TX 环形缓冲 + RXNE 中断接收）" alt="" coords="5,102,102,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="278,56,118,100,116,96,280,51"/>
+<area shape="rect" id="Node000006" href="$board__config_8h.html" title="板级硬件参数统一配置（GIM4310/4305 电机控制器 V0.0 板）" alt="" coords="126,102,253,132"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="310,56,233,97,230,92,315,53"/>
+<area shape="rect" id="Node000007" href="$usart_8h.html" title="This file contains all the function prototypes for the usart.c file" alt="" coords="278,102,347,132"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="349,53,330,90,326,86,345,56"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="370,102,449,132"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="375,52,396,89,391,88,373,57"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="473,102,541,132"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="401,52,472,94,467,94,401,57"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="565,102,638,132"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="428,52,553,97,548,98,427,57"/>
+<area shape="rect" id="Node000003" href="$main_8h.html" title=": Header for main.c file." alt="" coords="195,180,264,209"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,130,185,172,180,175,86,135"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="17,180,90,209"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="54,130,56,164,51,164,53,135"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="158,257,301,287"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="231,208,232,243,227,240,228,212"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="299,131,258,171,254,167,294,134"/>
+</map>

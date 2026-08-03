@@ -1,0 +1,9 @@
+<map id="APP_CAN_SetParamByIndex" name="APP_CAN_SetParamByIndex">
+<area shape="rect" id="Node000001" title="按索引写参数（只读项与非法值拒绝，CAN 配置通道与 shell 共用）" alt="" coords="5,32,242,62"/>
+<area shape="rect" id="Node000002" href="$bsp__can_8c.html#ab09830a7aa5df9b3a6fa393538f81ab8" title="切换 120 欧终端电阻（TS5A3159 模拟开关）" alt="" coords="290,5,504,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,33,277,32,272,33,242,38"/>
+<area shape="rect" id="Node000003" href="$motor__ctrl_8c.html#acd57a3a6a71d8ec4261dca794251a12a" title="参数修改后刷新 PID 增益（shell/CAN 调参后调用）" alt="" coords="309,59,484,88"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,56,296,63,291,64,242,61"/>
+<area shape="rect" id="Node000004" href="$pid_8c.html#a8977cc689f8f72deff8a981ff5da901f" title="运行中修改增益（不复位积分，保证无扰切换）" alt="" coords="552,59,675,88"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="485,71,539,73,534,74,485,76"/>
+</map>

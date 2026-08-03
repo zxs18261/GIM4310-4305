@@ -1,0 +1,9 @@
+<map id="PLL_Update" name="PLL_Update">
+<area shape="rect" id="Node000001" title="执行一次 PLL 跟踪" alt="" coords="389,5,501,35"/>
+<area shape="rect" id="Node000002" href="$motor__ctrl_8c.html#a5c982a7374da291bb0e5d06d26893def" title="FOC 主循环（ADC 注入完成 ISR，20kHz）" alt="" coords="242,5,341,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="371,20,342,23,341,18,376,20"/>
+<area shape="rect" id="Node000003" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="110,5,194,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="224,20,195,23,194,18,229,20"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,62,35"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="92,21,62,23,62,18,97,19"/>
+</map>

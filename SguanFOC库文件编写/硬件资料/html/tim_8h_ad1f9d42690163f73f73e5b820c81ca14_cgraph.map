@@ -1,0 +1,7 @@
+<map id="MX_TIM1_Init" name="MX_TIM1_Init">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,32,126,62"/>
+<area shape="rect" id="Node000002" href="$main_8c.html#a1730ffe1e560465665eb47d9264826f9" title="This function is executed in case of error occurrence." alt="" coords="203,5,326,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,36,191,29,186,31,127,41"/>
+<area shape="rect" id="Node000003" href="$tim_8c.html#a708f19bbc41b292fccf38f2d9796c46a" title=" " alt="" coords="174,59,355,88"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,52,161,59,155,60,126,58"/>
+</map>

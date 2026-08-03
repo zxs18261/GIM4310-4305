@@ -1,0 +1,9 @@
+<map id="BSP_UART_ReadByte" name="BSP_UART_ReadByte">
+<area shape="rect" id="Node000001" title="从 RX 环形缓冲读取一个字节" alt="" coords="457,5,645,35"/>
+<area shape="rect" id="Node000002" href="$app__shell_8c.html#ab93a15148be82ad3c0999b099de7c29e" title="shell 轮询（后台调用）" alt="" coords="257,5,409,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="439,20,409,23,409,18,445,20"/>
+<area shape="rect" id="Node000003" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,5,209,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="239,20,210,23,210,18,244,20"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,62,35"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="92,21,62,23,62,18,97,19"/>
+</map>

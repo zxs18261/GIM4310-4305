@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: Core/Src/opamp.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('opamp_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">opamp.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This file provides code for the configuration of the OPAMP instances.  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="opamp_8h_source.html">opamp.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+opamp.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="opamp_8c__incl.svg" width="160" height="274"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ae79cc2f9370135e331deba88fe78da9f" id="r_ae79cc2f9370135e331deba88fe78da9f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae79cc2f9370135e331deba88fe78da9f">MX_OPAMP1_Init</a> (void)</td></tr>
+<tr class="memitem:add65a8f7f8132534ddf7f54fa6125176" id="r_add65a8f7f8132534ddf7f54fa6125176"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#add65a8f7f8132534ddf7f54fa6125176">MX_OPAMP2_Init</a> (void)</td></tr>
+<tr class="memitem:a52d1ae7d2fceaebb7fa0f31235bfee5f" id="r_a52d1ae7d2fceaebb7fa0f31235bfee5f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a52d1ae7d2fceaebb7fa0f31235bfee5f">MX_OPAMP3_Init</a> (void)</td></tr>
+<tr class="memitem:a3bbedc14b9b9315a299e1278cf642080" id="r_a3bbedc14b9b9315a299e1278cf642080"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3bbedc14b9b9315a299e1278cf642080">HAL_OPAMP_MspInit</a> (OPAMP_HandleTypeDef *opampHandle)</td></tr>
+<tr class="memitem:abcc46f5e65a4527035fdfd5ec3ca9a97" id="r_abcc46f5e65a4527035fdfd5ec3ca9a97"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abcc46f5e65a4527035fdfd5ec3ca9a97">HAL_OPAMP_MspDeInit</a> (OPAMP_HandleTypeDef *opampHandle)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a0fca3f4c515cc9b12aedbba4dc9e92e4" id="r_a0fca3f4c515cc9b12aedbba4dc9e92e4"><td class="memItemLeft">OPAMP_HandleTypeDef&#160;</td><td class="memItemRight"><a class="el" href="#a0fca3f4c515cc9b12aedbba4dc9e92e4">hopamp1</a></td></tr>
+<tr class="memitem:ad6ba5a60e725f71a76497c5de37e3330" id="r_ad6ba5a60e725f71a76497c5de37e3330"><td class="memItemLeft">OPAMP_HandleTypeDef&#160;</td><td class="memItemRight"><a class="el" href="#ad6ba5a60e725f71a76497c5de37e3330">hopamp2</a></td></tr>
+<tr class="memitem:ade7074e2dbda0b331e52a0e0f055c8a0" id="r_ade7074e2dbda0b331e52a0e0f055c8a0"><td class="memItemLeft">OPAMP_HandleTypeDef&#160;</td><td class="memItemRight"><a class="el" href="#ade7074e2dbda0b331e52a0e0f055c8a0">hopamp3</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>This file provides code for the configuration of the OPAMP instances. </p>
+<dl class="section attention"><dt>注意</dt><dd></dd></dl>
+<p>Copyright (c) 2026 STMicroelectronics. All rights reserved.</p>
+<p>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="abcc46f5e65a4527035fdfd5ec3ca9a97" name="abcc46f5e65a4527035fdfd5ec3ca9a97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcc46f5e65a4527035fdfd5ec3ca9a97">&#9670;&#160;</a></span>HAL_OPAMP_MspDeInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_OPAMP_MspDeInit </td>
+          <td>(</td>
+          <td class="paramtype">OPAMP_HandleTypeDef *</td>          <td class="paramname"><span class="paramname"><em>opampHandle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>OPAMP1 GPIO Configuration PA1 ------&gt; OPAMP1_VINP PA2 ------&gt; OPAMP1_VOUT PA3 ------&gt; OPAMP1_VINM</p>
+<p>OPAMP2 GPIO Configuration PA5 ------&gt; OPAMP2_VINM PA6 ------&gt; OPAMP2_VOUT PA7 ------&gt; OPAMP2_VINP</p>
+<p>OPAMP3 GPIO Configuration PB0 ------&gt; OPAMP3_VINP PB1 ------&gt; OPAMP3_VOUT PB2 ------&gt; OPAMP3_VINM</p>
+
+</div>
+</div>
+<a id="a3bbedc14b9b9315a299e1278cf642080" name="a3bbedc14b9b9315a299e1278cf642080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bbedc14b9b9315a299e1278cf642080">&#9670;&#160;</a></span>HAL_OPAMP_MspInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_OPAMP_MspInit </td>
+          <td>(</td>
+          <td class="paramtype">OPAMP_HandleTypeDef *</td>          <td class="paramname"><span class="paramname"><em>opampHandle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>OPAMP1 GPIO Configuration PA1 ------&gt; OPAMP1_VINP PA2 ------&gt; OPAMP1_VOUT PA3 ------&gt; OPAMP1_VINM</p>
+<p>OPAMP2 GPIO Configuration PA5 ------&gt; OPAMP2_VINM PA6 ------&gt; OPAMP2_VOUT PA7 ------&gt; OPAMP2_VINP</p>
+<p>OPAMP3 GPIO Configuration PB0 ------&gt; OPAMP3_VINP PB1 ------&gt; OPAMP3_VOUT PB2 ------&gt; OPAMP3_VINM</p>
+
+</div>
+</div>
+<a id="ae79cc2f9370135e331deba88fe78da9f" name="ae79cc2f9370135e331deba88fe78da9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae79cc2f9370135e331deba88fe78da9f">&#9670;&#160;</a></span>MX_OPAMP1_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MX_OPAMP1_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="opamp_8c_ae79cc2f9370135e331deba88fe78da9f_cgraph.svg" width="331" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="opamp_8c_ae79cc2f9370135e331deba88fe78da9f_icgraph.svg" width="264" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="add65a8f7f8132534ddf7f54fa6125176" name="add65a8f7f8132534ddf7f54fa6125176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add65a8f7f8132534ddf7f54fa6125176">&#9670;&#160;</a></span>MX_OPAMP2_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MX_OPAMP2_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="opamp_8c_add65a8f7f8132534ddf7f54fa6125176_cgraph.svg" width="331" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="opamp_8c_add65a8f7f8132534ddf7f54fa6125176_icgraph.svg" width="264" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a52d1ae7d2fceaebb7fa0f31235bfee5f" name="a52d1ae7d2fceaebb7fa0f31235bfee5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52d1ae7d2fceaebb7fa0f31235bfee5f">&#9670;&#160;</a></span>MX_OPAMP3_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MX_OPAMP3_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="opamp_8c_a52d1ae7d2fceaebb7fa0f31235bfee5f_cgraph.svg" width="331" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="opamp_8c_a52d1ae7d2fceaebb7fa0f31235bfee5f_icgraph.svg" width="264" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">变量说明</h2>
+<a id="a0fca3f4c515cc9b12aedbba4dc9e92e4" name="a0fca3f4c515cc9b12aedbba4dc9e92e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fca3f4c515cc9b12aedbba4dc9e92e4">&#9670;&#160;</a></span>hopamp1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPAMP_HandleTypeDef hopamp1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6ba5a60e725f71a76497c5de37e3330" name="ad6ba5a60e725f71a76497c5de37e3330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6ba5a60e725f71a76497c5de37e3330">&#9670;&#160;</a></span>hopamp2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPAMP_HandleTypeDef hopamp2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade7074e2dbda0b331e52a0e0f055c8a0" name="ade7074e2dbda0b331e52a0e0f055c8a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade7074e2dbda0b331e52a0e0f055c8a0">&#9670;&#160;</a></span>hopamp3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OPAMP_HandleTypeDef hopamp3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a href="dir_b596f468b52957496e4f78b80e029268.html">Src</a></li><li class="navelem"><a href="opamp_8c.html">opamp.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

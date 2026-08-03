@@ -1,0 +1,9 @@
+<map id="Application/control/calibration.h" name="Application/control/calibration.h">
+<area shape="rect" id="Node000001" title="预定位校准模块头文件（编码器方向/极对数/电角度偏置）" alt="" coords="193,5,346,54"/>
+<area shape="rect" id="Node000002" href="$app__monitor_8c.html" title="调试数据打印模块" alt="" coords="5,102,169,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,61,134,104,132,99,208,62"/>
+<area shape="rect" id="Node000003" href="$calibration_8c.html" title="预定位校准模块（编码器方向/极对数/电角度偏置）" alt="" coords="193,102,346,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="271,67,272,103,267,100,268,71"/>
+<area shape="rect" id="Node000004" href="$motor__ctrl_8c.html" title="电机控制核心模块（模式状态机 + 20kHz FOC 主循环）" alt="" coords="370,102,524,151"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="328,59,405,102,400,101,327,64"/>
+</map>

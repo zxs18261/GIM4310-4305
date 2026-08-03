@@ -1,0 +1,10 @@
+<map id="Application/control/foc.h" name="Application/control/foc.h">
+<area shape="rect" id="Node000001" title="FOC 电流环模块头文件" alt="" coords="29,5,182,54"/>
+<area shape="rect" id="Node000002" href="$foc__math_8h.html" title="FOC 数学基础模块头文件（快速三角函数、坐标变换、角度工具）" alt="" coords="5,102,105,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,57,74,90,69,87,93,52"/>
+<area shape="rect" id="Node000004" href="$pid_8h.html" title="位置式抗饱和（clamping anti&#45;windup）PID 控制器模块头文件" alt="" coords="128,102,184,132"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="120,52,143,88,137,88,119,57"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="70,180,142,209"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="66,130,90,166,85,167,63,135"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="149,131,126,168,122,165,145,134"/>
+</map>

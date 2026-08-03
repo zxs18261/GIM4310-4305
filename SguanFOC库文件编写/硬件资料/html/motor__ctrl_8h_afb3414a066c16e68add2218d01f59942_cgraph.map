@@ -1,0 +1,15 @@
+<map id="MC_StartCalibration" name="MC_StartCalibration">
+<area shape="rect" id="Node000001" title="启动预定位校准（封波状态下）" alt="" coords="5,59,172,88"/>
+<area shape="rect" id="Node000002" href="$bsp__pwm_8c.html#a4bdefcd18b0b080f1e8db825e33c80e8" title="使能功率输出（解除封波）" alt="" coords="220,5,382,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,56,226,38,222,41,151,61"/>
+<area shape="rect" id="Node000004" href="$calibration_8c.html#a799bd918d9fd1f5b3c231d1d92b7fe0d" title="启动校准状态机" alt="" coords="253,59,348,88"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="172,71,240,73,235,74,172,76"/>
+<area shape="rect" id="Node000006" href="$foc_8c.html#aa25cf599086b4ad815ae5ad72dcfdec4" title="复位电流环状态（封波后重新使能前调用，防止积分残留冲击）" alt="" coords="248,112,354,142"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="151,86,235,109,230,111,150,92"/>
+<area shape="rect" id="Node000003" href="$bsp__pwm_8c.html#af4a87e2cef845a3eba6d0170011ff08d" title="三相占空比清零（低侧全导通：自举预充/动态刹车态）" alt="" coords="430,5,631,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="382,18,417,20,412,21,383,23"/>
+<area shape="rect" id="Node000005" href="$bsp__encoder_8c.html#a3daa1572c53aadb74b5ef71eb5422da8" title="读取方向反转标志" alt="" coords="445,59,616,88"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="349,71,432,73,427,74,349,76"/>
+<area shape="rect" id="Node000007" href="$pid_8c.html#acb76685b15d3fde29d9bd5548b3268c1" title="复位 PID 内部状态（积分/历史误差/输出）" alt="" coords="481,112,580,142"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="354,124,468,127,463,127,354,129"/>
+</map>

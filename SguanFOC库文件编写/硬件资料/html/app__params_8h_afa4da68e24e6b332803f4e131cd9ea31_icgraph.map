@@ -1,0 +1,26 @@
+<map id="APP_PARAMS_LoadDefaults" name="APP_PARAMS_LoadDefaults">
+<area shape="rect" id="Node000001" title="加载编译期默认参数" alt="" coords="1113,59,1348,88"/>
+<area shape="rect" id="Node000002" href="$app__can__protocol_8c.html#a962b5bb63f0dca9cd0efbd25455d6002" title="配置通道处理" alt="" coords="881,59,1065,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1095,74,1066,76,1066,71,1100,73"/>
+<area shape="rect" id="Node000009" href="$app__params_8c.html#a163333fe5d5fee3e7e1f80840ee66f28" title="参数初始化：从 Flash 加载，失败（首次上电/版本不符）则用默认值" alt="" coords="440,111,601,140"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="1134,91,1066,103,939,114,812,121,601,127,601,122,811,116,938,108,1065,98,1128,92"/>
+<area shape="rect" id="Node000010" href="$app__shell_8c.html#ad6303a346f63752b165b847c5dcefbb7" title="解析并执行一行命令" alt="" coords="882,5,1064,35"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="1138,55,1048,38,1048,33,1143,55"/>
+<area shape="rect" id="Node000003" href="$app__can__protocol_8c.html#a0c342291cd7188f387f12f9b2157c4e9" title="CAN 接收分发（ISR 上下文）" alt="" coords="649,59,833,88"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="862,74,834,76,834,71,868,73"/>
+<area shape="rect" id="Node000004" href="$app__can__protocol_8c.html#af389bd7cff6ae0b5df76c2feb46f25f6" title="初始化 CAN 应用协议（按持久化参数配置 BSP）" alt="" coords="456,57,585,87"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="631,73,585,75,585,70,636,73"/>
+<area shape="rect" id="Node000005" href="$app__can__protocol_8c.html#a6c2f3bebbd2597376fd87038ef059996" title="后台轮询：处理通信参数变更后的重新初始化" alt="" coords="257,57,392,87"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="438,72,393,75,393,70,444,72"/>
+<area shape="rect" id="Node000008" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="282,111,367,140"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="451,91,368,117,366,112,446,92"/>
+<area shape="rect" id="Node000006" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,57,209,87"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="239,73,210,75,209,70,244,72"/>
+<area shape="rect" id="Node000007" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,84,62,114"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="92,87,63,95,61,90,97,84"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="266,123,62,104,62,99,267,118"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="423,126,367,128,367,123,428,125"/>
+<area shape="rect" id="Node000011" href="$app__shell_8c.html#ab93a15148be82ad3c0999b099de7c29e" title="shell 轮询（后台调用）" alt="" coords="665,5,817,35"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="864,20,818,23,817,18,869,20"/>
+<area shape="poly" id="edge13_Node000011_Node000006" title=" " alt="" coords="646,20,467,27,362,35,257,48,209,59,207,54,257,43,361,29,467,21,652,19"/>
+</map>

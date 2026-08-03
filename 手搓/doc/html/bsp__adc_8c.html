@@ -1,0 +1,695 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: Application/bsp/bsp_adc.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('bsp__adc_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">bsp_adc.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ADC 采样 BSP（电流/母线电压注入组 + 温度规则组）  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="bsp__adc_8h_source.html">bsp_adc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="board__config_8h_source.html">board_config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="adc_8h_source.html">adc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="opamp_8h_source.html">opamp.h</a>&quot;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+bsp_adc.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__adc_8c__incl.svg" width="543" height="292"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a711d70fa87d9e888250585328414146f" id="r_a711d70fa87d9e888250585328414146f"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a711d70fa87d9e888250585328414146f">BSP_ADC_NtcToTemp</a> (uint16_t raw, float r25, float beta)</td></tr>
+<tr class="memdesc:a711d70fa87d9e888250585328414146f"><td class="mdescLeft">&#160;</td><td class="mdescRight">NTC 原始值转温度  <br /></td></tr>
+<tr class="memitem:a900bb32d34d9ee14f746741c3e985a4f" id="r_a900bb32d34d9ee14f746741c3e985a4f"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a900bb32d34d9ee14f746741c3e985a4f">BSP_ADC_ReadRegularOnce</a> (ADC_HandleTypeDef *hadc)</td></tr>
+<tr class="memdesc:a900bb32d34d9ee14f746741c3e985a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">软件触发单次规则组转换（NTC 慢通道专用）  <br /></td></tr>
+<tr class="memitem:abbd45eefc365e2ea364f387bd828f32c" id="r_abbd45eefc365e2ea364f387bd828f32c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abbd45eefc365e2ea364f387bd828f32c">BSP_ADC_Init</a> (void)</td></tr>
+<tr class="memdesc:abbd45eefc365e2ea364f387bd828f32c"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化 ADC（重配注入组/触发/校准）  <br /></td></tr>
+<tr class="memitem:a605539e695a8a2ebd55a2de8208d1153" id="r_a605539e695a8a2ebd55a2de8208d1153"><td class="memItemLeft">HAL_StatusTypeDef&#160;</td><td class="memItemRight"><a class="el" href="#a605539e695a8a2ebd55a2de8208d1153">BSP_ADC_MeasureOffsets</a> (uint32_t samples)</td></tr>
+<tr class="memdesc:a605539e695a8a2ebd55a2de8208d1153"><td class="mdescLeft">&#160;</td><td class="mdescRight">测量电流通道零流偏置（阻塞，封波状态下调用）  <br /></td></tr>
+<tr class="memitem:a6a41a825950cd0409e396305309af5b6" id="r_a6a41a825950cd0409e396305309af5b6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6a41a825950cd0409e396305309af5b6">BSP_ADC_StartFocIrq</a> (<a class="el" href="bsp__adc_8h.html#a3e56e2079977399297bb6be2eb92f91c">ADC_FocCallbackTypeDef</a> callback)</td></tr>
+<tr class="memdesc:a6a41a825950cd0409e396305309af5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册电流环回调并使能 JEOS 中断（进入运行节拍）  <br /></td></tr>
+<tr class="memitem:a895967199f8a689e1fe2c6919082ab7d" id="r_a895967199f8a689e1fe2c6919082ab7d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a895967199f8a689e1fe2c6919082ab7d">BSP_ADC_GetOffsets</a> (float *offsU, float *offsV, float *offsBus)</td></tr>
+<tr class="memdesc:a895967199f8a689e1fe2c6919082ab7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取电流通道零流偏置（监控/诊断显示用）  <br /></td></tr>
+<tr class="memitem:ab72cd6f293070bf75a5574de3c9eae98" id="r_ab72cd6f293070bf75a5574de3c9eae98"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab72cd6f293070bf75a5574de3c9eae98">BSP_ADC_SetOffsets</a> (float offsU, float offsV, float offsBus)</td></tr>
+<tr class="memdesc:ab72cd6f293070bf75a5574de3c9eae98"><td class="mdescLeft">&#160;</td><td class="mdescRight">写入电流通道零流偏置（调试注入预留，正常路径为上电实测）  <br /></td></tr>
+<tr class="memitem:a763f3646d6e5f90a3c26ec7fa4874742" id="r_a763f3646d6e5f90a3c26ec7fa4874742"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a763f3646d6e5f90a3c26ec7fa4874742">BSP_ADC_GetVbus</a> (void)</td></tr>
+<tr class="memdesc:a763f3646d6e5f90a3c26ec7fa4874742"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取滤波后母线电压 [V]（后台/保护用）  <br /></td></tr>
+<tr class="memitem:afa9f3886839c064af2f9ea65e1809550" id="r_afa9f3886839c064af2f9ea65e1809550"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#afa9f3886839c064af2f9ea65e1809550">BSP_ADC_ReadMosTemp</a> (void)</td></tr>
+<tr class="memdesc:afa9f3886839c064af2f9ea65e1809550"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取 MOS 管温度 [摄氏度]（阻塞轮询规则组，后台调用）  <br /></td></tr>
+<tr class="memitem:a48bb754e0f48feedd1f16cf6a5cc4abe" id="r_a48bb754e0f48feedd1f16cf6a5cc4abe"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a48bb754e0f48feedd1f16cf6a5cc4abe">BSP_ADC_ReadMotorTemp</a> (void)</td></tr>
+<tr class="memdesc:a48bb754e0f48feedd1f16cf6a5cc4abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">读取电机绕组温度 [摄氏度]（阻塞轮询规则组，后台调用）  <br /></td></tr>
+<tr class="memitem:a3bd1a3b7f44489ddd636adf6959143c9" id="r_a3bd1a3b7f44489ddd636adf6959143c9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3bd1a3b7f44489ddd636adf6959143c9">BSP_ADC_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a3bd1a3b7f44489ddd636adf6959143c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC1_2 中断服务（stm32g4xx_it.c 用户区调用）  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a0da9d206c4427d3c1a0a2a5f51037d52" id="r_a0da9d206c4427d3c1a0a2a5f51037d52"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a0da9d206c4427d3c1a0a2a5f51037d52">offsetU</a> = 2048.0f</td></tr>
+<tr class="memitem:a52721ffb7bbf85a3768391813d18b7c0" id="r_a52721ffb7bbf85a3768391813d18b7c0"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a52721ffb7bbf85a3768391813d18b7c0">offsetV</a> = 2048.0f</td></tr>
+<tr class="memitem:a8e8ff9abbd1b20b64dde43f144ef0bb1" id="r_a8e8ff9abbd1b20b64dde43f144ef0bb1"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a8e8ff9abbd1b20b64dde43f144ef0bb1">offsetBus</a> = 2048.0f</td></tr>
+<tr class="memitem:ad07da0a9d4cce7c5e0c9d4f35f2934c4" id="r_ad07da0a9d4cce7c5e0c9d4f35f2934c4"><td class="memItemLeft">static volatile float&#160;</td><td class="memItemRight"><a class="el" href="#ad07da0a9d4cce7c5e0c9d4f35f2934c4">vbusFilt</a> = 0.0f</td></tr>
+<tr class="memitem:aaa4df3353ae5448825e4f55ff72b25bb" id="r_aaa4df3353ae5448825e4f55ff72b25bb"><td class="memItemLeft">static <a class="el" href="bsp__adc_8h.html#a3e56e2079977399297bb6be2eb92f91c">ADC_FocCallbackTypeDef</a>&#160;</td><td class="memItemRight"><a class="el" href="#aaa4df3353ae5448825e4f55ff72b25bb">focCallback</a> = NULL</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>ADC 采样 BSP（电流/母线电压注入组 + 温度规则组） </p>
+<dl class="section note"><dt>注解</dt><dd>采样架构：<ul>
+<li>注入组由 TIM1 TRGO2（OC4，计数器峰值附近）硬件触发，20kHz： ADC1 注入序列 = 相电流(U) + 母线电流 + 母线电压， ADC2 注入序列 = 相电流(V)；两 ADC 同触发准同步采样；</li>
+<li>ADC1 JEOS（注入序列转换完成）中断即电流环节拍， 换算物理量后回调控制层；</li>
+<li>NTC 温度走规则组，后台软件触发轮询（毫秒级）；</li>
+<li>电流换算：I = (raw - offset) * LSB / (增益*采样电阻)， 偏置在上电封波状态下实测平均（运放偏置 + 1.65V 基准合并补偿）；</li>
+<li>CubeMX 生成的 ADC 参数（软件触发/单通道）为占位值，本模块重配。</li>
+</ul>
+</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd></dd></dl>
+<p>Copyright (c) 2026 Z.Xusheng SPDX-License-Identifier: MIT</p>
+<p>This file is part of the GIM4310/GIM4305 joint motor controller firmware, distributed under the MIT License. See the LICENSE file in the repository root for full terms. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="a895967199f8a689e1fe2c6919082ab7d" name="a895967199f8a689e1fe2c6919082ab7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a895967199f8a689e1fe2c6919082ab7d">&#9670;&#160;</a></span>BSP_ADC_GetOffsets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_ADC_GetOffsets </td>
+          <td>(</td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>offsU</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>offsV</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>offsBus</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取电流通道零流偏置（监控/诊断显示用） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offsU/offsV/offsBus</td><td>偏置输出 [LSB] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__adc_8c_a895967199f8a689e1fe2c6919082ab7d_icgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a763f3646d6e5f90a3c26ec7fa4874742" name="a763f3646d6e5f90a3c26ec7fa4874742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a763f3646d6e5f90a3c26ec7fa4874742">&#9670;&#160;</a></span>BSP_ADC_GetVbus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BSP_ADC_GetVbus </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取滤波后母线电压 [V]（后台/保护用） </p>
+
+</div>
+</div>
+<a id="abbd45eefc365e2ea364f387bd828f32c" name="abbd45eefc365e2ea364f387bd828f32c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbd45eefc365e2ea364f387bd828f32c">&#9670;&#160;</a></span>BSP_ADC_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_ADC_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化 ADC（重配注入组/触发/校准） </p>
+<dl class="section note"><dt>注解</dt><dd>须在 MX_ADC1/2_Init 与 BSP_PWM_Init 之后调用（依赖 TIM1 触发源配置）。 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__adc_8c_abbd45eefc365e2ea364f387bd828f32c_cgraph.svg" width="310" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__adc_8c_abbd45eefc365e2ea364f387bd828f32c_icgraph.svg" width="376" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a3bd1a3b7f44489ddd636adf6959143c9" name="a3bd1a3b7f44489ddd636adf6959143c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bd1a3b7f44489ddd636adf6959143c9">&#9670;&#160;</a></span>BSP_ADC_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_ADC_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ADC1_2 中断服务（stm32g4xx_it.c 用户区调用） </p>
+<dl class="section note"><dt>注解</dt><dd>JEOS 即电流环节拍：读取原始值、换算物理量、回调控制层。 寄存器级操作，不经 HAL 状态机。 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__adc_8c_a3bd1a3b7f44489ddd636adf6959143c9_icgraph.svg" width="428" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a605539e695a8a2ebd55a2de8208d1153" name="a605539e695a8a2ebd55a2de8208d1153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a605539e695a8a2ebd55a2de8208d1153">&#9670;&#160;</a></span>BSP_ADC_MeasureOffsets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_StatusTypeDef BSP_ADC_MeasureOffsets </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>samples</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>测量电流通道零流偏置（阻塞，封波状态下调用） </p>
+<dl class="section note"><dt>注解</dt><dd>依赖 TIM1 计数器已运行提供触发；MOE 必须处于关断（无相电流）。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">samples</td><td>平均次数（建议 &gt;= 256） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">HAL_OK</td><td>成功；HAL_TIMEOUT 等待触发超时（TIM1 未运行） </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__adc_8c_a605539e695a8a2ebd55a2de8208d1153_icgraph.svg" width="466" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a711d70fa87d9e888250585328414146f" name="a711d70fa87d9e888250585328414146f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a711d70fa87d9e888250585328414146f">&#9670;&#160;</a></span>BSP_ADC_NtcToTemp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BSP_ADC_NtcToTemp </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>raw</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>r25</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>beta</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>NTC 原始值转温度 </p>
+<dl class="section note"><dt>注解</dt><dd>电路拓扑：上拉电阻 BOARD_NTC_PULLUP 接 VCC，NTC 接 GND， ADC 参考与 VCC 同源，比值式测量与电源电压无关。 beta 方程：T = 1 / (1/T25 + ln(R/R25)/B) - 273.15。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">raw</td><td>12bit 原始值 </td></tr>
+    <tr><td class="paramname">r25</td><td>NTC 25 摄氏度阻值 [Ohm] </td></tr>
+    <tr><td class="paramname">beta</td><td>NTC B 常数 [K] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">温度</td><td>[摄氏度]；采样值异常（开路/短路）返回 <a class="el" href="board__config_8h.html#abaf708838731d0078c1b86bde2857afb">BOARD_NTC_FAULT_TEMP</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__adc_8c_a711d70fa87d9e888250585328414146f_icgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="afa9f3886839c064af2f9ea65e1809550" name="afa9f3886839c064af2f9ea65e1809550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa9f3886839c064af2f9ea65e1809550">&#9670;&#160;</a></span>BSP_ADC_ReadMosTemp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BSP_ADC_ReadMosTemp </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取 MOS 管温度 [摄氏度]（阻塞轮询规则组，后台调用） </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">温度</td><td>[C]；传感器开路/短路返回 <a class="el" href="board__config_8h.html#abaf708838731d0078c1b86bde2857afb">BOARD_NTC_FAULT_TEMP</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__adc_8c_afa9f3886839c064af2f9ea65e1809550_cgraph.svg" width="516" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__adc_8c_afa9f3886839c064af2f9ea65e1809550_icgraph.svg" width="659" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a48bb754e0f48feedd1f16cf6a5cc4abe" name="a48bb754e0f48feedd1f16cf6a5cc4abe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48bb754e0f48feedd1f16cf6a5cc4abe">&#9670;&#160;</a></span>BSP_ADC_ReadMotorTemp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BSP_ADC_ReadMotorTemp </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>读取电机绕组温度 [摄氏度]（阻塞轮询规则组，后台调用） </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">温度</td><td>[C]；传感器开路/短路返回 <a class="el" href="board__config_8h.html#abaf708838731d0078c1b86bde2857afb">BOARD_NTC_FAULT_TEMP</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__adc_8c_a48bb754e0f48feedd1f16cf6a5cc4abe_cgraph.svg" width="526" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__adc_8c_a48bb754e0f48feedd1f16cf6a5cc4abe_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a900bb32d34d9ee14f746741c3e985a4f" name="a900bb32d34d9ee14f746741c3e985a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900bb32d34d9ee14f746741c3e985a4f">&#9670;&#160;</a></span>BSP_ADC_ReadRegularOnce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BSP_ADC_ReadRegularOnce </td>
+          <td>(</td>
+          <td class="paramtype">ADC_HandleTypeDef *</td>          <td class="paramname"><span class="paramname"><em>hadc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>软件触发单次规则组转换（NTC 慢通道专用） </p>
+<dl class="section note"><dt>注解</dt><dd>- 规则序列/采样时间已在 BSP_ADC_Init 中一次性配好，此处只做 启动-轮询-取值；单次模式下序列结束 ADSTART 自动清零， HAL 状态自动收回 READY，可反复调用；<ul>
+<li>严禁调用 HAL_ADC_Stop：本 HAL 版本会连同注入组一起停止并 关闭 ADC，导致硬件触发的电流环节拍永久丢失；</li>
+<li>注入组优先级高于规则组，触发冲突时硬件自动仲裁（规则转换 被注入序列打断后自动恢复），本函数仅在后台低频调用， 阻塞几微秒。 </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hadc</td><td>ADC 句柄（ADC1 = MOS NTC，ADC2 = 电机 NTC） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">12bit</td><td>原始值；失败返回 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__adc_8c_a900bb32d34d9ee14f746741c3e985a4f_icgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ab72cd6f293070bf75a5574de3c9eae98" name="ab72cd6f293070bf75a5574de3c9eae98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab72cd6f293070bf75a5574de3c9eae98">&#9670;&#160;</a></span>BSP_ADC_SetOffsets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_ADC_SetOffsets </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>offsU</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>offsV</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>offsBus</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>写入电流通道零流偏置（调试注入预留，正常路径为上电实测） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offsU/offsV/offsBus</td><td>偏置 [LSB] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6a41a825950cd0409e396305309af5b6" name="a6a41a825950cd0409e396305309af5b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a41a825950cd0409e396305309af5b6">&#9670;&#160;</a></span>BSP_ADC_StartFocIrq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BSP_ADC_StartFocIrq </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="bsp__adc_8h.html#a3e56e2079977399297bb6be2eb92f91c">ADC_FocCallbackTypeDef</a></td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>注册电流环回调并使能 JEOS 中断（进入运行节拍） </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>电流环入口（ISR 上下文执行） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__adc_8c_a6a41a825950cd0409e396305309af5b6_icgraph.svg" width="434" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">变量说明</h2>
+<a id="aaa4df3353ae5448825e4f55ff72b25bb" name="aaa4df3353ae5448825e4f55ff72b25bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa4df3353ae5448825e4f55ff72b25bb">&#9670;&#160;</a></span>focCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="bsp__adc_8h.html#a3e56e2079977399297bb6be2eb92f91c">ADC_FocCallbackTypeDef</a> focCallback = NULL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e8ff9abbd1b20b64dde43f144ef0bb1" name="a8e8ff9abbd1b20b64dde43f144ef0bb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e8ff9abbd1b20b64dde43f144ef0bb1">&#9670;&#160;</a></span>offsetBus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float offsetBus = 2048.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>母线电流通道零流偏置 [LSB] </p>
+
+</div>
+</div>
+<a id="a0da9d206c4427d3c1a0a2a5f51037d52" name="a0da9d206c4427d3c1a0a2a5f51037d52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0da9d206c4427d3c1a0a2a5f51037d52">&#9670;&#160;</a></span>offsetU</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float offsetU = 2048.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>U 相电流通道零流偏置 [LSB] </p>
+
+</div>
+</div>
+<a id="a52721ffb7bbf85a3768391813d18b7c0" name="a52721ffb7bbf85a3768391813d18b7c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52721ffb7bbf85a3768391813d18b7c0">&#9670;&#160;</a></span>offsetV</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float offsetV = 2048.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>V 相电流通道零流偏置 [LSB] </p>
+
+</div>
+</div>
+<a id="ad07da0a9d4cce7c5e0c9d4f35f2934c4" name="ad07da0a9d4cce7c5e0c9d4f35f2934c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad07da0a9d4cce7c5e0c9d4f35f2934c4">&#9670;&#160;</a></span>vbusFilt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile float vbusFilt = 0.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>母线电压轻度低通结果 [V] </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_eb1463819d84903762eb6f59cc0c4383.html">Application</a></li><li class="navelem"><a href="dir_f8a9e981ae9517ef8ddac90afb3b230c.html">bsp</a></li><li class="navelem"><a href="bsp__adc_8c.html">bsp_adc.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

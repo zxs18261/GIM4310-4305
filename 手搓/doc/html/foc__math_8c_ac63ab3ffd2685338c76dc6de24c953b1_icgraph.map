@@ -1,0 +1,23 @@
+<map id="FOC_MATH_BuildTable" name="FOC_MATH_BuildTable">
+<area shape="rect" id="Node000001" title="构建 sin 查找表（仅初始化时执行一次）" alt="" coords="932,83,1126,112"/>
+<area shape="rect" id="Node000002" href="$foc__math_8c.html#a39d4aea10aec434cb4d2490fafb98632" title="查表+线性插值同时计算 sin/cos" alt="" coords="767,83,884,112"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="914,98,885,100,885,95,920,97"/>
+<area shape="rect" id="Node000003" href="$calibration_8c.html#a51f1133ceba653e8e1e600c24b54987e" title="校准状态机单步（电流环 ISR 调用，模式 = MC_MODE_CALIB）" alt="" coords="432,55,512,84"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="749,92,512,75,512,70,754,91"/>
+<area shape="rect" id="Node000007" href="$foc_8c.html#ae75f2892abb7689a482d566582276071" title="直接输出 d/q 电压矢量（开环模式 / 校准注入用，不经过电流 PI）" alt="" coords="389,108,555,138"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="749,103,555,120,555,114,754,103"/>
+<area shape="rect" id="Node000008" href="$foc_8c.html#adeb37d340903f5f803d273080550032d" title="执行一个电流环周期（在 ADC 注入转换完成 ISR 中调用）" alt="" coords="603,5,719,35"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="776,75,694,38,695,33,781,76"/>
+<area shape="rect" id="Node000009" href="$motor__ctrl_8c.html#a6289107a27126667fef8194dc34ad71f" title="初始化电机控制模块" alt="" coords="254,135,330,164"/>
+<area shape="poly" id="edge11_Node000002_Node000009" title=" " alt="" coords="754,112,720,121,638,140,555,152,432,157,330,154,330,149,432,152,554,147,637,134,718,116,749,113"/>
+<area shape="rect" id="Node000004" href="$motor__ctrl_8c.html#a5c982a7374da291bb0e5d06d26893def" title="FOC 主循环（ADC 注入完成 ISR，20kHz）" alt="" coords="242,68,341,98"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="414,74,342,82,341,77,419,73"/>
+<area shape="rect" id="Node000005" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="110,108,194,138"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="230,101,195,113,194,108,225,102"/>
+<area shape="rect" id="Node000006" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,108,62,138"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="92,124,62,125,62,120,97,122"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="385,104,342,96,342,91,390,104"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="590,39,513,62,511,57,585,40"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="584,21,493,29,390,45,356,56,324,70,322,65,354,51,389,40,492,23,590,20"/>
+<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="235,139,194,134,195,128,240,139"/>
+</map>

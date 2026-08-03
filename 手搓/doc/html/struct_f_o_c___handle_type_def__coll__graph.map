@@ -1,0 +1,7 @@
+<map id="FOC_HandleTypeDef" name="FOC_HandleTypeDef">
+<area shape="rect" id="Node000001" title="FOC 运行句柄结构体" alt="" coords="96,159,273,188"/>
+<area shape="rect" id="Node000002" href="$struct_p_i_d___handle_type_def.html" title="PID 控制器句柄结构体" alt="" coords="5,5,175,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,46,179,158,173,159,105,50"/>
+<area shape="rect" id="Node000003" href="$struct_f_o_c___vec2_type_def.html" title="两相正交量（alpha&#45;beta 或 d&#45;q）" alt="" coords="199,5,360,35"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="266,47,212,136,196,160,193,156,208,133,261,49"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Core/Inc/fdcan.h" name="Core/Inc/fdcan.h">
+<area shape="rect" id="Node000001" title="This file contains all the function prototypes for the fdcan.c file" alt="" coords="192,5,329,35"/>
+<area shape="rect" id="Node000002" href="$bsp__can_8c.html" title="FDCAN1 通信 BSP（经典 CAN 模式）" alt="" coords="5,83,167,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,41,136,85,134,80,215,43"/>
+<area shape="rect" id="Node000003" href="$fdcan_8c.html" title="This file provides code for the configuration of the FDCAN instances." alt="" coords="191,92,330,122"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="263,49,263,94,258,91,259,52"/>
+<area shape="rect" id="Node000004" href="$main_8c.html" title=": Main program body" alt="" coords="354,92,490,122"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="302,40,398,92,393,92,300,45"/>
+</map>

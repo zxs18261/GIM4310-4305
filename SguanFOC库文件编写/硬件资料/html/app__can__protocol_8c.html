@@ -1,0 +1,788 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: Application/app/app_can_protocol.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('app__can__protocol_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">app_can_protocol.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>CAN 应用协议（MIT 运控协议 + 配置协议）  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="app__can__protocol_8h_source.html">app_can_protocol.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="app__params_8h_source.html">app_params.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="motor__ctrl_8h_source.html">motor_ctrl.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bsp__can_8h_source.html">bsp_can.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="board__config_8h_source.html">board_config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="motor__config_8h_source.html">motor_config.h</a>&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+app_can_protocol.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c__incl.svg" width="100%" height="578"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a50a0d75d5820f6c9e24c07d6e1092a3e" id="r_a50a0d75d5820f6c9e24c07d6e1092a3e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a50a0d75d5820f6c9e24c07d6e1092a3e">MIT_SPECIAL_ENTER</a>&#160;&#160;&#160;(0xFCU)</td></tr>
+<tr class="memitem:a23b025091e52b9c837f91822a81fd66f" id="r_a23b025091e52b9c837f91822a81fd66f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a23b025091e52b9c837f91822a81fd66f">MIT_SPECIAL_EXIT</a>&#160;&#160;&#160;(0xFDU)</td></tr>
+<tr class="memitem:aa402ee0b16d90b1ab32e461f9a1d3a36" id="r_aa402ee0b16d90b1ab32e461f9a1d3a36"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa402ee0b16d90b1ab32e461f9a1d3a36">MIT_SPECIAL_ZERO</a>&#160;&#160;&#160;(0xFEU)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a0c342291cd7188f387f12f9b2157c4e9" id="r_a0c342291cd7188f387f12f9b2157c4e9"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a0c342291cd7188f387f12f9b2157c4e9">APP_CAN_RxHandler</a> (uint32_t id, const uint8_t *data, uint8_t len)</td></tr>
+<tr class="memdesc:a0c342291cd7188f387f12f9b2157c4e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN 接收分发（ISR 上下文）  <br /></td></tr>
+<tr class="memitem:a287ab0ebbb13b297320ec4082c51365b" id="r_a287ab0ebbb13b297320ec4082c51365b"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a287ab0ebbb13b297320ec4082c51365b">APP_CAN_HandleMit</a> (const uint8_t *data, uint8_t len, uint8_t isBroadcast)</td></tr>
+<tr class="memdesc:a287ab0ebbb13b297320ec4082c51365b"><td class="mdescLeft">&#160;</td><td class="mdescRight">MIT 运控通道处理  <br /></td></tr>
+<tr class="memitem:a962b5bb63f0dca9cd0efbd25455d6002" id="r_a962b5bb63f0dca9cd0efbd25455d6002"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a962b5bb63f0dca9cd0efbd25455d6002">APP_CAN_HandleCfg</a> (const uint8_t *data, uint8_t len)</td></tr>
+<tr class="memdesc:a962b5bb63f0dca9cd0efbd25455d6002"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置通道处理  <br /></td></tr>
+<tr class="memitem:a3f462aec782e36efd750a47844167fae" id="r_a3f462aec782e36efd750a47844167fae"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a3f462aec782e36efd750a47844167fae">APP_CAN_SendMitFeedback</a> (void)</td></tr>
+<tr class="memdesc:a3f462aec782e36efd750a47844167fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送 MIT 反馈帧（B0=ID，P16 V12 T12，发往主机 ID）  <br /></td></tr>
+<tr class="memitem:a966f37b5d2949acd6d6432af5cbcbcec" id="r_a966f37b5d2949acd6d6432af5cbcbcec"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a966f37b5d2949acd6d6432af5cbcbcec">APP_CAN_CfgReply</a> (uint8_t cmd, uint8_t status, float value)</td></tr>
+<tr class="memdesc:a966f37b5d2949acd6d6432af5cbcbcec"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置通道应答：cmd + 状态 + float 值  <br /></td></tr>
+<tr class="memitem:a374783cd12e7c5b94cb6926640bc0980" id="r_a374783cd12e7c5b94cb6926640bc0980"><td class="memItemLeft">static uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#a374783cd12e7c5b94cb6926640bc0980">MIT_FloatToUint</a> (float x, float xMin, float xMax, uint8_t bits)</td></tr>
+<tr class="memdesc:a374783cd12e7c5b94cb6926640bc0980"><td class="mdescLeft">&#160;</td><td class="mdescRight">mini-cheetah 打包：float -&gt; 无符号整数  <br /></td></tr>
+<tr class="memitem:a53bb63a1ac49bb84cd3f88ef1cc02112" id="r_a53bb63a1ac49bb84cd3f88ef1cc02112"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a53bb63a1ac49bb84cd3f88ef1cc02112">MIT_UintToFloat</a> (uint16_t x, float xMin, float xMax, uint8_t bits)</td></tr>
+<tr class="memdesc:a53bb63a1ac49bb84cd3f88ef1cc02112"><td class="mdescLeft">&#160;</td><td class="mdescRight">mini-cheetah 解包：无符号整数 -&gt; float  <br /></td></tr>
+<tr class="memitem:af389bd7cff6ae0b5df76c2feb46f25f6" id="r_af389bd7cff6ae0b5df76c2feb46f25f6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af389bd7cff6ae0b5df76c2feb46f25f6">APP_CAN_Init</a> (void)</td></tr>
+<tr class="memdesc:af389bd7cff6ae0b5df76c2feb46f25f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化 CAN 应用协议（按持久化参数配置 BSP）  <br /></td></tr>
+<tr class="memitem:a6c2f3bebbd2597376fd87038ef059996" id="r_a6c2f3bebbd2597376fd87038ef059996"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6c2f3bebbd2597376fd87038ef059996">APP_CAN_Poll</a> (void)</td></tr>
+<tr class="memdesc:a6c2f3bebbd2597376fd87038ef059996"><td class="mdescLeft">&#160;</td><td class="mdescRight">后台轮询：处理通信参数变更后的重新初始化  <br /></td></tr>
+<tr class="memitem:a3ab260e65506988e3c93e42c2a2ce2b3" id="r_a3ab260e65506988e3c93e42c2a2ce2b3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3ab260e65506988e3c93e42c2a2ce2b3">APP_CAN_RequestReinit</a> (void)</td></tr>
+<tr class="memdesc:a3ab260e65506988e3c93e42c2a2ce2b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">请求后台重新初始化 CAN（shell 恢复默认参数等场景）  <br /></td></tr>
+<tr class="memitem:aa7ee6d44a81d3042e0e6f9a3d161cda2" id="r_aa7ee6d44a81d3042e0e6f9a3d161cda2"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#aa7ee6d44a81d3042e0e6f9a3d161cda2">APP_CAN_IsCanControlled</a> (void)</td></tr>
+<tr class="memdesc:aa7ee6d44a81d3042e0e6f9a3d161cda2"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询当前使能是否由 CAN 发起（指令超时保护范围判定）  <br /></td></tr>
+<tr class="memitem:a32c56ede856a112ad210fd60fdb7b111" id="r_a32c56ede856a112ad210fd60fdb7b111"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a32c56ede856a112ad210fd60fdb7b111">APP_CAN_SetControlled</a> (uint8_t controlled)</td></tr>
+<tr class="memdesc:a32c56ede856a112ad210fd60fdb7b111"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置 CAN 控制标志（shell 使能时清零，豁免超时保护）  <br /></td></tr>
+<tr class="memitem:ae97d64d8caba7a4aee7b6ef40a26afb7" id="r_ae97d64d8caba7a4aee7b6ef40a26afb7"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ae97d64d8caba7a4aee7b6ef40a26afb7">APP_CAN_GetParamByIndex</a> (uint8_t index, uint8_t *ok)</td></tr>
+<tr class="memdesc:ae97d64d8caba7a4aee7b6ef40a26afb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">按索引读参数（CAN 配置通道与 shell 共用）  <br /></td></tr>
+<tr class="memitem:a1c22c988dc67c917a70b53b3386fcfca" id="r_a1c22c988dc67c917a70b53b3386fcfca"><td class="memItemLeft">uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a1c22c988dc67c917a70b53b3386fcfca">APP_CAN_SetParamByIndex</a> (uint8_t index, float value)</td></tr>
+<tr class="memdesc:a1c22c988dc67c917a70b53b3386fcfca"><td class="mdescLeft">&#160;</td><td class="mdescRight">按索引写参数（只读项与非法值拒绝，CAN 配置通道与 shell 共用）  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a2fcc47c08eaa6796d8a996b83a21dec3" id="r_a2fcc47c08eaa6796d8a996b83a21dec3"><td class="memItemLeft">static volatile uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#a2fcc47c08eaa6796d8a996b83a21dec3">reinitRequest</a> = 0U</td></tr>
+<tr class="memitem:aad42b2d571b39ab4026407ab40e34eb9" id="r_aad42b2d571b39ab4026407ab40e34eb9"><td class="memItemLeft">static volatile uint8_t&#160;</td><td class="memItemRight"><a class="el" href="#aad42b2d571b39ab4026407ab40e34eb9">canControlled</a> = 0U</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>CAN 应用协议（MIT 运控协议 + 配置协议） </p>
+<dl class="section note"><dt>注解</dt><dd>协议分两个通道，均为经典 CAN 标准帧： <pre class="fragment">     【MIT 运控通道】CAN ID = NodeId（兼容 SteadyWin GIM/mini-cheetah）：
+     - 命令帧 8 字节：P[16] V[12] KP[12] KD[12] T[12]，高位先行，
+       量程 P±12.5rad / V±65rad/s / KP 0~500 / KD 0~5 / T±18Nm
+       （输出轴量纲，见 motor_config.h）；
+     - 特殊帧：FF..FF FC 进入电机模式（MIT），FF..FF FD 退出，
+       FF..FF FE 设当前位置为零位；
+     - 反馈帧 6 字节发往 ID 0x000（主机）：B0=NodeId，P[16] V[12] T[12]；
+       每收到一条有效命令帧回发一条。
+
+     【配置通道】请求 ID = 0x600+NodeId，应答 ID = 0x680+NodeId：
+     命令码见头文件，覆盖 模式切换/使能/校准/调参/保存 等管理操作，
+     浮点均为小端 float32。
+
+     回调运行于 CAN ISR 上下文：仅做解析与目标值写入（轻量），
+     耗时操作（保存参数等）置标志由后台执行。
+</pre></dd></dl>
+<dl class="section attention"><dt>注意</dt><dd></dd></dl>
+<p>Copyright (c) 2026 Z.Xusheng SPDX-License-Identifier: MIT</p>
+<p>This file is part of the GIM4310/GIM4305 joint motor controller firmware, distributed under the MIT License. See the LICENSE file in the repository root for full terms. </p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="a50a0d75d5820f6c9e24c07d6e1092a3e" name="a50a0d75d5820f6c9e24c07d6e1092a3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a0d75d5820f6c9e24c07d6e1092a3e">&#9670;&#160;</a></span>MIT_SPECIAL_ENTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIT_SPECIAL_ENTER&#160;&#160;&#160;(0xFCU)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23b025091e52b9c837f91822a81fd66f" name="a23b025091e52b9c837f91822a81fd66f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23b025091e52b9c837f91822a81fd66f">&#9670;&#160;</a></span>MIT_SPECIAL_EXIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIT_SPECIAL_EXIT&#160;&#160;&#160;(0xFDU)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa402ee0b16d90b1ab32e461f9a1d3a36" name="aa402ee0b16d90b1ab32e461f9a1d3a36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa402ee0b16d90b1ab32e461f9a1d3a36">&#9670;&#160;</a></span>MIT_SPECIAL_ZERO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIT_SPECIAL_ZERO&#160;&#160;&#160;(0xFEU)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="a966f37b5d2949acd6d6432af5cbcbcec" name="a966f37b5d2949acd6d6432af5cbcbcec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a966f37b5d2949acd6d6432af5cbcbcec">&#9670;&#160;</a></span>APP_CAN_CfgReply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void APP_CAN_CfgReply </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>cmd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>status</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>配置通道应答：cmd + 状态 + float 值 </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a966f37b5d2949acd6d6432af5cbcbcec_cgraph.svg" width="379" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a966f37b5d2949acd6d6432af5cbcbcec_icgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ae97d64d8caba7a4aee7b6ef40a26afb7" name="ae97d64d8caba7a4aee7b6ef40a26afb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae97d64d8caba7a4aee7b6ef40a26afb7">&#9670;&#160;</a></span>APP_CAN_GetParamByIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float APP_CAN_GetParamByIndex </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>ok</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>按索引读参数（CAN 配置通道与 shell 共用） </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_ae97d64d8caba7a4aee7b6ef40a26afb7_icgraph.svg" width="100%" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a962b5bb63f0dca9cd0efbd25455d6002" name="a962b5bb63f0dca9cd0efbd25455d6002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a962b5bb63f0dca9cd0efbd25455d6002">&#9670;&#160;</a></span>APP_CAN_HandleCfg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void APP_CAN_HandleCfg </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>len</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>配置通道处理 </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a962b5bb63f0dca9cd0efbd25455d6002_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a962b5bb63f0dca9cd0efbd25455d6002_icgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a287ab0ebbb13b297320ec4082c51365b" name="a287ab0ebbb13b297320ec4082c51365b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a287ab0ebbb13b297320ec4082c51365b">&#9670;&#160;</a></span>APP_CAN_HandleMit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void APP_CAN_HandleMit </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>len</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>isBroadcast</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>MIT 运控通道处理 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isBroadcast</td><td>1 = 帧来自广播 ID：仅执行特殊帧且不回发反馈 （多节点同时以 0x000 回发会产生仲裁冲突），常规命令帧忽略 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a287ab0ebbb13b297320ec4082c51365b_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a287ab0ebbb13b297320ec4082c51365b_icgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="af389bd7cff6ae0b5df76c2feb46f25f6" name="af389bd7cff6ae0b5df76c2feb46f25f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af389bd7cff6ae0b5df76c2feb46f25f6">&#9670;&#160;</a></span>APP_CAN_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void APP_CAN_Init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化 CAN 应用协议（按持久化参数配置 BSP） </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_af389bd7cff6ae0b5df76c2feb46f25f6_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_af389bd7cff6ae0b5df76c2feb46f25f6_icgraph.svg" width="575" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa7ee6d44a81d3042e0e6f9a3d161cda2" name="aa7ee6d44a81d3042e0e6f9a3d161cda2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ee6d44a81d3042e0e6f9a3d161cda2">&#9670;&#160;</a></span>APP_CAN_IsCanControlled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t APP_CAN_IsCanControlled </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查询当前使能是否由 CAN 发起（指令超时保护范围判定） </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_aa7ee6d44a81d3042e0e6f9a3d161cda2_icgraph.svg" width="667" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6c2f3bebbd2597376fd87038ef059996" name="a6c2f3bebbd2597376fd87038ef059996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c2f3bebbd2597376fd87038ef059996">&#9670;&#160;</a></span>APP_CAN_Poll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void APP_CAN_Poll </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>后台轮询：处理通信参数变更后的重新初始化 </p>
+<dl class="section note"><dt>注解</dt><dd>波特率/节点 ID 修改不能在 ISR 内重配 FDCAN，延迟到后台执行。 </dd></dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a6c2f3bebbd2597376fd87038ef059996_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a6c2f3bebbd2597376fd87038ef059996_icgraph.svg" width="398" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a3ab260e65506988e3c93e42c2a2ce2b3" name="a3ab260e65506988e3c93e42c2a2ce2b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ab260e65506988e3c93e42c2a2ce2b3">&#9670;&#160;</a></span>APP_CAN_RequestReinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void APP_CAN_RequestReinit </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>请求后台重新初始化 CAN（shell 恢复默认参数等场景） </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a3ab260e65506988e3c93e42c2a2ce2b3_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a0c342291cd7188f387f12f9b2157c4e9" name="a0c342291cd7188f387f12f9b2157c4e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c342291cd7188f387f12f9b2157c4e9">&#9670;&#160;</a></span>APP_CAN_RxHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void APP_CAN_RxHandler </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>len</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>CAN 接收分发（ISR 上下文） </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a0c342291cd7188f387f12f9b2157c4e9_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a0c342291cd7188f387f12f9b2157c4e9_icgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a3f462aec782e36efd750a47844167fae" name="a3f462aec782e36efd750a47844167fae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f462aec782e36efd750a47844167fae">&#9670;&#160;</a></span>APP_CAN_SendMitFeedback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void APP_CAN_SendMitFeedback </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>发送 MIT 反馈帧（B0=ID，P16 V12 T12，发往主机 ID） </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a3f462aec782e36efd750a47844167fae_cgraph.svg" width="442" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a3f462aec782e36efd750a47844167fae_icgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a32c56ede856a112ad210fd60fdb7b111" name="a32c56ede856a112ad210fd60fdb7b111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c56ede856a112ad210fd60fdb7b111">&#9670;&#160;</a></span>APP_CAN_SetControlled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void APP_CAN_SetControlled </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>controlled</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置 CAN 控制标志（shell 使能时清零，豁免超时保护） </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a32c56ede856a112ad210fd60fdb7b111_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a1c22c988dc67c917a70b53b3386fcfca" name="a1c22c988dc67c917a70b53b3386fcfca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c22c988dc67c917a70b53b3386fcfca">&#9670;&#160;</a></span>APP_CAN_SetParamByIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t APP_CAN_SetParamByIndex </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>按索引写参数（只读项与非法值拒绝，CAN 配置通道与 shell 共用） </p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a1c22c988dc67c917a70b53b3386fcfca_cgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a1c22c988dc67c917a70b53b3386fcfca_icgraph.svg" width="100%" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a374783cd12e7c5b94cb6926640bc0980" name="a374783cd12e7c5b94cb6926640bc0980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a374783cd12e7c5b94cb6926640bc0980">&#9670;&#160;</a></span>MIT_FloatToUint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t MIT_FloatToUint </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>xMin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>xMax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>bits</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>mini-cheetah 打包：float -&gt; 无符号整数 </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a374783cd12e7c5b94cb6926640bc0980_icgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a53bb63a1ac49bb84cd3f88ef1cc02112" name="a53bb63a1ac49bb84cd3f88ef1cc02112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53bb63a1ac49bb84cd3f88ef1cc02112">&#9670;&#160;</a></span>MIT_UintToFloat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MIT_UintToFloat </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>xMin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>xMax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>bits</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>mini-cheetah 解包：无符号整数 -&gt; float </p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="app__can__protocol_8c_a53bb63a1ac49bb84cd3f88ef1cc02112_icgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">变量说明</h2>
+<a id="aad42b2d571b39ab4026407ab40e34eb9" name="aad42b2d571b39ab4026407ab40e34eb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad42b2d571b39ab4026407ab40e34eb9">&#9670;&#160;</a></span>canControlled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t canControlled = 0U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>1 = 当前使能由 CAN 发起（指令超时保护适用） </p>
+
+</div>
+</div>
+<a id="a2fcc47c08eaa6796d8a996b83a21dec3" name="a2fcc47c08eaa6796d8a996b83a21dec3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fcc47c08eaa6796d8a996b83a21dec3">&#9670;&#160;</a></span>reinitRequest</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t reinitRequest = 0U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>通信参数变更后重新初始化请求 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_eb1463819d84903762eb6f59cc0c4383.html">Application</a></li><li class="navelem"><a href="dir_e5579ab33bbf4d2eff4e2d0df4c2a59a.html">app</a></li><li class="navelem"><a href="app__can__protocol_8c.html">app_can_protocol.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

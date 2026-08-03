@@ -1,0 +1,30 @@
+<map id="Core/Src/main.c" name="Core/Src/main.c">
+<area shape="rect" id="Node000001" title=": Main program body" alt="" coords="280,5,415,35"/>
+<area shape="rect" id="Node000002" href="$main_8h.html" title=": Header for main.c file." alt="" coords="266,161,335,190"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="277,26,207,33,129,44,61,61,37,72,20,85,11,98,8,109,10,119,15,128,39,143,74,155,164,168,253,173,248,175,164,173,73,160,36,148,12,132,5,121,3,109,7,96,16,81,34,67,60,56,128,38,206,28,281,23"/>
+<area shape="rect" id="Node000004" href="$adc_8h.html" title="This file contains all the function prototypes for the adc.c file" alt="" coords="31,83,91,113"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="285,38,107,85,105,80,287,33"/>
+<area shape="rect" id="Node000005" href="$fdcan_8h.html" title="This file contains all the function prototypes for the fdcan.c file" alt="" coords="115,83,188,113"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="309,37,204,79,201,75,313,34"/>
+<area shape="rect" id="Node000006" href="$opamp_8h.html" title="This file contains all the function prototypes for the opamp.c file" alt="" coords="212,83,296,113"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="332,34,285,75,282,71,328,37"/>
+<area shape="rect" id="Node000007" href="$spi_8h.html" title="This file contains all the function prototypes for the spi.c file" alt="" coords="320,83,375,113"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="349,33,350,68,345,66,346,38"/>
+<area shape="rect" id="Node000008" href="$tim_8h.html" title="This file contains all the function prototypes for the tim.c file" alt="" coords="400,83,455,113"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="363,33,404,72,399,72,362,38"/>
+<area shape="rect" id="Node000009" href="$usart_8h.html" title="This file contains all the function prototypes for the usart.c file" alt="" coords="479,83,549,113"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="379,33,472,76,467,77,379,38"/>
+<area shape="rect" id="Node000010" href="$gpio_8h.html" title="This file contains all the function prototypes for the gpio.c file" alt="" coords="573,83,639,113"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="397,33,561,82,556,83,397,38"/>
+<area shape="rect" id="Node000011" href="$app__main_8h.html" title="应用入口模块头文件（前后台调度）" alt="" coords="663,83,768,113"/>
+<area shape="poly" id="edge17_Node000001_Node000011" title=" " alt="" coords="416,32,650,81,645,83,416,38"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="230,238,372,268"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="303,189,303,224,299,221,299,193"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="91,107,103,110,253,157,249,161,101,115,92,112"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="180,111,262,153,257,154,179,116"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="264,111,287,148,281,147,262,116"/>
+<area shape="poly" id="edge10_Node000007_Node000002" title=" " alt="" coords="341,112,319,149,316,145,337,115"/>
+<area shape="poly" id="edge12_Node000008_Node000002" title=" " alt="" coords="406,112,339,155,336,150,401,114"/>
+<area shape="poly" id="edge14_Node000009_Node000002" title=" " alt="" coords="481,111,351,159,350,154,476,112"/>
+<area shape="poly" id="edge16_Node000010_Node000002" title=" " alt="" coords="570,110,561,115,351,166,350,161,560,110,576,109"/>
+</map>

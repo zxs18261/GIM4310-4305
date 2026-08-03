@@ -1,0 +1,5 @@
+<map id="ADC1_2_IRQHandler" name="ADC1_2_IRQHandler">
+<area shape="rect" id="Node000001" title="ADC1/ADC2 全局中断：注入组完成 = 20kHz 电流环节拍" alt="" coords="5,5,183,35"/>
+<area shape="rect" id="Node000002" href="$bsp__adc_8c.html#a3bd1a3b7f44489ddd636adf6959143c9" title="ADC1_2 中断服务（stm32g4xx_it.c 用户区调用）" alt="" coords="231,5,423,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,18,218,20,212,20,183,23"/>
+</map>

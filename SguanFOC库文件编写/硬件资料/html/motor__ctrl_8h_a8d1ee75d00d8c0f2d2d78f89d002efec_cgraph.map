@@ -1,0 +1,14 @@
+<map id="MC_Enable" name="MC_Enable">
+<area shape="rect" id="Node000001" title="使能功率输出" alt="" coords="5,85,112,115"/>
+<area shape="rect" id="Node000002" href="$bsp__pwm_8c.html#a4bdefcd18b0b080f1e8db825e33c80e8" title="使能功率输出（解除封波）" alt="" coords="186,5,348,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,83,118,63,159,44,182,38,178,41,161,49,121,68,86,87"/>
+<area shape="rect" id="Node000004" href="$foc_8c.html#aa25cf599086b4ad815ae5ad72dcfdec4" title="复位电流环状态（封波后重新使能前调用，防止积分残留冲击）" alt="" coords="214,59,320,88"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="112,91,200,80,196,84,113,96"/>
+<area shape="rect" id="Node000005" href="$pid_8c.html#acb76685b15d3fde29d9bd5548b3268c1" title="复位 PID 内部状态（积分/历史误差/输出）" alt="" coords="473,84,572,114"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="112,98,374,98,460,99,455,100,374,103,112,103"/>
+<area shape="rect" id="Node000006" href="$protection_8c.html#a06029022ac7e5b95690b0119794c83d6" title="喂 CAN 指令看门狗（收到有效运动指令时调用）" alt="" coords="160,163,374,192"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="93,113,161,142,201,157,195,158,159,147,92,118"/>
+<area shape="rect" id="Node000003" href="$bsp__pwm_8c.html#af4a87e2cef845a3eba6d0170011ff08d" title="三相占空比清零（低侧全导通：自举预充/动态刹车态）" alt="" coords="422,5,623,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="348,18,409,19,404,21,349,23"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="321,76,460,92,455,93,321,81"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="MIT_FloatToUint" name="MIT_FloatToUint">
+<area shape="rect" id="Node000001" title="mini&#45;cheetah 打包：float &#45;&gt; 无符号整数" alt="" coords="1363,33,1502,63"/>
+<area shape="rect" id="Node000002" href="$app__can__protocol_8c.html#a3f462aec782e36efd750a47844167fae" title="发送 MIT 反馈帧（B0=ID，P16 V12 T12，发往主机 ID）" alt="" coords="1077,33,1315,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1344,48,1315,51,1315,46,1350,48"/>
+<area shape="rect" id="Node000003" href="$app__can__protocol_8c.html#a287ab0ebbb13b297320ec4082c51365b" title="MIT 运控通道处理" alt="" coords="849,33,1029,63"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1059,48,1030,51,1030,46,1064,48"/>
+<area shape="rect" id="Node000004" href="$app__can__protocol_8c.html#a0c342291cd7188f387f12f9b2157c4e9" title="CAN 接收分发（ISR 上下文）" alt="" coords="617,33,801,63"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="831,48,802,51,801,46,836,48"/>
+<area shape="rect" id="Node000005" href="$app__can__protocol_8c.html#af389bd7cff6ae0b5df76c2feb46f25f6" title="初始化 CAN 应用协议（按持久化参数配置 BSP）" alt="" coords="440,33,569,63"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="598,48,569,51,569,46,604,48"/>
+<area shape="rect" id="Node000006" href="$app__can__protocol_8c.html#a6c2f3bebbd2597376fd87038ef059996" title="后台轮询：处理通信参数变更后的重新初始化" alt="" coords="257,7,392,36"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="422,36,393,34,393,29,427,36"/>
+<area shape="rect" id="Node000009" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="117,59,202,88"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="425,57,202,73,202,68,425,51"/>
+<area shape="rect" id="Node000007" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,5,209,35"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="239,21,210,23,209,18,244,20"/>
+<area shape="rect" id="Node000008" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,32,62,62"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="92,35,63,43,61,38,97,32"/>
+<area shape="poly" id="edge9_Node000009_Node000008" title=" " alt="" coords="100,63,62,55,62,50,104,60"/>
+</map>

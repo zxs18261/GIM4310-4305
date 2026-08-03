@@ -1,0 +1,22 @@
+<map id="BSP_ENC_Crc6" name="BSP_ENC_Crc6">
+<area shape="rect" id="Node000001" title="CRC6 计算（X^6 + X + 1，初值 0，MSB 先入）" alt="" coords="882,33,1023,63"/>
+<area shape="rect" id="Node000002" href="$bsp__encoder_8c.html#a952d9a4a6bd64cde7ae4b60a8757c430" title="读取一次编码器角度（ISR 安全，阻塞约 5us）" alt="" coords="688,33,834,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="864,48,834,51,834,46,869,48"/>
+<area shape="rect" id="Node000003" href="$bsp__encoder_8c.html#a9f9d4545ad55a3bc5bc15920257754d3" title="预置编码器状态（上电首读，避免多圈计数误跳）" alt="" coords="476,59,640,88"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="675,59,641,66,640,61,670,60"/>
+<area shape="rect" id="Node000004" href="$motor__ctrl_8c.html#a5c982a7374da291bb0e5d06d26893def" title="FOC 主循环（ADC 注入完成 ISR，20kHz）" alt="" coords="293,5,392,35"/>
+<area shape="poly" id="edge11_Node000002_Node000004" title=" " alt="" coords="670,43,393,26,393,21,675,41"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="478,55,393,35,393,30,483,54"/>
+<area shape="rect" id="Node000007" href="$motor__ctrl_8c.html#a6289107a27126667fef8194dc34ad71f" title="初始化电机控制模块" alt="" coords="304,59,381,88"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="458,74,381,76,381,71,464,73"/>
+<area shape="rect" id="Node000008" href="$motor__ctrl_8c.html#a9c872c216c8943d5ba135b71957aea31" title="重建编码器多圈基准并保持用户位置连续（参数落盘后调用）" alt="" coords="257,112,428,142"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="483,92,406,114,405,109,478,93"/>
+<area shape="rect" id="Node000005" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="117,59,202,88"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="275,40,202,64,201,59,280,38"/>
+<area shape="rect" id="Node000006" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,85,62,115"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="100,87,63,97,61,92,104,84"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="286,74,202,76,202,71,291,73"/>
+<area shape="rect" id="Node000009" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,112,209,142"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="239,127,210,129,210,124,244,127"/>
+<area shape="poly" id="edge10_Node000009_Node000006" title=" " alt="" coords="92,114,62,109,62,103,97,112"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="BSP_CAN_Init" name="BSP_CAN_Init">
+<area shape="rect" id="Node000001" title="初始化 CAN（重配位时序 + 滤波器 + 中断）" alt="" coords="5,5,134,35"/>
+<area shape="rect" id="Node000002" href="$main_8c.html#a1730ffe1e560465665eb47d9264826f9" title="This function is executed in case of error occurrence." alt="" coords="182,5,304,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,18,169,20,164,20,134,23"/>
+</map>

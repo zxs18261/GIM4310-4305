@@ -1,0 +1,7 @@
+<map id="APP_PARAMS_Save" name="APP_PARAMS_Save">
+<area shape="rect" id="Node000001" title="立即保存参数（仅限电机封波状态下调用）" alt="" coords="5,5,182,35"/>
+<area shape="rect" id="Node000002" href="$bsp__flash_8c.html#a26214159159f35bf8008eb4cd97a626e" title="保存参数到参数页（擦除 + 双字编程）" alt="" coords="230,5,447,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,18,217,20,211,20,182,23"/>
+<area shape="rect" id="Node000003" href="$bsp__flash_8c.html#aa1c7fee83ecbb51032b9dad44332a207" title="硬件 CRC32 计算（默认多项式 0x4C11DB7，全字复位初值）" alt="" coords="495,5,663,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="448,18,482,20,477,20,448,23"/>
+</map>

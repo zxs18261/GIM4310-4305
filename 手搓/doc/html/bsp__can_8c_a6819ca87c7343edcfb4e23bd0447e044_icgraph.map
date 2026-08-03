@@ -1,0 +1,13 @@
+<map id="BSP_CAN_GetRxCount" name="BSP_CAN_GetRxCount">
+<area shape="rect" id="Node000001" title="读取接收帧累计计数（诊断用）" alt="" coords="923,5,1118,35"/>
+<area shape="rect" id="Node000002" href="$app__monitor_8c.html#a9bb383e6ceed1252d51dd3ebbc075668" title="打印完整状态快照（shell &quot;status&quot;）" alt="" coords="688,5,875,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="904,20,876,23,876,18,910,20"/>
+<area shape="rect" id="Node000003" href="$app__shell_8c.html#ad6303a346f63752b165b847c5dcefbb7" title="解析并执行一行命令" alt="" coords="457,5,640,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="669,20,640,23,640,18,675,20"/>
+<area shape="rect" id="Node000004" href="$app__shell_8c.html#ab93a15148be82ad3c0999b099de7c29e" title="shell 轮询（后台调用）" alt="" coords="257,5,409,35"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="439,20,409,23,409,18,444,20"/>
+<area shape="rect" id="Node000005" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,5,209,35"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="239,20,210,23,210,18,244,20"/>
+<area shape="rect" id="Node000006" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,62,35"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="92,21,62,23,62,18,97,19"/>
+</map>

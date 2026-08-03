@@ -1,0 +1,5 @@
+<map id="BSP_ENC_Read" name="BSP_ENC_Read">
+<area shape="rect" id="Node000001" title="读取一次编码器角度（ISR 安全，阻塞约 5us）" alt="" coords="5,5,152,35"/>
+<area shape="rect" id="Node000002" href="$bsp__encoder_8c.html#a05a73d1c3440289f913db2b8a47a954a" title="CRC6 计算（X^6 + X + 1，初值 0，MSB 先入）" alt="" coords="200,5,341,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,18,187,20,181,20,152,23"/>
+</map>

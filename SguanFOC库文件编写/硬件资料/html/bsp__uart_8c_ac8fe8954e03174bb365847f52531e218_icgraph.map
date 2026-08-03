@@ -1,0 +1,41 @@
+<map id="BSP_UART_Printf" name="BSP_UART_Printf">
+<area shape="rect" id="Node000001" title="格式化打印到调试串口（非阻塞）" alt="" coords="930,284,1083,314"/>
+<area shape="rect" id="Node000002" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="506,47,591,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="999,268,988,217,967,151,952,118,932,87,909,60,881,37,844,20,805,11,764,8,722,11,645,28,586,49,583,44,644,23,722,6,763,3,805,5,846,15,883,33,912,56,937,84,956,116,972,149,993,215,1004,270"/>
+<area shape="rect" id="Node000004" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,388,209,418"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="997,326,981,365,957,407,924,447,905,464,883,477,837,498,789,513,739,523,689,528,587,527,488,514,395,492,312,467,193,421,194,416,314,462,396,487,489,508,588,522,689,523,739,517,788,508,835,493,881,473,902,459,921,443,952,404,976,363,993,330"/>
+<area shape="rect" id="Node000005" href="$app__monitor_8c.html#aa50de6c3c6d7de9ecbd381513d6eb095" title="周期日志轮询（后台调用）" alt="" coords="264,570,402,599"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="1002,327,991,381,969,442,953,474,934,504,911,531,883,553,824,585,760,606,693,618,626,624,561,623,500,618,399,603,400,597,501,613,562,618,626,618,693,613,759,601,822,580,881,549,907,527,930,501,948,471,964,440,986,379,999,331"/>
+<area shape="rect" id="Node000006" href="$app__monitor_8c.html#a69348472c5378c7ae2787d865d1b626e" title="打印上电横幅" alt="" coords="688,47,882,77"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="992,268,976,231,952,185,920,138,880,97,850,80,850,74,884,93,924,134,956,182,981,229,997,270"/>
+<area shape="rect" id="Node000007" href="$app__shell_8c.html#ad6303a346f63752b165b847c5dcefbb7" title="解析并执行一行命令" alt="" coords="457,284,640,314"/>
+<area shape="poly" id="edge18_Node000001_Node000007" title=" " alt="" coords="986,325,942,372,914,393,883,408,830,425,785,430,741,424,687,408,648,390,612,365,563,317,564,312,616,361,650,385,689,403,742,419,785,425,828,420,881,403,911,388,939,368,982,327"/>
+<area shape="rect" id="Node000008" href="$app__shell_8c.html#ab93a15148be82ad3c0999b099de7c29e" title="shell 轮询（后台调用）" alt="" coords="257,388,409,418"/>
+<area shape="poly" id="edge23_Node000001_Node000008" title=" " alt="" coords="991,326,973,356,948,386,918,414,883,435,815,457,745,469,673,472,602,468,535,459,474,447,379,421,379,416,475,442,536,454,603,463,673,467,744,464,814,452,881,430,915,409,944,382,969,353,987,329"/>
+<area shape="rect" id="Node000009" href="$app__monitor_8c.html#a9bb383e6ceed1252d51dd3ebbc075668" title="打印完整状态快照（shell &quot;status&quot;）" alt="" coords="691,151,878,181"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="979,272,936,233,881,195,856,184,856,178,883,190,939,229,984,273"/>
+<area shape="rect" id="Node000010" href="$app__monitor_8c.html#a22c38d8c76224ba2db01a5a69b925982" title="设置周期日志开关与速率" alt="" coords="705,204,865,234"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="957,278,881,248,846,237,846,232,883,243,962,277"/>
+<area shape="rect" id="Node000011" href="$app__shell_8c.html#aae99ca6c66313d23c6f3a593badf4961" title="boot0 命令：检查/编程 nSWBOOT0 选项字节" alt="" coords="702,258,868,287"/>
+<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="912,288,869,285,868,280,917,288"/>
+<area shape="rect" id="Node000012" href="$app__shell_8c.html#a02ce76ff72a6b62807e1f3c3abdc850f" title="get/set 命令处理" alt="" coords="698,311,872,341"/>
+<area shape="poly" id="edge19_Node000001_Node000012" title=" " alt="" coords="912,311,872,318,871,313,917,309"/>
+<area shape="rect" id="Node000013" href="$app__shell_8c.html#a6d537e45ceeac530b13b4645c1e0961c" title="help 输出" alt="" coords="706,364,864,394"/>
+<area shape="poly" id="edge21_Node000001_Node000013" title=" " alt="" coords="962,320,883,355,847,366,846,361,881,350,957,321"/>
+<area shape="rect" id="Node000014" href="$app__main_8c.html#a9d7a99f268e16f853238569586d275aa" title="慢任务：温度采样/过温保护/CAN 指令超时" alt="" coords="482,159,615,189"/>
+<area shape="poly" id="edge24_Node000001_Node000014" title=" " alt="" coords="991,269,974,239,950,202,919,168,881,141,843,127,803,121,761,120,720,124,645,140,586,161,584,156,643,135,720,118,761,114,803,115,844,122,883,137,922,164,954,199,978,236,996,271"/>
+<area shape="rect" id="Node000003" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,338,62,367"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="507,87,63,339,60,335,506,82"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="104,383,63,366,61,361,108,380"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="270,562,255,553,224,520,198,483,166,421,168,416,202,480,228,517,259,549,275,562"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="670,63,592,64,590,59,675,61"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="752,84,690,141,665,171,642,202,566,286,563,282,638,199,661,167,686,137,748,87"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="500,322,367,390,365,385,504,320"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="239,404,210,406,209,401,244,402"/>
+<area shape="poly" id="edge13_Node000009_Node000007" title=" " alt="" coords="699,188,689,195,653,216,619,241,567,286,564,282,615,237,650,212,686,190,703,185"/>
+<area shape="poly" id="edge15_Node000010_Node000007" title=" " alt="" coords="708,240,689,248,588,286,586,281,687,243,712,238"/>
+<area shape="poly" id="edge17_Node000011_Node000007" title=" " alt="" coords="684,284,641,291,639,286,689,283"/>
+<area shape="poly" id="edge20_Node000012_Node000007" title=" " alt="" coords="680,315,641,312,640,307,685,314"/>
+<area shape="poly" id="edge22_Node000013_Node000007" title=" " alt="" coords="707,359,687,355,587,317,587,312,689,350,713,359"/>
+<area shape="poly" id="edge25_Node000014_Node000004" title=" " alt="" coords="508,200,188,390,185,385,508,194"/>
+</map>

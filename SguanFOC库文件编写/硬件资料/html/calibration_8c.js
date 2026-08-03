@@ -1,0 +1,37 @@
+var calibration_8c =
+[
+    [ "CAL_ELEC_PER_COUNT", "calibration_8c.html#a11bbf1aff9f504956a269fd443d85183", null ],
+    [ "CAL_POINT_SETTLE_CYCLES", "calibration_8c.html#a96bf39e9694f5390ca4d24dd6553e025", null ],
+    [ "CAL_RAMP_CYCLES", "calibration_8c.html#a5d548061aa77f7042c13409398338edf", null ],
+    [ "CAL_ROTATE_TOTAL_RAD", "calibration_8c.html#a42f3728aec193a2b2fc9c56d33daa529", null ],
+    [ "CAL_SETTLE_CYCLES", "calibration_8c.html#af619c32c548de02e17eb47347cd73b4a", null ],
+    [ "CAL_StateTypeDef", "calibration_8c.html#ae6329e56721fec5d9e446f72beb6c755", [
+      [ "CAL_ST_IDLE", "calibration_8c.html#ae6329e56721fec5d9e446f72beb6c755a639bf45e670e75a10a31cada015a60ff", null ],
+      [ "CAL_ST_RAMP", "calibration_8c.html#ae6329e56721fec5d9e446f72beb6c755a6e74edca4783fc2b5710a32b60f2aa10", null ],
+      [ "CAL_ST_SETTLE", "calibration_8c.html#ae6329e56721fec5d9e446f72beb6c755a543e3e3a71b65a58a1b152144206f3f0", null ],
+      [ "CAL_ST_ROTATE", "calibration_8c.html#ae6329e56721fec5d9e446f72beb6c755aa13b391d8bc958aa6f4f9b3c2a521c1a", null ],
+      [ "CAL_ST_RESETTLE", "calibration_8c.html#ae6329e56721fec5d9e446f72beb6c755a357feca49662a7ab453b064de3fb6111", null ],
+      [ "CAL_ST_OFFSET", "calibration_8c.html#ae6329e56721fec5d9e446f72beb6c755a36700fac22d853e4760638d7350403f8", null ],
+      [ "CAL_ST_RAMPDOWN", "calibration_8c.html#ae6329e56721fec5d9e446f72beb6c755a08066f567197043787311b33384d25a9", null ],
+      [ "CAL_ST_FAILDOWN", "calibration_8c.html#ae6329e56721fec5d9e446f72beb6c755ac3f745341491ae3e770e052f7b210e1e", null ],
+      [ "CAL_ST_DONE", "calibration_8c.html#ae6329e56721fec5d9e446f72beb6c755a32a5516e51887f43655c53998f6075cb", null ],
+      [ "CAL_ST_FAILED", "calibration_8c.html#ae6329e56721fec5d9e446f72beb6c755a0afbffabca25df9772f643710a7e0579", null ]
+    ] ],
+    [ "CAL_GetPhaseName", "calibration_8c.html#a8bfa245d980e0f628236b3c3db2e315e", null ],
+    [ "CAL_GetProgress", "calibration_8c.html#a5be71d98b2d7fc541402fac3accf8454", null ],
+    [ "CAL_Isr", "calibration_8c.html#a51f1133ceba653e8e1e600c24b54987e", null ],
+    [ "CAL_OffsetPointTheta", "calibration_8c.html#a26fea34b7ac90079fc8454f8012f95e0", null ],
+    [ "CAL_Start", "calibration_8c.html#a799bd918d9fd1f5b3c231d1d92b7fe0d", null ],
+    [ "baseRaw", "calibration_8c.html#a02fdeb0f394a85fe948883c79010b747", null ],
+    [ "baseTurns", "calibration_8c.html#ad4c59186712593d1e46592288d350706", null ],
+    [ "calState", "calibration_8c.html#a4a1914261a7538f7dc9be9dede1cd810", null ],
+    [ "curRef", "calibration_8c.html#a45a7945c36bc249ae2a5f5d048d40b24", null ],
+    [ "forcedTheta", "calibration_8c.html#a4e9441af5274e6fc1ae512f14d6dbc01", null ],
+    [ "measuredInvert", "calibration_8c.html#a9ff47f7a19aa92680c2c12e3d3e3140e", null ],
+    [ "measuredPp", "calibration_8c.html#a025c0036354db5ccef742ea4abf24792", null ],
+    [ "offsetCosSum", "calibration_8c.html#ab0e1d0a128aea0ef40945a0c9b0dc7d3", null ],
+    [ "offsetSinSum", "calibration_8c.html#a41b2020dbea6992f95331b9ac3416c61", null ],
+    [ "pointIdx", "calibration_8c.html#aa344a3f5ca47c85acaa97cb08618bdf8", null ],
+    [ "rotatedRad", "calibration_8c.html#a6134bad71fee4f7795396c551970d8b8", null ],
+    [ "stateCnt", "calibration_8c.html#af7717109a5ebbe1ee9e4ed652eb73403", null ]
+];

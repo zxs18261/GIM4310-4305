@@ -1,0 +1,32 @@
+<map id="Application/control/calibration.c" name="Application/control/calibration.c">
+<area shape="rect" id="Node000001" title="预定位校准模块（编码器方向/极对数/电角度偏置）" alt="" coords="380,5,533,54"/>
+<area shape="rect" id="Node000002" href="$calibration_8h.html" title="预定位校准模块头文件（编码器方向/极对数/电角度偏置）" alt="" coords="166,102,274,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="388,56,275,99,273,94,393,53"/>
+<area shape="rect" id="Node000010" href="$app__params_8h.html" title="运行参数管理头文件（RAM 副本 + Flash 持久化）" alt="" coords="308,180,431,209"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="425,53,402,78,384,103,374,134,371,165,366,163,369,133,379,101,398,74,421,56"/>
+<area shape="rect" id="Node000011" href="$motor__config_8h.html" title="电机参数与控制参数统一配置" alt="" coords="393,102,520,132"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="458,52,459,87,454,85,455,57"/>
+<area shape="rect" id="Node000012" href="$board__config_8h.html" title="板级硬件参数统一配置（GIM4310/4305 电机控制器 V0.0 板）" alt="" coords="481,180,608,209"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="490,52,515,74,533,101,544,133,547,165,543,163,539,134,529,103,510,78,490,57"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="594,102,663,132"/>
+<area shape="poly" id="edge17_Node000001_Node000013" title=" " alt="" coords="504,52,588,94,583,95,504,57"/>
+<area shape="rect" id="Node000003" href="$foc_8h.html" title="FOC 电流环模块头文件" alt="" coords="78,180,133,209"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="197,134,141,173,138,169,201,130"/>
+<area shape="rect" id="Node000007" href="$bsp__encoder_8h.html" title="MT6701 磁编码器 BSP 头文件（GPIO 位带模拟 SSI）" alt="" coords="157,180,284,209"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="221,130,223,165,218,163,219,135"/>
+<area shape="rect" id="Node000004" href="$foc__math_8h.html" title="FOC 数学基础模块头文件（快速三角函数、坐标变换、角度工具）" alt="" coords="5,257,105,287"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="95,212,75,246,71,243,97,208"/>
+<area shape="rect" id="Node000006" href="$pid_8h.html" title="位置式抗饱和（clamping anti&#45;windup）PID 控制器模块头文件" alt="" coords="128,257,184,287"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="116,207,141,244,136,244,115,213"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="124,335,196,365"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="76,285,131,325,126,327,74,290"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="159,286,161,320,156,318,155,290"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="220,208,212,246,199,288,180,323,176,320,194,286,207,245,216,212"/>
+<area shape="rect" id="Node000008" href="$main_8h.html" title=": Header for main.c file." alt="" coords="262,257,331,287"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="235,207,274,246,269,246,234,213"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="225,335,368,365"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="298,286,299,321,294,318,294,290"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="371,208,366,248,358,270,345,289,294,311,212,336,211,331,292,306,341,285,353,267,361,247,368,211"/>
+<area shape="poly" id="edge12_Node000010_Node000008" title=" " alt="" coords="358,209,322,248,319,244,354,211"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="473,130,519,170,514,169,472,135"/>
+</map>

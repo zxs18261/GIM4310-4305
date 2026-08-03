@@ -1,0 +1,17 @@
+<map id="Application/config/motor_config.h" name="Application/config/motor_config.h">
+<area shape="rect" id="Node000001" title="电机参数与控制参数统一配置" alt="" coords="577,5,725,54"/>
+<area shape="rect" id="Node000002" href="$app__can__protocol_8c.html" title="CAN 应用协议（MIT 运控协议 + 配置协议）" alt="" coords="5,102,169,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="559,43,386,70,182,105,170,107,168,102,181,99,385,64,564,42"/>
+<area shape="rect" id="Node000003" href="$app__main_8c.html" title="应用入口模块（前后台调度）" alt="" coords="193,102,357,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="564,53,357,107,356,102,559,54"/>
+<area shape="rect" id="Node000004" href="$app__monitor_8c.html" title="调试数据打印模块" alt="" coords="381,102,545,151"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="593,61,511,104,509,99,588,62"/>
+<area shape="rect" id="Node000005" href="$app__params_8c.html" title="运行参数管理（RAM 副本 + Flash 持久化）" alt="" coords="569,102,733,151"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="653,67,653,103,649,100,649,71"/>
+<area shape="rect" id="Node000006" href="$calibration_8c.html" title="预定位校准模块（编码器方向/极对数/电角度偏置）" alt="" coords="757,102,910,151"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="711,59,791,102,785,101,710,64"/>
+<area shape="rect" id="Node000007" href="$motor__ctrl_8c.html" title="电机控制核心模块（模式状态机 + 20kHz FOC 主循环）" alt="" coords="934,102,1088,151"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="740,52,924,99,936,105,931,105,922,105,740,57"/>
+<area shape="rect" id="Node000008" href="$protection_8c.html" title="保护与故障管理模块" alt="" coords="1112,102,1265,151"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="741,40,908,64,1101,99,1114,105,1109,104,1100,105,908,70,740,45"/>
+</map>

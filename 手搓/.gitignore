@@ -1,0 +1,22 @@
+# Keil MDK 构建产物（输出目录名与工程同名，含全角括号）
+MDK-ARM/GIM4310（V0.0）/
+MDK-ARM/build.log
+MDK-ARM/*.lnp
+MDK-ARM/*.iex
+MDK-ARM/*.htm
+MDK-ARM/*.map
+
+# Keil 用户界面状态（每机器不同，不入库；.uvoptx 保留以共享调试/烧写配置）
+MDK-ARM/*.uvguix.*
+*.uvguix.*
+
+# 调试器日志
+MDK-ARM/JLinkLog.txt
+MDK-ARM/JLinkSettings.ini
+MDK-ARM/DebugConfig/
+
+# 备份/临时文件
+*.bak
+*.orig
+*.tmp
+~$*

@@ -1,0 +1,61 @@
+<map id="Application/app/app_monitor.c" name="Application/app/app_monitor.c">
+<area shape="rect" id="Node000001" title="调试数据打印模块" alt="" coords="739,5,903,54"/>
+<area shape="rect" id="Node000002" href="$app__monitor_8h.html" title="调试数据打印模块头文件" alt="" coords="525,257,648,287"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="767,53,726,78,684,106,645,140,614,181,601,212,592,244,588,240,596,210,609,178,641,137,681,102,724,74,762,56"/>
+<area shape="rect" id="Node000004" href="$app__main_8h.html" title="应用入口模块头文件（前后台调度）" alt="" coords="955,102,1060,132"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="873,52,965,95,960,95,873,57"/>
+<area shape="rect" id="Node000005" href="$app__params_8h.html" title="运行参数管理头文件（RAM 副本 + Flash 持久化）" alt="" coords="623,180,747,209"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="770,53,739,77,713,104,698,134,690,166,686,163,693,132,708,100,735,73,766,56"/>
+<area shape="rect" id="Node000008" href="$motor__ctrl_8h.html" title="电机控制核心模块头文件（模式状态机 + FOC 主循环）" alt="" coords="200,102,304,132"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="738,46,320,108,319,103,740,41"/>
+<area shape="rect" id="Node000016" href="$calibration_8h.html" title="预定位校准模块头文件（编码器方向/极对数/电角度偏置）" alt="" coords="432,102,540,132"/>
+<area shape="poly" id="edge25_Node000001_Node000016" title=" " alt="" coords="736,53,557,100,555,95,741,51"/>
+<area shape="rect" id="Node000017" href="$bsp__uart_8h.html" title="USART3 调试串口 BSP 头文件（DMA TX 环形缓冲 + RXNE 中断接收）" alt="" coords="821,180,917,209"/>
+<area shape="poly" id="edge28_Node000001_Node000017" title=" " alt="" coords="829,52,863,166,858,164,826,57"/>
+<area shape="rect" id="Node000018" href="$bsp__can_8h.html" title="FDCAN1 通信 BSP 头文件（经典 CAN 模式）" alt="" coords="941,180,1037,209"/>
+<area shape="poly" id="edge31_Node000001_Node000018" title=" " alt="" coords="846,52,966,169,961,169,845,57"/>
+<area shape="rect" id="Node000019" href="$bsp__clock_8h.html" title="时钟切换 BSP 头文件（HSI &#45;&gt; HSE 20MHz）" alt="" coords="722,102,829,132"/>
+<area shape="poly" id="edge34_Node000001_Node000019" title=" " alt="" coords="810,53,792,90,789,86,806,56"/>
+<area shape="rect" id="Node000020" href="$board__config_8h.html" title="板级硬件参数统一配置（GIM4310/4305 电机控制器 V0.0 板）" alt="" coords="1099,180,1226,209"/>
+<area shape="poly" id="edge36_Node000001_Node000020" title=" " alt="" coords="903,40,989,62,1033,79,1074,100,1115,131,1146,168,1141,167,1111,135,1072,104,1031,84,987,67,903,46"/>
+<area shape="rect" id="Node000021" href="$motor__config_8h.html" title="电机参数与控制参数统一配置" alt="" coords="1135,102,1262,132"/>
+<area shape="poly" id="edge37_Node000001_Node000021" title=" " alt="" coords="903,47,1123,98,1118,98,903,52"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="426,335,498,365"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="566,287,499,329,497,324,560,288"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="687,208,682,248,675,270,662,289,628,314,590,332,551,343,514,348,514,343,550,337,588,327,626,310,658,285,670,268,677,247,683,211"/>
+<area shape="rect" id="Node000006" href="$main_8h.html" title=": Header for main.c file." alt="" coords="736,257,805,287"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="702,207,746,247,740,246,700,212"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="699,335,842,365"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="772,286,772,321,768,317,768,290"/>
+<area shape="rect" id="Node000009" href="$foc_8h.html" title="FOC 电流环模块头文件" alt="" coords="224,180,279,209"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="253,130,254,165,249,163,250,135"/>
+<area shape="rect" id="Node000011" href="$pid_8h.html" title="位置式抗饱和（clamping anti&#45;windup）PID 控制器模块头文件" alt="" coords="221,257,277,287"/>
+<area shape="poly" id="edge14_Node000008_Node000011" title=" " alt="" coords="241,130,226,155,214,180,212,197,215,213,231,245,225,244,210,215,207,197,209,179,222,152,237,134"/>
+<area shape="rect" id="Node000012" href="$filter_8h.html" title="滤波与状态估计模块头文件（一阶低通滤波器、PLL 速度估计器）" alt="" coords="5,257,69,287"/>
+<area shape="poly" id="edge15_Node000008_Node000012" title=" " alt="" coords="233,135,71,250,67,246,231,130"/>
+<area shape="rect" id="Node000013" href="$protection_8h.html" title="保护与故障管理模块头文件" alt="" coords="93,257,197,287"/>
+<area shape="poly" id="edge17_Node000008_Node000013" title=" " alt="" coords="242,130,207,181,164,246,160,243,203,178,239,134"/>
+<area shape="rect" id="Node000014" href="$bsp__encoder_8h.html" title="MT6701 磁编码器 BSP 头文件（GPIO 位带模拟 SSI）" alt="" coords="423,180,550,209"/>
+<area shape="poly" id="edge19_Node000008_Node000014" title=" " alt="" coords="296,130,430,174,425,175,296,135"/>
+<area shape="rect" id="Node000015" href="$bsp__adc_8h.html" title="ADC 采样 BSP 头文件（电流/母线电压注入组 + 温度规则组）" alt="" coords="304,180,399,209"/>
+<area shape="poly" id="edge22_Node000008_Node000015" title=" " alt="" coords="271,130,324,170,318,171,270,135"/>
+<area shape="rect" id="Node000010" href="$foc__math_8h.html" title="FOC 数学基础模块头文件（快速三角函数、坐标变换、角度工具）" alt="" coords="301,257,400,287"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="271,207,322,247,317,248,270,213"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="253,208,252,243,248,240,250,212"/>
+<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="372,285,431,326,426,326,371,290"/>
+<area shape="poly" id="edge13_Node000011_Node000003" title=" " alt="" coords="278,281,414,330,409,331,277,286"/>
+<area shape="poly" id="edge16_Node000012_Node000003" title=" " alt="" coords="68,281,82,284,262,319,413,342,408,343,261,324,80,290,70,286"/>
+<area shape="poly" id="edge18_Node000013_Node000003" title=" " alt="" coords="198,283,413,335,409,338,197,289"/>
+<area shape="poly" id="edge21_Node000014_Node000003" title=" " alt="" coords="486,208,469,321,465,318,482,212"/>
+<area shape="poly" id="edge20_Node000014_Node000006" title=" " alt="" coords="540,207,723,257,718,258,539,213"/>
+<area shape="poly" id="edge24_Node000015_Node000003" title=" " alt="" coords="369,207,414,256,452,322,447,321,410,259,367,212"/>
+<area shape="poly" id="edge23_Node000015_Node000006" title=" " alt="" coords="399,204,412,207,722,262,718,264,411,212,400,209"/>
+<area shape="poly" id="edge26_Node000016_Node000009" title=" " alt="" coords="438,134,295,181,293,177,443,131"/>
+<area shape="poly" id="edge27_Node000016_Node000014" title=" " alt="" coords="488,130,489,165,484,163,485,134"/>
+<area shape="poly" id="edge30_Node000017_Node000003" title=" " alt="" coords="867,208,851,250,837,272,819,289,795,301,762,312,680,329,591,340,514,348,514,342,591,335,680,323,761,307,793,296,815,285,833,268,846,248,863,211"/>
+<area shape="poly" id="edge29_Node000017_Node000006" title=" " alt="" coords="853,209,802,250,800,245,848,211"/>
+<area shape="poly" id="edge33_Node000018_Node000003" title=" " alt="" coords="975,209,921,251,887,272,850,289,760,317,667,335,582,345,514,350,514,344,582,340,667,330,758,312,848,285,884,268,918,247,970,211"/>
+<area shape="poly" id="edge32_Node000018_Node000006" title=" " alt="" coords="950,209,820,257,819,251,945,211"/>
+<area shape="poly" id="edge35_Node000019_Node000006" title=" " alt="" coords="777,130,774,243,769,240,773,134"/>
+<area shape="poly" id="edge38_Node000021_Node000020" title=" " alt="" coords="1194,131,1177,167,1174,163,1189,134"/>
+</map>

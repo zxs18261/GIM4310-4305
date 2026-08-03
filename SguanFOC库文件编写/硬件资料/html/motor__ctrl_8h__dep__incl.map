@@ -1,0 +1,15 @@
+<map id="Application/control/motor_ctrl.h" name="Application/control/motor_ctrl.h">
+<area shape="rect" id="Node000001" title="电机控制核心模块头文件（模式状态机 + FOC 主循环）" alt="" coords="480,5,633,54"/>
+<area shape="rect" id="Node000002" href="$app__can__protocol_8c.html" title="CAN 应用协议（MIT 运控协议 + 配置协议）" alt="" coords="5,102,169,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="465,50,182,105,170,107,168,102,181,99,464,44"/>
+<area shape="rect" id="Node000003" href="$app__led_8c.html" title="状态灯语模块（单颗 WS2812，亮度全局可调）" alt="" coords="193,102,357,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="474,59,346,104,345,99,469,60"/>
+<area shape="rect" id="Node000004" href="$app__main_8c.html" title="应用入口模块（前后台调度）" alt="" coords="381,102,545,151"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="525,64,488,104,485,99,520,66"/>
+<area shape="rect" id="Node000005" href="$app__monitor_8c.html" title="调试数据打印模块" alt="" coords="569,102,733,151"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="591,62,630,102,625,101,589,67"/>
+<area shape="rect" id="Node000006" href="$app__shell_8c.html" title="调试 shell 模块（USART3，行式命令）" alt="" coords="757,102,921,151"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="642,57,771,101,765,101,641,62"/>
+<area shape="rect" id="Node000007" href="$motor__ctrl_8c.html" title="电机控制核心模块（模式状态机 + 20kHz FOC 主循环）" alt="" coords="945,102,1098,151"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="648,44,933,99,947,105,942,105,932,105,648,49"/>
+</map>

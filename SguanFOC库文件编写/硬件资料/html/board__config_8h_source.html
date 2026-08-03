@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: Application/config/board_config.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('board__config_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">board_config.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="board__config_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#ifndef __BOARD_CONFIG_H</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define __BOARD_CONFIG_H</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">/* ============================== 时钟 ====================================== */</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="board__config_8h.html#ac9edcae3d1f60f60ac9cb59f0a1318db">   33</a></span><span class="preprocessor">#define BOARD_HSE_FREQ_HZ           (20000000UL)    </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="board__config_8h.html#ad29bfbd9ccafdae6b91d5c274b2b685e">   34</a></span><span class="preprocessor">#define BOARD_SYSCLK_HZ             (170000000UL)   </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="board__config_8h.html#a6644d550835215fbe4a8b10b0b4ddb04">   35</a></span><span class="preprocessor">#define BOARD_TIM1_CLK_HZ           (170000000UL)   </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">/* ============================== PWM ======================================= */</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="board__config_8h.html#a7debcd2a2db73be1ffea657d2fd3e715">   38</a></span><span class="preprocessor">#define BOARD_PWM_FREQ_HZ           (20000UL)       </span><span class="preprocessor"></span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="board__config_8h.html#aafb68e7d4294c7e20691c8cda1957090">   40</a></span><span class="preprocessor">#define BOARD_PWM_ARR               ((uint32_t)(BOARD_TIM1_CLK_HZ / (2UL * BOARD_PWM_FREQ_HZ)))</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="board__config_8h.html#a0d718b375104185711a0a901dbc14790">   42</a></span><span class="preprocessor">#define BOARD_PWM_DEADTIME_DTG      (34U)</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="board__config_8h.html#a7fec8551c3700e2ecbeb4a8544d4cf84">   45</a></span><span class="preprocessor">#define BOARD_PWM_MAX_DUTY          (0.94f)</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="board__config_8h.html#aaf286d012b58f701c1bad0fc362dc445">   48</a></span><span class="preprocessor">#define BOARD_PWM_ADC_TRIG_ADVANCE  (40U)</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="board__config_8h.html#a5a0e1d82570458abe695e32acf4aa299">   50</a></span><span class="preprocessor">#define BOARD_PWM_CCR_U             CCR1</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="board__config_8h.html#afd02ac954cfcb5990001b66ddf576de5">   51</a></span><span class="preprocessor">#define BOARD_PWM_CCR_V             CCR2</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="board__config_8h.html#a7b80a7742e7d892d9aeb5016160728e4">   52</a></span><span class="preprocessor">#define BOARD_PWM_CCR_W             CCR3</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">/* ============================ 电流采样 ==================================== */</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="board__config_8h.html#a6972a7e17b7e1847574f6780d82d2bd2">   55</a></span><span class="preprocessor">#define BOARD_SHUNT_OHM             (0.005f)        </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="board__config_8h.html#a2ec6ad813763f2391f3597d49f6b7fdc">   56</a></span><span class="preprocessor">#define BOARD_CSA_GAIN              (25.0f)         </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="board__config_8h.html#a5ab8e7370a550b1dc932aa1a4235809c">   57</a></span><span class="preprocessor">#define BOARD_ADC_VREF              (3.3f)          </span><span class="preprocessor"></span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="board__config_8h.html#aa9bfe22acf0e1495121ecad6d04c4987">   59</a></span><span class="preprocessor">#define BOARD_CUR_LSB               (BOARD_ADC_VREF / 4096.0f / (BOARD_CSA_GAIN * BOARD_SHUNT_OHM))</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="board__config_8h.html#ac6d0ad9a27b737a6f394fcdec571597e">   62</a></span><span class="preprocessor">#define BOARD_CUR_SIGN_U            (-1.0f)</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="board__config_8h.html#a26aa85955e77bd0faff5660a081ab19b">   63</a></span><span class="preprocessor">#define BOARD_CUR_SIGN_V            (-1.0f)</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="board__config_8h.html#ae63005289d1a5ff7432ebf5db039de8d">   64</a></span><span class="preprocessor">#define BOARD_CUR_SIGN_BUS          (1.0f)</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="board__config_8h.html#a5235c1299405728490745838d9124965">   66</a></span><span class="preprocessor">#define BOARD_CUR_MEAS_RANGE        (13.2f)</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="board__config_8h.html#a9072a593d066b96a7b39441989e28c5b">   73</a></span><span class="preprocessor">#define BOARD_ADC1_JCH_CUR          ADC_CHANNEL_12</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="board__config_8h.html#af712de11608a50329d77ddcde6d630b9">   74</a></span><span class="preprocessor">#define BOARD_ADC1_JCH_IBUS         ADC_CHANNEL_3</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="board__config_8h.html#af20e4ff4f91d387e659df648dd541de7">   75</a></span><span class="preprocessor">#define BOARD_ADC1_JCH_VBUS         ADC_CHANNEL_11</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="board__config_8h.html#ae5c19a896e942846553bff257dac6d1b">   76</a></span><span class="preprocessor">#define BOARD_ADC2_JCH_CUR          ADC_CHANNEL_3</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="board__config_8h.html#a8c2baf0164a9ccfda5b3768dd8f5424c">   78</a></span><span class="preprocessor">#define BOARD_ADC1_RCH_MOSNTC       ADC_CHANNEL_14</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="board__config_8h.html#a594e272632958f0d857917052d8482e5">   79</a></span><span class="preprocessor">#define BOARD_ADC2_RCH_MOTNTC       ADC_CHANNEL_5</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="board__config_8h.html#aaeab1d5f873cde4d302e6558f631ad9b">   82</a></span><span class="preprocessor">#define BOARD_ADC_CUR_SMPTIME       ADC_SAMPLETIME_6CYCLES_5</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="board__config_8h.html#aaf4f98cd0e05cbf852a5e436d3912b5c">   83</a></span><span class="preprocessor">#define BOARD_ADC_VBUS_SMPTIME      ADC_SAMPLETIME_24CYCLES_5</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="board__config_8h.html#a60fc80edb38e939ab44bf022c3e6724e">   84</a></span><span class="preprocessor">#define BOARD_ADC_NTC_SMPTIME       ADC_SAMPLETIME_247CYCLES_5</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="board__config_8h.html#a069c088a57f31bd30721a0b064970096">   89</a></span><span class="preprocessor">#define BOARD_ADC_OFFSET_MIN        (300.0f)</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="board__config_8h.html#a78d3afcd554c93d37fe2e59be527235f">   90</a></span><span class="preprocessor">#define BOARD_ADC_OFFSET_MAX        (3900.0f)</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="board__config_8h.html#aa4cdf1437fde188ada4c2ab7ae068d63">   92</a></span><span class="preprocessor">#define BOARD_ADC_RAIL_LOW          (20U)</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="board__config_8h.html#a696f782b84c7a257851d9428c1d7baf2">   93</a></span><span class="preprocessor">#define BOARD_ADC_RAIL_HIGH         (4075U)</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">/* ============================ 母线电压 ==================================== */</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="board__config_8h.html#af223b1ca71efbb7d2208098aeeb8ef21">   96</a></span><span class="preprocessor">#define BOARD_VBUS_R_TOP            (100.0f)        </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="board__config_8h.html#ab6c63ce9cf47f1c6ebba19e94dd4f989">   97</a></span><span class="preprocessor">#define BOARD_VBUS_R_BOT            (4.3f)          </span><span class="preprocessor"></span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="board__config_8h.html#a38625ac42ca0d6d46779435209eb870c">   99</a></span><span class="preprocessor">#define BOARD_VBUS_LSB              (BOARD_ADC_VREF / 4096.0f * ((BOARD_VBUS_R_TOP + BOARD_VBUS_R_BOT) / BOARD_VBUS_R_BOT))</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="board__config_8h.html#adf2221688d30eef9e7b97d5a9eba02d0">  101</a></span><span class="preprocessor">#define BOARD_VBUS_LPF_ALPHA        (0.05f)</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">/* ============================== NTC ======================================= */</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="board__config_8h.html#aed925ebe16a29b3e86f206d6cfae7359">  104</a></span><span class="preprocessor">#define BOARD_NTC_PULLUP            (10000.0f)      </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="board__config_8h.html#a4296307746e7b70e8d9cc039d2b62679">  105</a></span><span class="preprocessor">#define BOARD_NTC_MOS_R25           (10000.0f)      </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="board__config_8h.html#a331acb47ee1d0260f04fee442b95e4b1">  106</a></span><span class="preprocessor">#define BOARD_NTC_MOS_BETA          (3950.0f)</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="board__config_8h.html#a462dc439550e5208d74aa77f967d50f9">  107</a></span><span class="preprocessor">#define BOARD_NTC_MOT_R25           (10000.0f)      </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="board__config_8h.html#af06d461c2cdb5c971efc1efe248cee8a">  109</a></span><span class="preprocessor">#define BOARD_NTC_MOT_BETA          (3950.0f)</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="board__config_8h.html#abaf708838731d0078c1b86bde2857afb">  110</a></span><span class="preprocessor">#define BOARD_NTC_FAULT_TEMP        (250.0f)        </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">/* ============================ 调试串口 ==================================== */</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="board__config_8h.html#a7e9f8bc22ce424d47c209695874218ad">  113</a></span><span class="preprocessor">#define BOARD_UART_BAUDRATE         (921600UL)      </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">/* ============================== CAN ======================================= */</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="board__config_8h.html#a28110982ef5c85a64ea51845e6ecd702">  116</a></span><span class="preprocessor">#define BOARD_CAN_TERM_ACTIVE_HIGH  (1)             </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="board__config_8h.html#a202147b9350276f50927d97faa328a23">  117</a></span><span class="preprocessor">#define BOARD_CAN_BROADCAST_ID      (0x000U)        </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="board__config_8h.html#a17323fdfab5668e699770fef68768089">  118</a></span><span class="preprocessor">#define BOARD_CAN_NODE_ID_MAX       (63U)           </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="board__config_8h.html#a1a0ce54b2c34bed1a4e2fe2354b6df38">  119</a></span><span class="preprocessor">#define BOARD_CAN_CFG_ID_BASE       (0x600U)        </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="board__config_8h.html#ab31802725d7154c2474ce9e7e2b39b5b">  120</a></span><span class="preprocessor">#define BOARD_CAN_CFG_REPLY_BASE    (0x680U)        </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="board__config_8h.html#abf5b023975de260399e97803cd41170c">  121</a></span><span class="preprocessor">#define BOARD_CAN_MASTER_ID         (0x000U)        </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">/* ============================ WS2812 灯 =================================== */</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="board__config_8h.html#aab99b1c86d2191807c5c658706cfafe3">  125</a></span><span class="preprocessor">#define BOARD_WS2812_ARR            ((uint32_t)(BOARD_SYSCLK_HZ / 800000UL - 1UL))</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="board__config_8h.html#a44f10736ad3cf7da33b9c55cf273a456">  126</a></span><span class="preprocessor">#define BOARD_WS2812_CCR_0          (58U)           </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="board__config_8h.html#accc18e76f854bea190b727e9b777070c">  127</a></span><span class="preprocessor">#define BOARD_WS2812_CCR_1          (136U)          </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="board__config_8h.html#a42b09680f2f493af3a25ac6bb17c613f">  128</a></span><span class="preprocessor">#define BOARD_WS2812_ORDER_RGB      (0)             </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="board__config_8h.html#ac328c919d562f5cc2b4a4028216e075d">  129</a></span><span class="preprocessor">#define BOARD_LED_BRIGHTNESS_DEFAULT (40U)          </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">/* ========================= 编码器（位带 SSI） ============================= */</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="board__config_8h.html#a814763c53bd6bb2fc124d6f2fac5272b">  133</a></span><span class="preprocessor">#define BOARD_ENC_GPIO_PORT         GPIOB</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="board__config_8h.html#ab36b4534f44f309658a35c20ad68a0ae">  134</a></span><span class="preprocessor">#define BOARD_ENC_CSN_PIN           GPIO_PIN_4</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="board__config_8h.html#ab5280be52e14476db2115952d7b25317">  135</a></span><span class="preprocessor">#define BOARD_ENC_CLK_PIN           GPIO_PIN_5</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="board__config_8h.html#a73954cf3b8847e23662e1cdb4ed66e1d">  136</a></span><span class="preprocessor">#define BOARD_ENC_DO_PIN            GPIO_PIN_6</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="board__config_8h.html#a87efa9294596fd5945b884db631bf1d6">  137</a></span><span class="preprocessor">#define BOARD_ENC_DO_PIN_POS        (6U)            </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">/* =========================== 中断优先级 =================================== */</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="board__config_8h.html#abd60cc39afa21bfbf23ac15fc22a324e">  141</a></span><span class="preprocessor">#define BOARD_IRQPRIO_FOC           (1U)            </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="board__config_8h.html#aa26571a54f745bf294941c4f8c3a8caf">  142</a></span><span class="preprocessor">#define BOARD_IRQPRIO_CAN           (3U)            </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="board__config_8h.html#af999ec4630e03fb7821e7144b740d136">  143</a></span><span class="preprocessor">#define BOARD_IRQPRIO_UART          (6U)            </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="board__config_8h.html#a4069990512938e0cf6f663547e2a8123">  144</a></span><span class="preprocessor">#define BOARD_IRQPRIO_UART_DMA      (7U)            </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="board__config_8h.html#a28ef4d2a8d1cd2413569add7779edd2b">  145</a></span><span class="preprocessor">#define BOARD_IRQPRIO_LED_DMA       (8U)            </span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>}</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="preprocessor">#endif </span><span class="comment">/* __BOARD_CONFIG_H */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_eb1463819d84903762eb6f59cc0c4383.html">Application</a></li><li class="navelem"><a href="dir_33ba2c43ef16f0140a9216fe79248d2d.html">config</a></li><li class="navelem"><a href="board__config_8h.html">board_config.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

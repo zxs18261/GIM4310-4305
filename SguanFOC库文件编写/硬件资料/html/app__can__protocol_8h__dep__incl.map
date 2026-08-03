@@ -1,0 +1,9 @@
+<map id="Application/app/app_can_protocol.h" name="Application/app/app_can_protocol.h">
+<area shape="rect" id="Node000001" title="CAN 应用协议头文件（MIT 运控协议 + 配置协议）" alt="" coords="193,5,357,54"/>
+<area shape="rect" id="Node000002" href="$app__can__protocol_8c.html" title="CAN 应用协议（MIT 运控协议 + 配置协议）" alt="" coords="5,102,169,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,60,135,104,133,99,212,62"/>
+<area shape="rect" id="Node000003" href="$app__main_8c.html" title="应用入口模块（前后台调度）" alt="" coords="193,102,357,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="277,67,277,103,273,100,273,71"/>
+<area shape="rect" id="Node000004" href="$app__shell_8c.html" title="调试 shell 模块（USART3，行式命令）" alt="" coords="381,102,545,151"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="336,59,419,101,413,102,335,64"/>
+</map>

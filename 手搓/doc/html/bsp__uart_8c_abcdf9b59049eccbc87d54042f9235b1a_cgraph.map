@@ -1,0 +1,5 @@
+<map id="HAL_UART_TxCpltCallback" name="HAL_UART_TxCpltCallback">
+<area shape="rect" id="Node000001" title="HAL UART 发送完成回调：推进环形缓冲并续发下一段" alt="" coords="5,5,231,35"/>
+<area shape="rect" id="Node000002" href="$bsp__uart_8c.html#ad4dee4b2dd593f1d4c141de95156546d" title="若 DMA 空闲且缓冲有数据，则启动下一段 DMA 传输" alt="" coords="279,5,460,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,18,266,20,260,20,231,23"/>
+</map>

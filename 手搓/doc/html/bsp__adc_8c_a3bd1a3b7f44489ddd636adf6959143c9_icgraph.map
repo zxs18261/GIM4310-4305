@@ -1,0 +1,5 @@
+<map id="BSP_ADC_IRQHandler" name="BSP_ADC_IRQHandler">
+<area shape="rect" id="Node000001" title="ADC1_2 中断服务（stm32g4xx_it.c 用户区调用）" alt="" coords="231,5,423,35"/>
+<area shape="rect" id="Node000002" href="$stm32g4xx__it_8c.html#a3e8fca6e2f18e433a9fbc3d2dcc0b411" title="ADC1/ADC2 全局中断：注入组完成 = 20kHz 电流环节拍" alt="" coords="5,5,183,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,20,183,23,183,18,218,20"/>
+</map>

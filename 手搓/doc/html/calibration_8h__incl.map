@@ -1,0 +1,19 @@
+<map id="Application/control/calibration.h" name="Application/control/calibration.h">
+<area shape="rect" id="Node000001" title="预定位校准模块头文件（编码器方向/极对数/电角度偏置）" alt="" coords="112,5,265,54"/>
+<area shape="rect" id="Node000002" href="$foc_8h.html" title="FOC 电流环模块头文件" alt="" coords="103,102,159,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,52,151,90,147,87,171,57"/>
+<area shape="rect" id="Node000006" href="$bsp__encoder_8h.html" title="MT6701 磁编码器 BSP 头文件（GPIO 位带模拟 SSI）" alt="" coords="182,102,309,132"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="205,52,230,89,225,89,204,57"/>
+<area shape="rect" id="Node000003" href="$foc__math_8h.html" title="FOC 数学基础模块头文件（快速三角函数、坐标变换、角度工具）" alt="" coords="5,180,105,209"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,134,82,170,78,167,118,130"/>
+<area shape="rect" id="Node000005" href="$pid_8h.html" title="位置式抗饱和（clamping anti&#45;windup）PID 控制器模块头文件" alt="" coords="128,180,184,209"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="137,130,149,165,144,164,135,135"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="120,257,192,287"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="75,207,128,247,123,249,73,212"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="158,208,159,243,154,240,155,212"/>
+<area shape="poly" id="edge9_Node000006_Node000004" title=" " alt="" coords="241,131,199,211,176,246,172,242,194,208,236,133"/>
+<area shape="rect" id="Node000007" href="$main_8h.html" title=": Header for main.c file." alt="" coords="259,180,328,209"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="256,130,279,167,274,166,254,135"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="222,257,365,287"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="296,208,296,243,291,240,292,212"/>
+</map>

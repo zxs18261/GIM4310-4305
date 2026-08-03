@@ -1,0 +1,5 @@
+<map id="Application/config/motor_config.h" name="Application/config/motor_config.h">
+<area shape="rect" id="Node000001" title="电机参数与控制参数统一配置" alt="" coords="5,5,154,54"/>
+<area shape="rect" id="Node000002" href="$board__config_8h.html" title="板级硬件参数统一配置（GIM4310/4305 电机控制器 V0.0 板）" alt="" coords="16,102,143,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,52,82,87,77,85,78,57"/>
+</map>

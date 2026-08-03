@@ -1,0 +1,9 @@
+<map id="BSP_UART_TxFree" name="BSP_UART_TxFree">
+<area shape="rect" id="Node000001" title="查询 TX 环形缓冲剩余空间" alt="" coords="442,5,610,35"/>
+<area shape="rect" id="Node000002" href="$app__monitor_8c.html#aa50de6c3c6d7de9ecbd381513d6eb095" title="周期日志轮询（后台调用）" alt="" coords="257,5,394,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="424,20,395,23,395,18,429,20"/>
+<area shape="rect" id="Node000003" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,5,209,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="238,20,209,23,209,18,244,20"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,62,35"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="92,21,62,23,62,18,97,19"/>
+</map>

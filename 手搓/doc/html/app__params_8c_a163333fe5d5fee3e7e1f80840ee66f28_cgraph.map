@@ -1,0 +1,9 @@
+<map id="APP_PARAMS_Init" name="APP_PARAMS_Init">
+<area shape="rect" id="Node000001" title="参数初始化：从 Flash 加载，失败（首次上电/版本不符）则用默认值" alt="" coords="5,32,166,62"/>
+<area shape="rect" id="Node000002" href="$app__params_8c.html#afa4da68e24e6b332803f4e131cd9ea31" title="加载编译期默认参数" alt="" coords="214,5,448,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,35,201,34,196,35,167,41"/>
+<area shape="rect" id="Node000003" href="$bsp__flash_8c.html#abe117545b4c559768b5c43cc0da8777d" title="从参数页加载参数" alt="" coords="223,59,439,88"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,53,210,60,204,60,166,58"/>
+<area shape="rect" id="Node000004" href="$bsp__flash_8c.html#aa1c7fee83ecbb51032b9dad44332a207" title="硬件 CRC32 计算（默认多项式 0x4C11DB7，全字复位初值）" alt="" coords="496,59,664,88"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="440,71,483,73,478,74,440,76"/>
+</map>

@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GIM-4310/4315: Application/bsp/bsp_flash.c 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">GIM-4310/4315
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.16.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('bsp__flash_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">bsp_flash.c 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>片内 Flash 参数持久化 BSP  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="bsp__flash_8h_source.html">bsp_flash.h</a>&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+bsp_flash.c 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__flash_8c__incl.svg" width="278" height="292"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:FLASH_5FParamHeaderTypeDef" id="r_FLASH_5FParamHeaderTypeDef"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_f_l_a_s_h___param_header_type_def.html">FLASH_ParamHeaderTypeDef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">参数记录头（16 字节对齐到双字）  <a href="struct_f_l_a_s_h___param_header_type_def.html#details">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a4e2ad7b749f2e07f1c1e84d848fdabea" id="r_a4e2ad7b749f2e07f1c1e84d848fdabea"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4e2ad7b749f2e07f1c1e84d848fdabea">PARAM_PAGE_INDEX</a>&#160;&#160;&#160;(63U)</td></tr>
+<tr class="memitem:a7baa589ab4725c5dfe0768bb7d454a86" id="r_a7baa589ab4725c5dfe0768bb7d454a86"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7baa589ab4725c5dfe0768bb7d454a86">PARAM_PAGE_ADDR</a>&#160;&#160;&#160;(0x0801F800UL)</td></tr>
+<tr class="memitem:a937a907eb1f1f4abaf036a7e0816c9e0" id="r_a937a907eb1f1f4abaf036a7e0816c9e0"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a937a907eb1f1f4abaf036a7e0816c9e0">PARAM_PAGE_SIZE</a>&#160;&#160;&#160;(2048U)</td></tr>
+<tr class="memitem:a78425bbe8e5e6bc716b4d5296c06e554" id="r_a78425bbe8e5e6bc716b4d5296c06e554"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a78425bbe8e5e6bc716b4d5296c06e554">PARAM_MAGIC</a>&#160;&#160;&#160;(0x47494D34UL)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:aa1c7fee83ecbb51032b9dad44332a207" id="r_aa1c7fee83ecbb51032b9dad44332a207"><td class="memItemLeft">static uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#aa1c7fee83ecbb51032b9dad44332a207">BSP_FLASH_Crc32</a> (const uint8_t *data, uint32_t size)</td></tr>
+<tr class="memdesc:aa1c7fee83ecbb51032b9dad44332a207"><td class="mdescLeft">&#160;</td><td class="mdescRight">硬件 CRC32 计算（默认多项式 0x4C11DB7，全字复位初值）  <br /></td></tr>
+<tr class="memitem:abe117545b4c559768b5c43cc0da8777d" id="r_abe117545b4c559768b5c43cc0da8777d"><td class="memItemLeft">HAL_StatusTypeDef&#160;</td><td class="memItemRight"><a class="el" href="#abe117545b4c559768b5c43cc0da8777d">BSP_FLASH_LoadParams</a> (void *buf, uint32_t size)</td></tr>
+<tr class="memdesc:abe117545b4c559768b5c43cc0da8777d"><td class="mdescLeft">&#160;</td><td class="mdescRight">从参数页加载参数  <br /></td></tr>
+<tr class="memitem:a26214159159f35bf8008eb4cd97a626e" id="r_a26214159159f35bf8008eb4cd97a626e"><td class="memItemLeft">HAL_StatusTypeDef&#160;</td><td class="memItemRight"><a class="el" href="#a26214159159f35bf8008eb4cd97a626e">BSP_FLASH_SaveParams</a> (const void *buf, uint32_t size)</td></tr>
+<tr class="memdesc:a26214159159f35bf8008eb4cd97a626e"><td class="mdescLeft">&#160;</td><td class="mdescRight">保存参数到参数页（擦除 + 双字编程）  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
+<div class="textblock"><p>片内 Flash 参数持久化 BSP </p>
+<dl class="section note"><dt>注解</dt><dd>- 使用 STM32G431CB 最后一页（page 63，0x0801F800，2KB）存储参数；<ul>
+<li>记录头含 magic + 长度 + CRC32（硬件 CRC 外设），上电校验；</li>
+<li>页擦除约 20ms 且期间总线取指 stall：调用方必须保证电机已封波 （擦写期间电流环 ISR 无法执行），本模块内部关中断保护编程序列。</li>
+</ul>
+</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd></dd></dl>
+<p>Copyright (c) 2026 Z.Xusheng SPDX-License-Identifier: MIT</p>
+<p>This file is part of the GIM4310/GIM4305 joint motor controller firmware, distributed under the MIT License. See the LICENSE file in the repository root for full terms. </p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">宏定义说明</h2>
+<a id="a78425bbe8e5e6bc716b4d5296c06e554" name="a78425bbe8e5e6bc716b4d5296c06e554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78425bbe8e5e6bc716b4d5296c06e554">&#9670;&#160;</a></span>PARAM_MAGIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PARAM_MAGIC&#160;&#160;&#160;(0x47494D34UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>'GIM4' </p>
+
+</div>
+</div>
+<a id="a7baa589ab4725c5dfe0768bb7d454a86" name="a7baa589ab4725c5dfe0768bb7d454a86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7baa589ab4725c5dfe0768bb7d454a86">&#9670;&#160;</a></span>PARAM_PAGE_ADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PARAM_PAGE_ADDR&#160;&#160;&#160;(0x0801F800UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>参数页首地址 </p>
+
+</div>
+</div>
+<a id="a4e2ad7b749f2e07f1c1e84d848fdabea" name="a4e2ad7b749f2e07f1c1e84d848fdabea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e2ad7b749f2e07f1c1e84d848fdabea">&#9670;&#160;</a></span>PARAM_PAGE_INDEX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PARAM_PAGE_INDEX&#160;&#160;&#160;(63U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>参数页页号 </p>
+
+</div>
+</div>
+<a id="a937a907eb1f1f4abaf036a7e0816c9e0" name="a937a907eb1f1f4abaf036a7e0816c9e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a937a907eb1f1f4abaf036a7e0816c9e0">&#9670;&#160;</a></span>PARAM_PAGE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PARAM_PAGE_SIZE&#160;&#160;&#160;(2048U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>页大小 </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
+<a id="aa1c7fee83ecbb51032b9dad44332a207" name="aa1c7fee83ecbb51032b9dad44332a207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1c7fee83ecbb51032b9dad44332a207">&#9670;&#160;</a></span>BSP_FLASH_Crc32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t BSP_FLASH_Crc32 </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>硬件 CRC32 计算（默认多项式 0x4C11DB7，全字复位初值） </p>
+<dl class="section note"><dt>注解</dt><dd>按字节流喂入（CRC 外设配置 8bit 输入），与保存/加载两侧一致即可。 </dd></dl>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__flash_8c_aa1c7fee83ecbb51032b9dad44332a207_icgraph.svg" width="100%" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="abe117545b4c559768b5c43cc0da8777d" name="abe117545b4c559768b5c43cc0da8777d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe117545b4c559768b5c43cc0da8777d">&#9670;&#160;</a></span>BSP_FLASH_LoadParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_StatusTypeDef BSP_FLASH_LoadParams </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>buf</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从参数页加载参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>目标缓冲 </td></tr>
+    <tr><td class="paramname">size</td><td>参数体大小（须与保存时一致） </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">HAL_OK</td><td>校验通过；HAL_ERROR 无有效记录（首次上电或已损坏） </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__flash_8c_abe117545b4c559768b5c43cc0da8777d_cgraph.svg" width="444" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__flash_8c_abe117545b4c559768b5c43cc0da8777d_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a26214159159f35bf8008eb4cd97a626e" name="a26214159159f35bf8008eb4cd97a626e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26214159159f35bf8008eb4cd97a626e">&#9670;&#160;</a></span>BSP_FLASH_SaveParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_StatusTypeDef BSP_FLASH_SaveParams </td>
+          <td>(</td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>buf</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>保存参数到参数页（擦除 + 双字编程） </p>
+<dl class="section note"><dt>注解</dt><dd>仅允许在电机封波、后台上下文调用；内部全程关中断。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>参数体 </td></tr>
+    <tr><td class="paramname">size</td><td>参数体大小，须 &lt;= PARAM_PAGE_SIZE - 头大小 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">HAL</td><td>状态 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__flash_8c_a26214159159f35bf8008eb4cd97a626e_cgraph.svg" width="444" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="bsp__flash_8c_a26214159159f35bf8008eb4cd97a626e_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_eb1463819d84903762eb6f59cc0c4383.html">Application</a></li><li class="navelem"><a href="dir_f8a9e981ae9517ef8ddac90afb3b230c.html">bsp</a></li><li class="navelem"><a href="bsp__flash_8c.html">bsp_flash.c</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
+  </ul>
+</div>
+</body>
+</html>

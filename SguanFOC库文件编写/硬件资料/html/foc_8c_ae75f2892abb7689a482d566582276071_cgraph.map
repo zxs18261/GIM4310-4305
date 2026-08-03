@@ -1,0 +1,13 @@
+<map id="FOC_OutputVoltage" name="FOC_OutputVoltage">
+<area shape="rect" id="Node000001" title="直接输出 d/q 电压矢量（开环模式 / 校准注入用，不经过电流 PI）" alt="" coords="5,59,171,88"/>
+<area shape="rect" id="Node000002" href="$foc__math_8c.html#ae7e0a68727625c071145c38236b08cfe" title="Park 反变换（d/q &#45;&gt; alpha/beta）" alt="" coords="222,5,340,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,56,213,38,208,41,145,61"/>
+<area shape="rect" id="Node000003" href="$foc__math_8c.html#a39d4aea10aec434cb4d2490fafb98632" title="查表+线性插值同时计算 sin/cos" alt="" coords="223,59,340,88"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,71,210,73,205,74,172,76"/>
+<area shape="rect" id="Node000006" href="$foc__math_8c.html#a81c018372d65f69c5d8bd6abdeb9f1d2" title="SVPWM 调制（注入零序的 min&#45;max 中点平移法）" alt="" coords="219,112,344,142"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="145,86,213,107,208,108,144,92"/>
+<area shape="rect" id="Node000004" href="$foc__math_8c.html#ac63ab3ffd2685338c76dc6de24c953b1" title="构建 sin 查找表（仅初始化时执行一次）" alt="" coords="392,32,585,62"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="340,63,379,61,374,62,341,69"/>
+<area shape="rect" id="Node000005" href="$foc__math_8c.html#a4cc9d35ffa1c5f6ab5668cbe7623d018" title="角度归一化到 [0, 2pi)" alt="" coords="399,85,578,115"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="340,78,386,87,381,87,340,84"/>
+</map>

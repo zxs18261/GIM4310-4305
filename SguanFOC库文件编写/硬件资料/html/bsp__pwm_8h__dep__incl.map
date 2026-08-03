@@ -1,0 +1,9 @@
+<map id="Application/bsp/bsp_pwm.h" name="Application/bsp/bsp_pwm.h">
+<area shape="rect" id="Node000001" title="TIM1 三相互补 PWM BSP 头文件" alt="" coords="193,5,354,54"/>
+<area shape="rect" id="Node000002" href="$app__main_8c.html" title="应用入口模块（前后台调度）" alt="" coords="5,102,169,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,60,135,104,133,99,211,62"/>
+<area shape="rect" id="Node000003" href="$bsp__pwm_8c.html" title="TIM1 三相互补 PWM BSP" alt="" coords="193,102,354,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="275,67,276,103,271,100,272,71"/>
+<area shape="rect" id="Node000004" href="$motor__ctrl_8c.html" title="电机控制核心模块（模式状态机 + 20kHz FOC 主循环）" alt="" coords="378,102,532,151"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="333,59,412,101,407,101,332,64"/>
+</map>

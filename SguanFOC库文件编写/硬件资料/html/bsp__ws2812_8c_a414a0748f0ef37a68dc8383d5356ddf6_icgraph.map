@@ -1,0 +1,23 @@
+<map id="BSP_WS2812_RefreshTarget" name="BSP_WS2812_RefreshTarget">
+<area shape="rect" id="Node000001" title="按亮度缩放当前颜色并生成发送序颜色字，标记待发送" alt="" coords="743,32,977,62"/>
+<area shape="rect" id="Node000002" href="$bsp__ws2812_8c.html#aa343d7fb9bc7f5c802804cd659494aea" title="设置全局亮度（0~255，线性缩放）" alt="" coords="460,5,695,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="725,34,695,34,695,29,730,34"/>
+<area shape="rect" id="Node000008" href="$bsp__ws2812_8c.html#a14f4272e51ac6b64194ad2368ed44a71" title="设置目标颜色（缓存，Poll 时发送）" alt="" coords="479,59,676,88"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="725,60,677,67,676,62,730,59"/>
+<area shape="rect" id="Node000003" href="$app__led_8c.html#a4eb86fe33d029e9f08b60e781948039a" title="初始化灯语模块" alt="" coords="272,59,397,88"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="494,38,399,62,397,57,489,39"/>
+<area shape="rect" id="Node000006" href="$app__led_8c.html#a0667624ed63a699e14975ababc2eeb67" title="灯语轮询（后台调用，内部按 HAL tick 计时）" alt="" coords="268,5,401,35"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="442,21,402,23,401,18,448,20"/>
+<area shape="rect" id="Node000004" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="117,59,202,88"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="254,74,202,76,202,71,259,73"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,32,62,62"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="100,63,63,55,62,50,104,60"/>
+<area shape="rect" id="Node000007" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,5,209,35"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="250,21,210,23,209,18,255,19"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="93,36,63,43,61,39,96,32"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="461,74,398,76,398,71,466,73"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="489,55,401,37,401,32,495,55"/>
+<area shape="rect" id="Node000009" href="$bsp__ws2812_8c.html#acad123fd7d3377dda0013ffc74a9445a" title="初始化 WS2812 驱动（重配 TIM2 + DMA）" alt="" coords="257,112,412,142"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="494,92,406,114,405,109,489,93"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="266,107,201,89,202,84,272,107"/>
+</map>

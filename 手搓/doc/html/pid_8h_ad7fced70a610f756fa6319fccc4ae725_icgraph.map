@@ -1,0 +1,17 @@
+<map id="PID_SetLimits" name="PID_SetLimits">
+<area shape="rect" id="Node000001" title="运行中修改输出限幅，并把积分收拢到新限幅内" alt="" coords="729,84,852,114"/>
+<area shape="rect" id="Node000002" href="$foc_8c.html#adeb37d340903f5f803d273080550032d" title="执行一个电流环周期（在 ADC 注入转换完成 ISR 中调用）" alt="" coords="565,57,681,87"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="711,87,681,84,682,79,716,87"/>
+<area shape="rect" id="Node000007" href="$motor__ctrl_8c.html#a9dd4aa02cb15dd5ea27aa8085155adb7" title="慢环（1kHz）：电流限幅刷新与速度/位置外环" alt="" coords="389,109,517,139"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="716,104,517,122,517,117,711,105"/>
+<area shape="rect" id="Node000003" href="$calibration_8c.html#a51f1133ceba653e8e1e600c24b54987e" title="校准状态机单步（电流环 ISR 调用，模式 = MC_MODE_CALIB）" alt="" coords="413,5,493,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="555,52,493,35,493,30,560,52"/>
+<area shape="rect" id="Node000004" href="$motor__ctrl_8c.html#a5c982a7374da291bb0e5d06d26893def" title="FOC 主循环（ADC 注入完成 ISR，20kHz）" alt="" coords="242,57,341,87"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="547,73,342,75,341,70,552,72"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="401,37,341,59,339,54,396,38"/>
+<area shape="rect" id="Node000005" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="110,57,194,87"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="224,73,195,75,194,70,229,72"/>
+<area shape="rect" id="Node000006" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,57,62,87"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="92,74,63,75,61,70,96,71"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="388,104,340,90,341,85,393,104"/>
+</map>

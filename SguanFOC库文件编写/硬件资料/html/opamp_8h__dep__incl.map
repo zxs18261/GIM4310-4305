@@ -1,0 +1,9 @@
+<map id="Core/Inc/opamp.h" name="Core/Inc/opamp.h">
+<area shape="rect" id="Node000001" title="This file contains all the function prototypes for the opamp.c file" alt="" coords="184,5,332,35"/>
+<area shape="rect" id="Node000002" href="$bsp__adc_8c.html" title="ADC 采样 BSP（电流/母线电压注入组 + 温度规则组）" alt="" coords="5,83,167,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,42,135,85,133,80,213,43"/>
+<area shape="rect" id="Node000003" href="$main_8c.html" title=": Main program body" alt="" coords="190,92,326,122"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="260,49,260,94,256,91,256,52"/>
+<area shape="rect" id="Node000004" href="$opamp_8c.html" title="This file provides code for the configuration of the OPAMP instances." alt="" coords="350,92,499,122"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="300,40,400,92,395,92,299,45"/>
+</map>

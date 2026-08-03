@@ -1,0 +1,5 @@
+<map id="PROT_CheckSlow" name="PROT_CheckSlow">
+<area shape="rect" id="Node000001" title="慢速保护检查（后台约 10Hz 调用）" alt="" coords="5,5,163,35"/>
+<area shape="rect" id="Node000002" href="$protection_8c.html#a40bd77da34a0710d0ee46ecc0b4abb55" title="线性降额：温度低于告警点为 1，达到故障点为 0" alt="" coords="211,5,363,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,18,197,20,192,20,163,23"/>
+</map>

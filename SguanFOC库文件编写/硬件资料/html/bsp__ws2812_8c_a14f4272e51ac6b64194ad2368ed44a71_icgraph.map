@@ -1,0 +1,17 @@
+<map id="BSP_WS2812_SetColor" name="BSP_WS2812_SetColor">
+<area shape="rect" id="Node000001" title="设置目标颜色（缓存，Poll 时发送）" alt="" coords="460,59,658,88"/>
+<area shape="rect" id="Node000002" href="$app__led_8c.html#a4eb86fe33d029e9f08b60e781948039a" title="初始化灯语模块" alt="" coords="272,5,397,35"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="476,55,398,38,398,32,481,54"/>
+<area shape="rect" id="Node000005" href="$app__led_8c.html#a0667624ed63a699e14975ababc2eeb67" title="灯语轮询（后台调用，内部按 HAL tick 计时）" alt="" coords="268,112,401,142"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="481,92,401,114,400,109,476,93"/>
+<area shape="rect" id="Node000007" href="$bsp__ws2812_8c.html#acad123fd7d3377dda0013ffc74a9445a" title="初始化 WS2812 驱动（重配 TIM2 + DMA）" alt="" coords="257,59,412,88"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="442,74,413,76,413,71,447,73"/>
+<area shape="rect" id="Node000003" href="$app__main_8c.html#a4759d3fdff6b33e2c0a0ae151452112f" title="应用初始化（main 的 USER CODE BEGIN 2 调用）" alt="" coords="117,59,202,88"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="266,41,203,63,201,58,271,39"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,85,62,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="100,87,63,97,61,92,104,84"/>
+<area shape="rect" id="Node000006" href="$app__main_8c.html#a6709d26bb67f905916b7c7f048b8396c" title="后台超级循环体（main 的 while(1) 内调用）" alt="" coords="110,112,209,142"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="250,127,209,129,209,124,255,127"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="92,114,62,109,62,103,97,112"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="239,74,202,76,202,71,244,73"/>
+</map>
