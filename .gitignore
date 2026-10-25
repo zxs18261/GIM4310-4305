@@ -19,3 +19,23 @@
 Thumbs.db
 
 **/.git_bak_nested/
+# --- dsh-auto-ignore: build artifacts & oversized files ---
+node_modules/
+build/
+dist/
+dist-electron/
+out/
+target/
+Debug/
+Release/
+Objects/
+Listings/
+.pio/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.vs/
+*.uvguix.*
+*.egg-info/
+
